@@ -5,7 +5,8 @@ import { PageHero } from "@/components/PageHero";
 import { insights } from "@/data/site";
 
 export const metadata = {
-  title: "Insights | OZ Software Agency"
+  title: "Insights | OZ Software Agency",
+  description: "Practical guides and strategy notes for founders and operators planning custom software, MVPs, and digital growth systems."
 };
 
 export default function InsightsPage() {

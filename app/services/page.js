@@ -5,7 +5,8 @@ import { PageHero } from "@/components/PageHero";
 import { services, technologyLogos } from "@/data/site";
 
 export const metadata = {
-  title: "Services | OZ Software Agency"
+  title: "Services | OZ Software Agency",
+  description: "Custom web apps, mobile development, cloud deployment, software modernization, and growth technology built for scale."
 };
 
 export default function ServicesPage() {

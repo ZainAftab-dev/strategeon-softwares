@@ -351,6 +351,40 @@ button {
   box-shadow: var(--shadow);
 }
 
+.hero-photo {
+  position: relative;
+  min-height: 470px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(83, 174, 255, 0.18);
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(4, 20, 35, 0.45) 0%,
+    rgba(4, 20, 35, 0.15) 60%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+.hero-photo .floating-card {
+  z-index: 2;
+}
 
 .service-strip {
   position: relative;
@@ -1015,6 +1049,10 @@ button {
     position: relative;
     top: auto;
     min-height: 390px;
+  }
+
+  .hero-photo {
+    min-height: 340px;
   }
 
   .tech-row {

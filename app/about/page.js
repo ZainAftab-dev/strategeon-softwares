@@ -3,7 +3,8 @@ import { PageHero } from "@/components/PageHero";
 import { reviews, stats, values } from "@/data/site";
 
 export const metadata = {
-  title: "About | OZ Software Agency"
+  title: "About | OZ Software Agency",
+  description: "Learn how OZ Software Agency delivers full stack development, design, cloud, and growth technology for growing businesses."
 };
 
 export default function AboutPage() {

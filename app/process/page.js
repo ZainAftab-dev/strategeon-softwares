@@ -4,7 +4,8 @@ import { PageHero } from "@/components/PageHero";
 import { processSteps } from "@/data/site";
 
 export const metadata = {
-  title: "Process | OZ Software Agency"
+  title: "Process | OZ Software Agency",
+  description: "Our proven five-step delivery process connects strategy, design, engineering, and business outcomes from day one."
 };
 
 export default function ProcessPage() {
@@ -17,20 +18,18 @@ export default function ProcessPage() {
         text="Our delivery process keeps strategy, design, engineering, and business outcomes connected from day one."
       />
       <section className="section">
-        <div className="container grid grid-5">
-          <div className="grid grid-3">
-            {processSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <article className="card" key={step.title}>
-                  <span className="pill">Step {index + 1}</span>
-                  <Icon size={38} className="card-icon" />
-                  <h3>{step.title}</h3>
-                  <p>{step.summary}</p>
-                </article>
-              );
-            })}
-          </div>
+        <div className="container grid grid-3">
+          {processSteps.map((step, index) => {
+            const Icon = step.icon;
+            return (
+              <article className="card" key={step.title}>
+                <span className="pill">Step {index + 1}</span>
+                <Icon size={38} className="card-icon" />
+                <h3>{step.title}</h3>
+                <p>{step.summary}</p>
+              </article>
+            );
+          })}
         </div>
       </section>
       <section className="section section-soft">

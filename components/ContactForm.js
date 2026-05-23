@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
 
-export function ContactForm({ compact = false }) {
+export function ContactForm() {
   const [status, setStatus] = useState("idle"); // idle | loading | sent | error
 
   async function handleSubmit(event) {

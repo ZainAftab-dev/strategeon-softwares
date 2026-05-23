@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { caseStudies } from "@/data/site";
 
 export function CaseStudyGrid() {
@@ -35,15 +35,10 @@ export function CaseStudyGrid() {
               <h3>{item.title}</h3>
               <p>{item.summary}</p>
               <p><strong>{item.result}</strong></p>
-              <div className={`project-actions ${!item.repoUrl ? "single-action" : ""}`}>
+              <div className="project-actions single-action">
                 <a className="btn btn-primary" href={item.demoUrl} target="_blank" rel="noreferrer">
                   View Project <ExternalLink size={16} />
                 </a>
-                {item.repoUrl && (
-                  <a className="btn btn-light" href={item.repoUrl} target="_blank" rel="noreferrer">
-                    GitHub Repo <Github size={16} />
-                  </a>
-                )}
               </div>
             </div>
           </article>

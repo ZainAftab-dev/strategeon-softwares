@@ -3,7 +3,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
 
 export const metadata = {
-  title: "Contact | OZ Software Agency"
+  title: "Contact | OZ Software Agency",
+  description: "Schedule a free consultation with OZ Software Agency. Share your project goals and get a practical next step."
 };
 
 export default function ContactPage() {

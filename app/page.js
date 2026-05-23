@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, MonitorSmartphone, Rocket } from "lucide-react";
+import { ArrowRight, MonitorSmartphone } from "lucide-react";
 import { CaseStudyGrid } from "@/components/CaseStudyGrid";
 import { CTA } from "@/components/CTA";
 import { reviews, services, stats, technologyLogos, values } from "@/data/site";
@@ -35,18 +35,11 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="workstation" aria-label="Software development workstation illustration">
-            <div className="monitor">
-              <div className="monitor-top"><i /><i /><i /></div>
-              <div className="code-lines">
-                {Array.from({ length: 10 }).map((_, index) => <span key={index} />)}
-              </div>
-              <div className="floating-card">
-                <Rocket size={34} className="card-icon" />
-                <h3>From Idea to Launch</h3>
-                <p>We turn your vision into powerful digital products.</p>
-              </div>
-            </div>
+          <div className="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=900&q=80&fit=crop"
+              alt="Developer working at a multi-monitor workstation"
+            />
           </div>
         </div>
       </section>
