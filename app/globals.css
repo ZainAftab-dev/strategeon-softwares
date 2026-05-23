@@ -386,6 +386,119 @@ button {
   z-index: 2;
 }
 
+.article-page {
+  padding: 60px 0 100px;
+}
+
+.article-container {
+  max-width: 760px;
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.article-back:hover {
+  color: var(--blue);
+}
+
+.article-title {
+  margin: 16px 0 18px;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.08;
+  color: var(--ink);
+}
+
+.article-summary {
+  font-size: 20px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.article-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 36px 0;
+}
+
+.article-body {
+  display: grid;
+  gap: 36px;
+}
+
+.article-section h2 {
+  font-size: 22px;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.article-section p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #374151;
+  margin: 0;
+}
+
+.article-cta {
+  margin-top: 64px;
+  padding: 36px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.article-cta h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.article-cta p {
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+
+.clients-strip {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.clients-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.clients-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 32px;
+}
+
+.client-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+  opacity: 0.55;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
 .service-strip {
   position: relative;
   z-index: 4;

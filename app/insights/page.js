@@ -25,8 +25,8 @@ export default function InsightsPage() {
               <span className="pill">{post.tag}</span>
               <h3>{post.title}</h3>
               <p>{post.summary}</p>
-              <Link className="btn btn-light" href="/contact">
-                Discuss This Topic <ArrowRight size={16} />
+              <Link className="btn btn-light" href={`/insights/${post.slug}`}>
+                Read Article <ArrowRight size={16} />
               </Link>
             </article>
           ))}

@@ -59,6 +59,17 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="clients-strip">
+        <div className="container">
+          <p className="clients-label">Trusted by</p>
+          <div className="clients-row">
+            {["Strategeon LLC", "BrightPath Operations", "Northline Dental Group", "Summit Retail Systems", "HarborCare Services"].map((name) => (
+              <span className="client-name" key={name}>{name}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <div className="section-head">
