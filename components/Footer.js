@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "@/data/site";
 
 export function Footer() {
@@ -35,6 +35,7 @@ export function Footer() {
             <h4>Contact</h4>
             <p><Mail size={16} /> ozsoftwareagency@gmail.com</p>
             <p><Phone size={16} /> +1 (640) 227-4748</p>
+            <p><MapPin size={16} /> 7901 4th St N # 21548, Saint Petersburg, FL 33702</p>
           </div>
         </div>
         <div className="footer-bottom">

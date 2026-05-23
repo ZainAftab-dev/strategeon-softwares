@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
 
@@ -35,6 +35,11 @@ export default function ContactPage() {
                 <Phone size={26} className="card-icon" />
                 <h3>Phone</h3>
                 <p>+1 (640) 227-4748</p>
+              </div>
+              <div className="card">
+                <MapPin size={26} className="card-icon" />
+                <h3>Address</h3>
+                <p>7901 4th St N # 21548<br />Saint Petersburg, FL 33702</p>
               </div>
             </div>
           </div>
