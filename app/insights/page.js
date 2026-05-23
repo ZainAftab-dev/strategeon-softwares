@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
@@ -16,7 +15,7 @@ export default function InsightsPage() {
         eyebrow="Insights"
         title="Practical thinking for better"
         highlight="digital products"
-        text="Guides and strategy notes for founders, operators, and marketing teams planning custom software."
+        text="Curated guides and research for founders, operators, and marketing teams planning custom software."
       />
       <section className="section">
         <div className="container grid grid-3">
@@ -25,9 +24,14 @@ export default function InsightsPage() {
               <span className="pill">{post.tag}</span>
               <h3>{post.title}</h3>
               <p>{post.summary}</p>
-              <Link className="btn btn-light" href={`/insights/${post.slug}`}>
+              <a
+                className="btn btn-light"
+                href={post.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read Article <ArrowRight size={16} />
-              </Link>
+              </a>
             </article>
           ))}
         </div>
