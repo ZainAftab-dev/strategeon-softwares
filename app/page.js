@@ -99,30 +99,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">What we build</span>
-              <h2>Digital products, cloud systems, and growth platforms with real business use.</h2>
-            </div>
-            <Link className="btn btn-primary" href="/services">View Services</Link>
-          </div>
-          <div className="grid grid-3">
-            {services.map((service) => {
-              const Icon = service.icon;
-              return (
-                <article className="card" key={service.title}>
-                  <Icon size={36} className="card-icon" />
-                  <h3>{service.title}</h3>
-                  <p>{service.summary}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       <section className="section proof-section">
         <div className="container">
           <div className="proof-copy">
