@@ -10,15 +10,25 @@ export function ContactForm({ compact = false }) {
     event.preventDefault();
     setStatus("loading");
     const form = event.currentTarget;
-    const data = Object.fromEntries(new FormData(form));
+    const fd = new FormData(form);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          access_key: "d6e7778d-7122-40ea-84a1-763897d8dd96",
+          subject: `New project request — ${fd.get("name")}`,
+          from_name: "OZ Agency Site",
+          replyto: fd.get("email"),
+          name: fd.get("name"),
+          email: fd.get("email"),
+          project: fd.get("project"),
+          message: fd.get("message"),
+        }),
       });
-      if (!res.ok) throw new Error("send failed");
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message);
       setStatus("sent");
       form.reset();
     } catch {
@@ -41,15 +51,9 @@ export function ContactForm({ compact = false }) {
         <input name="name" required placeholder="Your name" />
       </label>
       <label>
-        Work email
-        <input name="email" type="email" required placeholder="you@company.com" />
+        Email
+        <input name="email" type="email" required placeholder="your@email.com" />
       </label>
-      {!compact && (
-        <label>
-          Company
-          <input name="company" placeholder="Company name" />
-        </label>
-      )}
       <label>
         Project type
         <select name="project" required defaultValue="">
