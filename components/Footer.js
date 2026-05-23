@@ -33,7 +33,7 @@ export function Footer() {
           </div>
           <div>
             <h4>Contact</h4>
-            <p><Mail size={16} /> hello@ozsoftwareagency.com</p>
+            <p><Mail size={16} /> ozsoftwareagency@gmail.com</p>
             <p><Phone size={16} /> +1 (640) 227-4748</p>
           </div>
         </div>

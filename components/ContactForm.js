@@ -4,19 +4,38 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 export function ContactForm({ compact = false }) {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | loading | sent | error
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    setSent(true);
-    event.currentTarget.reset();
+    setStatus("loading");
+    const form = event.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setStatus("sent");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
     <form className="form card" onSubmit={handleSubmit}>
-      <div className={`success ${sent ? "show" : ""}`} role="status">
-        Thanks. Your project request is ready for the OZ team to review.
+      <div className={`success ${status === "sent" ? "show" : ""}`} role="status">
+        Thanks. Your project request is on its way to the OZ team.
       </div>
+      {status === "error" && (
+        <p style={{ color: "red", marginBottom: "12px" }}>
+          Something went wrong — please email us directly at ozsoftwareagency@gmail.com
+        </p>
+      )}
       <label>
         Name
         <input name="name" required placeholder="Your name" />
@@ -46,8 +65,8 @@ export function ContactForm({ compact = false }) {
         Message
         <textarea name="message" required placeholder="Tell us what you want to build." />
       </label>
-      <button className="btn btn-primary" type="submit">
-        Send Request <Send size={18} />
+      <button className="btn btn-primary" type="submit" disabled={status === "loading"}>
+        {status === "loading" ? "Sending…" : <>Send Request <Send size={18} /></>}
       </button>
     </form>
   );

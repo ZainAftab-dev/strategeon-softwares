@@ -22,14 +22,13 @@ export default function ContactPage() {
             <h2>We will help you shape the next practical step.</h2>
             <p>
               Send a few details about your business goal, timeline, and current
-              challenge. The form is fully interactive and ready to connect to a
-              CRM or email service when you deploy.
+              challenge. Every submission lands directly in our inbox.
             </p>
             <div className="contact-methods">
               <div className="card">
                 <Mail size={26} className="card-icon" />
                 <h3>Email</h3>
-                <p>hello@ozsoftwareagency.com</p>
+                <p>ozsoftwareagency@gmail.com</p>
               </div>
               <div className="card">
                 <Phone size={26} className="card-icon" />
