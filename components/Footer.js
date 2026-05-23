@@ -29,6 +29,7 @@ export function Footer() {
               <Link href="/insights">Insights</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/work">Case Studies</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </div>
           </div>
           <div>
@@ -40,7 +41,7 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 OZ Software Agency. All rights reserved.</span>
-          <span>Full Stack Development · Real Solutions · Real Results</span>
+          <Link href="/privacy" style={{ color: "rgba(255,255,255,0.5)", fontSize: "13px" }}>Privacy Policy</Link>
         </div>
       </div>
     </footer>
