@@ -118,36 +118,44 @@ export const caseStudies = [
     image: "/projects/healthcare.png"
   },
   {
+    title: "Finance Dashboard",
+    category: "Platforms",
+    result: "Personal finance analytics platform",
+    summary: "A clean finance management app with bank account linking, spending breakdowns, transaction history, and budget goal tracking.",
+    demoUrl: "https://gregogun-xylo.vercel.app",
+    image: "/projects/finance.png"
+  },
+  {
     title: "Strategeon LLC",
     category: "Business",
-    result: "Professional company website",
-    summary: "A clean business presence with strong service positioning, polished layout, and conversion-focused page structure.",
+    result: "Professional e-commerce storefront",
+    summary: "A clean, conversion-optimized e-commerce site with product discovery, category browsing, and a polished retail experience.",
     demoUrl: "https://strategeonllc.com/",
     image: "/projects/strategeon.png"
   },
   {
-    title: "Learning Management System",
+    title: "Job Board Platform",
     category: "Apps",
-    result: "Online education platform",
-    summary: "A full-featured LMS with course creation, student enrollment, video streaming, progress tracking, and Stripe subscription management.",
-    demoUrl: "https://lms.krishnasai.top",
-    image: "/projects/lms.png"
+    result: "Developer job listing and search portal",
+    summary: "A full-stack job board with role filtering, location search, remote job listings, and a clean card-based browsing experience.",
+    demoUrl: "https://nextjs-job-board-one.vercel.app",
+    image: "/projects/jobboard.png"
   },
   {
-    title: "Event Management Platform",
-    category: "Apps",
-    result: "Event discovery and ticketing system",
-    summary: "A platform for discovering, creating, and registering for events with Stripe payments, authentication, and attendee management.",
-    demoUrl: "https://nextjs-evently-sabir.vercel.app",
-    image: "/projects/events.png"
+    title: "Property Rental Platform",
+    category: "Platforms",
+    result: "Rental property listing and search system",
+    summary: "A full-stack property rental app where renters search listings by location and type, and owners list and manage their properties.",
+    demoUrl: "https://property-management-nextjs.vercel.app",
+    image: "/projects/property.png"
   },
   {
-    title: "Social Community Platform",
-    category: "Apps",
-    result: "Modern social networking app",
-    summary: "A full-stack social media platform with user profiles, posts, follows, real-time interactions, and PostgreSQL-backed data management.",
-    demoUrl: "https://nextjs-social-media-six.vercel.app",
-    image: "/projects/social.png"
+    title: "Logistics Dashboard",
+    category: "SaaS",
+    result: "Fleet and shipment management system",
+    summary: "An operations dashboard tracking vehicles, transporters, shipments, and customers with analytics, invoices, and support tools.",
+    demoUrl: "https://ipi-logistics-dashboard.vercel.app",
+    image: "/projects/logistics.png"
   }
 ];
 
