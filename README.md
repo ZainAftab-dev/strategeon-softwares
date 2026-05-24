@@ -1,4 +1,4 @@
-# OZ Software Agency
+# Strategeon Softwares
 
 > Full stack development solutions for businesses that need modern, scalable, high-performing web and mobile applications.
 
@@ -97,7 +97,7 @@ npm run start
 ## Project Structure
 
 ```
-oz-agency/
+strategeon-softwares/
 ├── app/
 │   ├── layout.js          # Root layout (Header + Footer)
 │   ├── page.js            # Home page
@@ -169,4 +169,4 @@ MIT — feel free to use this as a template for your own agency site.
 
 ---
 
-Built by [OZ Software Agency](https://github.com/ZainAftab-dev/OZ-Agency)
+Built by [Strategeon Softwares](https://github.com/ZainAftab-dev/OZ-Agency)

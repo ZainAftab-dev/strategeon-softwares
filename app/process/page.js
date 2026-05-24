@@ -4,7 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { processSteps } from "@/data/site";
 
 export const metadata = {
-  title: "Process | OZ Software Agency",
+  title: "Process | Strategeon Softwares",
   description: "Our proven five-step delivery process connects strategy, design, engineering, and business outcomes from day one."
 };
 

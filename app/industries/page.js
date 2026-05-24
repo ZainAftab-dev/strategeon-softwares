@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { industries } from "@/data/site";
 
 export const metadata = {
-  title: "Industries | OZ Software Agency",
+  title: "Industries | Strategeon Softwares",
   description: "Software solutions for healthcare, SaaS, ecommerce, finance, real estate, and manufacturing teams that need reliable digital systems."
 };
 

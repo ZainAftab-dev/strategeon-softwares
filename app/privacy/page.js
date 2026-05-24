@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy | OZ Software Agency",
-  description: "How OZ Software Agency collects, uses, and protects your personal information."
+  title: "Privacy Policy | Strategeon Softwares",
+  description: "How Strategeon Softwares collects, uses, and protects your personal information."
 };
 
 const LAST_UPDATED = "May 24, 2026";
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
           <div className="article-section">
             <h2>1. Who we are</h2>
             <p>
-              OZ Software Agency ("OZ", "we", "us", or "our") is a full stack software development
+              Strategeon Softwares ("Strategeon", "we", "us", or "our") is a full stack software development
               company located at 7901 4th St N # 21548, Saint Petersburg, FL 33702, United States.
               We operate the website at this domain and provide software development services to
               businesses. You can reach us at ozsoftwareagency@gmail.com or +1 (640) 227-4748.
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
             <h2>11. Contact us</h2>
             <p>
               If you have any questions about this Privacy Policy or how we handle your personal
-              information, please contact us at: OZ Software Agency, 7901 4th St N # 21548,
+              information, please contact us at: Strategeon Softwares, 7901 4th St N # 21548,
               Saint Petersburg, FL 33702. Email: ozsoftwareagency@gmail.com.
               Phone: +1 (640) 227-4748.
             </p>

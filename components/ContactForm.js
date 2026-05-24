@@ -19,7 +19,7 @@ export function ContactForm() {
         body: JSON.stringify({
           access_key: "d6e7778d-7122-40ea-84a1-763897d8dd96",
           subject: `New project request — ${fd.get("name")}`,
-          from_name: "OZ Agency Site",
+          from_name: "Strategeon Softwares Site",
           replyto: fd.get("email"),
           name: fd.get("name"),
           email: fd.get("email"),
@@ -39,7 +39,7 @@ export function ContactForm() {
   return (
     <form className="form card" onSubmit={handleSubmit}>
       <div className={`success ${status === "sent" ? "show" : ""}`} role="status">
-        Thanks. Your project request is on its way to the OZ team.
+        Thanks. Your project request is on its way to the Strategeon team.
       </div>
       {status === "error" && (
         <p style={{ color: "red", marginBottom: "12px" }}>

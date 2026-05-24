@@ -3,8 +3,8 @@ import { PageHero } from "@/components/PageHero";
 import { reviews, stats, values } from "@/data/site";
 
 export const metadata = {
-  title: "About | OZ Software Agency",
-  description: "Learn how OZ Software Agency delivers full stack development, design, cloud, and growth technology for growing businesses."
+  title: "About | Strategeon Softwares",
+  description: "Learn how Strategeon Softwares delivers full stack development, design, cloud, and growth technology for growing businesses."
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
         eyebrow="About"
         title="A software partner built for"
         highlight="business results"
-        text="OZ Software Agency combines strategy, design, engineering, cloud, and growth technology so clients can launch stronger digital products."
+        text="Strategeon Softwares combines strategy, design, engineering, cloud, and growth technology so clients can launch stronger digital products."
       />
       <section className="section">
         <div className="container split">
@@ -22,7 +22,7 @@ export default function AboutPage() {
             <span className="eyebrow">Our story</span>
             <h2>We build the systems behind companies that are ready to grow.</h2>
             <p>
-              OZ was shaped around a simple promise: full stack development,
+              Strategeon was shaped around a simple promise: full stack development,
               full service delivery, and full commitment to the business outcome.
               That means fewer handoffs, clearer communication, and products
               designed to perform after launch.

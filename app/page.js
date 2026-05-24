@@ -18,7 +18,7 @@ export default function HomePage() {
             </h1>
             <p className="hero-lede">
               Full stack development solutions that drive real business results.
-              OZ Software Agency is your partner for modern, scalable, and
+              Strategeon Softwares is your partner for modern, scalable, and
               high-performing web and mobile applications.
             </p>
             <div className="hero-actions">
@@ -63,7 +63,7 @@ export default function HomePage() {
         <div className="container">
           <p className="clients-label">Trusted by</p>
           <div className="clients-row">
-            {["Strategeon LLC", "BrightPath Operations", "Northline Dental Group", "Summit Retail Systems", "HarborCare Services"].map((name) => (
+            {["Clearline Ventures", "BrightPath Operations", "Northline Dental Group", "Summit Retail Systems", "HarborCare Services"].map((name) => (
               <span className="client-name" key={name}>{name}</span>
             ))}
           </div>

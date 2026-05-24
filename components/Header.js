@@ -15,11 +15,11 @@ export function Header() {
       <div className="container nav-wrap">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
           <span className="brand-mark" aria-hidden="true">
-            <span>O</span><span>Z</span>
+            <span>S</span><span>G</span>
           </span>
           <span className="brand-copy">
-            <strong>Software</strong>
-            <small>Agency</small>
+            <strong>Strategeon</strong>
+            <small>Softwares</small>
           </span>
         </Link>
 

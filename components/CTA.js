@@ -7,7 +7,7 @@ export function CTA() {
       <div className="container split">
         <div className="copy">
           <span className="eyebrow">Let us build something amazing together</span>
-          <h2>From idea to launch, OZ turns vision into powerful digital products.</h2>
+          <h2>From idea to launch, Strategeon turns vision into powerful digital products.</h2>
           <p>
             Bring the business goal. We will help shape the strategy, design the
             experience, engineer the product, and support the launch.

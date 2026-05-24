@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h3>OZ Software Agency</h3>
+            <h3>Strategeon Softwares</h3>
             <p>
               Full stack development solutions for businesses that need modern,
               scalable, high-performing web and mobile applications.
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 OZ Software Agency. All rights reserved.</span>
+          <span>© 2026 Strategeon Softwares. All rights reserved.</span>
           <Link href="/privacy" style={{ color: "rgba(255,255,255,0.5)", fontSize: "13px" }}>Privacy Policy</Link>
         </div>
       </div>

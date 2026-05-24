@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "OZ Software Agency — Full Stack Development Solutions";
+export const alt = "Strategeon Softwares — Full Stack Development Solutions";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -44,12 +44,12 @@ export default async function Image() {
             alignItems: "center",
             gap: 4,
           }}>
-            <span style={{ color: "#1688ff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>O</span>
-            <span style={{ color: "#ffffff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>Z</span>
+            <span style={{ color: "#1688ff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
+            <span style={{ color: "#ffffff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>G</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ color: "#ffffff", fontSize: 22, fontWeight: 800, lineHeight: 1.1 }}>Software</span>
-            <span style={{ color: "#35b8ff", fontSize: 14, letterSpacing: "0.22em" }}>AGENCY</span>
+            <span style={{ color: "#ffffff", fontSize: 22, fontWeight: 800, lineHeight: 1.1 }}>Strategeon</span>
+            <span style={{ color: "#35b8ff", fontSize: 14, letterSpacing: "0.22em" }}>SOFTWARES</span>
           </div>
         </div>
 

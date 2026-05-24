@@ -3,8 +3,8 @@ import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 
 export const metadata = {
-  title: "Work | OZ Software Agency",
-  description: "Browse real projects, live demos, and product references built by OZ Software Agency for clients across multiple industries."
+  title: "Work | Strategeon Softwares",
+  description: "Browse real projects, live demos, and product references built by Strategeon Softwares for clients across multiple industries."
 };
 
 export default function WorkPage() {
