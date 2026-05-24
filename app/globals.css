@@ -82,6 +82,22 @@ button {
   border-radius: 6px;
 }
 
+.brand-copy {
+  display: grid;
+  line-height: 1.1;
+}
+
+.brand-copy strong {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.brand-copy small {
+  color: var(--blue-2);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+}
+
 .footer-logo {
   height: 56px;
   width: auto;

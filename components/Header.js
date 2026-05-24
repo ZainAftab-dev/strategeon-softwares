@@ -15,6 +15,10 @@ export function Header() {
       <div className="container nav-wrap">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
           <img src="/logo.png" alt="Strategeon Softwares" className="brand-logo" />
+          <span className="brand-copy">
+            <strong>Strategeon</strong>
+            <small>Softwares</small>
+          </span>
         </Link>
 
         <nav className={`nav-links ${open ? "open" : ""}`} aria-label="Main navigation">
