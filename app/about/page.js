@@ -1,6 +1,9 @@
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
-import { reviews, stats, values } from "@/data/site";
+import { AnimatedStats } from "@/components/AnimatedStats";
+import { ReviewsCarousel } from "@/components/ReviewsCarousel";
+import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
+import { stats, values } from "@/data/site";
 
 export const metadata = {
   title: "About | Strategeon Softwares",
@@ -16,9 +19,11 @@ export default function AboutPage() {
         highlight="business results"
         text="Strategeon Softwares combines strategy, design, engineering, cloud, and growth technology so clients can launch stronger digital products."
       />
+
+      {/* Story + stats */}
       <section className="section">
         <div className="container split">
-          <div className="copy">
+          <SlideLeft className="copy">
             <span className="eyebrow">Our story</span>
             <h2>We build the systems behind companies that are ready to grow.</h2>
             <p>
@@ -27,56 +32,46 @@ export default function AboutPage() {
               That means fewer handoffs, clearer communication, and products
               designed to perform after launch.
             </p>
-          </div>
-          <div className="stats">
-            {stats.map((item) => (
-              <div className="stat" key={item.label}>
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </div>
+          </SlideLeft>
+          <SlideRight>
+            <AnimatedStats stats={stats} className="stats" />
+          </SlideRight>
         </div>
       </section>
+
+      {/* Values */}
       <section className="section section-soft">
-        <div className="container grid grid-3">
-          {values.map((value) => (
-            <article className="card" key={value.title}>
-              <h3>{value.title}</h3>
-              <p>{value.summary}</p>
-            </article>
-          ))}
+        <div className="container">
+          <StaggerContainer className="grid grid-3">
+            {values.map((value) => (
+              <FadeItem key={value.title}>
+                <article className="card card-hover">
+                  <h3>{value.title}</h3>
+                  <p>{value.summary}</p>
+                </article>
+              </FadeItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
+
+      {/* Reviews */}
       <section className="section">
-        <div className="container feedback-layout">
-          <aside className="feedback-summary">
+        <div className="container split">
+          <SlideLeft className="copy">
             <span className="eyebrow">Client feedback</span>
             <h2>Trusted by growing teams.</h2>
-            <div className="rating-box">
+            <div className="rating-box" style={{ marginTop: "20px" }}>
               <strong>4.9</strong>
               <span>average project rating</span>
             </div>
-          </aside>
-          <div className="review-grid">
-            {reviews.map((review) => (
-              <article className="review-card" key={review.name}>
-                <div className="review-top">
-                  <span className="avatar">{review.initials}</span>
-                  <div>
-                    <h3>{review.name}</h3>
-                    <span>{review.location}</span>
-                  </div>
-                  <strong className="score">{review.rating}</strong>
-                </div>
-                <p className="verified">✓ {review.order}</p>
-                <h4>{review.headline}</h4>
-                <p>{review.quote}</p>
-              </article>
-            ))}
-          </div>
+          </SlideLeft>
+          <SlideRight>
+            <ReviewsCarousel />
+          </SlideRight>
         </div>
       </section>
+
       <CTA />
     </>
   );

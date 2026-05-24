@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CustomCursor } from "@/components/CustomCursor";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const metadata = {
   title: "Strategeon Softwares | Full Stack Development Solutions",
@@ -28,6 +30,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <LoadingScreen />
+        <CustomCursor />
         <Header />
         <main>{children}</main>
         <Footer />

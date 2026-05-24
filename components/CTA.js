@@ -21,7 +21,7 @@ export function CTA() {
             leave with a practical next step.
           </p>
           <div className="cta-actions">
-            <Link className="btn btn-primary" href="/contact">
+            <Link className="btn btn-primary btn-shimmer btn-pulse" href="/contact">
               Book Consultation <ArrowRight size={18} />
             </Link>
             <Link className="btn btn-secondary" href="/services">

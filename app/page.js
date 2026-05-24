@@ -1,51 +1,36 @@
 import Link from "next/link";
-import { ArrowRight, MonitorSmartphone } from "lucide-react";
+import { MonitorSmartphone } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
+import { InfiniteMarquee } from "@/components/InfiniteMarquee";
+import { AnimatedStats } from "@/components/AnimatedStats";
+import { ReviewsCarousel } from "@/components/ReviewsCarousel";
+import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
 import { CaseStudyGrid } from "@/components/CaseStudyGrid";
 import { CTA } from "@/components/CTA";
-import { reviews, services, stats, technologyLogos, values } from "@/data/site";
+import { services, stats, technologyLogos, values } from "@/data/site";
+
+const CLIENTS = [
+  "Clearline Ventures",
+  "BrightPath Operations",
+  "Northline Dental Group",
+  "Summit Retail Systems",
+  "HarborCare Services",
+  "Clearline Ventures",
+  "BrightPath Operations",
+  "Northline Dental Group",
+];
 
 export default function HomePage() {
   const strip = services.slice(0, 4);
 
   return (
     <>
-      <section className="hero">
-        <div className="container hero-grid">
-          <div>
-            <span className="eyebrow">Full Stack Development Solutions</span>
-            <h1>
-              We Build. You <span>Grow.</span>
-            </h1>
-            <p className="hero-lede">
-              Full stack development solutions that drive real business results.
-              Strategeon Softwares is your partner for modern, scalable, and
-              high-performing web and mobile applications.
-            </p>
-            <div className="hero-actions">
-              <Link className="btn btn-primary" href="/contact">
-                Schedule a Free Consultation <ArrowRight size={18} />
-              </Link>
-              <Link className="btn btn-secondary" href="/work">
-                See Our Work
-              </Link>
-            </div>
-            <div className="hero-proof">
-              {stats.slice(0, 3).map((item) => (
-                <span key={item.label}><strong>{item.value}</strong>{item.label}</span>
-              ))}
-            </div>
-          </div>
-          <div className="hero-photo">
-            <img
-              src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=900&q=80&fit=crop"
-              alt="Developer working at a multi-monitor workstation"
-            />
-          </div>
-        </div>
-      </section>
+      {/* ── Hero ── */}
+      <HeroSection />
 
+      {/* ── Service strip ── */}
       <section className="service-strip">
-        <div className="container strip-grid">
+        <AnimateInView className="container strip-grid">
           {strip.map((service) => {
             const Icon = service.icon;
             return (
@@ -56,123 +41,110 @@ export default function HomePage() {
               </Link>
             );
           })}
-        </div>
+        </AnimateInView>
       </section>
 
+      {/* ── Clients marquee ── */}
       <section className="clients-strip">
         <div className="container">
           <p className="clients-label">Trusted by</p>
-          <div className="clients-row">
-            {["Clearline Ventures", "BrightPath Operations", "Northline Dental Group", "Summit Retail Systems", "HarborCare Services"].map((name) => (
-              <span className="client-name" key={name}>{name}</span>
-            ))}
-          </div>
         </div>
+        <InfiniteMarquee speed={32} pauseOnHover>
+          {CLIENTS.map((name, i) => (
+            <span className="client-name" key={`${name}-${i}`}>{name}</span>
+          ))}
+        </InfiniteMarquee>
       </section>
 
+      {/* ── Full Stack / Full Service / Full Commitment ── */}
       <section className="section">
         <div className="container">
-          <div className="section-head">
+          <AnimateInView className="section-head">
             <div>
               <span className="eyebrow">Full Stack. Full Service. Full Commitment.</span>
               <h2>We handle everything so you can focus on growing your business.</h2>
             </div>
             <Link className="btn btn-light" href="/process">Our Process</Link>
-          </div>
-          <div className="grid grid-3">
+          </AnimateInView>
+          <StaggerContainer className="grid grid-3">
             {values.map((value) => (
-              <article className="card" key={value.title}>
-                <MonitorSmartphone size={34} className="card-icon" />
-                <h3>{value.title}</h3>
-                <p>{value.summary}</p>
-              </article>
+              <FadeItem key={value.title}>
+                <article className="card card-hover">
+                  <MonitorSmartphone size={34} className="card-icon" />
+                  <h3>{value.title}</h3>
+                  <p>{value.summary}</p>
+                </article>
+              </FadeItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 
+      {/* ── Tech stack marquee ── */}
       <section className="section section-soft">
         <div className="container">
-          <div className="section-head">
+          <AnimateInView className="section-head">
             <div>
               <span className="eyebrow">Modern technologies. Proven results.</span>
               <h2>Built with reliable tools that scale from first launch to serious growth.</h2>
             </div>
-          </div>
-          <div className="tech-row logo-tech-row">
+          </AnimateInView>
+        </div>
+        <div style={{ padding: "24px 0" }}>
+          <InfiniteMarquee speed={26} direction="left" pauseOnHover>
             {technologyLogos.map((tech) => (
-              <span className="tech-logo" key={tech.name}>
-                <img src={tech.icon} alt="" />
+              <span className="tech-logo tech-logo-marquee" key={tech.name}>
+                <img src={tech.icon} alt={tech.name} width={30} height={30} />
                 {tech.name}
               </span>
             ))}
-          </div>
+          </InfiniteMarquee>
         </div>
       </section>
 
+      {/* ── Stats ── */}
       <section className="section proof-section">
         <div className="container">
-          <div className="proof-copy">
+          <AnimateInView className="proof-copy">
             <div>
               <span className="eyebrow">Proof points</span>
               <h2>Built for practical business outcomes.</h2>
             </div>
             <p>Delivered work, satisfied clients, supported launches, and experience across multiple industries.</p>
-          </div>
-          <div className="stats proof-stats">
-            {stats.map((item) => (
-              <div className="stat" key={item.label}>
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </div>
+          </AnimateInView>
+          <AnimatedStats stats={stats} className="stats proof-stats" />
         </div>
       </section>
 
+      {/* ── Portfolio ── */}
       <section className="section">
         <div className="container">
-          <div className="section-head">
+          <AnimateInView className="section-head">
             <div>
               <span className="eyebrow">Selected projects</span>
               <h2>Real projects and product references clients can actually inspect.</h2>
             </div>
             <Link className="btn btn-light" href="/work">Open Work Page</Link>
-          </div>
+          </AnimateInView>
           <CaseStudyGrid />
         </div>
       </section>
 
+      {/* ── Testimonials ── */}
       <section className="section section-soft">
-        <div className="container">
-          <div className="feedback-layout">
-            <aside className="feedback-summary">
-              <span className="eyebrow">Client feedback</span>
-              <h2>Trusted by founders and growing service teams.</h2>
-              <div className="rating-box">
-                <strong>4.9</strong>
-                <span>average project rating</span>
-              </div>
-              <p>Clear planning, reliable communication, and support before and after launch.</p>
-            </aside>
-            <div className="review-grid">
-              {reviews.map((review) => (
-                <article className="review-card" key={review.name}>
-                  <div className="review-top">
-                    <span className="avatar">{review.initials}</span>
-                    <div>
-                      <h3>{review.name}</h3>
-                      <span>{review.location}</span>
-                    </div>
-                    <strong className="score">{review.rating}</strong>
-                  </div>
-                  <p className="verified">✓ {review.order}</p>
-                  <h4>{review.headline}</h4>
-                  <p>{review.quote}</p>
-                </article>
-              ))}
+        <div className="container split">
+          <SlideLeft className="copy">
+            <span className="eyebrow">Client feedback</span>
+            <h2>Trusted by founders and growing service teams.</h2>
+            <div className="rating-box" style={{ marginTop: "20px" }}>
+              <strong>4.9</strong>
+              <span>average project rating</span>
             </div>
-          </div>
+            <p>Clear planning, reliable communication, and support before and after launch.</p>
+          </SlideLeft>
+          <SlideRight>
+            <ReviewsCarousel />
+          </SlideRight>
         </div>
       </section>
 

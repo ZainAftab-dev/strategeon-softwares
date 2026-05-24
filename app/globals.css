@@ -1263,3 +1263,499 @@ button {
     width: auto;
   }
 }
+
+/* ─── ANIMATION SYSTEM ─────────────────────────────────────────────────── */
+
+/* --- Custom Cursor --- */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  margin-top: -4px;
+  background: var(--blue);
+  box-shadow: 0 0 10px var(--blue), 0 0 22px rgba(22, 136, 255, 0.55);
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border: 2px solid rgba(22, 136, 255, 0.45);
+}
+
+body.cursor-hidden,
+body.cursor-hidden * {
+  cursor: none !important;
+}
+
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+}
+
+/* --- Loading Screen --- */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: var(--navy);
+}
+
+.loading-logo {
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(22, 136, 255, 0.35);
+}
+
+.loading-name {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.loading-bar-wrap {
+  width: 180px;
+  height: 3px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--blue-2));
+  transform-origin: left center;
+  border-radius: 99px;
+}
+
+/* --- Animated Hero Background --- */
+.hero-animated {
+  position: relative;
+}
+
+.hero-animated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 75% 35%, rgba(22, 136, 255, 0.22), transparent 36%),
+    linear-gradient(115deg, transparent 48%, rgba(255, 255, 255, 0.045) 48.2%, transparent 66%);
+  animation: heroBgPulse 7s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes heroBgPulse {
+  0%   { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.hero-animated .hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Grow text shimmer --- */
+.grow-text {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    var(--blue) 0%,
+    var(--blue-2) 33%,
+    #7dd3fc 50%,
+    var(--blue-2) 67%,
+    var(--blue) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 3.5s linear infinite;
+}
+
+@keyframes textShimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Override the generic h1 span color for hero — grow-text uses gradient */
+.hero h1 span.grow-text {
+  color: transparent;
+}
+
+/* --- Button shimmer on hover --- */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: skewX(-18deg);
+}
+
+.btn-shimmer:hover::after {
+  animation: shimmerSweep 0.55s ease-out forwards;
+}
+
+@keyframes shimmerSweep {
+  0%   { left: -110%; }
+  100% { left: 140%; }
+}
+
+/* --- Button scale on hover/press (global) --- */
+.btn {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px) scale(1.025);
+}
+
+.btn:active {
+  transform: scale(0.972);
+}
+
+/* --- Pulsing CTA button --- */
+.btn-pulse {
+  animation: buttonPulse 2.6s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+  0%, 100% { box-shadow: 0 16px 30px rgba(22, 136, 255, 0.25); }
+  50%       { box-shadow: 0 16px 30px rgba(22, 136, 255, 0.58), 0 0 0 9px rgba(22, 136, 255, 0.11); }
+}
+
+/* --- Animated CTA section background --- */
+.section-dark {
+  background: linear-gradient(-45deg, #07192b, #0c2b47, #111e3a, #07192b);
+  background-size: 350% 350%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Card hover effects --- */
+.card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.012);
+  box-shadow: 0 22px 55px rgba(22, 136, 255, 0.14);
+  border-color: rgba(22, 136, 255, 0.35);
+}
+
+.card-hover:hover .card-icon,
+.card-hover:hover svg {
+  transform: rotate(5deg);
+  transition: transform 0.22s ease;
+}
+
+/* --- Strip card hover --- */
+.strip-card {
+  transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.strip-card:hover {
+  background: rgba(22, 136, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+/* --- Case card image zoom & overlay --- */
+.case-visual {
+  overflow: hidden;
+}
+
+.case-visual img {
+  transition: transform 0.45s ease;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-card:hover .case-visual img {
+  transform: scale(1.06);
+}
+
+/* --- Infinite Marquee --- */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+.marquee-hoverable:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding-right: 56px;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Clients marquee padding */
+.clients-strip .marquee-wrapper {
+  padding: 4px 0;
+}
+
+.clients-strip .marquee-content {
+  gap: 48px;
+  padding-right: 48px;
+}
+
+/* Tech logo marquee */
+.tech-logo-marquee {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-logo-marquee:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 22px rgba(22, 136, 255, 0.15);
+}
+
+/* --- Scrolled header --- */
+.site-header {
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.35s ease, min-height 0.3s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(4, 18, 32, 0.99);
+  backdrop-filter: blur(28px);
+  box-shadow: 0 4px 34px rgba(0, 0, 0, 0.38);
+}
+
+.site-header.scrolled .nav-wrap {
+  min-height: 62px;
+}
+
+/* Nav link hover underline slide */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+/* Footer link hover underline */
+.footer-links a {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+}
+
+.footer-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* --- Reviews carousel --- */
+.reviews-carousel {
+  width: 100%;
+}
+
+.review-carousel-card {
+  min-height: 270px;
+}
+
+.review-role {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 10px 0 0;
+}
+
+.carousel-stars {
+  display: flex;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.star {
+  color: #f59e0b;
+  font-size: 18px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(22, 136, 255, 0.22);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: var(--blue);
+  transform: scale(1.5);
+}
+
+/* --- Tab sliding indicator (CaseStudyGrid) --- */
+.tab-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.tab-indicator {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--blue);
+  z-index: -1;
+}
+
+.tab-button.active {
+  color: var(--white);
+  border-color: var(--blue);
+  background: transparent;
+}
+
+/* --- Logo glow on load --- */
+@keyframes logoGlow {
+  0%   { filter: drop-shadow(0 0 0px rgba(22, 136, 255, 0)); }
+  50%  { filter: drop-shadow(0 0 12px rgba(22, 136, 255, 0.65)); }
+  100% { filter: drop-shadow(0 0 0px rgba(22, 136, 255, 0)); }
+}
+
+.brand-logo-anim {
+  animation: logoGlow 2s ease-in-out 0.6s 1 forwards;
+}
+
+/* --- Page hero word-by-word --- */
+.page-hero h1 .word-anim {
+  display: inline-block;
+  margin-right: 0.22em;
+}
+
+/* Suppress the generic span color rule for animated word spans */
+.page-hero h1 .word-anim[style*="color: inherit"],
+.page-hero h1 .word-anim {
+  color: inherit;
+}
+
+/* --- Reduced motion: disable everything --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+
+  .marquee-track {
+    animation: none !important;
+  }
+
+  .grow-text {
+    animation: none !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--blue) !important;
+  }
+
+  .btn-pulse {
+    animation: none !important;
+  }
+
+  .section-dark {
+    animation: none !important;
+    background: linear-gradient(135deg, var(--navy), #0c2b47) !important;
+  }
+}
