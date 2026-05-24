@@ -34,7 +34,7 @@ export function Footer() {
           </div>
           <div>
             <h4>Contact</h4>
-            <p><Mail size={16} /> ozsoftwareagency@gmail.com</p>
+            <p><Mail size={16} /> info@strategeonsoftwares.com</p>
             <p><Phone size={16} /> +1 (640) 227-4748</p>
             <p><MapPin size={16} /> 7901 4th St N # 21548, Saint Petersburg, FL 33702</p>
           </div>

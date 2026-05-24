@@ -24,7 +24,7 @@ export default function PrivacyPage() {
               Strategeon Softwares ("Strategeon", "we", "us", or "our") is a full stack software development
               company located at 7901 4th St N # 21548, Saint Petersburg, FL 33702, United States.
               We operate the website at this domain and provide software development services to
-              businesses. You can reach us at ozsoftwareagency@gmail.com or +1 (640) 227-4748.
+              businesses. You can reach us at info@strategeonsoftwares.com or +1 (640) 227-4748.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export default function PrivacyPage() {
               as is necessary to manage the associated business inquiry. If no project engagement
               results from an inquiry, we do not retain the personal data beyond the period required
               to respond to your message. You may request deletion of your information at any time
-              by contacting us at ozsoftwareagency@gmail.com.
+              by contacting us at info@strategeonsoftwares.com.
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function PrivacyPage() {
               the California Consumer Privacy Act (CCPA), including the right to know what personal
               information is collected, the right to delete personal information, and the right to
               opt out of the sale of personal information. We do not sell personal information.
-              To exercise any of these rights, contact us at ozsoftwareagency@gmail.com. We will
+              To exercise any of these rights, contact us at info@strategeonsoftwares.com. We will
               respond to verifiable requests within 30 days.
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
             <p>
               If you have any questions about this Privacy Policy or how we handle your personal
               information, please contact us at: Strategeon Softwares, 7901 4th St N # 21548,
-              Saint Petersburg, FL 33702. Email: ozsoftwareagency@gmail.com.
+              Saint Petersburg, FL 33702. Email: info@strategeonsoftwares.com.
               Phone: +1 (640) 227-4748.
             </p>
           </div>

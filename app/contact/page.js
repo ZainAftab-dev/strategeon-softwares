@@ -29,7 +29,7 @@ export default function ContactPage() {
               <div className="card">
                 <Mail size={26} className="card-icon" />
                 <h3>Email</h3>
-                <p>ozsoftwareagency@gmail.com</p>
+                <p>info@strategeonsoftwares.com</p>
               </div>
               <div className="card">
                 <Phone size={26} className="card-icon" />

@@ -43,7 +43,7 @@ export function ContactForm() {
       </div>
       {status === "error" && (
         <p style={{ color: "red", marginBottom: "12px" }}>
-          Something went wrong — please email us directly at ozsoftwareagency@gmail.com
+          Something went wrong — please email us directly at info@strategeonsoftwares.com
         </p>
       )}
       <label>
