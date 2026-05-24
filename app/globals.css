@@ -1472,6 +1472,16 @@ body.cursor-hidden * {
   100% { background-position: 0% 50%; }
 }
 
+/* Make animation wrapper divs (FadeItem) stretch cards to equal height in grids */
+.grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid > div > .card {
+  flex: 1;
+}
+
 /* --- Card hover effects --- */
 .card-hover {
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
