@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CustomCursor } from "@/components/CustomCursor";
 import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const metadata = {
@@ -31,7 +30,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <LoadingScreen />
-        <CustomCursor />
         <Header />
         <main>{children}</main>
         <Footer />
