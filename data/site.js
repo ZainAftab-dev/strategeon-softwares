@@ -86,44 +86,44 @@ export const technologies = [
 
 export const caseStudies = [
   {
-    title: "Formbricks",
-    category: "Platforms",
-    result: "Survey and experience platform",
-    summary: "A polished customer feedback platform with surveys, dashboards, targeting, and product analytics style workflows.",
-    demoUrl: "https://formbricks.com",
-    image: "/projects/formbricks.png"
+    title: "Restaurant Ordering Platform",
+    category: "SaaS",
+    result: "Multi-tenant QR ordering system",
+    summary: "A restaurant SaaS platform with QR-based table menus, real-time order management, owner dashboards, and multi-location support.",
+    demoUrl: "https://restaurant-ordering-saas.vercel.app",
+    image: "/projects/restaurant.png"
   },
   {
-    title: "Papermark",
+    title: "Hotel Booking Platform",
     category: "Platforms",
-    result: "Secure document sharing platform",
-    summary: "A professional data-room and document-sharing product with viewer analytics, branded rooms, and secure deal workflows.",
-    demoUrl: "https://www.papermark.com",
-    image: "/projects/papermark.png"
+    result: "Full-stack property booking system",
+    summary: "A comprehensive hotel booking platform with advanced property search, secure Stripe payments, owner dashboards, and business analytics.",
+    demoUrl: "https://hotel-mern-booking.vercel.app",
+    image: "/projects/hotel.png"
   },
   {
-    title: "OpenStatus",
+    title: "Real Estate Portal",
     category: "Platforms",
-    result: "Status pages and uptime monitoring",
-    summary: "A monitoring product with status pages, incident communication, API checks, and clean operational dashboards.",
-    demoUrl: "https://www.openstatus.dev",
-    image: "/projects/openstatus.png"
+    result: "Property listings and search platform",
+    summary: "A full-stack real estate platform with property listings, filters, user authentication, image uploads, and MongoDB-powered search.",
+    demoUrl: "https://real-estate-cvrlnolan.vercel.app",
+    image: "/projects/realestate.png"
   },
   {
-    title: "Infisical",
-    category: "Platforms",
-    result: "Secrets and access management",
-    summary: "A security platform for managing secrets, certificates, permissions, audit logs, and developer infrastructure workflows.",
-    demoUrl: "https://infisical.com",
-    image: "/projects/infisical.png"
+    title: "Project Management Board",
+    category: "SaaS",
+    result: "Team kanban and task tracking",
+    summary: "A professional project management tool with drag-and-drop kanban boards, team collaboration, auth, and a Supabase-powered backend.",
+    demoUrl: "https://kanban-next.vercel.app",
+    image: "/projects/kanban.png"
   },
   {
-    title: "Unkey",
+    title: "Finance Dashboard",
     category: "Platforms",
-    result: "API key management platform",
-    summary: "A developer platform for API keys, usage controls, analytics, permissions, and secure application access patterns.",
-    demoUrl: "https://www.unkey.com",
-    image: "/projects/unkey.png"
+    result: "Personal finance analytics platform",
+    summary: "A finance management dashboard integrating Open Banking data with spending analytics, account overviews, and interactive charts.",
+    demoUrl: "https://gregogun-xylo.vercel.app",
+    image: "/projects/finance.png"
   },
   {
     title: "Strategeon LLC",
