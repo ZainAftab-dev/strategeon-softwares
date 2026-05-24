@@ -45,7 +45,7 @@ export default async function Image() {
             gap: 4,
           }}>
             <span style={{ color: "#1688ff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
-            <span style={{ color: "#ffffff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>G</span>
+            <span style={{ color: "#ffffff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ color: "#ffffff", fontSize: 22, fontWeight: 800, lineHeight: 1.1 }}>Strategeon</span>
