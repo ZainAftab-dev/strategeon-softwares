@@ -72,8 +72,8 @@ Coming soon — deploy link will appear here after Vercel deployment.
 ### Installation
 
 ```bash
-git clone https://github.com/ZainAftab-dev/OZ-Agency.git
-cd OZ-Agency
+git clone https://github.com/ZainAftab-dev/strategeon-softwares.git
+cd strategeon-softwares
 npm install
 ```
 
@@ -169,4 +169,4 @@ MIT — feel free to use this as a template for your own agency site.
 
 ---
 
-Built by [Strategeon Softwares](https://github.com/ZainAftab-dev/OZ-Agency)
+Built by [Strategeon Softwares](https://github.com/ZainAftab-dev/strategeon-softwares)

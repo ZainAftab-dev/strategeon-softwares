@@ -4,3 +4,8 @@ out
 .vercel
 *.log
 .env*
+
+# Loose screenshots / source assets — belong in public/projects/ not the root
+Screenshot*.png
+ChatGPT*.png
+*.tmp
