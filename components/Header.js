@@ -14,7 +14,7 @@ export function Header() {
     <header className="site-header">
       <div className="container nav-wrap">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
-          <img src="/logo.png" alt="Strategeon Softwares" className="brand-logo" />
+          <img src="/logo.png" alt="Strategeon Softwares" className="brand-logo" fetchPriority="high" decoding="sync" />
           <span className="brand-copy">
             <strong>Strategeon</strong>
             <small>Softwares</small>

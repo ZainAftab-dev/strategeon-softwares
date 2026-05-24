@@ -91,7 +91,7 @@ export const caseStudies = [
     result: "Multi-tenant QR ordering system",
     summary: "A restaurant SaaS platform with QR-based table menus, real-time order management, owner dashboards, and multi-location support.",
     demoUrl: "https://restaurant-ordering-saas.vercel.app",
-    image: "/projects/restaurant.png"
+    image: "/projects/restaurant.webp"
   },
   {
     title: "Hotel Booking Platform",
@@ -99,7 +99,7 @@ export const caseStudies = [
     result: "Full-stack property booking system",
     summary: "A comprehensive hotel booking platform with advanced property search, secure Stripe payments, owner dashboards, and business analytics.",
     demoUrl: "https://hotel-mern-booking.vercel.app",
-    image: "/projects/hotel.png"
+    image: "/projects/hotel.webp"
   },
   {
     title: "E-Commerce Platform",
@@ -107,7 +107,7 @@ export const caseStudies = [
     result: "Full-stack retail store with admin",
     summary: "A complete e-commerce solution with a customer-facing storefront, admin dashboard, product management, and Stripe-powered checkout.",
     demoUrl: "https://kk-nextjs-ecommerce.vercel.app",
-    image: "/projects/ecommerce.png"
+    image: "/projects/ecommerce.webp"
   },
   {
     title: "Healthcare Appointment System",
@@ -115,7 +115,7 @@ export const caseStudies = [
     result: "Patient and doctor scheduling platform",
     summary: "A patient management platform for booking, confirming, and managing doctor appointments with an admin portal and SMS notifications.",
     demoUrl: "https://healthcare-arnob.vercel.app",
-    image: "/projects/healthcare.png"
+    image: "/projects/healthcare.webp"
   },
   {
     title: "Finance Dashboard",
@@ -123,7 +123,7 @@ export const caseStudies = [
     result: "Personal finance analytics platform",
     summary: "A clean finance management app with bank account linking, spending breakdowns, transaction history, and budget goal tracking.",
     demoUrl: "https://gregogun-xylo.vercel.app",
-    image: "/projects/finance.png"
+    image: "/projects/finance.webp"
   },
   {
     title: "Strategeon LLC",
@@ -131,7 +131,7 @@ export const caseStudies = [
     result: "Professional e-commerce storefront",
     summary: "A clean, conversion-optimized e-commerce site with product discovery, category browsing, and a polished retail experience.",
     demoUrl: "https://strategeonllc.com/",
-    image: "/projects/strategeon.png"
+    image: "/projects/strategeon.webp"
   },
   {
     title: "Job Board Platform",
@@ -139,7 +139,7 @@ export const caseStudies = [
     result: "Developer job listing and search portal",
     summary: "A full-stack job board with role filtering, location search, remote job listings, and a clean card-based browsing experience.",
     demoUrl: "https://nextjs-job-board-one.vercel.app",
-    image: "/projects/jobboard.png"
+    image: "/projects/jobboard.webp"
   },
   {
     title: "Property Rental Platform",
@@ -147,7 +147,7 @@ export const caseStudies = [
     result: "Rental property listing and search system",
     summary: "A full-stack property rental app where renters search listings by location and type, and owners list and manage their properties.",
     demoUrl: "https://property-management-nextjs.vercel.app",
-    image: "/projects/property.png"
+    image: "/projects/property.webp"
   },
   {
     title: "Logistics Dashboard",
@@ -155,7 +155,7 @@ export const caseStudies = [
     result: "Fleet and shipment management system",
     summary: "An operations dashboard tracking vehicles, transporters, shipments, and customers with analytics, invoices, and support tools.",
     demoUrl: "https://ipi-logistics-dashboard.vercel.app",
-    image: "/projects/logistics.png"
+    image: "/projects/logistics.webp"
   }
 ];
 

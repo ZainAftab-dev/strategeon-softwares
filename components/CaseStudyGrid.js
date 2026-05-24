@@ -27,7 +27,7 @@ export function CaseStudyGrid() {
         {filtered.map((item) => (
           <article className="card case-card" key={item.title}>
             <div className="case-visual" aria-hidden="true">
-              <img src={item.image} alt="" />
+              <img src={item.image} alt="" loading="lazy" decoding="async" />
               <span>{item.title}</span>
             </div>
             <div className="case-body">

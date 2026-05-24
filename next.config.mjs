@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
+  images: {
+    formats: ['image/webp'],
+    minimumCacheTTL: 31536000,
+  },
 };
 
 export default nextConfig;
