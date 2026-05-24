@@ -8,6 +8,9 @@ export const metadata = {
   description:
     "Strategeon Softwares builds scalable web apps, mobile apps, cloud platforms, and end-to-end software systems for growing businesses.",
   metadataBase: new URL("https://strategeonsoftwares.com"),
+  verification: {
+    google: "X65B3QzqQhI3rKBCqemGAETxzuqg32FBOAWOSCqEiNk",
+  },
   openGraph: {
     title: "Strategeon Softwares | Full Stack Development Solutions",
     description:
