@@ -6,8 +6,17 @@ import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from
 import { stats, values } from "@/data/site";
 
 export const metadata = {
-  title: "About | Strategeon Softwares",
-  description: "Learn how Strategeon Softwares delivers full stack development, design, cloud, and growth technology for growing businesses."
+  title: "About Us | Full-Stack Software Development Agency",
+  description:
+    "Strategeon Softwares is a full-stack software development agency delivering custom web apps, mobile apps, cloud platforms, and digital products for growing US businesses.",
+  keywords: [
+    "about Strategeon Softwares",
+    "software development agency",
+    "full stack development company",
+    "custom software team",
+    "web app development agency USA",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/about" },
 };
 
 export default function AboutPage() {

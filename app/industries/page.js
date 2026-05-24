@@ -6,8 +6,19 @@ import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from
 import { industries } from "@/data/site";
 
 export const metadata = {
-  title: "Industries | Strategeon Softwares",
-  description: "Software solutions for healthcare, SaaS, ecommerce, finance, real estate, and manufacturing teams that need reliable digital systems."
+  title: "Industries We Serve | Healthcare, SaaS, Ecommerce & More",
+  description:
+    "Strategeon Softwares builds software for healthcare, SaaS, ecommerce, finance, real estate, and manufacturing teams that need reliable and scalable digital systems.",
+  keywords: [
+    "healthcare software development",
+    "SaaS platform development",
+    "ecommerce software development",
+    "fintech software development",
+    "real estate software",
+    "manufacturing software",
+    "industry-specific software solutions",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/industries" },
 };
 
 export default function IndustriesPage() {

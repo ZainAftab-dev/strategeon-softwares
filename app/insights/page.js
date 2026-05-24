@@ -4,8 +4,18 @@ import { PageHero } from "@/components/PageHero";
 import { insights } from "@/data/site";
 
 export const metadata = {
-  title: "Insights | Strategeon Softwares",
-  description: "Practical guides and strategy notes for founders and operators planning custom software, MVPs, and digital growth systems."
+  title: "Software Development Insights & Guides",
+  description:
+    "Practical guides and strategy resources for founders and operators planning custom software, MVPs, SaaS platforms, and digital growth systems.",
+  keywords: [
+    "software development guides",
+    "MVP planning guide",
+    "custom software strategy",
+    "SaaS product planning",
+    "web app development tips",
+    "software for business owners",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/insights" },
 };
 
 export default function InsightsPage() {

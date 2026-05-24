@@ -6,13 +6,42 @@ import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from
 import { services, technologyLogos } from "@/data/site";
 
 export const metadata = {
-  title: "Services | Strategeon Softwares",
-  description: "Custom web apps, mobile development, cloud deployment, software modernization, and growth technology built for scale."
+  title: "Software Development Services | Web, Mobile & Cloud",
+  description:
+    "Custom web application development, mobile app development, cloud deployment, software modernization, and growth technology. End-to-end delivery for growing businesses.",
+  keywords: [
+    "custom web application development",
+    "mobile app development services",
+    "cloud deployment services",
+    "software modernization",
+    "SaaS development services",
+    "full stack development services",
+    "end-to-end software development",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/services" },
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Software Development Services by Strategeon Softwares",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Custom Web Applications", url: "https://strategeonsoftwares.com/services" },
+    { "@type": "ListItem", position: 2, name: "Mobile App Development", url: "https://strategeonsoftwares.com/services" },
+    { "@type": "ListItem", position: 3, name: "Cloud Deployment", url: "https://strategeonsoftwares.com/services" },
+    { "@type": "ListItem", position: 4, name: "End-to-End Development", url: "https://strategeonsoftwares.com/services" },
+    { "@type": "ListItem", position: 5, name: "Software Modernization", url: "https://strategeonsoftwares.com/services" },
+    { "@type": "ListItem", position: 6, name: "Growth Technology", url: "https://strategeonsoftwares.com/services" },
+  ],
 };
 
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
+      />
       <PageHero
         eyebrow="Services"
         title="Full stack software services for"
@@ -59,7 +88,7 @@ export default function ServicesPage() {
               <div className="tech-row service-tech-row logo-tech-row">
                 {technologyLogos.map((tech) => (
                   <span className="tech-logo" key={tech.name}>
-                    <img src={tech.icon} alt="" />
+                    <img src={tech.icon} alt={`${tech.name} logo`} />
                     {tech.name}
                   </span>
                 ))}

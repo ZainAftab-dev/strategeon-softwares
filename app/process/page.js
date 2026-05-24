@@ -5,13 +5,40 @@ import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from
 import { processSteps } from "@/data/site";
 
 export const metadata = {
-  title: "Process | Strategeon Softwares",
-  description: "Our proven five-step delivery process connects strategy, design, engineering, and business outcomes from day one."
+  title: "Our Development Process | Strategy to Launch",
+  description:
+    "See how Strategeon Softwares delivers software projects — from discovery and design through development, launch, and ongoing growth. Clear, structured, and reliable.",
+  keywords: [
+    "software development process",
+    "agile software delivery",
+    "software project management",
+    "how software is built",
+    "software development lifecycle",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/process" },
+};
+
+const processSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How Strategeon Softwares Delivers Software Projects",
+  description: "A proven 5-step process from strategy to launch and growth.",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Discover", text: "We map business goals, users, risks, must-have features, and the launch path." },
+    { "@type": "HowToStep", position: 2, name: "Design", text: "We create wireframes, flows, interface systems, and technical architecture." },
+    { "@type": "HowToStep", position: 3, name: "Build", text: "We develop in focused sprints with demos, QA, reviews, and working increments." },
+    { "@type": "HowToStep", position: 4, name: "Launch", text: "We prepare deployment, performance, analytics, documentation, and handoff." },
+    { "@type": "HowToStep", position: 5, name: "Grow", text: "We keep improving conversion, reliability, features, and operational efficiency." },
+  ],
 };
 
 export default function ProcessPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(processSchema) }}
+      />
       <PageHero
         eyebrow="Process"
         title="A clear path from strategy to"

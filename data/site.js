@@ -220,7 +220,7 @@ export const reviews = [
     headline: "The final product felt organized, fast, and ready for real customers.",
     role: "Founder, BrightPath Operations",
     quote:
-      "OZ turned our messy internal process into a clean platform our team actually uses. Communication was clear from the first call."
+      "Strategeon turned our messy internal process into a clean platform our team actually uses. Communication was clear from the first call."
   },
   {
     name: "Sarah Whitmore",

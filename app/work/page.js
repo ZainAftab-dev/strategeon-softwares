@@ -3,8 +3,18 @@ import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 
 export const metadata = {
-  title: "Work | Strategeon Softwares",
-  description: "Browse real projects, live demos, and product references built by Strategeon Softwares for clients across multiple industries."
+  title: "Portfolio & Case Studies | Real Software Projects",
+  description:
+    "Browse real projects built by Strategeon Softwares — SaaS platforms, e-commerce stores, healthcare systems, finance dashboards, and logistics tools with live demos.",
+  keywords: [
+    "software development portfolio",
+    "web app case studies",
+    "SaaS platform examples",
+    "software agency portfolio",
+    "custom software projects",
+    "web development examples",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/work" },
 };
 
 export default function WorkPage() {

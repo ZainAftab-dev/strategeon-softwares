@@ -4,13 +4,48 @@ import { PageHero } from "@/components/PageHero";
 import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
 
 export const metadata = {
-  title: "Contact | Strategeon Softwares",
-  description: "Schedule a free consultation with Strategeon Softwares. Share your project goals and get a practical next step."
+  title: "Free Consultation | Contact Us",
+  description:
+    "Get in touch with Strategeon Softwares for a free software consultation. Share your project goals and get a practical plan for your web app, mobile app, or SaaS platform.",
+  keywords: [
+    "contact software development company",
+    "free software consultation",
+    "hire software developers",
+    "software project inquiry",
+    "web app development quote",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com/contact" },
+};
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact Strategeon Softwares",
+  url: "https://strategeonsoftwares.com/contact",
+  description: "Get in touch with Strategeon Softwares for a free software consultation.",
+  mainEntity: {
+    "@type": "LocalBusiness",
+    name: "Strategeon Softwares",
+    telephone: "+1-640-227-4748",
+    email: "info@strategeonsoftwares.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7901 4th St N # 21548",
+      addressLocality: "Saint Petersburg",
+      addressRegion: "FL",
+      postalCode: "33702",
+      addressCountry: "US",
+    },
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       <PageHero
         eyebrow="Contact"
         title="Tell us what you want to"

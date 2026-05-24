@@ -1,3 +1,52 @@
+export const metadata = {
+  title: "Custom Software Development Company",
+  description:
+    "Strategeon Softwares builds custom web apps, mobile apps, SaaS platforms, and cloud systems for growing US businesses. Full-stack team. Free consultation.",
+  keywords: [
+    "custom software development company",
+    "web app development",
+    "mobile app development company",
+    "SaaS development",
+    "full stack software agency",
+    "hire software developers USA",
+    "custom web application",
+    "software development services",
+  ],
+  alternates: { canonical: "https://strategeonsoftwares.com" },
+};
+
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Strategeon Softwares",
+  url: "https://strategeonsoftwares.com",
+  description:
+    "Full-stack software development agency building custom web apps, mobile apps, and SaaS platforms for growing US businesses.",
+  telephone: "+1-640-227-4748",
+  email: "info@strategeonsoftwares.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "7901 4th St N # 21548",
+    addressLocality: "Saint Petersburg",
+    addressRegion: "FL",
+    postalCode: "33702",
+    addressCountry: "US",
+  },
+  areaServed: "US",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Software Development Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Web Applications" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Mobile App Development" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cloud Deployment" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "End-to-End Development" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Software Modernization" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Growth Technology" } },
+    ],
+  },
+};
+
 import Link from "next/link";
 import { MonitorSmartphone } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
@@ -25,6 +74,10 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
       {/* ── Hero ── */}
       <HeroSection />
 
