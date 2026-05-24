@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h3>Strategeon Softwares</h3>
+            <img src="/logo.png" alt="Strategeon Softwares" className="footer-logo" />
             <p>
               Full stack development solutions for businesses that need modern,
               scalable, high-performing web and mobile applications.

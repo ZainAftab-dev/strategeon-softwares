@@ -75,37 +75,19 @@ button {
   font-weight: 800;
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  place-items: center;
-  width: 58px;
-  height: 42px;
-  color: var(--white);
-  font-size: 31px;
-  letter-spacing: -2px;
-  line-height: 1;
+.brand-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
 }
 
-.brand-mark span:first-child {
-  color: var(--blue);
-}
-
-.brand-copy {
-  display: grid;
-  line-height: 1.1;
-}
-
-.brand-copy strong {
-  font-size: 18px;
-  letter-spacing: 0.02em;
-}
-
-.brand-copy small {
-  color: var(--blue-2);
-  font-size: 12px;
-  letter-spacing: 0.24em;
+.footer-logo {
+  height: 56px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
 
 .nav-links {
