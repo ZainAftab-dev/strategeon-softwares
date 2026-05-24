@@ -102,28 +102,20 @@ export const caseStudies = [
     image: "/projects/hotel.png"
   },
   {
-    title: "Real Estate Portal",
+    title: "E-Commerce Platform",
     category: "Platforms",
-    result: "Property listings and search platform",
-    summary: "A full-stack real estate platform with property listings, filters, user authentication, image uploads, and MongoDB-powered search.",
-    demoUrl: "https://real-estate-cvrlnolan.vercel.app",
-    image: "/projects/realestate.png"
+    result: "Full-stack retail store with admin",
+    summary: "A complete e-commerce solution with a customer-facing storefront, admin dashboard, product management, and Stripe-powered checkout.",
+    demoUrl: "https://kk-nextjs-ecommerce.vercel.app",
+    image: "/projects/ecommerce.png"
   },
   {
-    title: "Project Management Board",
+    title: "Healthcare Appointment System",
     category: "SaaS",
-    result: "Team kanban and task tracking",
-    summary: "A professional project management tool with drag-and-drop kanban boards, team collaboration, auth, and a Supabase-powered backend.",
-    demoUrl: "https://kanban-next.vercel.app",
-    image: "/projects/kanban.png"
-  },
-  {
-    title: "Finance Dashboard",
-    category: "Platforms",
-    result: "Personal finance analytics platform",
-    summary: "A finance management dashboard integrating Open Banking data with spending analytics, account overviews, and interactive charts.",
-    demoUrl: "https://gregogun-xylo.vercel.app",
-    image: "/projects/finance.png"
+    result: "Patient and doctor scheduling platform",
+    summary: "A patient management platform for booking, confirming, and managing doctor appointments with an admin portal and SMS notifications.",
+    demoUrl: "https://healthcare-arnob.vercel.app",
+    image: "/projects/healthcare.png"
   },
   {
     title: "Strategeon LLC",
@@ -134,28 +126,28 @@ export const caseStudies = [
     image: "/projects/strategeon.png"
   },
   {
-    title: "Digital Whiteboard",
+    title: "Learning Management System",
     category: "Apps",
-    result: "Interactive web app",
-    summary: "A responsive browser-based whiteboard experience with drawing, planning, and collaboration-style interaction patterns.",
-    demoUrl: "https://v0-digital-whiteboard-app-mauve.vercel.app/",
-    image: "/projects/whiteboard.png"
+    result: "Online education platform",
+    summary: "A full-featured LMS with course creation, student enrollment, video streaming, progress tracking, and Stripe subscription management.",
+    demoUrl: "https://lms.krishnasai.top",
+    image: "/projects/lms.png"
   },
   {
-    title: "Movies Search",
+    title: "Event Management Platform",
     category: "Apps",
-    result: "Search-focused app interface",
-    summary: "A fast movie search interface with simple discovery flows, clean results, and user-friendly entertainment browsing.",
-    demoUrl: "https://v0-movies-search.vercel.app/",
-    image: "/projects/movies.png"
+    result: "Event discovery and ticketing system",
+    summary: "A platform for discovering, creating, and registering for events with Stripe payments, authentication, and attendee management.",
+    demoUrl: "https://nextjs-evently-sabir.vercel.app",
+    image: "/projects/events.png"
   },
   {
-    title: "Weather App",
+    title: "Social Community Platform",
     category: "Apps",
-    result: "Live weather experience",
-    summary: "A focused utility app with weather lookup, clean presentation, and mobile-friendly information design.",
-    demoUrl: "https://v0-weathers-app.vercel.app/",
-    image: "/projects/weather.png"
+    result: "Modern social networking app",
+    summary: "A full-stack social media platform with user profiles, posts, follows, real-time interactions, and PostgreSQL-backed data management.",
+    demoUrl: "https://nextjs-social-media-six.vercel.app",
+    image: "/projects/social.png"
   }
 ];
 
