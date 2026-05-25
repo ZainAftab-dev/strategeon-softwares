@@ -11,6 +11,21 @@ export const metadata = {
   description:
     "Strategeon Softwares builds custom web apps, mobile apps, SaaS platforms, and end-to-end software systems for growing US businesses. Free consultation available.",
   metadataBase: new URL("https://strategeonsoftwares.com"),
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" },
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
+  },
   keywords: [
     "custom software development",
     "web app development company",
