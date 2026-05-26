@@ -14,9 +14,14 @@ export const metadata = {
     "SaaS product planning",
     "web app development tips",
     "software for business owners",
+    "custom software cost",
+    "custom CRM vs Salesforce",
+    "replace SaaS tools",
   ],
   alternates: { canonical: "https://strategeonsoftwares.com/insights" },
 };
+
+const isInternal = (url) => url.startsWith("/");
 
 export default function InsightsPage() {
   return (
@@ -25,7 +30,7 @@ export default function InsightsPage() {
         eyebrow="Insights"
         title="Practical thinking for better"
         highlight="digital products"
-        text="Curated guides and research for founders, operators, and marketing teams planning custom software."
+        text="In-depth guides, cost breakdowns, and strategy resources for business owners planning custom software."
       />
       <section className="section">
         <div className="container grid grid-3">
@@ -34,14 +39,20 @@ export default function InsightsPage() {
               <span className="pill">{post.tag}</span>
               <h3>{post.title}</h3>
               <p>{post.summary}</p>
-              <a
-                className="btn btn-light"
-                href={post.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read Article <ArrowRight size={16} />
-              </a>
+              {isInternal(post.url) ? (
+                <a className="btn btn-light" href={post.url}>
+                  Read Article <ArrowRight size={16} />
+                </a>
+              ) : (
+                <a
+                  className="btn btn-light"
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Article <ArrowRight size={16} />
+                </a>
+              )}
             </article>
           ))}
         </div>

@@ -191,6 +191,36 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-development-cost-usa",
+    title: "Custom Software Development Cost in the USA: 2025 Complete Breakdown",
+    tag: "Cost Guide",
+    summary: "The real numbers behind custom software projects — from $15,000 internal tools to $500,000 enterprise platforms. Know what drives cost before you talk to a vendor."
+  },
+  {
+    url: "/insights/signs-business-needs-custom-software",
+    title: "7 Signs Your Business Has Outgrown Off-the-Shelf Software",
+    tag: "Strategy",
+    summary: "Generic software is built for the average business. If your business is not average, you are probably losing hours and money every week to workarounds and limitations."
+  },
+  {
+    url: "/insights/custom-crm-vs-salesforce",
+    title: "Custom CRM vs Salesforce: Which Is Better for Small Business in 2025?",
+    tag: "Comparison",
+    summary: "Salesforce costs $60,000–$90,000 over three years for a 10-person team. A custom CRM built for your exact process often costs less and does more."
+  },
+  {
+    url: "/insights/replace-saas-tools-custom-platform",
+    title: "How to Replace 5 SaaS Subscriptions With One Custom Platform",
+    tag: "Cost Savings",
+    summary: "The average US business spends $31,000 per year on SaaS tools that barely integrate. Here is how to consolidate them and eliminate recurring fees forever."
+  },
+  {
+    url: "/insights/what-is-custom-software-development",
+    title: "What Is Custom Software Development? A Plain-English Guide",
+    tag: "Beginner Guide",
+    summary: "Custom software means building software specifically for your business instead of buying a generic product. Here is everything you need to know before getting started."
+  },
+  {
     url: "https://www.ycombinator.com/library/6f-how-to-plan-an-mvp",
     title: "What a scalable MVP really needs before launch",
     tag: "Product",
