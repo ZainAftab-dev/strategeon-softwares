@@ -191,6 +191,24 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-erp-system-cost-usa",
+    title: "Custom ERP System Cost in the USA: 2025 Full Breakdown",
+    tag: "Cost Guide",
+    summary: "Custom ERP systems cost anywhere from $75,000 to $500,000+ in the USA depending on modules and scale. This breakdown explains every cost driver so you can budget before you speak to a vendor."
+  },
+  {
+    url: "/insights/mobile-app-development-cost-usa",
+    title: "Mobile App Development Cost in the USA: 2025 Honest Guide",
+    tag: "Cost Guide",
+    summary: "Mobile app development in the USA ranges from $20,000 for a focused MVP to $300,000+ for a complex platform with a custom backend. This guide gives you the honest numbers by platform and feature set."
+  },
+  {
+    url: "/insights/web-application-development-cost",
+    title: "Web Application Development Cost: What Businesses Pay in 2025",
+    tag: "Cost Guide",
+    summary: "Web application development costs range from $15,000 for a focused internal tool to $300,000+ for a full enterprise platform. This guide breaks down every cost driver for US and UK business owners."
+  },
+  {
     url: "/insights/custom-software-development-cost-usa",
     title: "Custom Software Development Cost in the USA: 2025 Complete Breakdown",
     tag: "Cost Guide",

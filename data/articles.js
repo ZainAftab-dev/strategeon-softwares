@@ -529,4 +529,382 @@ export const articles = [
       buttonText: "Book a Free Consultation",
     },
   },
+
+  {
+    slug: "custom-erp-system-cost-usa",
+    title: "Custom ERP System Cost in the USA: 2025 Full Breakdown",
+    metaTitle: "Custom ERP System Cost USA 2025 | Full Breakdown",
+    metaDescription: "How much does a custom ERP system cost in the USA? Get the full 2025 breakdown including modules, timelines, and hidden fees.",
+    tag: "Cost Guide",
+    publishDate: "May 28, 2025",
+    readTime: "10 min read",
+    summary:
+      "Custom ERP systems cost anywhere from $75,000 to $500,000+ in the USA depending on modules and scale. This breakdown explains every cost driver so you can budget before you speak to a vendor.",
+    intro:
+      "Enterprise Resource Planning software is the operational backbone of a growing business — connecting finance, HR, inventory, purchasing, and operations into a single system. But the big-name options like SAP and NetSuite come with licensing fees that can run to six figures before you have customised anything. An increasing number of US businesses are choosing to build a custom ERP instead: one that fits their workflows exactly, with no per-user fees and no vendor lock-in. This guide breaks down every cost involved so you can approach the decision with clear numbers and a realistic budget.",
+    sections: [
+      {
+        heading: "What Is an ERP and Why Build a Custom One?",
+        content:
+          "An ERP — Enterprise Resource Planning system — connects the core operational functions of your business in one platform. Rather than running finance in QuickBooks, HR in a separate payroll tool, and inventory in spreadsheets, an ERP creates a single data layer that all departments work from. The reason businesses build custom ERP systems rather than licensing SAP, NetSuite, or Microsoft Dynamics is control. Off-the-shelf ERP products are built for the median business in your industry. If your workflows differ from that median — unusual pricing models, non-standard job types, unique compliance requirements — every deviation becomes a workaround that costs staff time every single day. Custom ERP eliminates the workarounds by building the system around your actual process, not a generic template.",
+      },
+      {
+        heading: "Typical Cost Ranges by Business Size",
+        content:
+          "ERP cost scales heavily with the number of modules, users, and data complexity. Here are typical 2025 ranges for US-based development:",
+        table: {
+          headers: ["Business Size", "ERP Scope", "Typical Cost Range", "Timeline"],
+          rows: [
+            ["Small (10–30 staff)", "Core finance, basic inventory, HR", "$75,000 – $150,000", "4–6 months"],
+            ["Mid-size (30–100 staff)", "Finance, HR, inventory, CRM, reporting", "$150,000 – $300,000", "6–12 months"],
+            ["Enterprise (100+ staff)", "Full multi-module platform, multi-site", "$300,000 – $600,000+", "12–24 months"],
+            ["MVP / phased launch", "2–3 core modules only", "$50,000 – $100,000", "3–5 months"],
+          ],
+        },
+        afterTable:
+          "These figures assume US-based development at $150–$250 per hour. Nearshore or offshore development can reduce the initial build cost by 40–50%, though it adds project management overhead and typically extends the timeline.",
+      },
+      {
+        heading: "Cost Breakdown by Module",
+        content:
+          "Most businesses do not need every ERP module on day one. Building in phases lets you prioritise the modules with the highest ROI and spread the investment over time. Here is what individual modules typically cost to build in the USA in 2025:",
+        table: {
+          headers: ["Module", "What It Does", "Typical Build Cost"],
+          rows: [
+            ["Financial Management", "GL, AP, AR, bank reconciliation, reporting", "$25,000 – $60,000"],
+            ["Human Resources & Payroll", "Employee records, leave management, payroll integration", "$20,000 – $45,000"],
+            ["Inventory & Warehouse", "Stock tracking, purchase orders, supplier management", "$25,000 – $55,000"],
+            ["CRM & Sales", "Contacts, pipeline, quotes, order management", "$20,000 – $50,000"],
+            ["Project Management", "Job tracking, time sheets, project P&L", "$20,000 – $40,000"],
+            ["Reporting & BI Dashboard", "Cross-module reporting, KPI dashboards", "$15,000 – $35,000"],
+            ["Customer / Supplier Portal", "External-facing login for orders, invoices, documents", "$15,000 – $35,000"],
+          ],
+        },
+        afterTable:
+          "Costs shown are per module and assume development from scratch. If you already have data in an existing system, migration costs are additional — see the hidden costs section below for a full breakdown.",
+      },
+      {
+        heading: "Custom ERP vs SAP vs NetSuite: The Real Comparison",
+        content:
+          "The build-versus-buy decision for an ERP is not just about upfront cost. It is about total cost of ownership over five years and how closely the system fits your actual business operations.",
+        subsections: [
+          {
+            subheading: "SAP Business One",
+            text: "SAP Business One is aimed at small to mid-size businesses. Licensing runs $3,000–$5,000 per named user upfront (perpetual licence) or $150–$200 per user per month on subscription. Implementation by a SAP partner typically adds $50,000–$150,000. Any customisation requires SAP's ABAP development language and certified consultants charging $200–$400 per hour. Total three-year cost for a 20-user implementation typically runs $250,000–$500,000 — and rises every year as user counts grow.",
+          },
+          {
+            subheading: "NetSuite",
+            text: "NetSuite charges a base platform fee of $999 per month, plus $99–$149 per user per month, plus separate fees for each add-on module. For a 20-user company with standard modules, expect $80,000–$120,000 per year in licensing alone. NetSuite implementations run $30,000–$200,000 depending on complexity. Total three-year cost frequently exceeds $280,000–$560,000 before custom development is factored in.",
+          },
+          {
+            subheading: "Custom ERP",
+            text: "A custom ERP built for the same 20-user company covering equivalent scope typically costs $150,000–$250,000 to build and $15,000–$25,000 per year in hosting and maintenance. Total three-year cost: $195,000–$325,000 — and after year three, annual costs remain flat while SAP and NetSuite costs grow with every new hire and price increase. By year five, the custom ERP is often $200,000–$400,000 cheaper in total.",
+          },
+        ],
+      },
+      {
+        heading: "Hidden Costs to Budget For",
+        content:
+          "The build cost is only part of the total ERP investment. These additional costs catch most first-time buyers off guard and should be included in your budget from day one:",
+        list: [
+          "Data migration — extracting, cleaning, and importing data from legacy systems typically costs $10,000–$40,000 depending on data volume and quality",
+          "Staff training — plan for 2–5 days of structured training per department, plus ongoing refresher sessions. Budget $5,000–$15,000",
+          "Change management — larger organisations often engage an internal project manager or consultant to manage staff adoption. Add $10,000–$30,000",
+          "Third-party integrations — connecting to your bank, payroll provider, or e-commerce platform adds $3,000–$15,000 per integration",
+          "Annual maintenance — development teams typically charge 15–20% of build cost per year for updates, security patches, and new features",
+          "Infrastructure — hosting a custom ERP on AWS or Azure typically runs $300–$2,000 per month depending on data volume and user count",
+        ],
+      },
+      {
+        heading: "How to Phase the Build to Manage Cash Flow",
+        content:
+          "Few businesses need to build the full ERP in a single project. Phasing the build over 12–24 months spreads the investment, delivers value earlier, and allows later modules to be shaped by how the earlier ones are actually used in practice.",
+        subsections: [
+          {
+            subheading: "Phase 1: Core Finance and Operations (Months 1–5)",
+            text: "Start with the modules that run your money — financial management, basic inventory or job tracking, and reporting. This phase typically costs $60,000–$120,000 and delivers immediate visibility into your business performance. Many businesses recover this investment in saved accountant time, reduced errors, and faster month-end closing within the first 12 months of going live.",
+          },
+          {
+            subheading: "Phase 2: CRM and HR (Months 6–10)",
+            text: "Once core operations are stable, add the CRM and HR modules. These build on the data foundation laid in Phase 1 — customer data connects to orders and invoices, employee records connect to payroll and time tracking. You also benefit from 5–6 months of real operational data informing what the CRM needs to do. Typical cost: $40,000–$80,000.",
+          },
+          {
+            subheading: "Phase 3: Portals, Automation, and BI (Months 11–18)",
+            text: "The final phase adds customer and supplier portals, advanced automation workflows, and a full business intelligence dashboard. By this stage, you have real operational data informing exactly what to measure and automate. Typical cost: $30,000–$60,000. The total phased investment is comparable to a single large build, but each phase generates ROI before the next one begins.",
+          },
+        ],
+      },
+      {
+        heading: "ROI Calculation: Does a Custom ERP Pay Off?",
+        content:
+          "Here is a worked example for a 40-person manufacturing business replacing spreadsheets and three separate SaaS tools with a custom ERP covering finance, inventory, and CRM:",
+        table: {
+          headers: ["Cost / Saving Category", "Annual Value"],
+          rows: [
+            ["SaaS licences cancelled (Salesforce, QuickBooks, project tool)", "$42,000/year saved"],
+            ["Staff time saved — manual data entry reduced by 8 hrs/week at $35/hr", "$14,560/year saved"],
+            ["Error reduction — 2 fewer invoice errors per month at avg $800 each", "$19,200/year saved"],
+            ["Faster order processing — 30 additional orders/month at $150 margin", "$54,000/year additional revenue"],
+            ["Total annual benefit", "$129,760/year"],
+            ["Custom ERP build cost", "$200,000 (one-time)"],
+            ["Annual hosting + maintenance", "$25,000/year"],
+            ["Payback period", "~21 months"],
+          ],
+        },
+        afterTable:
+          "This is a conservative example. Businesses with higher staff costs or larger order volumes typically see payback in 12–18 months. The ROI compounds annually as the system grows with the business, and there is no ceiling created by per-user licensing fees.",
+      },
+    ],
+    cta: {
+      heading: "Get a Custom ERP Cost Estimate",
+      text: "Tell us about your business and we will map out what an ERP would include, how long it would take to build, and what it would cost — with no obligation.",
+      link: "/contact",
+      buttonText: "Request a Free Estimate",
+    },
+  },
+
+  {
+    slug: "mobile-app-development-cost-usa",
+    title: "Mobile App Development Cost in the USA: 2025 Honest Guide",
+    metaTitle: "Mobile App Development Cost USA 2025 | Honest Guide",
+    metaDescription: "What does it actually cost to build a mobile app in the USA in 2025? Honest breakdown by app type, platform, and feature set.",
+    tag: "Cost Guide",
+    publishDate: "May 28, 2025",
+    readTime: "8 min read",
+    summary:
+      "Mobile app development in the USA ranges from $20,000 for a focused MVP to $300,000+ for a complex platform with a custom backend. This guide gives you the honest numbers by platform and feature set.",
+    intro:
+      "Building a mobile app is one of the most frequently mispriced projects in the software industry. You will find freelancers quoting $5,000 and agencies quoting $500,000 for what sounds like the same product. The difference is not always dishonesty — it reflects genuine variation in scope, quality, platform choice, and approach. This guide breaks down every variable that drives mobile app development cost in the USA in 2025, so you can enter any vendor conversation knowing exactly what questions to ask and what numbers to expect.",
+    sections: [
+      {
+        heading: "Cost Ranges by App Type",
+        content:
+          "The most reliable way to estimate mobile app development cost is by complexity category. These 2025 ranges apply to US-based development teams:",
+        table: {
+          headers: ["App Type", "Description", "Cost Range", "Timeline"],
+          rows: [
+            ["Simple app / MVP", "Single core function, basic UI, limited backend", "$20,000 – $50,000", "6–10 weeks"],
+            ["Medium complexity", "Multiple features, user auth, notifications, API calls", "$50,000 – $120,000", "10–20 weeks"],
+            ["Complex app", "Real-time data, payments, complex logic, admin portal", "$120,000 – $250,000", "20–36 weeks"],
+            ["Enterprise / marketplace", "Multi-role, multi-platform, deep integrations", "$250,000 – $500,000+", "9–18 months"],
+          ],
+        },
+        afterTable:
+          "These ranges assume a US or UK development team. Nearshore teams (Latin America) reduce cost by 30–40%. Offshore teams (India, Southeast Asia) reduce cost by 50–65% but add coordination overhead and typically extend timelines by 30–50%.",
+      },
+      {
+        heading: "iOS vs Android vs Cross-Platform: Cost Differences",
+        content:
+          "One of the biggest early decisions in any app project is platform choice — and it has a direct and significant impact on your budget.",
+        subsections: [
+          {
+            subheading: "Native iOS or Android Only",
+            text: "Building for a single platform — iOS using Swift or Android using Kotlin — is the fastest and simplest approach. The upside is a polished, high-performance app with full access to device features. The downside is that you reach only one half of the mobile market. If you later want the second platform, expect to pay 70–85% of the original build cost, because native codebases cannot be shared. Best for: consumer apps with a known audience skewed heavily to one platform.",
+          },
+          {
+            subheading: "Cross-Platform (React Native or Flutter)",
+            text: "Cross-platform frameworks build a single codebase that runs on both iOS and Android. Cost saving compared to building two native apps is typically 30–45%. React Native (maintained by Meta) and Flutter (maintained by Google) are both mature, production-proven frameworks used by companies including Airbnb, Shopify, and Alibaba. Performance is now near-native for most business use cases. This is the most common and cost-effective recommendation for business apps in 2025.",
+          },
+          {
+            subheading: "Progressive Web App (PWA)",
+            text: "A PWA is a website built to behave like a mobile app. It does not appear in app stores but can be saved to the home screen and works offline. Development cost is 40–60% lower than a native app. Hardware feature access is limited — Bluetooth, NFC, and advanced camera functions are restricted. Good for: internal tools, low-complexity MVP validation, or any use case where app store discovery is not a priority.",
+          },
+        ],
+      },
+      {
+        heading: "Features That Drive Cost Up",
+        content:
+          "The specific features your app requires are the most accurate predictor of your final cost. These are the features that add the most significant cost to any mobile app project:",
+        list: [
+          "User authentication and account management — login, registration, password reset, social login via Google or Apple. Adds $5,000–$15,000",
+          "Push notifications — in-app and system notifications with scheduling and targeting logic. Adds $5,000–$10,000",
+          "In-app payments — Stripe, Apple Pay, Google Pay integration with subscription and refund logic. Adds $10,000–$25,000",
+          "Real-time features — live chat, live tracking, collaborative editing using WebSockets or similar. Adds $15,000–$40,000",
+          "Maps and geolocation — route display, delivery tracking, proximity search with live map. Adds $8,000–$20,000",
+          "Media handling — photo/video capture, upload, cloud storage, and in-app playback. Adds $5,000–$15,000",
+          "Offline mode — local data storage and sync when the device reconnects after working offline. Adds $10,000–$30,000",
+          "Admin panel — a web interface for managing app content, users, and analytics. Adds $10,000–$30,000",
+          "Third-party API integrations — Twilio, Salesforce, HubSpot, mapping services. Each adds $3,000–$10,000",
+        ],
+      },
+      {
+        heading: "Hourly Rates: US vs Offshore in 2025",
+        content:
+          "Developer location is the single biggest lever on your project's total cost. Here is what the market looks like globally in 2025 for mobile development:",
+        table: {
+          headers: ["Location", "Avg Hourly Rate", "Key Consideration"],
+          rows: [
+            ["USA (local agency or in-house)", "$150 – $300/hr", "Highest quality control; easiest communication"],
+            ["United Kingdom", "$100 – $200/hr", "Strong technical standards; similar timezone to US East"],
+            ["Latin America (nearshore)", "$45 – $90/hr", "Good timezone overlap with US; growing ecosystem"],
+            ["Eastern Europe", "$50 – $100/hr", "High quality; strong engineering culture"],
+            ["India", "$20 – $60/hr", "Large talent pool; wide quality range — vet carefully"],
+            ["Southeast Asia", "$25 – $55/hr", "Growing market; variable quality"],
+          ],
+        },
+        afterTable:
+          "Cheaper is not always cheaper in practice. A $30/hr team that takes 3,000 hours costs $90,000. A $150/hr team that delivers in 600 hours costs the same total but delivers in a fraction of the time with less management overhead.",
+      },
+      {
+        heading: "App Store Fees and Ongoing Running Costs",
+        content:
+          "The build cost covers getting to launch, but it is not the end of your investment. Plan these recurring costs into your budget before you begin:",
+        list: [
+          "Apple Developer Program — $99 per year to publish iOS apps in the App Store",
+          "Google Play Developer — one-time fee of $25 to publish Android apps on Google Play",
+          "Backend hosting — a typical business app costs $50–$500 per month on AWS or Google Cloud, scaling with user traffic",
+          "Push notification services — Firebase (free for most apps); OneSignal scales from free to $99/month",
+          "Analytics — Firebase Analytics is free; Mixpanel or Amplitude run $0–$500/month at growing data volumes",
+          "Bug fixes and OS compatibility — Apple and Google release major OS versions annually. Plan for compatibility updates and bug-fix sprints costing 10–20% of build cost per year",
+          "App Store Optimization — if you rely on organic discovery, professional ASO runs $500–$2,000/month",
+        ],
+      },
+      {
+        heading: "How to Build an MVP First to De-Risk Your Investment",
+        content:
+          "The biggest risk in mobile app development is spending $150,000 on a full product, launching, and discovering that users want something different. An MVP — Minimum Viable Product — reduces that risk by launching a stripped-down version to real users first.",
+        subsections: [
+          {
+            subheading: "What an MVP Includes",
+            text: "An MVP covers the single core feature that defines your app's value — the one thing users would return for or pay for. For a delivery tracking app, that is live location tracking. For a booking app, it is search and booking confirmation. Everything else — user profiles, reviews, referral programmes, in-app chat — comes in the next phase. A well-scoped MVP costs $20,000–$60,000 and can be live in 6–12 weeks.",
+          },
+          {
+            subheading: "What You Learn from an MVP Launch",
+            text: "With real users on a live app, you learn what they actually use, where they drop off, what they complain about, and what they request. This data is worth more than any amount of pre-launch market research. Businesses that launch an MVP before building the full product save an average of 30–40% on total development cost by avoiding features nobody actually uses.",
+          },
+          {
+            subheading: "MVP to Full Product: The Progression",
+            text: "After validating your MVP with 100–500 real users, you have a clear, evidence-based picture of what Phase 2 should include. Your development team builds on the existing codebase rather than starting over. This approach — MVP then full product — is how the majority of successful consumer and B2B apps are built and funded in 2025. It also makes fundraising conversations significantly easier.",
+          },
+        ],
+      },
+    ],
+    cta: {
+      heading: "Get an Honest Mobile App Development Quote",
+      text: "Tell us what you want to build and we will give you a detailed estimate — platform choice, feature breakdown, cost range, and timeline — with no obligation.",
+      link: "/contact",
+      buttonText: "Get a Free Estimate",
+    },
+  },
+
+  {
+    slug: "web-application-development-cost",
+    title: "Web Application Development Cost: What Businesses Pay in 2025",
+    metaTitle: "Web Application Development Cost 2025 | Business Guide",
+    metaDescription: "Complete cost guide for custom web application development in 2025 — by complexity, feature set, and development location.",
+    tag: "Cost Guide",
+    publishDate: "May 28, 2025",
+    readTime: "8 min read",
+    summary:
+      "Web application development costs range from $15,000 for a focused internal tool to $300,000+ for a full enterprise platform. This guide breaks down every cost driver for US and UK business owners.",
+    intro:
+      "A web application is different from a website. A website presents information. A web application does something: it lets users log in, manage data, process transactions, track projects, or communicate with your team. The cost to build a web application varies enormously — from $15,000 for a focused internal tool to $300,000 or more for a multi-module enterprise platform. This guide breaks down every factor that drives cost so you can plan your budget accurately and avoid the most common mistakes when commissioning a development partner.",
+    sections: [
+      {
+        heading: "Web App vs Website: What Is the Difference?",
+        content:
+          "Before budgeting, it is important to understand what you are actually building. A website and a web application look similar from the outside, but they are fundamentally different in complexity, architecture, and cost.",
+        table: {
+          headers: ["", "Website", "Web Application"],
+          rows: [
+            ["Primary purpose", "Present information", "Process data and transactions"],
+            ["User interaction", "Read-only, mostly", "Create, read, update, and delete data"],
+            ["User accounts", "Optional", "Usually required"],
+            ["Backend complexity", "Low — mainly content management", "High — business logic, databases, APIs"],
+            ["Typical cost range", "$3,000 – $20,000", "$15,000 – $300,000+"],
+            ["Examples", "Company website, landing page, blog", "Client portal, CRM, booking system, SaaS product"],
+          ],
+        },
+        afterTable:
+          "If users need to log in and do something — place an order, track a project, submit a form that changes data, or view personalised information — you are building a web application, not a website.",
+      },
+      {
+        heading: "Cost Ranges by Complexity Tier",
+        content:
+          "The most reliable starting point for budgeting is complexity tier. Here are the 2025 ranges for professionally-built web applications using US or UK development teams:",
+        table: {
+          headers: ["Tier", "Description", "Cost Range", "Timeline"],
+          rows: [
+            ["Tier 1 — Simple", "Single function, basic auth, minimal logic", "$15,000 – $40,000", "4–8 weeks"],
+            ["Tier 2 — Standard", "Multiple modules, user roles, integrations", "$40,000 – $100,000", "8–16 weeks"],
+            ["Tier 3 — Complex", "Custom workflows, real-time features, payments", "$100,000 – $200,000", "16–28 weeks"],
+            ["Tier 4 — Enterprise", "Multi-module platform, advanced automation, BI", "$200,000 – $400,000+", "6–15 months"],
+          ],
+        },
+        afterTable:
+          "Most client-facing business portals and internal management tools fall into Tier 2 or Tier 3. The jump from Tier 2 to Tier 3 typically happens when you need real-time features, payment processing, or three or more integrated third-party services.",
+      },
+      {
+        heading: "Frontend vs Backend vs Full Stack Cost Splits",
+        content:
+          "Understanding how development cost is distributed between the frontend and backend helps you understand where the complexity lies in your project — and where cost can be managed.",
+        subsections: [
+          {
+            subheading: "Frontend Development",
+            text: "The frontend is the user interface — the screens, forms, tables, dashboards, and navigation that users interact with. For a typical web application, frontend work represents 25–35% of total development cost. Complex data visualisations, drag-and-drop interfaces, and real-time UI components push this figure higher. The dominant frontend technology in 2025 is React, typically deployed via Next.js for server-side rendering and performance.",
+          },
+          {
+            subheading: "Backend Development",
+            text: "The backend covers all server-side logic: databases, APIs, authentication systems, business rules, third-party integrations, and scheduled tasks. For most web applications, backend work accounts for 40–55% of total project cost. Complex permission systems, multi-tenancy architecture (serving multiple companies from one codebase), and high-volume data processing drive this significantly higher. Backend reliability and security are non-negotiable for any application handling customer data or financial transactions.",
+          },
+          {
+            subheading: "UX Design and Quality Assurance",
+            text: "Professional UX design — wireframes, interactive prototypes, visual design system — typically adds 15–20% to total project cost. Quality assurance and structured testing adds a further 10–15%. Neither is optional. Poorly designed interfaces reduce adoption and generate constant support requests. Insufficient testing means bugs reach your users and erode trust. Budget for both properly from the outset, and insist on seeing design deliverables before any code is written.",
+          },
+        ],
+      },
+      {
+        heading: "Key Cost Drivers to Know Before You Get a Quote",
+        content:
+          "Beyond complexity tier, these specific features add the most significant cost to any web application project. Knowing which you need before your first call with a development firm produces a much more accurate estimate:",
+        list: [
+          "User authentication and role-based permissions — multiple user types with different data access levels adds $8,000–$20,000",
+          "Payment processing — Stripe or direct bank integration with subscription management and billing logic adds $10,000–$25,000",
+          "Real-time features — live notifications, collaborative editing, or live data updates using WebSockets adds $15,000–$40,000",
+          "Third-party integrations — each integration with Salesforce, HubSpot, QuickBooks, or similar adds $3,000–$12,000",
+          "File management — document upload, storage, versioning, access controls, and in-browser preview adds $5,000–$15,000",
+          "Email and notification systems — transactional email, SMS, and in-app notifications via SendGrid or Twilio adds $5,000–$10,000",
+          "Compliance and security — GDPR data tools, HIPAA audit logging, or SOC 2-aligned controls adds $15,000–$50,000",
+          "Multi-language and localisation — internationalisation for multiple markets adds 20–30% to frontend cost",
+        ],
+      },
+      {
+        heading: "Maintenance and Hosting Costs After Launch",
+        content:
+          "The build cost covers getting to launch. Post-launch running costs are a separate line in your budget and should be understood before you commit. Here is what to plan for:",
+        list: [
+          "Cloud hosting — AWS, Google Cloud, or Vercel typically costs $50–$1,500 per month depending on traffic and data volume",
+          "Database hosting — managed PostgreSQL or MySQL on AWS RDS runs $50–$400 per month",
+          "Third-party service fees — Stripe charges 2.9% plus $0.30 per transaction; SendGrid runs $20–$100/month; Twilio is usage-based",
+          "Security monitoring — Sentry for error tracking costs $26–$80/month; Datadog for infrastructure monitoring runs $15–$300/month",
+          "SSL and domain — usually included with modern hosting platforms at no extra cost",
+          "Annual maintenance contract — plan for 15–20% of build cost per year for dependency updates, security patches, and feature additions",
+        ],
+        afterContent:
+          "For most $50,000–$100,000 web applications, total annual running costs land between $8,000 and $20,000. This is typically far lower than the equivalent combination of SaaS licences — and every pound or dollar spent goes toward your own asset, not a third party's revenue.",
+      },
+      {
+        heading: "How to Get an Accurate Quote",
+        content:
+          "The most common reason for wildly inaccurate quotes is insufficient information provided at the start of the process. A development firm quoting without full context is either guessing or quoting low to win the engagement and adjusting later. To get a reliable number, prepare the following before your first call:",
+        list: [
+          "A written description of what the application needs to do — even rough bullet points work",
+          "The list of user types and what each one needs to do within the app",
+          "Any systems the app needs to connect to — CRMs, payment processors, databases, APIs",
+          "Your expected user count at launch and in 12 months",
+          "Any regulatory or compliance requirements — GDPR, HIPAA, PCI DSS",
+          "Your timeline and whether there is a hard launch deadline",
+          "Examples of similar products you have used or admire",
+        ],
+        afterContent:
+          "A credible development firm will ask you most of these questions anyway. If they don't — if they give you a price after a 10-minute call — treat that quote as a placeholder, not a commitment.",
+      },
+    ],
+    cta: {
+      heading: "Get an Accurate Web Application Quote",
+      text: "Share what you want to build and we will give you a detailed cost estimate — with scope breakdown, timeline, and an explanation of what drives the price.",
+      link: "/contact",
+      buttonText: "Request a Free Estimate",
+    },
+  },
 ];
