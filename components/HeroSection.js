@@ -8,7 +8,7 @@ import { stats } from "@/data/site";
 
 // --- Helpers ---
 
-const TYPED_TEXT = "Custom Software,";
+const TYPED_TEXT = "We Build.";
 const TYPED_CHARS = TYPED_TEXT.split("");
 
 function parseStat(val) {
@@ -69,10 +69,10 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Custom Software Development
+            Full Stack Development Solutions
           </motion.span>
 
-          <h1 aria-label="Custom Software, Built Around Your Business.">
+          <h1 aria-label="We Build. You Grow.">
             {/* Typewriter: "We Build." */}
             <motion.span
               aria-hidden="true"
@@ -112,8 +112,8 @@ export function HeroSection() {
               animate={typingDone ? { opacity: 1 } : {}}
               transition={{ duration: 0.7 }}
             >
-              Built Around Your{" "}
-              <span className="grow-text">Business.</span>
+              You{" "}
+              <span className="grow-text">Grow.</span>
             </motion.span>
           </h1>
 
