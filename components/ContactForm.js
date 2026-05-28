@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
 
-export function ContactForm() {
+export function ContactForm({ industry }) {
   const [status, setStatus] = useState("idle"); // idle | loading | sent | error
 
   async function handleSubmit(event) {
@@ -67,8 +67,14 @@ export function ContactForm() {
       </label>
       <label>
         Message
-        <textarea name="message" required placeholder="Tell us what you want to build." />
+        <textarea
+          name="message"
+          required
+          placeholder="Tell us what you want to build."
+          defaultValue={industry ? `I'm interested in building software for the ${industry} industry.` : ""}
+        />
       </label>
+      <input type="checkbox" name="botcheck" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
       <button className="btn btn-primary" type="submit" disabled={status === "loading"}>
         {status === "loading" ? "Sending…" : <>Send Request <Send size={18} /></>}
       </button>

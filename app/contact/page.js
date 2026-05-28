@@ -39,7 +39,8 @@ const contactSchema = {
   },
 };
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }) {
+  const { industry } = await searchParams;
   return (
     <>
       <script
@@ -78,7 +79,7 @@ export default function ContactPage() {
             </StaggerContainer>
           </SlideLeft>
           <SlideRight>
-            <ContactForm />
+            <ContactForm industry={industry} />
           </SlideRight>
         </div>
       </section>

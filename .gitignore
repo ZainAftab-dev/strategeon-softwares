@@ -9,3 +9,9 @@ out
 Screenshot*.png
 ChatGPT*.png
 *.tmp
+
+# Facebook post HTML previews (local generation artifacts)
+public/posts/*.html
+
+# Claude memory and scheduled task configs
+.claude/

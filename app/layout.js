@@ -2,6 +2,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import { CustomCursor } from "@/components/CustomCursor";
 
 export const metadata = {
   title: {
@@ -112,6 +113,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
+        <CustomCursor />
         <LoadingScreen />
         <Header />
         <main>{children}</main>

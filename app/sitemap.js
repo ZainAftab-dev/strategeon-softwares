@@ -1,3 +1,5 @@
+import { articles } from "@/data/articles";
+
 export default function sitemap() {
   const base = "https://strategeonsoftwares.com";
   const now = new Date();
@@ -14,10 +16,19 @@ export default function sitemap() {
     { url: "/privacy",     priority: 0.3, changeFrequency: "yearly"  },
   ];
 
-  return pages.map(({ url, priority, changeFrequency }) => ({
+  const staticEntries = pages.map(({ url, priority, changeFrequency }) => ({
     url: `${base}${url}`,
     lastModified: now,
     changeFrequency,
     priority,
   }));
+
+  const articleEntries = articles.map((article) => ({
+    url: `${base}/insights/${article.slug}`,
+    lastModified: new Date(article.publishDate),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...articleEntries];
 }
