@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-erp-vs-sap",
+    title: "Custom ERP vs SAP: Which Should Growing Businesses Choose in 2025?",
+    tag: "Comparison",
+    summary:
+      "SAP is the world's most widely deployed ERP. It is also expensive and complex. Here is the honest 2025 comparison for growing businesses — total cost, features, and when custom wins.",
+  },
+  {
+    url: "/insights/client-portal-development-cost",
+    title: "How Much Does a Client Portal Cost to Build? (2025 Guide)",
+    tag: "Cost Guide",
+    summary:
+      "A custom client portal costs $15,000 to $120,000 depending on features and complexity. This guide breaks down every cost driver so you know exactly what you are paying for.",
+  },
+  {
+    url: "/insights/saas-product-development-cost",
+    title: "SaaS Product Development Cost: What to Budget in 2025",
+    tag: "Cost Guide",
+    summary:
+      "Building a SaaS product costs significantly more than a standard web application. Multi-tenancy, billing systems, and scale infrastructure add real complexity — and real cost.",
+  },
+  {
     url: "/insights/custom-erp-system-cost-usa",
     title: "Custom ERP System Cost in the USA: 2025 Full Breakdown",
     tag: "Cost Guide",

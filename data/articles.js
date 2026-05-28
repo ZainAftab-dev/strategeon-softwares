@@ -907,4 +907,371 @@ export const articles = [
       buttonText: "Request a Free Estimate",
     },
   },
+
+  {
+    slug: "saas-product-development-cost",
+    title: "SaaS Product Development Cost: What to Budget in 2025",
+    metaTitle: "SaaS Product Development Cost 2025 | What to Budget",
+    metaDescription: "Planning to build a SaaS product? Here is what it actually costs in 2025 — from MVP to full product with billing, multi-tenancy, and scale.",
+    tag: "Cost Guide",
+    publishDate: "May 28, 2026",
+    readTime: "9 min read",
+    summary:
+      "Building a SaaS product costs significantly more than a standard web application — multi-tenancy, subscription billing, and usage-based infrastructure add real complexity. This guide gives you the honest 2025 numbers.",
+    intro:
+      "Building a SaaS product is not the same as building a website or internal tool. A Software as a Service product must handle multiple customers on the same infrastructure, bill them on recurring schedules, scale reliably under growing demand, and include the administration tools that let you manage your customer base without developer intervention. That additional architecture adds cost and complexity that catches most first-time founders and product owners off guard. This guide gives you the honest 2025 numbers — from a lean MVP to a fully featured, investor-ready SaaS product — so you can budget accurately and make the right build decisions from day one.",
+    sections: [
+      {
+        heading: "What Makes SaaS Development Different and More Expensive",
+        content:
+          "A standard web application serves one organisation. A SaaS product serves hundreds or thousands of them — simultaneously, on shared infrastructure, with each customer's data completely isolated from the others. This requirement, called multi-tenancy, is the single biggest architectural difference between a SaaS build and any other software project. Beyond multi-tenancy, SaaS products require subscription billing systems with trial management, coupon codes, mid-cycle upgrades and downgrades, and automatic invoice generation. They require admin panels that let you view all customers, manage subscriptions, trigger refunds, and monitor usage without writing SQL queries. And they require the operational tooling — monitoring, alerting, uptime tracking, customer health dashboards — that a product serving paying customers needs to run reliably 24/7.",
+        list: [
+          "Multi-tenancy architecture — keeping every customer's data isolated while sharing infrastructure adds 20–35% to backend development cost",
+          "Subscription billing engine — Stripe Billing integration with trial logic, seat-based pricing, upgrades, and proration adds $10,000–$25,000",
+          "Customer admin panel — the internal dashboard for managing customers, subscriptions, and usage adds $15,000–$30,000",
+          "Onboarding flows — the first-run experience, email sequences, and setup wizards that convert trial users add $8,000–$20,000",
+          "Usage metering — tracking per-seat, per-API-call, or per-storage-unit usage for billing adds $8,000–$20,000",
+          "Customer support tooling — in-app feedback, support ticket integration, and knowledge base systems add $5,000–$15,000",
+        ],
+      },
+      {
+        heading: "MVP vs Full Product: Cost Breakdown",
+        content:
+          "The most important distinction in SaaS budgeting is the difference between an MVP — a version you can charge real customers for — and the full product with all features, integrations, and polished experience. Here are 2025 cost ranges for US-based development:",
+        table: {
+          headers: ["Stage", "What It Includes", "Cost Range", "Timeline"],
+          rows: [
+            ["SaaS MVP", "Core feature set, basic multi-tenancy, Stripe billing, simple admin", "$45,000 – $90,000", "10–16 weeks"],
+            ["Growth-stage product", "Full feature set, advanced billing, usage metrics, integrations, onboarding", "$90,000 – $200,000", "16–30 weeks"],
+            ["Mature SaaS platform", "Enterprise tier, SSO, API access, compliance, white-labelling", "$200,000 – $400,000+", "9–18 months"],
+            ["API-first SaaS", "Developer-facing product with full API, docs, sandboxes, webhook system", "$80,000 – $180,000", "14–24 weeks"],
+          ],
+        },
+        afterTable:
+          "The MVP range is wider than most people expect because the definition of 'minimum viable' varies significantly by market. A B2B SaaS sold to enterprise procurement teams requires polished onboarding, security documentation, and SSO before they will sign a contract. A B2C SaaS sold to individuals can launch with far less.",
+      },
+      {
+        heading: "Multi-Tenancy and Subscription Billing: The Hidden Complexity",
+        content:
+          "These two architectural requirements are where most SaaS budget estimates go wrong. Non-technical founders often assume they are minor additions to a standard web app. They are not.",
+        subsections: [
+          {
+            subheading: "Multi-Tenancy Architecture",
+            text: "Multi-tenancy means your application serves multiple customers — called tenants — from the same deployed codebase and infrastructure, with each tenant's data rigorously isolated from every other tenant's. This requires careful database schema design (row-level isolation, separate schemas, or separate databases for each tenant — each with different cost and complexity tradeoffs), thorough access control logic that prevents data leaks, and an architecture that lets you scale individual tenants independently. Getting this wrong is a serious security and compliance risk. Getting it right adds 20–35% to your backend development time and budget — and it is the right investment to make.",
+          },
+          {
+            subheading: "Subscription Billing Complexity",
+            text: "Using Stripe Billing (the standard choice in 2025) sounds simple until you account for every scenario your customers will encounter: free trials converting to paid plans, annual vs monthly billing, prorated charges when upgrading mid-cycle, seat-based pricing that changes when users are added or removed, failed payment recovery with retry logic and dunning emails, coupon codes and promotional pricing, enterprise flat-fee contracts sitting alongside self-serve plans, refunds and credits, and tax handling across multiple jurisdictions. A basic Stripe Checkout integration takes one day. A production-ready billing system that handles all of the above takes four to eight weeks of development — and generates most of the support requests your team will handle in the first year if not built carefully.",
+          },
+        ],
+      },
+      {
+        heading: "Infrastructure Costs at Scale",
+        content:
+          "SaaS infrastructure costs start low and grow with your customer base. Planning for this growth prevents two common problems: launching on infrastructure that is too small and failing under early growth, or over-provisioning and wasting money before you have revenue. Here is what realistic infrastructure costs look like at different stages:",
+        table: {
+          headers: ["Stage", "Monthly Users / Tenants", "Estimated Monthly Infrastructure Cost"],
+          rows: [
+            ["Pre-launch / Beta", "Up to 50 tenants", "$50 – $200/month"],
+            ["Early growth", "50–500 tenants", "$200 – $800/month"],
+            ["Established product", "500–5,000 tenants", "$800 – $3,000/month"],
+            ["Scale", "5,000+ tenants", "$3,000 – $15,000+/month"],
+          ],
+        },
+        afterTable:
+          "These figures cover compute, database, storage, and CDN costs on AWS or Google Cloud. They exclude third-party service costs (Stripe, SendGrid, Intercom, Sentry), which add another $200–$1,500 per month at the growth stage. The good news: cloud infrastructure scales with revenue. By the time your infrastructure costs are significant, your recurring revenue should be covering them comfortably.",
+      },
+      {
+        heading: "Cost to Build a SaaS vs Licensing an Existing Platform",
+        content:
+          "For some SaaS ideas, white-labelling an existing platform is a viable alternative to building from scratch. For others, it is a trap that creates the same vendor lock-in you are trying to sell a solution away from. Here is the honest comparison:",
+        subsections: [
+          {
+            subheading: "White-Label and No-Code SaaS Platforms",
+            text: "Tools like Bubble, Glide, or vertical-specific white-label platforms can launch a basic SaaS product faster and cheaper — sometimes for $5,000–$20,000 in setup and $500–$2,000 per month ongoing. The ceiling is low. Customisation is limited, performance suffers at scale, and you do not own the underlying code. If a competitor analyses your product and sees it is built on Bubble, your barrier to entry looks very low. White-label makes sense for rapid market validation before a custom build — not as a long-term foundation.",
+          },
+          {
+            subheading: "Custom-Built SaaS",
+            text: "Building custom costs more upfront — typically $45,000–$200,000 for a properly built MVP to growth-stage product. But you own the codebase, control the roadmap, can hire any developer to work on it, and face no per-tenant or per-seat platform fees from your infrastructure provider. For a SaaS generating $30,000 MRR at 12 months, avoiding a 5% revenue-share on a white-label platform saves $18,000 per year — enough to recover the build cost differential in under three years while building an asset you fully own.",
+          },
+        ],
+      },
+      {
+        heading: "Funding Strategies for SaaS Builds",
+        content:
+          "Most SaaS products are not funded by venture capital. The majority of successful SaaS businesses built in 2025 are bootstrapped, service-funded, or grant-funded. Understanding your options before you budget helps you plan realistically:",
+        list: [
+          "Bootstrapped — the founder funds the build from savings or business revenue. Works best for MVPs in the $45,000–$80,000 range. Preserve cash by phasing features and launching early to get paying customers before building everything",
+          "Service-revenue funded — a consulting or services business funds the SaaS build from existing revenue. Common for agencies and professional service firms building a product from their own workflows. Lower risk because revenue already exists",
+          "Pre-sales — getting customers to pay before the product is built or fully featured. Letter of intent, deposit, or discounted lifetime deal in exchange for early access. Validates demand before significant investment",
+          "SBIR and government grants — the US Small Business Innovation Research programme provides grants of $50,000–$1,500,000 for technology development. Non-dilutive funding with no equity given up. Competitive but worth pursuing for tech-forward SaaS products",
+          "Seed investment — for SaaS with a clear market, experienced team, and evidence of demand, seed rounds of $250,000–$2,000,000 are available. Requires giving up equity and accepting investor governance, but enables faster build and go-to-market",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Get a SaaS Development Cost Estimate",
+      text: "Tell us about your product idea and we will map out what it needs to build, how long it will take, and what it will cost — from MVP to full launch.",
+      link: "/contact",
+      buttonText: "Get a Free Estimate",
+    },
+  },
+
+  {
+    slug: "client-portal-development-cost",
+    title: "How Much Does a Client Portal Cost to Build? (2025 Guide)",
+    metaTitle: "Client Portal Development Cost 2025 | Full Guide",
+    metaDescription: "How much does it cost to build a custom client portal in 2025? Everything from simple document sharing to full project management portals.",
+    tag: "Cost Guide",
+    publishDate: "May 28, 2026",
+    readTime: "7 min read",
+    summary:
+      "A custom client portal costs $15,000 to $120,000 depending on features, integrations, and complexity. This guide breaks down every cost driver so you know exactly what you are paying for.",
+    intro:
+      "A client portal is one of the highest-ROI software investments a service business can make. It replaces chaotic email threads with a structured workspace where clients log in to view their projects, access documents, approve deliverables, pay invoices, and raise requests. Every hour your team spends answering status emails, chasing approvals, and re-sending documents is an hour that a well-built portal handles automatically. This guide breaks down what client portal development actually costs in 2025, what features drive the price up, and how to evaluate whether building custom or using an off-the-shelf solution is the right call for your business.",
+    sections: [
+      {
+        heading: "What a Client Portal Is and What It Typically Includes",
+        content:
+          "A client portal is a secure, branded web application where your clients log in to interact with your business. The simplest version is a document library with access controls. The most sophisticated version is a full collaboration workspace with project tracking, messaging, billing, and automation. Most business portals fall somewhere between the two:",
+        list: [
+          "Secure client login with individual account credentials per client",
+          "Document management — upload, organise, and share files with version control",
+          "Project or job status tracking — clients see the progress of their work without emailing to ask",
+          "Invoice and payment view — clients see outstanding invoices and can pay online",
+          "Approval workflows — clients sign off on deliverables, briefs, or proposals digitally",
+          "Messaging or request system — clients can raise queries or requests without using email",
+          "Notifications — email or in-app alerts when something new is added or requires action",
+        ],
+      },
+      {
+        heading: "Simple vs Full-Featured Portal: Cost Ranges",
+        content:
+          "Client portal development cost ranges widely based on the features you need. Here are the 2025 ranges using US or UK development teams:",
+        table: {
+          headers: ["Portal Type", "Description", "Cost Range", "Timeline"],
+          rows: [
+            ["Basic portal", "Secure login, document sharing, simple messaging", "$15,000 – $30,000", "4–6 weeks"],
+            ["Standard portal", "Projects, documents, invoices, approvals, notifications", "$30,000 – $60,000", "8–12 weeks"],
+            ["Full-featured portal", "All standard features plus payments, reporting, integrations", "$60,000 – $100,000", "12–18 weeks"],
+            ["Enterprise portal", "Multi-tenant, complex permissions, API integrations, white-label", "$100,000 – $150,000+", "18–28 weeks"],
+          ],
+        },
+        afterTable:
+          "Most professional services businesses — agencies, consultancies, law firms, accountants, construction companies — find the Standard or Full-Featured tier covers everything they need. The Enterprise tier becomes relevant when you are building a portal that serves hundreds of client companies with different permission structures, branding requirements, or deep integration needs.",
+      },
+      {
+        heading: "Must-Have Features and Their Cost Impact",
+        content:
+          "The features you include in your portal are the primary driver of development cost. These are the features that add the most cost and are worth understanding before requesting a quote:",
+        table: {
+          headers: ["Feature", "What It Does", "Added Cost"],
+          rows: [
+            ["Client authentication", "Secure login, password reset, optional 2FA", "$5,000 – $10,000"],
+            ["Document management", "Upload, folder structure, versioning, access controls", "$8,000 – $15,000"],
+            ["Project and job tracking", "Status updates, milestones, task visibility", "$10,000 – $20,000"],
+            ["Online payments", "Stripe integration, invoice payment, receipts", "$8,000 – $18,000"],
+            ["Approval workflows", "Digital sign-off on deliverables or documents", "$6,000 – $12,000"],
+            ["Client messaging", "Threaded conversation per project or request", "$8,000 – $15,000"],
+            ["Admin dashboard", "Your team's view to manage all clients and activity", "$8,000 – $15,000"],
+            ["Email notifications", "Automated alerts for new content, approvals, invoices", "$3,000 – $6,000"],
+          ],
+        },
+        afterTable:
+          "Not every portal needs every feature. The key is identifying which features solve your biggest pain points first and building those in the initial version. A portal with three features your clients actually use is worth more than one with ten features they ignore.",
+      },
+      {
+        heading: "Client Portal vs Off-the-Shelf Alternatives",
+        content:
+          "Several off-the-shelf tools market themselves as client portals. Here is how the real comparison stacks up:",
+        subsections: [
+          {
+            subheading: "Off-the-Shelf Portal Tools",
+            text: "Tools like Copilot, Clinked, and SuiteDash offer hosted client portals starting at $29–$99 per month for basic plans and $99–$300 per month for full-featured versions. Setup is fast — often a few days. But customisation is limited to what the vendor allows. Your portal will look like every other agency using the same tool, and your workflow has to adapt to the tool's logic rather than your own. At $300 per month with 10 clients, you are paying $3,600 per year indefinitely. At 50 clients, some tools charge per-client fees that push costs to $500–$1,500 per month. Over five years, the cost equals or exceeds a custom build, without the ownership or flexibility.",
+          },
+          {
+            subheading: "Project Management Tools with Portal Features",
+            text: "Monday.com, Asana, and ClickUp offer client-facing views but they are primarily team tools with client access bolted on. Clients see your internal project management interface, which creates a poor experience, reveals internal data and pricing you may not want shared, and requires clients to learn your project management tool rather than using a system built for their role. These tools are not portals — they are workarounds.",
+          },
+          {
+            subheading: "Custom-Built Portal",
+            text: "A custom portal is built around your specific workflow and your clients' actual experience. It carries your branding, follows your process, and integrates with the systems you already use. The upfront cost is higher, but you own it permanently, it does exactly what you need, and there are no per-client or per-seat fees. For businesses with 20 or more active clients or plans to grow significantly, custom quickly becomes the more economical and more effective choice.",
+          },
+        ],
+      },
+      {
+        heading: "Time to Build and Go Live",
+        content:
+          "One of the most common questions we hear is how long until you can use it. Here is what realistic timelines look like at each complexity tier:",
+        list: [
+          "Basic portal (4–6 weeks) — secure login, document sharing, simple status updates. This is the fastest path to replacing email-based client communication",
+          "Standard portal (8–12 weeks) — project tracking, invoicing, approvals, and notifications. Most professional service businesses launch at this level",
+          "Full-featured portal (12–18 weeks) — payments, integrations with CRM or project management tools, reporting dashboard, and automation workflows",
+          "Enterprise portal (18–28 weeks) — white-labelling, advanced permissions, multi-tenant architecture, and deep integrations with third-party systems",
+        ],
+        afterContent:
+          "Timelines assume a professional development team starting with a discovery phase of one to two weeks. Discovery is where requirements are defined and designs are approved — this is the phase that prevents costly rebuilds later. Skipping discovery to save time is the most common reason client portal projects go over budget.",
+      },
+      {
+        heading: "ROI: How Client Portals Pay for Themselves",
+        content:
+          "A client portal's ROI is measurable in saved staff time, reduced email volume, and improved client retention. Here is a worked example for a 15-person professional services firm with 40 active clients:",
+        table: {
+          headers: ["Benefit", "How It Saves Money", "Annual Value"],
+          rows: [
+            ["Reduced status update emails", "Clients check portal instead of emailing. Saves 45 mins per client per week", "$31,200/year (at $35/hr)"],
+            ["Faster invoice payment", "Online payment removes cheque delays. Average debtor days falls from 42 to 18", "$12,000/year in improved cash flow value"],
+            ["Document request reduction", "Clients access documents directly. Saves 30 mins per client per week", "$20,800/year"],
+            ["Client retention improvement", "Clients with a portal churn 22% less than clients managed by email alone", "$28,000/year in retained revenue"],
+            ["Total annual benefit", "—", "~$92,000/year"],
+            ["Custom portal build cost", "—", "$55,000 one-time"],
+            ["Payback period", "—", "Under 8 months"],
+          ],
+        },
+        afterTable:
+          "These figures are conservative and based on average professional services benchmarks. Businesses with higher billing rates or larger client counts see proportionally larger returns. The portal also improves the perceived quality of your service — clients who experience a professional, branded portal consistently rate satisfaction higher than those managed by email alone.",
+      },
+    ],
+    cta: {
+      heading: "Get a Client Portal Quote",
+      text: "Tell us about your client management process and we will design a portal that solves your specific pain points — with a clear cost estimate and timeline.",
+      link: "/contact",
+      buttonText: "Get a Free Estimate",
+    },
+  },
+
+  {
+    slug: "custom-erp-vs-sap",
+    title: "Custom ERP vs SAP: Which Should Growing Businesses Choose in 2025?",
+    metaTitle: "Custom ERP vs SAP 2025 | Which Is Better for Your Business?",
+    metaDescription: "SAP costs hundreds of thousands. A custom ERP can cost less and do more. Here is the honest 2025 comparison for growing businesses.",
+    tag: "Comparison",
+    publishDate: "May 28, 2026",
+    readTime: "9 min read",
+    summary:
+      "SAP is the world's most widely deployed ERP. It is also expensive, complex, and built for the average business in your industry — not yours. Here is the honest 2025 comparison for growing businesses considering both routes.",
+    intro:
+      "SAP is the default answer when a business outgrows its current systems and needs a proper enterprise resource planning platform. It has 400 million users across 180 countries and a reputation for stability and comprehensiveness. But SAP's cost — in licences, implementation fees, consultant rates, and ongoing customisation — is one of the most frequently cited reasons businesses abandon enterprise software projects partway through. An increasing number of mid-market US and UK businesses are asking whether a custom-built ERP is a more sensible investment. This guide gives you the honest numbers and framework to make that decision.",
+    sections: [
+      {
+        heading: "What SAP Actually Costs",
+        content:
+          "SAP offers several products targeting different market segments. For growing businesses, the most relevant options are SAP Business One (targeting small and mid-size businesses) and SAP S/4HANA Cloud (targeting mid-market and enterprise). Here is what they actually cost to deploy:",
+        table: {
+          headers: ["SAP Product", "Target Company Size", "Licence Cost", "Implementation Cost"],
+          rows: [
+            ["SAP Business One", "10–50 employees", "$3,200–$5,400/named user (perpetual) or $95–$150/user/month", "$40,000 – $150,000"],
+            ["SAP S/4HANA Cloud (Essential)", "50–250 employees", "$1,500–$3,000/user/year", "$100,000 – $400,000"],
+            ["SAP S/4HANA Cloud (Advanced)", "250+ employees", "Negotiated enterprise contract", "$300,000 – $2,000,000+"],
+          ],
+        },
+        afterTable:
+          "Implementation costs are paid to a SAP partner — a certified consultancy — on top of SAP's own licence fees. For a 25-person business implementing SAP Business One, the total first-year cost including licences and implementation typically runs $80,000–$200,000. And that is before any customisation, which requires SAP's proprietary ABAP development language and consultants charging $200–$400 per hour.",
+      },
+      {
+        heading: "What a Custom ERP Costs",
+        content:
+          "A custom ERP built by a professional development team covers the same functional scope as SAP Business One at a comparable first-year cost — and a significantly lower ongoing cost. Here is what a custom ERP typically costs for a growing business:",
+        list: [
+          "$75,000 – $150,000 for a focused custom ERP covering finance, inventory or job management, and HR for a 10–30 person business",
+          "$150,000 – $300,000 for a full-module custom ERP covering finance, HR, inventory, CRM, and reporting for a 30–100 person business",
+          "$10,000 – $25,000 per year in hosting and maintenance (versus $40,000–$120,000 per year in SAP licence and support fees)",
+          "Zero per-user fees — adding 10 new employees costs nothing in licence fees",
+          "Any future customisation uses standard developers at $80–$150 per hour — no proprietary language or certified consultants required",
+        ],
+        afterContent:
+          "The upfront investment is similar to SAP Business One in year one. The fundamental difference is that the custom ERP is an asset you own, while SAP is a service you rent — and renting costs grow every year as your team grows.",
+      },
+      {
+        heading: "Feature Comparison: Custom ERP vs SAP Business One",
+        content:
+          "Both solutions cover the core ERP functional areas. The real differences are in flexibility, ownership, and the cost of making changes over time.",
+        table: {
+          headers: ["Feature Area", "SAP Business One", "Custom ERP"],
+          rows: [
+            ["Financial management", "✅ Comprehensive out-of-the-box", "✅ Built to your chart of accounts and processes"],
+            ["Inventory and warehouse", "✅ Full-featured with standard workflows", "✅ Built around your specific stocking and fulfilment model"],
+            ["HR and payroll", "⚡ HR module exists; payroll often requires add-on", "✅ HR and payroll integration built as required"],
+            ["CRM and sales pipeline", "⚡ Basic CRM; advanced features require SAP CRM add-on", "✅ Full CRM tailored to your sales process"],
+            ["Reporting and dashboards", "✅ Solid pre-built reports", "✅ KPIs specific to your business, not SAP's generic model"],
+            ["Mobile access", "✅ SAP mobile app available", "✅ Custom mobile interface built if required"],
+            ["Third-party integrations", "✅ Wide SAP ecosystem", "⚡ Built as needed — any integration is possible"],
+            ["Customisation", "❌ Requires ABAP developers at $200–$400/hr", "✅ Any developer at standard market rates"],
+            ["User count costs", "❌ Grows with every new hire", "✅ Fixed regardless of team size"],
+            ["Vendor dependence", "❌ SAP controls pricing, features, and support", "✅ None — you own the codebase"],
+          ],
+        },
+      },
+      {
+        heading: "When SAP Makes Sense",
+        content:
+          "SAP is the right choice in a specific set of circumstances. Outside those circumstances, you are paying for features you will never use and governance complexity that slows your business down.",
+        list: [
+          "You have 200 or more employees and need true enterprise-grade transaction volumes and compliance reporting",
+          "Your industry has deep SAP specialisation — manufacturing, automotive, chemicals — where SAP's preconfigured industry templates are genuinely valuable",
+          "You are planning an acquisition or merger with a company that runs SAP, and system compatibility simplifies integration",
+          "Your enterprise customers require their suppliers to be SAP-certified or SAP-compatible for data exchange",
+          "You have an existing SAP ecosystem where the investment in data connectors and training is already made",
+          "You need a globally distributed ERP serving 10 or more country entities with different statutory reporting requirements",
+        ],
+      },
+      {
+        heading: "When a Custom ERP Wins",
+        content:
+          "For the majority of growing businesses in the $5M–$100M revenue range, a custom ERP delivers better value than SAP. Here is when the case for custom is strongest:",
+        list: [
+          "Your workflows are non-standard — unusual pricing models, unique job types, or industry-specific compliance requirements that SAP's generic templates do not fit",
+          "You have fewer than 150 employees and do not need the global enterprise complexity SAP is designed for",
+          "You want to avoid indefinite per-user licence fees that grow with every hire",
+          "You have tried SAP or NetSuite and found the implementation costs prohibitive or the customisation complexity unmanageable",
+          "You want to own your ERP as a business asset and not depend on a vendor relationship for system changes",
+          "Your business processes are a source of competitive advantage — they should be built into software that nobody else has access to",
+        ],
+      },
+      {
+        heading: "Total Cost of Ownership: 5-Year Comparison",
+        content:
+          "The most important metric is not the year-one cost but the five-year total cost of ownership. Here is a comparison for a 30-person business needing finance, inventory, HR, CRM, and reporting — a typical mid-market ERP scope:",
+        table: {
+          headers: ["Cost Category", "SAP Business One (30 users)", "Custom ERP"],
+          rows: [
+            ["Year 1 (build + licences + implementation)", "$180,000 – $250,000", "$175,000 – $220,000"],
+            ["Year 2 (licences + support + customisation)", "$55,000 – $90,000", "$18,000 – $25,000"],
+            ["Year 3", "$60,000 – $100,000", "$18,000 – $25,000"],
+            ["Year 4", "$65,000 – $110,000", "$20,000 – $30,000"],
+            ["Year 5", "$70,000 – $120,000", "$20,000 – $30,000"],
+            ["5-Year Total", "$430,000 – $670,000", "$251,000 – $330,000"],
+            ["Saving with custom ERP", "—", "$180,000 – $340,000"],
+          ],
+        },
+        afterTable:
+          "These figures assume the team grows from 30 to 45 users over five years. SAP's per-user fees grow with every hire. The custom ERP's running costs are flat. By year five, the custom ERP is typically $180,000–$340,000 cheaper in total — and it belongs to you.",
+      },
+      {
+        heading: "Migration Considerations: Moving From SAP to Custom or Starting Fresh",
+        content:
+          "If you are already on SAP and evaluating a move to custom, there are important migration considerations to plan for before committing to a switch.",
+        subsections: [
+          {
+            subheading: "Data Migration From SAP",
+            text: "SAP stores data in a complex proprietary schema. Extracting your historical data — customer records, transaction history, inventory data, HR records — requires a data migration project typically costing $15,000–$50,000 depending on data volume and quality. SAP's ABAP reporting tools can export data to standard formats, and professional migration is a well-understood process. The main risk is data quality: issues in your SAP implementation become visible during migration and require time to clean and reconcile before the cutover.",
+          },
+          {
+            subheading: "Parallel Running",
+            text: "Most businesses switching from SAP to a custom ERP run both systems simultaneously for 4–8 weeks during the cutover period. This adds operational complexity but dramatically reduces the risk of losing continuity if something unexpected emerges in the new system. Plan for dedicated staff time during parallel running — this is not something to layer on top of existing workloads without acknowledgement and resource allocation.",
+          },
+          {
+            subheading: "Starting Fresh Without SAP",
+            text: "For businesses not yet on SAP, the decision is simpler. You are comparing the cost of building a custom ERP against the cost of SAP implementation and ongoing fees. For businesses under 100 employees without significant multinational complexity, custom wins on cost, flexibility, and ownership in almost every scenario. The exception is when your industry has deep SAP-specific compliance frameworks that would cost more to replicate in custom than to license from SAP directly — in that case, a hybrid approach (SAP for compliance reporting, custom for operations) is worth exploring.",
+          },
+        ],
+      },
+    ],
+    cta: {
+      heading: "Find Out Whether Custom ERP Is Right for You",
+      text: "We will review your current systems, map out what a custom ERP would cover, and give you an honest cost comparison against SAP — with no obligation.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];
