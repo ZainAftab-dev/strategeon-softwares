@@ -8,7 +8,7 @@ import { stats } from "@/data/site";
 
 // --- Helpers ---
 
-const TYPED_TEXT = "We Build.";
+const TYPED_TEXT = "Custom Software,";
 const TYPED_CHARS = TYPED_TEXT.split("");
 
 function parseStat(val) {
@@ -69,10 +69,10 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Full Stack Development Solutions
+            Custom Software Development
           </motion.span>
 
-          <h1 aria-label="We Build. You Grow.">
+          <h1 aria-label="Custom Software, Built Around Your Business.">
             {/* Typewriter: "We Build." */}
             <motion.span
               aria-hidden="true"
@@ -112,8 +112,8 @@ export function HeroSection() {
               animate={typingDone ? { opacity: 1 } : {}}
               transition={{ duration: 0.7 }}
             >
-              You{" "}
-              <span className="grow-text">Grow.</span>
+              Built Around Your{" "}
+              <span className="grow-text">Business.</span>
             </motion.span>
           </h1>
 
@@ -123,9 +123,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: typingTotalDelay + 0.3 }}
           >
-            Full stack development solutions that drive real business results.
-            Strategeon Softwares is your partner for modern, scalable, and
-            high-performing web and mobile applications.
+            We design and build custom web apps, mobile apps, and automation
+            tools around the way your business works — not the other way around.
+            Your full-stack partner from concept to launch.
           </motion.p>
 
           <div className="hero-actions">
