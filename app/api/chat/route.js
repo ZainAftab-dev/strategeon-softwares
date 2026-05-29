@@ -55,47 +55,44 @@ export async function POST(req) {
       return NextResponse.json({ error: "Invalid request" }, { status: 400 });
     }
 
-    // Keep last 10 messages to control cost; sanitise each
-    const recent = messages.slice(-10).map((m) => ({
-      role: m.role === "model" ? "model" : "user",
-      parts: [{ text: String(m.text ?? "").slice(0, 800) }],
+    // Build message array for Groq (OpenAI-compatible format)
+    // Keep last 10 exchanges to control token usage
+    const history = messages.slice(-10).map((m) => ({
+      role: m.role === "model" ? "assistant" : "user",
+      content: String(m.text ?? "").slice(0, 800),
     }));
 
-    // Gemini requires the conversation to start with a user turn
-    const filtered =
-      recent[0]?.role === "model" ? recent.slice(1) : recent;
-
-    const geminiBody = {
-      system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-      contents: filtered,
-      generationConfig: {
-        maxOutputTokens: 300,
-        temperature: 0.7,
-      },
+    const groqBody = {
+      model: "llama-3.3-70b-versatile",
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        ...history,
+      ],
+      max_tokens: 300,
+      temperature: 0.7,
     };
 
-    const apiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(geminiBody),
-      }
-    );
+    const apiRes = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+      },
+      body: JSON.stringify(groqBody),
+    });
 
     if (!apiRes.ok) {
       const errText = await apiRes.text();
-      console.error("Gemini API error:", apiRes.status, errText);
-      // Return a safe message to the client; log details server-side
+      console.error("Groq API error:", apiRes.status, errText);
       return NextResponse.json(
-        { error: "AI unavailable", detail: `Status ${apiRes.status}` },
+        { error: "AI unavailable" },
         { status: 502 }
       );
     }
 
     const data = await apiRes.json();
     const reply =
-      data.candidates?.[0]?.content?.parts?.[0]?.text ||
+      data.choices?.[0]?.message?.content ||
       "I'm not sure about that — please reach out directly at strategeonsoftwares.com/contact and we'll be happy to help.";
 
     return NextResponse.json({ reply });
