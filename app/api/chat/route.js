@@ -75,7 +75,7 @@ export async function POST(req) {
     };
 
     const apiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -85,8 +85,12 @@ export async function POST(req) {
 
     if (!apiRes.ok) {
       const errText = await apiRes.text();
-      console.error("Gemini API error:", errText);
-      return NextResponse.json({ error: "AI unavailable" }, { status: 502 });
+      console.error("Gemini API error:", apiRes.status, errText);
+      // Return a safe message to the client; log details server-side
+      return NextResponse.json(
+        { error: "AI unavailable", detail: `Status ${apiRes.status}` },
+        { status: 502 }
+      );
     }
 
     const data = await apiRes.json();
