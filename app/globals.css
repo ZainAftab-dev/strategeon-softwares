@@ -2353,11 +2353,17 @@ body.cursor-hidden * {
   .chat-root {
     bottom: 16px;
     right: 12px;
+    /* panel is fixed independently on mobile, root only holds the toggle */
+    gap: 0;
   }
 
+  /* Panel breaks out of the flex container and anchors itself to the viewport */
   .chat-panel {
-    width: calc(100vw - 24px);
-    max-width: calc(100vw - 24px);
+    position: fixed !important;
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 80px !important;
+    width: auto !important;
     height: 460px;
     border-radius: 14px;
     overflow: hidden;
