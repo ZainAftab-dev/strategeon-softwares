@@ -2298,6 +2298,56 @@ body.cursor-hidden * {
   line-height: 1;
 }
 
+/* ---- Links inside bot messages ---- */
+.chat-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.chat-link:hover {
+  color: var(--blue-2);
+}
+
+/* ---- CTA buttons ---- */
+.chat-ctas {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 10px;
+  flex-shrink: 0;
+}
+
+.chat-cta {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.18s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.chat-cta:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.chat-cta--wa {
+  background: #25d366;
+  color: #fff;
+}
+
+.chat-cta--consult {
+  background: linear-gradient(135deg, var(--blue) 0%, #1a6fd4 100%);
+  color: #fff;
+}
+
 /* ---- Mobile ---- */
 @media (max-width: 480px) {
   .chat-root {
@@ -2307,7 +2357,7 @@ body.cursor-hidden * {
 
   .chat-panel {
     width: calc(100vw - 32px);
-    height: 420px;
+    height: 440px;
     border-radius: 14px;
   }
 }
