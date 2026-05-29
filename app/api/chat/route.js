@@ -1,0 +1,102 @@
+import { NextResponse } from "next/server";
+
+const SYSTEM_PROMPT = `You are Sage, the AI assistant for Strategeon Softwares — a custom software development company serving businesses across the US and UK.
+
+You help visitors with questions about:
+- What we build: custom web apps, mobile apps, SaaS platforms, automation tools, client portals, CRM and ERP systems, e-commerce platforms
+- Our process: Discovery → Design → Development → Testing → Launch → Growth support
+- Industries we serve: Healthcare, Finance, Real Estate, E-commerce, Manufacturing, SaaS startups
+- How to get started: Free consultation at strategeonsoftwares.com/contact
+- Portfolio: Real projects at strategeonsoftwares.com/work
+- Pricing: Every project is scoped individually — always direct to a free consultation for specifics
+- Timeline: Typically 6–16 weeks depending on complexity
+
+Rules:
+- Be friendly, concise, and professional
+- Keep replies under 120 words unless the question clearly needs more detail
+- Never invent specific prices, team names, or project details you are not certain about
+- If unsure about something, invite them to book a free consultation
+- When relevant, mention useful links: Schedule a consultation → /contact | See our work → /work | Our services → /services
+- Do not answer questions unrelated to software, technology, or the business — politely redirect`;
+
+// Simple in-memory rate limit: 30 messages per IP per hour
+const rateLimitMap = new Map();
+
+function isAllowed(ip) {
+  const now = Date.now();
+  const windowMs = 60 * 60 * 1000;
+  const max = 30;
+  const entry = rateLimitMap.get(ip) || { count: 0, resetAt: now + windowMs };
+  if (now > entry.resetAt) {
+    entry.count = 0;
+    entry.resetAt = now + windowMs;
+  }
+  entry.count++;
+  rateLimitMap.set(ip, entry);
+  return entry.count <= max;
+}
+
+export async function POST(req) {
+  try {
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+
+    if (!isAllowed(ip)) {
+      return NextResponse.json(
+        { error: "Too many messages. Please try again later." },
+        { status: 429 }
+      );
+    }
+
+    const body = await req.json();
+    const messages = body?.messages;
+
+    if (!Array.isArray(messages) || messages.length === 0) {
+      return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+    }
+
+    // Keep last 10 messages to control cost; sanitise each
+    const recent = messages.slice(-10).map((m) => ({
+      role: m.role === "model" ? "model" : "user",
+      parts: [{ text: String(m.text ?? "").slice(0, 800) }],
+    }));
+
+    // Gemini requires the conversation to start with a user turn
+    const filtered =
+      recent[0]?.role === "model" ? recent.slice(1) : recent;
+
+    const geminiBody = {
+      system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+      contents: filtered,
+      generationConfig: {
+        maxOutputTokens: 300,
+        temperature: 0.7,
+      },
+    };
+
+    const apiRes = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(geminiBody),
+      }
+    );
+
+    if (!apiRes.ok) {
+      const errText = await apiRes.text();
+      console.error("Gemini API error:", errText);
+      return NextResponse.json({ error: "AI unavailable" }, { status: 502 });
+    }
+
+    const data = await apiRes.json();
+    const reply =
+      data.candidates?.[0]?.content?.parts?.[0]?.text ||
+      "I'm not sure about that — please reach out directly at strategeonsoftwares.com/contact and we'll be happy to help.";
+
+    return NextResponse.json({ reply });
+  } catch (err) {
+    console.error("Chat route error:", err);
+    return NextResponse.json({ error: "Server error" }, { status: 500 });
+  }
+}
