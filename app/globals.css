@@ -2352,15 +2352,15 @@ body.cursor-hidden * {
 @media (max-width: 480px) {
   .chat-root {
     bottom: 16px;
-    left: 12px;
     right: 12px;
-    align-items: flex-end;
   }
 
   .chat-panel {
-    width: 100%;
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
     height: 460px;
     border-radius: 14px;
+    overflow: hidden;
   }
 
   .chat-toggle-label {
