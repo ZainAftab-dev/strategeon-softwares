@@ -62,6 +62,10 @@ export async function POST(req) {
       content: String(m.text ?? "").slice(0, 800),
     }));
 
+    if (!process.env.GROQ_API_KEY) {
+      return NextResponse.json({ error: "GROQ_API_KEY_MISSING" }, { status: 500 });
+    }
+
     const groqBody = {
       model: "llama-3.3-70b-versatile",
       messages: [
@@ -85,7 +89,7 @@ export async function POST(req) {
       const errText = await apiRes.text();
       console.error("Groq API error:", apiRes.status, errText);
       return NextResponse.json(
-        { error: "AI unavailable" },
+        { error: "AI unavailable", status: apiRes.status, detail: errText },
         { status: 502 }
       );
     }
