@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-vs-no-code-tools",
+    title: "Custom Software vs No-Code Tools: Which Is Right for Your Business?",
+    tag: "Comparison",
+    summary:
+      "No-code tools are a legitimate starting point — fast, affordable, and low-risk. But they have a hard ceiling. This guide shows exactly when no-code stops working and custom software takes over.",
+  },
+  {
+    url: "/insights/custom-ecommerce-vs-shopify",
+    title: "Custom E-Commerce vs Shopify: Which Is Better for Your Business?",
+    tag: "Comparison",
+    summary:
+      "Shopify Plus costs $27,600 per year before apps and transaction fees. At scale, a custom e-commerce platform costs less, performs better, and handles B2B workflows Shopify cannot.",
+  },
+  {
+    url: "/insights/custom-platform-vs-hubspot",
+    title: "Custom Platform vs HubSpot: The True Cost Comparison for 2025",
+    tag: "Comparison",
+    summary:
+      "HubSpot's Professional tier costs $24,000–$36,000 per year and grows with every contact and seat you add. A custom platform covering the same ground is a one-time investment — and you own it.",
+  },
+  {
     url: "/insights/custom-erp-vs-sap",
     title: "Custom ERP vs SAP: Which Should Growing Businesses Choose in 2025?",
     tag: "Comparison",

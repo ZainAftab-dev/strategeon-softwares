@@ -1274,4 +1274,414 @@ export const articles = [
       buttonText: "Book a Free Consultation",
     },
   },
+
+  {
+    slug: "custom-platform-vs-hubspot",
+    title: "Custom Platform vs HubSpot: The True Cost Comparison for 2025",
+    metaTitle: "Custom Platform vs HubSpot 2025 | True Cost Comparison",
+    metaDescription: "HubSpot starts at $800/month and scales to $5,000+. A custom platform is a one-time investment. Here is the full 2025 cost and feature comparison.",
+    tag: "Comparison",
+    publishDate: "May 29, 2026",
+    readTime: "9 min read",
+    summary:
+      "HubSpot's Professional tier costs $24,000–$36,000 per year and grows with every contact and seat you add. A custom platform covering the same ground is a one-time investment — and you own it.",
+    intro:
+      "HubSpot is one of the most successful software companies in the world, and for good reason: its CRM, marketing, sales, and service tools are genuinely well-built. But the pricing model is designed to extract increasing revenue as your business grows — more contacts, more seats, and more add-ons every year. A growing number of US and UK businesses are running the numbers and discovering that a custom platform built to cover the same ground costs less over three years, does exactly what their business requires, and generates zero ongoing licence fees. This guide gives you the full, honest comparison.",
+    sections: [
+      {
+        heading: "HubSpot Real Pricing in 2025",
+        content:
+          "HubSpot's published pricing is straightforward. The actual cost of running HubSpot at a meaningful level for a growing business is significantly higher than the headline numbers suggest. Here is what businesses actually pay in 2025:",
+        table: {
+          headers: ["HubSpot Hub", "Professional Tier", "Enterprise Tier", "Key Limits"],
+          rows: [
+            ["Marketing Hub", "$800/month (3 seats, 2,000 contacts)", "$3,600/month (5 seats)", "+$50/1,000 additional contacts/month"],
+            ["Sales Hub", "$450/month (5 seats)", "$1,500/month (10 seats)", "Extra seats: $90/seat/month (Pro)"],
+            ["Service Hub", "$450/month (5 seats)", "$1,200/month (10 seats)", "Extra seats: $90/seat/month (Pro)"],
+            ["Content Hub", "$450/month (3 seats)", "$1,500/month", "Websites, landing pages, blog"],
+            ["Operations Hub", "$720/month", "$2,000/month", "Data sync, automation, custom objects"],
+            ["Full Professional Bundle", "~$2,250/month base", "~$7,200/month base", "Plus overages for contacts and seats"],
+          ],
+        },
+        afterTable:
+          "A 15-person business running Marketing Hub Professional, Sales Hub Professional, and Service Hub Professional pays approximately $2,250 per month at the base tier — $27,000 per year before contact overages. With 10,000 marketing contacts, add $450 per month in contact fees. Total: $32,400 per year and growing as your team and contact list expand.",
+      },
+      {
+        heading: "What a Custom Platform With Equivalent Features Costs",
+        content:
+          "A custom-built business platform covering CRM, marketing automation, sales pipeline management, and service desk — the functional equivalent of HubSpot's core hubs — typically costs the following to build with a US or UK development team in 2025:",
+        list: [
+          "$60,000 – $90,000 for a focused custom platform covering CRM, pipeline tracking, and basic email automation",
+          "$90,000 – $150,000 for a full platform with CRM, email marketing automation, sales pipeline, service ticketing, and reporting dashboard",
+          "$150,000 – $220,000 for an enterprise-grade platform with multi-team permissions, advanced automation logic, custom integrations, and a client-facing portal",
+          "Zero per-seat fees — 5 users or 50 users costs the same in running costs",
+          "Zero per-contact fees — grow your database to 100,000 contacts without a licence surcharge",
+          "$8,000 – $18,000 per year in hosting and maintenance — your only ongoing cost",
+        ],
+        afterContent:
+          "Over three years, a custom platform built for $110,000 costs approximately $144,000 total including hosting. HubSpot's equivalent three-year cost for a 15-person business with moderate usage is $97,000–$130,000 — and that number keeps growing. From year four onwards, the custom platform is substantially cheaper.",
+      },
+      {
+        heading: "Feature Comparison: CRM, Marketing, Sales, and Service",
+        content:
+          "Both HubSpot and a custom platform can cover the core functional areas a growing business needs. The differences are in flexibility, ownership, and how well each maps to your specific process.",
+        table: {
+          headers: ["Feature Area", "HubSpot", "Custom Platform"],
+          rows: [
+            ["CRM — contact and deal tracking", "✅ Excellent out-of-the-box", "✅ Built around your exact sales model"],
+            ["Marketing email automation", "✅ Powerful sequence builder", "✅ Custom triggers and logic built for your flows"],
+            ["Landing pages and forms", "✅ Included in Marketing Hub", "⚡ Can be included; often handled by separate CMS"],
+            ["Sales pipeline management", "✅ Strong visual pipeline", "✅ Pipeline stages match your exact process"],
+            ["Service desk and ticketing", "✅ Full helpdesk in Service Hub", "✅ Built for your support workflow"],
+            ["Custom reports and dashboards", "⚡ Available but limited in lower tiers", "✅ Unlimited custom reporting on your data"],
+            ["Workflow automation", "⚡ Powerful but capped by plan tier", "✅ No caps — any automation you need"],
+            ["API and integrations", "✅ 1,000+ native integrations", "⚡ Built as needed — any integration possible"],
+            ["Data ownership", "❌ HubSpot holds your data", "✅ You own your data outright"],
+            ["Per-contact pricing", "❌ Grows with database size", "✅ None — unlimited contacts"],
+            ["Per-seat pricing", "❌ Grows with every hire", "✅ None — unlimited users"],
+          ],
+        },
+      },
+      {
+        heading: "Vendor Lock-In and Data Ownership",
+        content:
+          "HubSpot is one of the stickiest software products in the market — not by accident. Switching costs are high by design.",
+        subsections: [
+          {
+            subheading: "Data Portability Risks",
+            text: "HubSpot allows you to export contacts, deals, and activities — but the export process is incomplete for complex data structures. Custom objects, association data, email engagement history, and automation logs do not export cleanly to a format usable by another platform. Businesses that have tried to migrate away from HubSpot after three or more years consistently report data loss or a need to manually clean and reformat data. Plan for $5,000–$20,000 in data migration costs if you ever leave.",
+          },
+          {
+            subheading: "Pricing Leverage",
+            text: "Once your team relies on HubSpot and your contact history, deal data, and automation workflows are inside the platform, HubSpot can — and does — raise prices. The average annual price increase is 6–9%. A $2,250/month bill today becomes $3,100–$3,800 by year five. Each new hire requires an additional seat fee. Each marketing campaign that grows your contact list triggers contact tier increases. The platform is designed to grow its revenue alongside yours. A custom platform's running costs are flat.",
+          },
+        ],
+      },
+      {
+        heading: "When HubSpot Is the Right Choice",
+        content:
+          "HubSpot is genuinely excellent software and the right tool for specific situations. It makes sense when:",
+        list: [
+          "You need to be operational within days — HubSpot can be set up and running in a week vs 12–20 weeks for a custom build",
+          "Your team is fewer than 8 people and the Starter tier at $50/month meets your needs without Professional-tier complexity",
+          "You rely heavily on HubSpot's native integrations with tools your business already uses across the ecosystem",
+          "You plan to hire staff who already know HubSpot and want to avoid retraining time on a new system",
+          "You are pre-revenue or very early stage and cannot justify the upfront investment of a custom build",
+          "You want access to HubSpot's Academy training resources, active community, and established support infrastructure",
+        ],
+      },
+      {
+        heading: "When a Custom Platform Is Better",
+        content:
+          "A custom platform is the smarter investment when your business has specific needs that HubSpot does not fit well, or when the total cost of ownership comparison favours building.",
+        list: [
+          "Your sales process has unique stages, non-standard deal structures, or multi-stakeholder workflows HubSpot forces you to work around",
+          "You want to combine CRM, operations, billing, and client portal in one system — HubSpot only covers the front-end CRM layer",
+          "Your marketing contact list is large or growing fast — per-contact fees add $3,000–$20,000 per year at scale",
+          "You have 15 or more team members who need CRM or sales access — per-seat costs become significant quickly",
+          "You want a client-facing portal integrated with your CRM data — HubSpot does not offer a proper client portal",
+          "You handle sensitive client data and need full control over where it is stored and who can access it",
+          "You plan to operate the business for five or more years and want to own your operational platform outright",
+        ],
+      },
+      {
+        heading: "3-Year Total Cost of Ownership Comparison",
+        content:
+          "The most meaningful comparison is total cost over three years, accounting for realistic growth in team size and contact database. This example uses a 15-person business with 15,000 marketing contacts growing to 40,000 over three years:",
+        table: {
+          headers: ["Cost Category", "HubSpot Professional", "Custom Platform"],
+          rows: [
+            ["Year 1 (setup + licences)", "$27,000 + $8,000 setup = $35,000", "$110,000 build + $10,000 hosting = $120,000"],
+            ["Year 1 contact overage fees", "$3,600 (avg 5,000 contacts above base)", "None"],
+            ["Year 2 (licences + growth)", "$32,400 + $6,000 contact overages", "$10,000 hosting + maintenance"],
+            ["Year 3 (with 9% price increase)", "$37,400 + $9,000 contact overages", "$10,000 hosting + maintenance"],
+            ["3-Year Total", "$123,400", "$140,000"],
+            ["Year 5 Total", "$230,000+", "$160,000"],
+          ],
+        },
+        afterTable:
+          "The custom platform breaks even around year four and becomes significantly cheaper every year after. For any business planning to operate beyond three years, the lifetime cost comparison is decisive in favour of a custom build — and the custom platform is an asset on your balance sheet, not a recurring expense.",
+      },
+    ],
+    cta: {
+      heading: "See What a Custom Platform Would Cost for Your Business",
+      text: "Tell us what HubSpot features you rely on and we will design a custom platform that covers everything — with a detailed cost estimate and three-year comparison.",
+      link: "/contact",
+      buttonText: "Get a Free Estimate",
+    },
+  },
+
+  {
+    slug: "custom-ecommerce-vs-shopify",
+    title: "Custom E-Commerce vs Shopify: Which Is Better for Your Business?",
+    metaTitle: "Custom E-Commerce vs Shopify 2025 | Which Is Better?",
+    metaDescription: "Shopify Plus costs $2,300/month plus plugins. A custom e-commerce platform gives you everything you need with no monthly fees. Full 2025 comparison.",
+    tag: "Comparison",
+    publishDate: "May 29, 2026",
+    readTime: "9 min read",
+    summary:
+      "Shopify Plus costs $27,600 per year before apps and transaction fees. At scale, a custom e-commerce platform costs less, performs better, and handles the complex pricing and B2B workflows that Shopify cannot.",
+    intro:
+      "Shopify is the default choice for new e-commerce businesses — and rightly so. Getting a store online in hours with no technical knowledge is a genuinely impressive capability. But Shopify is designed for the average e-commerce business, and as businesses grow beyond that average — through higher transaction volumes, B2B pricing, complex inventory requirements, or subscription models — the platform's limitations become operational costs. This guide gives you an honest comparison between Shopify and Shopify Plus versus a custom-built e-commerce platform, so you can make the right decision for where your business is heading.",
+    sections: [
+      {
+        heading: "Shopify and Shopify Plus Real Costs in 2025",
+        content:
+          "Shopify's monthly plans are well-known. The total cost of running a store at each tier is significantly higher than the plan price alone once apps, transaction fees, and theme costs are included.",
+        table: {
+          headers: ["Plan", "Monthly Fee", "Transaction Fee (non-Shopify Payments)", "Typical App Spend"],
+          rows: [
+            ["Basic", "$39/month", "2.0% per transaction", "$50 – $200/month"],
+            ["Shopify", "$105/month", "1.0% per transaction", "$100 – $400/month"],
+            ["Advanced", "$399/month", "0.5% per transaction", "$200 – $600/month"],
+            ["Plus", "$2,300/month (or 0.25% of revenue)", "0.15% per transaction", "$500 – $2,000/month"],
+          ],
+        },
+        afterTable:
+          "On a $2M revenue store using Shopify Advanced, transaction fees alone add $10,000 per year if you use a payment processor other than Shopify Payments. On Shopify Plus at $5M revenue, the 0.25% transaction fee adds $12,500 on top of the $27,600 annual plan fee. A full-featured Shopify Plus store with review apps, loyalty programme, subscriptions, B2B pricing tools, and advanced inventory typically spends $1,500–$2,500 per month in apps — adding $18,000–$30,000 per year to the base cost.",
+      },
+      {
+        heading: "What a Custom E-Commerce Platform Costs to Build",
+        content:
+          "A custom e-commerce platform is built specifically for your product catalogue, checkout requirements, inventory model, and customer type. Here are the 2025 cost ranges for professionally-built custom platforms:",
+        list: [
+          "$40,000 – $80,000 for a focused direct-to-consumer store with product management, checkout, basic inventory, and Stripe payments",
+          "$80,000 – $160,000 for a full-featured store with subscriptions, account management, advanced inventory, and multi-currency support",
+          "$150,000 – $300,000 for a B2B e-commerce platform with account-based pricing, quote management, bulk ordering, and ERP integration",
+          "$200,000 – $400,000 for a marketplace or multi-vendor platform with seller accounts, commission management, and advanced fulfilment",
+          "$6,000 – $18,000 per year in hosting, maintenance, and security updates — the only ongoing cost",
+          "Zero transaction fees beyond standard payment processing (Stripe: 2.9% + $0.30 per transaction)",
+        ],
+        afterContent:
+          "The key financial difference: Shopify's costs grow indefinitely with your revenue and team size. Custom e-commerce involves a one-time build investment followed by flat annual running costs. At $3M annual revenue, a custom platform typically breaks even with Shopify Plus costs within 2.5–3 years.",
+      },
+      {
+        heading: "Feature Comparison: Checkout, Inventory, B2B, Subscriptions",
+        content:
+          "Both Shopify and a custom platform handle standard direct-to-consumer e-commerce well. The divergence is pronounced in B2B pricing, complex inventory, and subscription scenarios.",
+        table: {
+          headers: ["Feature", "Shopify / Shopify Plus", "Custom E-Commerce"],
+          rows: [
+            ["Standard D2C checkout", "✅ Excellent out-of-the-box", "✅ Built to your exact flow"],
+            ["B2B pricing per account", "⚡ Shopify Plus only; limited flexibility", "✅ Any pricing model — tiered, contracted, net terms"],
+            ["Subscription management", "❌ Requires third-party app ($299+/month)", "✅ Built-in with full billing logic"],
+            ["Custom checkout logic", "⚡ Plus only via Checkout Extensions; limited", "✅ Any checkout rules, fields, and validation flows"],
+            ["Multi-warehouse inventory", "⚡ Shopify Locations feature; limited automation", "✅ Full warehouse management and routing logic"],
+            ["Quote and RFQ workflow", "❌ Not natively supported", "✅ Full quote-to-order workflow built in"],
+            ["ERP / accounting integration", "⚡ Third-party apps; often unreliable", "✅ Direct API integration built for your ERP"],
+            ["Custom product configurator", "⚡ Possible but expensive and fragile with apps", "✅ Unlimited — any configuration logic"],
+            ["Loyalty and rewards", "❌ Requires third-party app ($199–$599/month)", "✅ Built-in with your reward rules and tiers"],
+            ["Headless / API-first", "⚡ Shopify Storefront API available", "✅ Fully API-first architecture by design"],
+          ],
+        },
+      },
+      {
+        heading: "Performance and SEO Differences",
+        content:
+          "Site speed and search engine optimisation are directly linked to revenue on e-commerce stores. Google's Core Web Vitals scores affect ranking, and research consistently shows a one-second improvement in page load time improves conversion rates by 2–7%.",
+        subsections: [
+          {
+            subheading: "Shopify Performance",
+            text: "Shopify's infrastructure is solid, but the platform's architecture has inherent speed constraints. Each installed app adds JavaScript that loads on every page. A typical Shopify Plus store with 10+ apps scores 35–60 on Google PageSpeed Insights mobile — below the 75+ threshold that Google considers good for ranking. Liquid, Shopify's templating language, cannot be replaced with modern frameworks on standard Shopify. Common performance optimisations like granular caching, edge rendering, and critical CSS require app-level workarounds rather than direct code control.",
+          },
+          {
+            subheading: "Custom E-Commerce Performance",
+            text: "A custom-built store on a modern stack — Next.js frontend, Node.js or Python API, Vercel or AWS deployment — consistently achieves PageSpeed scores of 85–98 on mobile. Server-side rendering, intelligent caching, optimised image pipelines, and zero third-party app JavaScript loads produce significantly faster stores. For businesses generating $1M or more annually, a 3% improvement in conversion rate from better performance adds $30,000 per year in revenue — more than covering the annual maintenance cost of the custom platform.",
+          },
+        ],
+      },
+      {
+        heading: "When Shopify Is the Right Call",
+        content:
+          "Shopify is the right starting point for a wide range of e-commerce businesses. Here is when it clearly makes sense to stay on Shopify:",
+        list: [
+          "You are launching a new store and need to be trading within days rather than waiting 12–20 weeks for a custom build",
+          "Your annual revenue is under $1M and platform fees represent a minor percentage of revenue",
+          "Your product catalogue and checkout requirements are standard — no complex B2B pricing, no custom configurators",
+          "You rely on Shopify's app ecosystem — Klaviyo, Reviews.io, Gorgias — and want plug-and-play integrations",
+          "You sell in multiple international markets and need Shopify Markets for localised checkout and currency handling",
+          "Your team is non-technical and values the ability to manage products and content without a developer for day-to-day operations",
+        ],
+      },
+      {
+        heading: "When Custom E-Commerce Wins",
+        content:
+          "The case for a custom platform becomes compelling when Shopify's constraints create operational costs or limit your revenue potential.",
+        list: [
+          "You are on Shopify Plus paying $2,300+ per month and your app stack adds another $1,500–$2,500 per month on top",
+          "You have a B2B customer base with custom pricing per account, net payment terms, and quote workflows Shopify cannot handle natively",
+          "Your products require a complex configurator — custom builds, option-dependent pricing, multi-step selection — beyond Shopify's variant model",
+          "You run subscriptions and pay $299–$500 per month for a third-party subscription app with limitations you keep running into",
+          "Your checkout conversion rate is suffering because app JavaScript is slowing your store below competitive load times",
+          "You need tight integration between your e-commerce platform and an ERP, 3PL, or warehouse management system",
+          "You want to own your customer data, order history, and product catalogue without dependency on Shopify's platform",
+        ],
+      },
+      {
+        heading: "Migration From Shopify to Custom",
+        content:
+          "The most common concern about moving from Shopify to a custom platform is disruption and data loss. Here is what the migration process actually involves:",
+        subsections: [
+          {
+            subheading: "Data Migration",
+            text: "Shopify provides comprehensive data export tools. Products, customers, orders, discount codes, and review data all export cleanly via the Shopify API or CSV export. A professional migration imports this data into the new platform's database before go-live, preserving full order history, account data, and product information. Data migration for a typical store costs $5,000–$15,000 as part of the build project, depending on data volume and complexity.",
+          },
+          {
+            subheading: "SEO Continuity",
+            text: "URL structure changes during migration can damage search rankings if handled incorrectly. A professional migration preserves every existing URL structure or sets up 301 redirects for any URLs that change. Sitemap files are updated and search console is notified immediately after launch. Managed correctly, migration causes no long-term SEO damage — and improved Core Web Vitals scores typically improve rankings within 60–90 days on a faster custom platform.",
+          },
+          {
+            subheading: "Parallel Running",
+            text: "Most Shopify-to-custom migrations run both platforms simultaneously for two to four weeks. The custom platform handles new orders while the Shopify store is set to 'coming soon' mode. This parallel period allows the team to verify data accuracy, test all order flows, and confirm integrations are working before full cutover. Downtime on launch day is typically zero — the transition happens via DNS cutover in a matter of minutes.",
+          },
+        ],
+      },
+    ],
+    cta: {
+      heading: "Find Out If Custom E-Commerce Makes Sense for Your Business",
+      text: "Tell us about your store and we will run the numbers — what a custom platform would cost, what you would save in Shopify and app fees, and how long the payback period would be.",
+      link: "/contact",
+      buttonText: "Get a Free Cost Analysis",
+    },
+  },
+
+  {
+    slug: "custom-software-vs-no-code-tools",
+    title: "Custom Software vs No-Code Tools: Which Is Right for Your Business?",
+    metaTitle: "Custom Software vs No-Code Tools | Which Is Better?",
+    metaDescription: "Bubble, Webflow, Airtable, and Zapier sound like an easy solution. But when do no-code tools hit their ceiling — and when do you need custom software?",
+    tag: "Comparison",
+    publishDate: "May 29, 2026",
+    readTime: "8 min read",
+    summary:
+      "No-code tools are a legitimate starting point for many businesses — fast, affordable, and low-risk. But they have a hard ceiling. This guide shows you exactly when no-code stops working and custom software takes over.",
+    intro:
+      "No-code and low-code tools have genuinely transformed what small businesses can build without a development team. Platforms like Bubble, Webflow, Airtable, Zapier, and Glide let non-technical founders and operations managers build functional products and automations in days rather than months. But every no-code tool has a hard ceiling — a point at which growing complexity, performance demands, integration requirements, or scaling needs exceed what the platform can deliver. This guide gives you an honest comparison between no-code tools and custom software, including cost comparisons, specific limitation examples, and a clear decision framework for choosing the right path at each stage of your business.",
+    sections: [
+      {
+        heading: "What No-Code Tools Are and What They Are Good At",
+        content:
+          "No-code tools are software platforms that let you build applications, automations, and workflows without writing traditional code. They cover a wide range of use cases, each with different strengths:",
+        list: [
+          "Bubble — visual programming for full web applications: login systems, databases, dashboards, and user-facing apps with real business logic",
+          "Webflow — professional website and CMS design without code; limited application logic but excellent for marketing sites",
+          "Airtable — structured database with a spreadsheet-like interface; useful for internal data management and lightweight apps",
+          "Zapier and Make (formerly Integromat) — workflow automation connecting existing tools via triggers and actions without custom integration code",
+          "Glide and Softr — mobile and web apps built on top of Google Sheets or Airtable data with minimal setup",
+          "Retool and Internal.io — internal tools and admin dashboards connected to databases and APIs; ideal for ops teams",
+        ],
+        afterContent:
+          "These tools genuinely excel at rapid prototyping, early-stage MVPs, internal tools for small teams, and automating repetitive tasks between existing software systems. For a 5-person team needing a simple internal dashboard or basic client-facing form, no-code is frequently the fastest and most cost-effective choice available.",
+      },
+      {
+        heading: "Real Limitations of No-Code for Growing Businesses",
+        content:
+          "No-code platforms advertise simplicity. What they do not advertise as prominently are the constraints that become operational problems at scale. Here are the three most common ceilings businesses hit:",
+        subsections: [
+          {
+            subheading: "Performance Limits",
+            text: "Bubble's server-side rendering and auto-generated database queries produce acceptable performance for small apps. Once a Bubble app exceeds a few thousand users or handles complex relational queries, page load times slow significantly. Bubble's servers run on shared infrastructure — performance varies based on platform-wide load and cannot be tuned at the infrastructure level. There is no option to optimise database queries directly, implement custom caching strategies, or run background jobs efficiently outside Bubble's own scheduler. For internal tools used by 10 staff, this matters little. For a customer-facing app with 1,000+ daily active users, it is a hard constraint.",
+          },
+          {
+            subheading: "Customisation Ceiling",
+            text: "Every no-code platform has a fixed feature set. If your business logic requires something the platform does not support natively — a specific algorithm, a custom authentication flow, an unusual data structure, or a proprietary third-party integration — you are either working around it, paying for a plugin that partially solves the problem, or stuck entirely. Custom code plugins in Bubble reintroduce many of the risks no-code was supposed to eliminate: they are difficult to maintain, break on platform updates, and require a developer to fix. The more custom logic you bolt on, the more the 'no-code' label stops being accurate.",
+          },
+          {
+            subheading: "Vendor and Exit Risk",
+            text: "Your Bubble app runs on Bubble's infrastructure. If Bubble changes its pricing model, discontinues a feature, reduces server performance on your plan, or goes out of business, your application is directly affected. In 2024, Bubble raised prices significantly with short notice, causing many businesses to face unexpected cost increases or emergency migration projects. No-code platforms can — and do — change the rules without your consent. With custom software, you own the codebase, choose your hosting provider, and control your own infrastructure without dependency on any single platform vendor.",
+          },
+        ],
+      },
+      {
+        heading: "When No-Code Is the Right Starting Point",
+        content:
+          "No-code is not a compromise solution — for specific situations, it is the correct choice. Use no-code when:",
+        list: [
+          "You need to validate an idea before investing in a proper build — a Bubble MVP in two weeks tells you whether users want the product before spending $60,000",
+          "You are building an internal tool for fewer than 20 people with straightforward requirements and no performance demands",
+          "The automation you need connects two existing tools (e.g. Salesforce to QuickBooks via Zapier) rather than building a new application from scratch",
+          "Your budget does not support a custom build yet and no-code lets you start generating revenue before scaling up the investment",
+          "The problem is genuinely simple — a structured data entry form, a basic approval workflow, or a simple booking and confirmation system",
+          "You need something working within days, not weeks, and time-to-market is the critical constraint above all others",
+        ],
+      },
+      {
+        heading: "When No-Code Becomes a Bottleneck",
+        content:
+          "The transition from 'no-code is working fine' to 'no-code is holding us back' often happens faster than expected. These are the most reliable signals that you have hit the ceiling:",
+        list: [
+          "Your Bubble or Glide app loads slowly and users are complaining — page response times above 2–3 seconds are causing measurable drop-off",
+          "You need a feature the platform cannot deliver — complex business logic, a specific API integration, or a data structure the tool does not support",
+          "You are paying $300–$1,000 per month in plugins, add-ons, and workarounds to compensate for the platform's built-in limitations",
+          "Your Zapier or Make automation workflows are fragile — they break regularly and require manual monitoring and repair time each week",
+          "A security audit or compliance review has flagged your no-code platform as insufficiently controllable for your data obligations",
+          "You want to hire developers to improve the product and discover there are very few developers who specialise in your specific no-code tool",
+          "Your no-code platform has raised prices and the ongoing monthly cost is approaching what custom software hosting and maintenance would cost",
+        ],
+      },
+      {
+        heading: "Cost Comparison Over 3 Years",
+        content:
+          "No-code tools appear cheaper upfront but the total cost over three years is closer to custom software than most people expect. Here is a realistic comparison for a 10-person team building a customer-facing web application:",
+        table: {
+          headers: ["Cost Item", "No-Code (Bubble + Zapier + Airtable)", "Custom Software"],
+          rows: [
+            ["Year 1 setup and build", "$5,000 – $15,000 (configuration and design)", "$55,000 – $90,000 (full build)"],
+            ["Year 1 platform fees", "$3,600 – $7,200/year", "$6,000 – $12,000/year (hosting)"],
+            ["Year 1 plugin and add-on costs", "$2,400 – $6,000/year", "None"],
+            ["Year 2 (fees + rising costs)", "$7,200 – $12,000/year", "$8,000 – $12,000/year"],
+            ["Year 3 (fees + growth overages)", "$9,000 – $18,000/year", "$8,000 – $12,000/year"],
+            ["3-Year Total (fees only)", "$22,000 – $43,000", "$22,000 – $36,000"],
+            ["3-Year Total (including build)", "$27,000 – $58,000", "$77,000 – $126,000"],
+          ],
+        },
+        afterTable:
+          "The no-code option is cheaper over three years in most scenarios — but only if the platform continues to meet your needs at a stable price. Many businesses discover their no-code tool stops working for them at 12–24 months and face a full rebuild on top of the no-code investment already made. When you add the cost of a mid-stream migration from no-code to custom (typically $15,000–$40,000), the total cost of the no-code path often exceeds going custom from the start.",
+      },
+      {
+        heading: "Migration Path From No-Code to Custom",
+        content:
+          "If you are currently on a no-code platform and know you need to move to custom software, the migration is manageable with proper planning. Here is how to approach it:",
+        subsections: [
+          {
+            subheading: "Data Export and Migration",
+            text: "Most no-code platforms allow data export in JSON or CSV format. Airtable and Glide export cleanly. Bubble's database can be exported fully, though the schema needs to be mapped to the new application's data model before import. A data migration from a typical no-code application takes two to four weeks and costs $5,000–$15,000 as part of the rebuild project. Investing time in cleaning data before migration — removing duplicates, standardising formats — reduces migration cost and avoids carrying legacy data problems into the new system.",
+          },
+          {
+            subheading: "Parallel Running Strategy",
+            text: "For business-critical applications, the safest migration approach is parallel running — the custom build and the no-code tool operate simultaneously for two to four weeks before full cutover. Users transition gradually, and the team can verify that all data and workflows are functioning correctly before retiring the no-code platform. This is particularly important for automation-heavy setups where Zapier or Make workflows need to be replicated as server-side logic in the new custom build.",
+          },
+          {
+            subheading: "What to Preserve vs Rebuild",
+            text: "Not everything in a no-code setup needs to be rebuilt exactly as-is. The migration is an opportunity to rethink workflows that were constrained by the no-code platform's limitations, drop features nobody uses, and improve the user experience informed by 12–24 months of real operational data. The best migration projects preserve the business logic that genuinely works, discard the workarounds that no-code forced, and build the capabilities the no-code tool could never provide.",
+          },
+        ],
+      },
+      {
+        heading: "Decision Framework: Which to Choose",
+        content:
+          "Use this framework to decide whether no-code or custom software is the right approach for your project right now:",
+        table: {
+          headers: ["Your Situation", "Recommended Approach"],
+          rows: [
+            ["Idea stage — no revenue, no users, no validated demand", "No-code or prototype first to validate before investing"],
+            ["Early stage — under $500K revenue, internal tool or simple app", "No-code is fine; monitor for ceiling signs every 6 months"],
+            ["Growing — 1,000+ users relying on the tool daily", "Evaluate custom; no-code risk is rising quickly"],
+            ["Established — performance issues, compliance needs, or B2B complexity", "Custom software is the right call"],
+            ["Automation only — connecting existing tools without building a new app", "Zapier or Make is appropriate and sufficient"],
+            ["New SaaS product — needs scale, multi-tenancy, subscription billing", "Custom from the start; no-code will not scale"],
+            ["Replacing a no-code tool costing more than $500/month in fees", "Calculate custom build ROI — often positive within 24 months"],
+          ],
+        },
+        afterTable:
+          "The decision is not permanent. Starting with no-code and migrating to custom when you hit the ceiling is a legitimate strategy — provided you plan for the migration before you need it, not in a crisis. The worst position is running a business-critical no-code app at scale, hitting a performance wall, and needing to rebuild under operational pressure. Start planning the custom build when your no-code tool is still working, not when it has already become a problem.",
+      },
+    ],
+    cta: {
+      heading: "Find Out If Custom Software Is the Right Next Step",
+      text: "Tell us what you have built on no-code and where it is limiting you. We will tell you honestly whether custom software makes sense now — and what it would cost.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];
