@@ -2352,12 +2352,14 @@ body.cursor-hidden * {
 @media (max-width: 480px) {
   .chat-root {
     bottom: 16px;
-    right: 16px;
+    left: 12px;
+    right: 12px;
+    align-items: flex-end;
   }
 
   .chat-panel {
-    width: calc(100vw - 32px);
-    height: 440px;
+    width: 100%;
+    height: 460px;
     border-radius: 14px;
   }
 
@@ -2366,10 +2368,23 @@ body.cursor-hidden * {
   }
 
   .chat-toggle {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
     padding: 0;
     border-radius: 50%;
     justify-content: center;
+  }
+
+  .chat-input-row {
+    padding: 8px 10px 10px;
+  }
+
+  .chat-send-btn {
+    flex-shrink: 0;
+  }
+
+  .chat-ctas {
+    padding: 0 10px 8px;
   }
 }
