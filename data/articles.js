@@ -1684,4 +1684,393 @@ export const articles = [
       buttonText: "Book a Free Consultation",
     },
   },
+
+  {
+    slug: "custom-reporting-vs-power-bi",
+    title: "Custom Business Dashboard vs Power BI: Which Is Better for Small Business?",
+    metaTitle: "Custom Dashboard vs Power BI | Small Business Comparison",
+    metaDescription: "Power BI costs $10-20 per user per month and requires specialist knowledge. A custom dashboard shows your exact KPIs with zero configuration. Full comparison.",
+    tag: "Comparison",
+    publishDate: "May 30, 2026",
+    readTime: "8 min read",
+    summary:
+      "Power BI is a powerful analytics platform — but setting it up correctly requires specialist skills most small businesses do not have. A custom reporting dashboard gives you exactly the KPIs you need, connected to your data sources, from day one.",
+    intro:
+      "Every business owner wants a clear, live view of what is happening in their business — revenue trends, team performance, pipeline health, margin by product. Power BI is Microsoft's dominant business intelligence tool and it is genuinely powerful. But power alone does not equal useful. A Power BI dashboard requires specialist configuration, a clean data model, and ongoing maintenance from someone who understands DAX formulas and data pipelines. Most small and mid-size businesses get none of those things — they pay for the licences, run the default reports, and wonder why nobody looks at the dashboard. This guide gives you an honest comparison of Power BI against a custom-built reporting dashboard so you can choose the right tool for your business.",
+    sections: [
+      {
+        heading: "What Power BI Costs and What It Does",
+        content:
+          "Power BI is available in three tiers, and the differences between them matter significantly for a small business evaluation. The free tier is genuinely limited — it is more of a personal analytics tool than a business reporting platform. The Pro licence at $10 per user per month is the entry point for sharing dashboards across your team. Premium Per User at $20 per user per month unlocks more advanced features including paginated reports, AI-driven insights, and higher data refresh rates.",
+        table: {
+          headers: ["Power BI Plan", "Monthly Cost Per User", "Key Capabilities", "Main Limitations"],
+          rows: [
+            ["Free", "$0", "Personal dashboards, basic visualisations", "No sharing with colleagues, 1GB data limit"],
+            ["Pro", "$10/user", "Share dashboards, collaborate, refresh 8x daily", "Max 1GB per dataset, no premium features"],
+            ["Premium Per User", "$20/user", "Paginated reports, AI insights, 16x daily refresh", "Per-user pricing grows with every hire"],
+            ["Premium Capacity", "$4,995/month", "Unlimited sharing, large datasets, Dataflows", "Enterprise-scale pricing only"],
+          ],
+        },
+        afterTable:
+          "For a 10-person business, Power BI Pro costs $1,200 per year. That sounds modest — until you factor in the hidden cost of someone who actually knows how to configure it. Power BI's true cost includes either a Power BI specialist consultant at $80–$150 per hour or a staff member trained in DAX, Power Query, and data modelling. The licence fee is often the smallest part of the total investment.",
+      },
+      {
+        heading: "What a Custom Reporting Dashboard Costs and Does",
+        content:
+          "A custom business dashboard is a web-based reporting interface built specifically around your business's KPIs, data sources, and user roles. Unlike Power BI — which is a general-purpose tool requiring you to configure your specific business metrics into it — a custom dashboard is built with your metrics already defined, your data already connected, and your team's specific views already designed. There is no setup required by the user. You log in and the data is there, accurate, and presented the way your business needs to see it.",
+        list: [
+          "Your exact KPIs — revenue by client, job margin, pipeline by stage, staff utilisation — displayed without any configuration required",
+          "Multiple user roles — managers see the full picture, staff see their own workload, clients see only their own data",
+          "Real-time or near-real-time data — connected directly to your database, CRM, or operational system",
+          "Custom charts and tables — the specific visualisations your business uses to make decisions, not Power BI's default chart library",
+          "Drill-down capability — click on a monthly revenue figure to see the clients, projects, and invoice lines that make it up",
+          "Automated reporting — scheduled weekly or monthly PDF reports delivered directly to stakeholders without manual exports",
+        ],
+        afterContent:
+          "Custom dashboards typically cost $15,000–$50,000 to build depending on the number of data sources, user roles, and complexity of the metrics being visualised. Running costs are $3,000–$8,000 per year in hosting and maintenance — with no per-user licence fees regardless of how many people access the dashboard.",
+      },
+      {
+        heading: "Setup Complexity: Power BI vs Custom",
+        content:
+          "This is where the real-world experience of Power BI diverges most sharply from the marketing material. Power BI is advertised as a self-service analytics tool. In practice, producing a reliable and accurate dashboard for a business with data spread across multiple systems requires significant technical work — and the cost of getting it wrong is reporting you trust that is silently wrong.",
+        subsections: [
+          {
+            subheading: "Power BI Setup Reality",
+            text: "Before Power BI can display your business data accurately, you need a clean, joined data model. If your sales data is in a CRM, your financial data is in QuickBooks, your project data is in a project management tool, and your operational data is in a separate system, you need to connect all sources, build a unified data model, write transformation logic in Power Query, define measures in DAX, and set up refresh schedules. A Power BI specialist can do this correctly in two to four weeks. A business owner attempting it typically produces dashboards that look convincing but contain calculation errors — averages of averages, double-counting, or incorrect date filters — that lead to decisions made on wrong numbers.",
+          },
+          {
+            subheading: "Custom Dashboard Setup",
+            text: "A custom dashboard is built by a development team that handles all data connection, transformation, and calculation logic on the backend. The business owner's role is to define what metrics they need and approve the designs. There is no DAX to learn, no Power Query to debug, and no data model to maintain. When you log in on day one, your dashboard shows your actual business data correctly — because the development team built it that way. Changes — adding a new metric, updating a visualisation, connecting a new data source — are handled by the development team as part of a maintenance agreement.",
+          },
+        ],
+      },
+      {
+        heading: "Data Sources and Integration Comparison",
+        content:
+          "The ability to connect to your specific data sources is critical for any reporting solution. Both Power BI and custom dashboards can connect to a wide range of systems, but the mechanics and reliability differ significantly — particularly for businesses running non-Microsoft tools or custom applications.",
+        table: {
+          headers: ["Data Source Type", "Power BI", "Custom Dashboard"],
+          rows: [
+            ["Microsoft products (Excel, SQL Server, Azure)", "✅ Excellent native connectors", "✅ Fully supported via standard APIs"],
+            ["Salesforce, HubSpot, Pipedrive", "✅ Native connectors available", "✅ API integration built to your spec"],
+            ["QuickBooks, Xero, Sage", "✅ Available with configuration", "✅ Direct API integration"],
+            ["Custom or proprietary databases", "⚡ Requires ODBC or custom connectors", "✅ Native connection to your own database"],
+            ["Real-time data streams", "⚡ Streaming on Premium tier only", "✅ Real-time WebSocket connections"],
+            ["Legacy or on-premise systems", "⚡ Requires gateway configuration", "✅ Built-in integration to your systems"],
+          ],
+        },
+        afterTable:
+          "If your business runs on Microsoft products — Azure SQL, SharePoint, Teams — Power BI's native connectors are a genuine advantage. If your data lives in a mix of non-Microsoft tools, a custom database, or legacy systems, a custom dashboard produces more reliable and maintainable connections that your team controls.",
+      },
+      {
+        heading: "Maintenance and Training Requirements",
+        content:
+          "The ongoing cost of keeping a reporting solution working and accurate is often underestimated in the initial buying decision. Both approaches have ongoing requirements — but the nature of those requirements is very different, and the burden falls on different people in each case.",
+        list: [
+          "Power BI maintenance: data model updates when source systems change schema, DAX measure rewrites when business logic evolves, gateway management for on-premise connections, and performance tuning as data volumes grow",
+          "Power BI training: new staff need to learn the Power BI interface, filter interactions, and bookmark navigation — non-trivial for non-technical teams, and the interface changes with Microsoft's release cycle",
+          "Custom dashboard maintenance: the development team handles all backend data pipeline updates, calculation logic changes, and infrastructure management — the user experience never changes without your approval",
+          "Custom dashboard training: because the interface is designed specifically for your team's workflows, onboarding typically takes one to two hours rather than one to two days",
+          "Feature updates: Power BI adds features automatically on Microsoft's schedule; custom dashboard features are added when you need them, on your schedule, without disrupting existing reports",
+        ],
+        afterContent:
+          "For businesses without a dedicated IT or data team, the maintenance burden of Power BI is consistently underestimated. A custom dashboard outsources that maintenance to the development team — so your staff can focus on using the data, not managing the tool that delivers it.",
+      },
+      {
+        heading: "When Power BI Is Enough",
+        content:
+          "Power BI is genuinely excellent software and the right choice for specific business situations. It is not a compromise tool — for the right profile, it is the best option available. Power BI works best when:",
+        list: [
+          "Your business already runs on Microsoft infrastructure — Azure, SQL Server, Office 365 — and Power BI's native connectors give you fast access to clean, well-structured data",
+          "You have a skilled Power BI developer in-house or budget for a part-time specialist to manage and maintain the dashboards",
+          "Your reporting needs are exploratory — you want your team to build ad-hoc reports and slice data in different ways, not just view pre-defined metrics",
+          "You are at enterprise scale with a data team and Premium capacity pricing is justified by the volume of data and users involved",
+          "Your team is already familiar with Power BI and retraining time is a meaningful cost and disruption factor",
+          "You want to share interactive reports with external stakeholders who do not have licences — Power BI's embedded and publish-to-web features handle this well",
+        ],
+      },
+      {
+        heading: "When a Custom Dashboard Is Better",
+        content:
+          "A custom dashboard becomes the better investment when your business needs reliable, accurate reporting without the setup complexity, the specialist dependency, or the per-user cost structure of Power BI. Custom is the right call when:",
+        list: [
+          "Your data lives in multiple non-Microsoft systems — your own database, a custom CRM, a bespoke operational platform — and Power BI's connectors are unreliable or require complex configuration",
+          "You want a dashboard your entire team can use from day one without training — designed for your specific workflows, not a general analytics user",
+          "You have specific, well-defined KPIs — revenue by client, job margin, team utilisation — and want them presented clearly and accurately without configuration overhead",
+          "You are embedding reporting into an existing custom application such as a client portal or internal tool, where Power BI would require a separate login and separate interface",
+          "You are concerned about data sovereignty — your business data should not be processed through Microsoft's cloud services",
+          "You are already commissioning a custom software build and adding a reporting module is a natural, cost-effective extension of that project rather than a separate tool",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Get a Custom Dashboard Built for Your Business",
+      text: "Tell us what metrics you need to track and we will design a dashboard that connects to your data, shows exactly what you need, and requires zero specialist knowledge to use.",
+      link: "/contact",
+      buttonText: "Request a Free Consultation",
+    },
+  },
+
+  {
+    slug: "custom-software-for-healthcare-businesses",
+    title: "Custom Software for Healthcare Businesses: What to Build and What It Costs",
+    metaTitle: "Custom Healthcare Software 2025 | What to Build & What It Costs",
+    metaDescription: "HIPAA-compliant custom software for healthcare businesses. Patient portals, scheduling, billing, and EHR integrations — with cost ranges for 2025.",
+    tag: "Industry",
+    publishDate: "May 30, 2026",
+    readTime: "9 min read",
+    summary:
+      "Healthcare businesses consistently outgrow generic practice management software. Here is what clinics, practices, and healthcare organisations are building custom in 2025 — and what HIPAA-compliant development actually costs.",
+    intro:
+      "Healthcare is one of the most compliance-heavy and workflow-intensive industries in the US. The combination of HIPAA regulations, complex patient journeys, multi-department coordination, and revenue cycle management makes off-the-shelf software a difficult fit for most growing healthcare businesses. Practices and clinics that have grown beyond basic scheduling and billing tools consistently find that generic SaaS platforms force them into workarounds — workarounds that cost staff time, introduce errors, and create compliance exposure. This guide covers what healthcare businesses most commonly build with custom software, what HIPAA requirements mean for your development project, and what realistic cost ranges look like in 2025.",
+    sections: [
+      {
+        heading: "Why Healthcare Needs Custom Software",
+        content:
+          "Healthcare has three structural characteristics that make generic software a poor long-term fit for growing practices and organisations.",
+        subsections: [
+          {
+            subheading: "HIPAA Compliance Requirements",
+            text: "Every software system that stores, processes, or transmits Protected Health Information — including patient names, dates of service, diagnoses, insurance information, and billing records — must comply with HIPAA's Security Rule and Privacy Rule. This places specific technical requirements on how data is encrypted, who can access it, how access is logged, and how breaches are detected and reported. Generic SaaS tools may carry a Business Associate Agreement — the document required by HIPAA before sharing PHI with a third party — but that does not mean they are configured correctly for your workflow or that their data handling meets the specific requirements of your specialty and jurisdiction.",
+          },
+          {
+            subheading: "Workflow Specificity",
+            text: "Healthcare workflows are highly specific to practice type, specialty, and size. A general practice, a physical therapy clinic, a dental group, and a mental health provider all have fundamentally different intake processes, documentation requirements, billing structures, and follow-up protocols. Generic practice management software is designed for the average across all of these — which means it fits none of them perfectly. Custom software is built around the specific workflow of your practice: the exact intake questions you ask, the documentation structure your clinical staff use, the billing codes your specialty generates, and the follow-up logic that reflects your care model.",
+          },
+          {
+            subheading: "Integration Requirements",
+            text: "The average mid-size practice integrates an EHR, a practice management system, a billing platform, a patient communication tool, and sometimes a telehealth system. When these systems do not communicate reliably, staff duplicate data entry, errors occur at transition points, and the patient experience suffers. Custom software integrates directly with your EHR via HL7 FHIR APIs — the modern interoperability standard — and connects your operational systems into a unified workflow without requiring staff to switch between multiple tools for a single patient encounter.",
+          },
+        ],
+      },
+      {
+        heading: "Most Common Healthcare Software Built Custom",
+        content:
+          "Healthcare businesses build custom software across a consistent set of use cases. These are the most frequently commissioned projects in 2025 for US healthcare organisations:",
+        list: [
+          "Patient portals — secure, branded web and mobile interfaces where patients book appointments, view records, access test results, complete intake forms, pay invoices, and message their care team",
+          "Custom scheduling systems — appointment booking logic specific to your specialty, provider availability rules, room and equipment scheduling, and waitlist management beyond what generic tools can handle",
+          "Revenue cycle management tools — custom billing workflows, claims management dashboards, denial tracking, and accounts receivable reporting tailored to your payer mix",
+          "Clinical documentation systems — structured note templates, care plan builders, and outcome tracking tools built for your specific clinical workflows and documentation requirements",
+          "Telehealth platforms — HIPAA-compliant video consultation, secure messaging, and remote monitoring tools integrated with your existing EHR and scheduling system",
+          "Referral management systems — digital referral intake, status tracking, and communication workflows connecting you to referring providers and specialists",
+          "Staff credentialing tools — compliance tracking for clinical staff licences, certifications, and mandatory training requirements with automated renewal alerts",
+        ],
+      },
+      {
+        heading: "Patient Portal Development",
+        content:
+          "A patient portal is typically the first custom software investment a growing healthcare business makes — and for good reason. It directly reduces administrative workload, improves patient experience, and supports the shift to digital-first patient communication that patients now expect. A well-built patient portal gives patients the ability to manage their healthcare relationship with your practice without requiring staff intervention for routine tasks.",
+        table: {
+          headers: ["Portal Feature", "What It Does", "Development Cost"],
+          rows: [
+            ["Appointment booking", "Real-time availability, provider selection, instant confirmation", "$12,000 – $22,000"],
+            ["Intake and consent forms", "Digital completion before visit, stored against patient record", "$8,000 – $15,000"],
+            ["Secure patient-provider messaging", "HIPAA-compliant message thread with clinical team", "$10,000 – $18,000"],
+            ["Medical record and test result access", "Patients view lab results, clinical notes, and care plans", "$10,000 – $20,000"],
+            ["Invoice and payment portal", "View and pay outstanding invoices, access payment history", "$8,000 – $15,000"],
+            ["Prescription refill requests", "Structured refill workflow from patient to prescribing provider", "$6,000 – $12,000"],
+            ["Telehealth video consultation", "HIPAA-compliant video built into the portal, no third-party app", "$15,000 – $30,000"],
+          ],
+        },
+        afterTable:
+          "A full-featured patient portal covering appointment booking, secure messaging, record access, and payment typically costs $55,000–$100,000 to build. A focused portal covering the three highest-impact features — booking, intake forms, and invoicing — costs $30,000–$55,000 and can be live in 10–14 weeks.",
+      },
+      {
+        heading: "Scheduling and Billing System Considerations",
+        content:
+          "Scheduling and billing are the operational core of any healthcare practice. The complexity of both increases rapidly as practice size grows — more providers, more locations, more payer contracts, and more procedure types each add layers that generic tools handle poorly.",
+        subsections: [
+          {
+            subheading: "Custom Scheduling Systems",
+            text: "Generic scheduling tools are designed for simple single-provider practices. Custom scheduling systems handle multi-provider availability with individual rules per provider, room and equipment allocation alongside provider time, complex appointment types with different durations and preparation requirements, waitlist management with automated fill logic when cancellations occur, referral-to-appointment workflows with status tracking, and recall scheduling integrated with clinical documentation. A custom scheduling module typically costs $20,000–$45,000 and delivers immediate ROI through reduced phone time for reception staff and improved appointment utilisation rates.",
+          },
+          {
+            subheading: "Revenue Cycle Management",
+            text: "The average US healthcare practice writes off 5–10% of revenue due to billing errors, missed charges, and uncollected patient balances. A custom RCM dashboard gives billing staff a real-time view of claims status, denial reasons, and outstanding balances segmented by payer, provider, and procedure type. Custom automation flags common denial patterns, generates corrected claims workflows, and triggers patient balance statements automatically. For a practice generating $2M annually, a 3% improvement in collections from better RCM tooling adds $60,000 per year — a strong return on a $40,000–$80,000 custom build.",
+          },
+        ],
+      },
+      {
+        heading: "EHR Integration Complexity and Cost",
+        content:
+          "Integrating a custom application with an Electronic Health Record system is one of the most technically complex aspects of healthcare software development. Complexity and cost depend primarily on which EHR you use and what level of data exchange you need.",
+        table: {
+          headers: ["EHR System", "Integration Method", "Complexity", "Typical Cost"],
+          rows: [
+            ["Epic", "SMART on FHIR, Epic App Orchard", "High — Epic certification process required", "$25,000 – $80,000"],
+            ["Cerner (Oracle Health)", "FHIR R4 APIs, Cerner Ignite", "High — partner onboarding required", "$20,000 – $60,000"],
+            ["athenahealth", "athenahealth REST API", "Medium — documented API, responsive support", "$15,000 – $40,000"],
+            ["eClinicalWorks", "eClinicalWorks API, FHIR", "Medium — requires eCW partnership", "$15,000 – $35,000"],
+            ["Kareo / Tebra", "REST API", "Lower — well-documented modern API", "$10,000 – $25,000"],
+            ["Practice Fusion", "HL7 v2 or FHIR", "Medium", "$12,000 – $30,000"],
+          ],
+        },
+        afterTable:
+          "FHIR R4 is the modern interoperability standard that most major EHRs now support. A FHIR integration allows your custom application to read and write patient data, encounter records, scheduling information, and clinical documents in a standardised format. For new custom software projects, specifying FHIR R4 compatibility as a requirement from the outset is the right approach — it future-proofs the integration as EHR vendors continue to expand their FHIR support.",
+      },
+      {
+        heading: "HIPAA Compliance Requirements for Custom Software",
+        content:
+          "Building HIPAA-compliant custom software is not about adding a compliance feature at the end — it requires design decisions made from the first line of architecture. A development team that does not understand HIPAA will produce software that creates liability rather than eliminates it. Here are the specific technical requirements that HIPAA's Security Rule places on custom software handling PHI:",
+        list: [
+          "Encryption at rest — all PHI stored in databases and file systems must be encrypted using AES-256 or equivalent",
+          "Encryption in transit — all data transmitted between users and the application must use TLS 1.2 or higher; plain HTTP connections must be blocked",
+          "Access controls and audit logging — every access to PHI must be logged with user identity, timestamp, and action taken; logs must be retained for six years",
+          "Role-based access control — staff can only access PHI relevant to their clinical or administrative role; billing staff should not have access to clinical notes",
+          "Automatic session timeout — inactive sessions must time out after a defined period to prevent unauthorised access on shared workstations",
+          "Backup and disaster recovery — PHI must be backed up with documented recovery procedures and defined recovery time objectives",
+          "Business Associate Agreements — every third-party service handling PHI including cloud hosting, email, and analytics must sign a BAA before receiving any patient data",
+        ],
+        afterContent:
+          "A development team building HIPAA-compliant software should provide a Security Risk Analysis document as part of the project deliverables — a written assessment of risks to PHI confidentiality, integrity, and availability. This document is required by HIPAA and forms the foundation of your compliance documentation for auditors and partners.",
+      },
+      {
+        heading: "Cost Ranges for Healthcare Software Projects",
+        content:
+          "Healthcare software development costs more than equivalent non-healthcare projects for two reasons: HIPAA compliance architecture adds 20–35% to development time, and EHR integration work is technically complex. Here are 2025 cost ranges using US-based development teams:",
+        table: {
+          headers: ["Project Type", "Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Patient portal (focused)", "Booking, intake forms, invoicing", "$30,000 – $55,000", "8–12 weeks"],
+            ["Patient portal (full-featured)", "All features including telehealth and messaging", "$55,000 – $110,000", "14–22 weeks"],
+            ["Custom scheduling system", "Multi-provider, multi-location, waitlist management", "$25,000 – $55,000", "8–14 weeks"],
+            ["RCM dashboard and billing tools", "Claims tracking, denial management, AR reporting", "$30,000 – $70,000", "10–16 weeks"],
+            ["EHR integration (single EHR)", "FHIR-based read and write integration", "$15,000 – $60,000", "4–12 weeks"],
+            ["Telehealth platform", "HIPAA-compliant video, messaging, record access", "$50,000 – $120,000", "12–20 weeks"],
+            ["Full practice management system", "All modules with EHR integration and patient portal", "$200,000 – $500,000+", "8–18 months"],
+          ],
+        },
+        afterTable:
+          "Most healthcare businesses start with a focused project — typically a patient portal or scheduling system — and phase additional modules over 12–24 months. This approach delivers value early, allows requirements to be refined based on real usage, and manages the capital investment over time. Each subsequent module benefits from the HIPAA-compliant architecture established in the first phase, reducing incremental compliance cost for later builds.",
+      },
+    ],
+    cta: {
+      heading: "Build HIPAA-Compliant Software for Your Healthcare Business",
+      text: "Tell us about your practice and what you need to improve — we will scope a custom solution and give you an honest cost estimate with a clear compliance plan.",
+      link: "/contact",
+      buttonText: "Request a Free Consultation",
+    },
+  },
+
+  {
+    slug: "custom-software-for-real-estate",
+    title: "Custom Software for Real Estate Businesses: CRM, Portals, and Automation",
+    metaTitle: "Custom Real Estate Software 2025 | CRM, Portals & Automation",
+    metaDescription: "Custom CRM, property portals, and automation tools built for real estate agencies and brokerages. What to build, what it costs, and what ROI looks like.",
+    tag: "Industry",
+    publishDate: "May 30, 2026",
+    readTime: "8 min read",
+    summary:
+      "Real estate software built for the average agency rarely fits any specific agency's workflow. Here is what growing brokerages and agencies are building custom in 2025 — and what it costs to build a platform your competitors cannot buy off the shelf.",
+    intro:
+      "Real estate is a relationship-driven business built on speed, data, and communication. The problem is that most software available to agencies and brokerages was built for the average agent workflow — not the specific way your team qualifies leads, manages listings, coordinates viewings, and closes deals. Off-the-shelf CRMs like Salesforce and HubSpot are generic, and real estate-specific tools like Propertybase and LionDesk often charge per-seat fees that scale quickly without delivering the customisation growing agencies need. Custom software gives real estate businesses a CRM that fits their pipeline exactly, a client portal that impresses buyers and sellers, and automation that removes the manual follow-up work consuming hours every week.",
+    sections: [
+      {
+        heading: "Why Real Estate Agencies Use Custom CRM vs Generic Tools",
+        content:
+          "Real estate sales cycles are long, multi-touch, and involve complex relationships between buyers, sellers, landlords, tenants, lenders, solicitors, and agents. Generic CRMs are built for a linear B2B sales pipeline — prospect, qualify, propose, close. Real estate deals do not work that way, and forcing your pipeline into that model creates friction your agents feel every day.",
+        subsections: [
+          {
+            subheading: "Generic CRM Limitations for Real Estate",
+            text: "When an agency tries to run its pipeline through Salesforce or HubSpot, the mismatch becomes operational friction. A single property listing may have multiple interested buyers tracked in parallel — each at a different stage, with different financing situations, different timelines, and different requirements. A single buyer may be evaluating multiple properties simultaneously. A vendor contact may be both a seller now and a potential buyer in 12 months. Managing these multi-directional relationships in a tool designed for single-thread B2B sales requires constant workarounds — custom fields, tags, multiple pipelines, and manual cross-referencing that agents do in their heads because the CRM cannot do it for them.",
+          },
+          {
+            subheading: "What a Custom Real Estate CRM Does Instead",
+            text: "A custom CRM for a real estate agency is built around the relationship structures that real estate actually involves. It tracks multiple buyer-to-property matches simultaneously, maintains a vendor-buyer relationship graph rather than a linear pipeline, surfaces full communication history across all parties in a deal, automates follow-up sequences triggered by deal stage transitions and time-based rules, and integrates directly with your listing management system so property updates and price changes trigger relevant buyer alerts without manual intervention. Agents spend less time updating the system and more time with clients — because the CRM reflects how real estate deals actually move.",
+          },
+        ],
+      },
+      {
+        heading: "Property Listing Management Systems",
+        content:
+          "For agencies managing a significant portfolio — whether sales, lettings, or commercial — listing management is one of the highest-value areas for custom software. Generic tools offer standard templates and manual publishing workflows. A custom listing management system integrates your entire workflow from instruction to completion.",
+        list: [
+          "Instruction intake — structured digital workflow for capturing property details, owner information, and agency agreement terms when a new instruction is taken on",
+          "Media management — centralised storage and organisation for photographs, floor plans, EPC certificates, and marketing materials with version control and access permissions",
+          "Multi-channel publishing — automated simultaneous publishing to Rightmove, Zoopla, OnTheMarket, and your own website from a single data entry point, eliminating duplicate input",
+          "Price change management — update a listing price once and the change propagates to all channels simultaneously with automatic vendor notification",
+          "Viewing scheduling — integrated calendar showing agent availability, automated confirmation emails to buyers, and post-viewing feedback capture with follow-up triggers",
+          "Offer management — formal offer recording, vendor counter-offer tracking, and sales progression status from accepted offer through to exchange and completion",
+          "Compliance documentation — automated AML check prompts, solicitor details capture, ID verification workflow, and memorandum of sale generation",
+        ],
+        afterContent:
+          "Agencies managing 50 or more active listings typically find that a custom listing management system saves each agent 3–5 hours per week in administrative work. Across a 10-agent team at an average cost of $150,000 per agent per year, recovering 4 hours weekly is worth approximately $300,000 in productive capacity annually.",
+      },
+      {
+        heading: "Client and Lead Portal Development",
+        content:
+          "A client portal for a real estate business is a branded, secure interface where buyers and vendors log in to track transaction progress, access documents, and communicate with their agent. It replaces unstructured email threads and status phone calls with a structured workspace that clients check themselves.",
+        table: {
+          headers: ["Portal Feature", "What It Does", "Business Impact"],
+          rows: [
+            ["Live transaction tracker", "Step-by-step progress from offer to completion", "Reduces inbound status calls by 60–80%"],
+            ["Document centre", "Upload and share solicitor documents, survey reports, and contracts", "Eliminates emailing large attachments back and forth"],
+            ["Viewing history and feedback", "Buyers see past viewings; agents see buyer notes in one place", "Aligns all parties without manual updates"],
+            ["Offer status dashboard", "Vendor sees all offers received, status, and agent recommendation", "Professional, transparent offer management"],
+            ["Secure messaging", "Threaded conversation between client and agent team", "Reduces email volume and context-switching"],
+            ["New listing alerts", "Buyers receive personalised notifications for matching new listings", "Keeps active buyers engaged and reduces lost leads"],
+            ["Completion checklist", "Buyer and vendor track outstanding items before exchange", "Reduces last-minute delays at critical stages"],
+          ],
+        },
+        afterTable:
+          "Agencies that deploy a client portal report higher client satisfaction scores, fewer complaints about communication, and improved referral rates. A client who logs into a branded portal to see their transaction progressing feels in control of the process — and that feeling of control is one of the strongest drivers of positive reviews and word-of-mouth in real estate.",
+      },
+      {
+        heading: "Automated Follow-Up and Pipeline Tools",
+        content:
+          "Real estate lead management is notoriously time-intensive. Responding to an online property enquiry within five minutes is statistically 100 times more likely to convert to a qualified lead than responding after 30 minutes — yet most agencies have no automated system to ensure fast, personalised first contact. Custom automation changes this entirely.",
+        subsections: [
+          {
+            subheading: "Lead Response Automation",
+            text: "A custom automation system triggers an immediate, personalised response to every incoming lead — from your website, Rightmove, Zoopla, or a portal enquiry — within seconds of arrival. The response includes the specific property details the buyer asked about, similar listings matching their stated criteria, a booking link for an immediate viewing, and the agent's contact details. The lead is simultaneously created in the CRM, assigned to the appropriate agent, and scheduled for a follow-up task. Without automation, a 30-minute response time is optimistic for most agencies during busy periods. With automation, every lead gets an intelligent response in under 60 seconds, regardless of the time of day.",
+          },
+          {
+            subheading: "Long-Term Nurture Sequences",
+            text: "Most real estate leads do not convert on first contact. The average buyer searches for 6–12 months before purchasing. A custom nurture sequence keeps your agency front-of-mind throughout that period through automated, personalised touchpoints: monthly market reports for the buyer's target area, price reduction alerts for properties on their watchlist, new listing notifications matching their criteria, and check-in messages at key intervals. These sequences run automatically, require no agent time, and consistently surface warm leads who have been quietly tracking the market for months and are now ready to move. The return on automated nurture is measurable in reactivated leads that most agencies currently lose to competitors who maintained contact.",
+          },
+        ],
+      },
+      {
+        heading: "MLS and Third-Party API Integrations",
+        content:
+          "Real estate businesses operate in a data-rich ecosystem where the ability to connect to external data sources — MLS databases, land registry, property data providers, mapping services, and financing platforms — is a significant operational advantage. Custom software allows these integrations to be built cleanly and maintained reliably as the external APIs evolve.",
+        list: [
+          "MLS integration — read and write access to Multiple Listing Service databases for agencies operating in the US market, keeping listings synchronised without manual entry",
+          "Rightmove, Zoopla, and OnTheMarket feeds — automated feed management for UK agencies, handling the technical specifications of each portal's data format",
+          "Land Registry API — automatic property ownership and title information retrieval, reducing manual research time during listing and sales progression",
+          "Valuation and AVM data — integration with automated valuation model providers for data-driven property valuation support in listing presentations",
+          "Mortgage and affordability calculators — embedded financing tools connected to live rate data, giving buyers real affordability information within your client portal",
+          "Google Maps and Streetview — property location visualisation, neighbourhood data overlays, and commute time calculators built directly into your listings interface",
+          "E-signature platforms — DocuSign or HelloSign integration for digital signing of agency agreements, offer letters, and compliance documents",
+        ],
+        afterContent:
+          "Each integration adds $5,000–$20,000 to a custom build depending on the complexity of the external API and the business logic required. The most common starting set for a UK residential agency is Rightmove and Zoopla feeds, e-signature, and Land Registry — typically $20,000–$40,000 in integration work on top of the core platform build.",
+      },
+      {
+        heading: "Cost Ranges for Real Estate Software",
+        content:
+          "Real estate software costs vary based on the size of the agency, the features required, and the number of external integrations. Here are 2025 cost ranges for the most common project types using US or UK development teams:",
+        table: {
+          headers: ["Project Type", "Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Custom real estate CRM", "Pipeline management, contact records, deal tracking, basic automation", "$40,000 – $80,000", "10–16 weeks"],
+            ["Listing management system", "Instruction intake, media management, multi-channel publishing", "$30,000 – $65,000", "8–14 weeks"],
+            ["Client portal (standard)", "Transaction tracker, document sharing, messaging, offer management", "$35,000 – $70,000", "10–14 weeks"],
+            ["Lead automation system", "Instant response, nurture sequences, CRM integration", "$20,000 – $45,000", "6–10 weeks"],
+            ["Full agency platform", "CRM, listings, client portal, automation, and portal integrations", "$120,000 – $250,000", "5–10 months"],
+            ["Portal integrations (per portal)", "Rightmove, Zoopla, MLS data feeds", "$8,000 – $20,000 each", "3–6 weeks each"],
+          ],
+        },
+        afterTable:
+          "Most growing agencies start with a custom CRM and client portal — the two investments with the most immediate impact on agent productivity and client satisfaction. Listing management and automation modules typically follow in a second phase once the core CRM is live and the team has had 3–6 months of operational experience informing what the automation should actually do.",
+      },
+    ],
+    cta: {
+      heading: "Build a Custom Platform for Your Real Estate Business",
+      text: "Tell us about your agency — team size, current tools, and the bottlenecks limiting your growth. We will design a custom solution and give you an honest cost estimate.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];

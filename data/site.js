@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-for-real-estate",
+    title: "Custom Software for Real Estate Businesses: CRM, Portals, and Automation",
+    tag: "Industry",
+    summary:
+      "Real estate software built for the average agency rarely fits any specific agency's workflow. Here is what growing brokerages are building custom in 2025 — and what it costs to build a platform your competitors cannot buy off the shelf.",
+  },
+  {
+    url: "/insights/custom-software-for-healthcare-businesses",
+    title: "Custom Software for Healthcare Businesses: What to Build and What It Costs",
+    tag: "Industry",
+    summary:
+      "Healthcare businesses consistently outgrow generic practice management software. Here is what clinics and practices are building custom in 2025 — and what HIPAA-compliant development actually costs.",
+  },
+  {
+    url: "/insights/custom-reporting-vs-power-bi",
+    title: "Custom Business Dashboard vs Power BI: Which Is Better for Small Business?",
+    tag: "Comparison",
+    summary:
+      "Power BI is a powerful analytics platform — but setting it up correctly requires specialist skills most small businesses do not have. A custom reporting dashboard gives you exactly the KPIs you need, from day one.",
+  },
+  {
     url: "/insights/custom-software-vs-no-code-tools",
     title: "Custom Software vs No-Code Tools: Which Is Right for Your Business?",
     tag: "Comparison",
