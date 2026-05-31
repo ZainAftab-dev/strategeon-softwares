@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-for-logistics-companies",
+    title: "Custom Logistics Software: Fleet, Dispatch, and Delivery Management",
+    tag: "Industry",
+    summary:
+      "Logistics companies running dispatch on spreadsheets and tracking deliveries by phone call are losing customers to competitors with real-time visibility tools. Here is what custom logistics software looks like and what it costs.",
+  },
+  {
+    url: "/insights/custom-software-for-construction-companies",
+    title: "Custom Software for Construction Companies: Project, Field, and Finance",
+    tag: "Industry",
+    summary:
+      "Construction companies operating on spreadsheets and disconnected apps bleed money through poor job costing, slow field reporting, and subcontractor management friction. Custom software solves these problems where generic tools leave gaps.",
+  },
+  {
+    url: "/insights/custom-software-for-law-firms",
+    title: "Custom Software for Law Firms: Case Management, Billing, and Client Portals",
+    tag: "Industry",
+    summary:
+      "Law firms running on generic tools lose billable hours to manual time entry, missed billing opportunities, and inefficient document management. Custom software solves these problems at the workflow level.",
+  },
+  {
     url: "/insights/custom-software-for-real-estate",
     title: "Custom Software for Real Estate Businesses: CRM, Portals, and Automation",
     tag: "Industry",

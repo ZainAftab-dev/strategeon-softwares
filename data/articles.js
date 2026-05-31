@@ -2073,4 +2073,340 @@ export const articles = [
       buttonText: "Book a Free Consultation",
     },
   },
+
+  {
+    slug: "custom-software-for-law-firms",
+    title: "Custom Software for Law Firms: Case Management, Billing, and Client Portals",
+    metaTitle: "Custom Law Firm Software | Case Management & Billing Systems",
+    metaDescription: "Custom case management, time tracking, billing, and client portals built for law firms. Replace Clio or build on top of it — here is what works.",
+    tag: "Industry",
+    publishDate: "May 31, 2026",
+    readTime: "9 min read",
+    summary:
+      "Law firms running on generic tools lose billable hours to manual time entry, missed billing opportunities, and inefficient document management. Custom software solves these problems at the workflow level.",
+    intro:
+      "Law firms operate under unusual constraints: every minute counts literally, client confidentiality is non-negotiable, and the workflows — from matter intake to final billing — are complex enough that generic tools force constant workarounds. Clio, MyCase, and PracticePanther serve the average small firm reasonably well. But as firms grow, take on more complex matters, or operate across multiple practice areas, the limitations of off-the-shelf practice management software create real revenue leakage and operational bottlenecks. This guide explains what law firms typically build custom — and what it costs.",
+    sections: [
+      {
+        heading: "Why Law Firms Build Custom Case Management Systems",
+        content:
+          "The core problem with generic practice management tools is that they are built for the median law firm. If your firm's workflows deviate from that median — and most growing firms' do — every deviation becomes a manual workaround that costs someone time every day. Common pain points that drive firms toward custom development include billing structures that off-the-shelf tools cannot model correctly (blended rates, success fees, retainer reconciliation), practice-specific matter workflows that do not map onto the generic stages provided by commercial tools, reporting requirements that the built-in dashboards cannot produce without exporting to spreadsheets, and integration needs with specific court portals, document management systems, or accounting platforms that generic tools do not support. Custom software eliminates these workarounds by building the system around your firm's actual process — not a product manager's guess at what an average firm needs.",
+      },
+      {
+        heading: "Key Features Law Firms Build Custom",
+        content:
+          "A custom legal practice management system typically includes some or all of the following modules, built to the firm's specific requirements:",
+        table: {
+          headers: ["Feature", "What It Does", "Why Firms Build It Custom"],
+          rows: [
+            ["Matter management", "Tracks every open and closed matter with tasks, deadlines, and responsible attorneys", "Practice-specific workflows, stages, and custom field requirements"],
+            ["Time tracking", "Captures billable and non-billable time by matter, fee earner, and activity code", "Firm-specific activity codes, rounding rules, and billing rate hierarchies"],
+            ["Billing and invoicing", "Generates invoices from time entries, manages WIP, retainer reconciliation, and LEDES billing", "Complex billing arrangements generic tools cannot model"],
+            ["Document management", "Version-controlled document storage linked to matters, with permission controls", "Integration with existing DMS or court filing portals"],
+            ["Calendar and deadlines", "Statute of limitations tracking, court date calendaring, and automated deadline reminders", "Jurisdiction-specific deadline rules with automatic calculation"],
+            ["Conflict checking", "Searches all parties across open and closed matters before accepting new instructions", "Firm-specific conflict rules and escalation workflows"],
+            ["Client portal", "Secure client login for matter updates, document sharing, invoice payment, and messaging", "Branded, confidential communication replacing email for sensitive matters"],
+          ],
+        },
+        afterTable:
+          "Most firms do not build all of these at once. The highest-ROI starting point is usually billing and time tracking — the direct revenue-generating functions — combined with matter management. The client portal and document management typically follow in a second phase.",
+      },
+      {
+        heading: "Client Portal for Legal Services",
+        content:
+          "A well-built client portal is one of the most impactful investments a law firm can make. It replaces email chains — which are insecure, untracked, and inefficient — with a structured workspace where clients log in to see their matter status, access documents, approve invoices, and send messages that are automatically linked to the correct file. The key requirements for a legal client portal differ from a generic client portal because of the confidentiality and audit requirements involved.",
+        subsections: [
+          {
+            subheading: "Secure Document Sharing",
+            text: "Every document shared through the portal must be logged with timestamp and recipient identity, versioned so earlier drafts remain accessible, and permissioned so clients only see documents linked to their own matters. Encryption in transit and at rest is non-negotiable. The portal should require multi-factor authentication and generate an access log suitable for use in any future dispute about what was disclosed and when.",
+          },
+          {
+            subheading: "Invoice Payment and Trust Account Integration",
+            text: "Clients paying invoices through the portal should see a clear breakdown of time entries and disbursements, be able to pay by card or ACH, and receive an automatic receipt. For firms that hold client funds in trust accounts, the portal must clearly distinguish between trust account balances, fees billed against the retainer, and amounts due. Integration with the firm's accounting system — whether QuickBooks, Xero, or a custom general ledger — ensures payments reconcile automatically without manual re-entry.",
+          },
+          {
+            subheading: "Matter Status and Timeline",
+            text: "Clients want to know what is happening with their matter without having to email or call. A custom portal can surface the current status, the next key deadline, and any actions required from the client — a document to sign, a question to answer, an approval needed — in a clear dashboard. This single feature typically reduces inbound client status calls by 30–50%, recovering meaningful associate time every week.",
+          },
+        ],
+      },
+      {
+        heading: "Conflict of Interest Checking Systems",
+        content:
+          "Conflict of interest checking is a professional requirement, not a nice-to-have. For firms with hundreds or thousands of matters and thousands of parties — clients, opposing parties, witnesses, related entities — manual conflict checks are slow and unreliable. A custom conflict checking system indexes every party name, related entity, and individual associated with every matter in the firm's history and searches that database instantly when new instructions are received. Key requirements for a reliable conflict system include:",
+        list: [
+          "Phonetic and fuzzy matching — catches similar-sounding names even when spelled differently, such as O'Brien vs OBrien vs O Brien",
+          "Entity relationship mapping — flags conflicts when a new client is related to a previous adverse party even through a subsidiary or holding company",
+          "Search audit log — every conflict search is logged with timestamp, user, search terms, and results, providing a defensible record",
+          "Escalation workflow — potential conflicts trigger a review task assigned to a senior partner or designated conflicts officer, with a required approval before matter opening proceeds",
+          "Historical matter inclusion — closed matters remain searchable because confidentiality obligations survive matter closure",
+        ],
+        afterContent:
+          "Building a conflict system as part of a broader custom practice management platform typically adds $20,000–$40,000 to the project cost. The alternative — a missed conflict leading to disqualification, professional sanctions, or a malpractice claim — is substantially more expensive.",
+      },
+      {
+        heading: "Integration with Existing Practice Management Tools",
+        content:
+          "Many law firms use Clio, MyCase, or LexisNexis as a foundation and want to build supplementary tools rather than replace everything. Custom integration development — connecting a bespoke billing module or client portal to an existing Clio account via the Clio API — is often the most cost-effective starting point. These integrations typically cover:",
+        list: [
+          "Syncing matter and contact data from the existing PMS into the custom system in real time",
+          "Pulling time entries from the PMS into a custom billing engine for more complex invoice generation",
+          "Feeding custom portal messages and document upload notifications back into the PMS activity log",
+          "Connecting to court eFiling portals, legal research platforms, or external document signing services",
+          "Integrating with the firm's accounts software for automatic invoice reconciliation and payment tracking",
+        ],
+        afterContent:
+          "Integration-first builds typically cost 40–60% less than full replacement builds and carry lower operational risk because existing workflows are disrupted more gradually. They are the right starting point for firms with significant existing data in a current PMS whose core pain points are specific rather than systemic.",
+      },
+      {
+        heading: "Cost and Timeline for Legal Software",
+        content:
+          "Here are 2025 cost ranges for the most common legal software development projects using US or UK development teams:",
+        table: {
+          headers: ["Project Type", "Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Custom client portal", "Document sharing, invoice payment, matter status, messaging", "$35,000 – $70,000", "8–14 weeks"],
+            ["Billing and time tracking module", "Time entry, WIP management, invoice generation, LEDES billing", "$40,000 – $80,000", "10–16 weeks"],
+            ["Conflict checking system", "Party indexing, fuzzy search, escalation workflow, audit log", "$20,000 – $45,000", "6–10 weeks"],
+            ["Full custom matter management system", "All core PMS functions: matters, time, billing, documents, calendar", "$120,000 – $250,000", "5–10 months"],
+            ["Integration with Clio or similar PMS", "Custom modules connected to existing PMS via API", "$25,000 – $60,000", "6–12 weeks"],
+          ],
+        },
+        afterTable:
+          "Legal software development takes longer than equivalent tools in other industries because of the additional security, audit logging, and compliance requirements. A development partner with legal sector experience will understand these requirements without needing extensive briefing — ask for examples of previous legal software projects before committing.",
+      },
+    ],
+    cta: {
+      heading: "Build Custom Software for Your Law Firm",
+      text: "Tell us about your firm, your current tools, and the workflow bottlenecks costing you billable hours. We will design a custom solution and give you an honest cost estimate.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
+
+  {
+    slug: "custom-software-for-construction-companies",
+    title: "Custom Software for Construction Companies: Project, Field, and Finance",
+    metaTitle: "Custom Construction Software | Project & Field Management",
+    metaDescription: "Custom project management, field reporting, subcontractor portals, and job costing software for construction companies. What to build and what it costs.",
+    tag: "Industry",
+    publishDate: "May 31, 2026",
+    readTime: "9 min read",
+    summary:
+      "Construction companies operating on spreadsheets and disconnected apps bleed money through poor job costing, slow field reporting, and subcontractor management friction. Custom software solves these problems where generic tools leave gaps.",
+    intro:
+      "Construction is one of the most data-intensive industries in the world, and also one of the worst served by generic software. Procore costs $375–$1,500 per month and still requires significant manual workaround for any business with non-standard project types or workflows. Buildertrend and CoConstruct handle residential well but struggle with commercial, civil, or specialty subcontracting. The result is that most construction companies — from 15-person specialty contractors to 200-person regional builders — are running critical business functions on spreadsheets, paper forms, and text messages. This guide explains what construction companies are building custom in 2025 and what it costs.",
+    sections: [
+      {
+        heading: "Why Construction Companies Outgrow Generic Tools",
+        content:
+          "The problem with off-the-shelf construction software is not that it is badly built — it is built for an average construction company. Real construction businesses are not average. A mechanical subcontractor, a commercial fit-out company, a civil engineering firm, and a residential housebuilder all have fundamentally different workflows, billing structures, document requirements, and subcontractor relationships. Generic tools force all of them into the same interface and the same process — and the result is constant workarounds. The most common breaking points are:",
+        list: [
+          "Job costing that cannot handle the firm's contract structures — especially NEC, JCT, or AIA-format contracts with complex variations and retention management",
+          "Field reporting that requires internet access and a specific device type — useless on sites with no signal or workers who only have basic phones",
+          "Subcontractor portals that lack the specific document and payment application workflows the firm uses",
+          "Document control that cannot integrate with the firm's chosen drawing management platform",
+          "Finance modules that do not connect to the firm's accounting software, requiring manual re-entry of every job cost and invoice",
+        ],
+      },
+      {
+        heading: "Job Costing and Budget Tracking Systems",
+        content:
+          "Accurate job costing is the single most valuable software function for any construction business. A job costing system tracks every cost — labour, materials, plant hire, subcontractor payments, and overhead allocation — against each cost code on each project, and compares actual spend to the original budget in real time. The critical difference between a good and bad system is timing: if a foreman has to wait three days for office staff to enter timesheets before the job cost report updates, the project manager is flying blind for three days of every week. Key capabilities a custom job costing system should include:",
+        list: [
+          "Real-time cost entry from the field — operatives log time and materials directly from a mobile app, updating the job cost immediately",
+          "Subcontractor cost commitment tracking — purchase orders and subcontract values committed but not yet invoiced visible alongside actual spend",
+          "Variation and change order tracking — approved and pending variations tracked separately from the original budget, with clear earned-value reporting",
+          "Retention management — retention held and release schedules tracked per contract, with automatic alerts when retention becomes due",
+          "Forecasted final cost — the system projects cost at completion based on actual spend rate and remaining quantities, not just the original budget",
+          "Cost code hierarchy — costs captured at the level of detail needed for post-project analysis and future estimating",
+        ],
+        afterContent:
+          "A well-built job costing system typically pays for itself within two to three projects by identifying cost overruns while there is still time to act — rather than discovering them at month-end when the damage is done.",
+      },
+      {
+        heading: "Field Reporting and Daily Log Apps",
+        content:
+          "Field reporting is one of the highest-impact investments a construction company can make in custom software. Paper daily logs are never complete, rarely legible, frequently lost, and completely unsearchable. A custom field reporting app captures everything that happens on site in a structured, searchable format — and does so on the actual devices your site teams carry, in the connectivity conditions they actually work in.",
+        subsections: [
+          {
+            subheading: "What a Custom Field App Captures",
+            text: "A well-designed field app captures: daily labour headcount by trade and activity, plant and equipment on site, materials delivered and installed, weather conditions, progress against programme, subcontractor activity, site visitors, safety observations and toolbox talks, quality hold points and inspections, and any events — delays, accidents, instructions received, defects identified — that might later be relevant to a variation claim or dispute. Each entry is timestamped, geotagged, and linked to the relevant project, section, and cost code.",
+          },
+          {
+            subheading: "Offline-First Design",
+            text: "Any field app built for construction must work offline. Sites without mobile signal or Wi-Fi are the norm, not the exception. An offline-first architecture stores all data locally on the device and syncs automatically when connectivity is restored. Operatives complete their daily log on site exactly as they would with full connectivity — the sync happens in the background when they are back in range. This is a specific and non-trivial architectural requirement that separates construction-grade software from generic mobile apps built for office environments.",
+          },
+        ],
+      },
+      {
+        heading: "Subcontractor Management and Portals",
+        content:
+          "Subcontractor management is one of the most friction-heavy workflows in construction — and one of the most poorly served by generic tools. A custom subcontractor management system covers two distinct areas: internal management of subcontractor relationships, and an external portal that subcontractors use to submit their own applications, documents, and queries.",
+        table: {
+          headers: ["Function", "Internal Tool Capability", "Subcontractor Portal Capability"],
+          rows: [
+            ["Payment applications", "Review, certify, and dispute subcontractor payment applications", "Subcontractors submit and track their own payment applications"],
+            ["Document management", "Track insurance certificates, H&S docs, and accreditations by expiry date", "Subcontractors upload and update their own compliance documents"],
+            ["PQQ and onboarding", "Manage pre-qualification questionnaires and approval status", "New subcontractors complete their own onboarding forms"],
+            ["Variations", "Issue, track, and price variations sent to subcontractors", "Subcontractors respond to and price variations online"],
+            ["Snagging and defects", "Issue defect notices with photos and required completion dates", "Subcontractors acknowledge and close out defects with evidence"],
+            ["Programme and access", "Control site access dates and notify subcontractors of programme changes", "Subcontractors view their programme and receive change notifications"],
+          ],
+        },
+        afterTable:
+          "A well-built subcontractor portal eliminates most of the email and phone traffic between your commercial team and your supply chain — reducing administrative load on both sides and creating a clear, auditable record of every instruction, application, and approval.",
+      },
+      {
+        heading: "Document Control and Compliance Tracking",
+        content:
+          "Document control is a contractual and regulatory requirement on almost every construction project, and a persistent operational headache. Drawings must be issued at the correct revision, every revision distributed to the correct recipients, and superseded drawings clearly marked so nobody builds from an out-of-date document. A custom document control system handles this automatically — and integrates with the firm's chosen drawing management platform rather than duplicating it.",
+        list: [
+          "Drawing register — every drawing tracked by number, title, current revision, and issue date, with automated distribution lists",
+          "Transmittal management — every document issue generates a numbered transmittal with the recipient list and a record of acknowledgement",
+          "Revision alerts — when a new revision is issued, everyone who received the previous revision is automatically notified",
+          "RFI management — requests for information tracked from issue through response, with a record of impact on programme and cost",
+          "Inspection and test records — quality hold points, ITPs, and sign-off records linked to the relevant drawing, floor, and zone",
+          "Health and safety compliance — COSHH assessments, risk assessments, method statements, and toolbox talk records tracked by project, date, and recipient",
+        ],
+      },
+      {
+        heading: "Cost to Build Construction Management Software",
+        content:
+          "Here are 2025 cost ranges for the most common construction software development projects using US or UK development teams:",
+        table: {
+          headers: ["Project Type", "Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Field reporting mobile app", "Daily log, labour, materials, photos, offline-first", "$45,000 – $90,000", "10–18 weeks"],
+            ["Custom job costing system", "Budget vs actual, cost codes, variations, retention, forecasts", "$55,000 – $110,000", "12–20 weeks"],
+            ["Subcontractor portal", "Payment apps, document upload, variations, snagging", "$40,000 – $80,000", "10–16 weeks"],
+            ["Document control system", "Drawing register, transmittals, RFIs, revision alerts", "$35,000 – $70,000", "8–14 weeks"],
+            ["Full project management platform", "All of the above plus programme tracking and commercial reporting", "$150,000 – $350,000", "6–14 months"],
+          ],
+        },
+        afterTable:
+          "Most construction companies start with the field app and job costing system — the two tools with the most immediate impact on site productivity and financial visibility. Subcontractor portals and document control follow in a second phase, typically funded by the savings generated in the first six months of live operation.",
+      },
+    ],
+    cta: {
+      heading: "Build Custom Software for Your Construction Business",
+      text: "Tell us about your projects, your current tools, and the workflow problems costing you time and money. We will design a solution that fits how you actually build.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
+
+  {
+    slug: "custom-software-for-logistics-companies",
+    title: "Custom Logistics Software: Fleet, Dispatch, and Delivery Management",
+    metaTitle: "Custom Logistics Software | Fleet, Dispatch & Delivery Management",
+    metaDescription: "Custom TMS, dispatch systems, driver apps, and delivery tracking platforms for logistics companies. What replaces manual spreadsheets and generic tools.",
+    tag: "Industry",
+    publishDate: "May 31, 2026",
+    readTime: "9 min read",
+    summary:
+      "Logistics companies running dispatch on spreadsheets and tracking deliveries by phone call are losing customers to competitors with real-time visibility tools. Here is what custom logistics software looks like and what it costs.",
+    intro:
+      "Logistics is a margin-thin industry where operational efficiency is the primary competitive advantage. The difference between a profitable route and an unprofitable one can be a single wasted mile. The difference between retaining a key customer and losing them can be whether they can see where their delivery is in real time. Most small and mid-size logistics companies manage these challenges with a combination of manual processes, WhatsApp groups, and generic tools that were not built for freight. This guide explains what logistics companies are building custom in 2025 — from dispatch and TMS systems to driver apps and customer delivery portals — and what each piece costs.",
+    sections: [
+      {
+        heading: "Why Logistics Companies Need Custom Dispatch and TMS Systems",
+        content:
+          "A Transport Management System is the operational centre of any logistics business — it manages orders, assigns vehicles and drivers, optimises routes, tracks deliveries, and records proof of delivery. Off-the-shelf TMS options exist at every price point, but they share a common limitation: they model a generic logistics operation, and most real businesses are not generic. The most common reasons logistics companies build custom systems are:",
+        list: [
+          "Unique rate structures — contract pricing with specific customers, surcharges for fuel, weight, hazardous goods, or time-sensitive delivery windows that generic TMS tools cannot model correctly",
+          "Specific vehicle types or load constraints — specialist vehicles, multi-temperature trailers, or load-planning rules that off-the-shelf tools cannot enforce",
+          "Integration requirements — connecting to a customer's WMS, ERP, or order management system via a specific API that generic TMS tools do not support natively",
+          "Proof of delivery requirements — customers requiring specific ePOD formats, photos at specific points in the delivery process, or signature capture with particular legal language",
+          "Subcontractor and owner-operator management — managing a mixed fleet of employed drivers and subcontractors with different rate structures, payment terms, and compliance requirements",
+          "Reporting requirements — producing specific management reports, customer-facing performance data, or regulatory reports that standard TMS dashboards cannot generate",
+        ],
+      },
+      {
+        heading: "Route Optimisation and Driver App Development",
+        content:
+          "Route optimisation is one of the highest-ROI investments in any logistics software build. A 5% reduction in total mileage across a fleet of 30 vehicles saves approximately $45,000–$75,000 per year in fuel alone, before factoring in reduced driver hours, vehicle wear, and improved delivery windows. A custom driver app brings the optimised route to the driver with the full context of each stop.",
+        subsections: [
+          {
+            subheading: "Route Optimisation Engine",
+            text: "A custom route optimisation system takes a set of delivery or collection stops, vehicle capacity and type constraints, customer time windows, driver hours regulations, and road network data and produces the most efficient sequence of stops for each vehicle. The optimisation can run once at the start of the day or dynamically in real time as new orders arrive, vehicles complete stops, or traffic conditions change. Most builds use an underlying optimisation API — Google Routes Optimisation, HERE, or Routific — and build custom logic and integration on top, bringing the cost to $25,000–$60,000 for the optimisation layer.",
+          },
+          {
+            subheading: "Driver Mobile App",
+            text: "The driver app is the operational interface between the dispatch system and the person making the delivery. A well-built driver app presents the day's manifest in optimised order, provides turn-by-turn navigation integrated with Google Maps or HERE, captures digital proof of delivery including signature, photo, and timestamp at each stop, allows drivers to report exceptions — access issues, damaged goods, refused deliveries — with photo evidence, and sends real-time location data to the dispatch system and customer tracking portal. The app must work offline for operations in areas with poor mobile signal, syncing all captured data when connectivity resumes.",
+          },
+        ],
+      },
+      {
+        heading: "Customer Delivery Tracking Portals",
+        content:
+          "Real-time delivery visibility has moved from a competitive differentiator to a basic customer expectation. A custom customer delivery tracking portal gives your clients a self-service window into the status of their deliveries without requiring them to call your dispatch team — reducing inbound calls, improving customer satisfaction, and creating a clear record of every delivery event.",
+        table: {
+          headers: ["Feature", "What It Shows", "Customer Benefit"],
+          rows: [
+            ["Live vehicle tracking", "Real-time GPS position of the vehicle carrying their delivery", "Accurate ETA without calling dispatch"],
+            ["Delivery status updates", "Automated notifications at key milestones: loaded, en route, approaching, delivered", "Proactive communication without manual effort from your team"],
+            ["Proof of delivery", "Instant access to signed ePOD, photos, and timestamp immediately on delivery", "Immediate documentation for records and billing queries"],
+            ["Exception notifications", "Automatic alert when a delivery cannot be completed, with reason and next steps", "No surprise failed deliveries — customers can plan responses"],
+            ["Historical delivery records", "Searchable archive of all past deliveries, PODs, and performance data", "Self-service access to records for invoice queries and audits"],
+            ["Booking and order entry", "Customers place orders directly into your system with their own reference numbers", "Eliminates email and phone order entry — reduces errors on both sides"],
+          ],
+        },
+        afterTable:
+          "The customer tracking portal is often the first piece of custom logistics software a business builds, because it is visible to customers, differentiates you from competitors still using phone calls, and has a direct impact on retention. Building the portal on the same underlying data architecture as the dispatch system ensures delivery events appear in real time rather than on a delay.",
+      },
+      {
+        heading: "Fleet Management and Maintenance Tracking",
+        content:
+          "Fleet management software tracks the physical assets — vehicles and equipment — alongside operational data. A custom fleet management module connects to the TMS to provide a complete picture of each asset: where it is, what it is carrying, how many miles it has covered this week, and when it is next due for service. Key capabilities include:",
+        list: [
+          "Planned maintenance scheduling — service intervals, MOT or inspection dates, tachograph calibration, and LOLER inspection records tracked by vehicle with automated reminders",
+          "Defect reporting — drivers complete a daily walkaround check in the driver app, logging any defects that must be cleared before the vehicle can be dispatched",
+          "Repair and downtime tracking — every repair, its cause, cost, and downtime impact recorded against the vehicle for whole-life cost analysis",
+          "Fuel consumption tracking — fuel card data integrated with mileage data to calculate fuel efficiency per vehicle and per route, identifying underperforming assets",
+          "Tachograph and driver hours compliance — tachograph data imported automatically, with alerts when a driver is approaching daily or weekly hours limits",
+          "Vehicle document management — VED, operator licence, insurance certificates, and inspection records stored against each vehicle with expiry date alerts",
+        ],
+        afterContent:
+          "Fleet management is often added in the second phase of a logistics software build, once the dispatch and tracking systems are live. The most common trigger for prioritising it earlier is an operator licence renewal or a Traffic Commissioner review, where having auditable compliance records is essential.",
+      },
+      {
+        heading: "Integration with GPS, ELD, and Freight Platforms",
+        content:
+          "Custom logistics software is only as good as the data that flows into it. Building without integrating the key data sources that already exist in your operation creates a system that is manually maintained and quickly falls behind reality. The most important integrations for a logistics TMS are:",
+        list: [
+          "GPS and telematics — integrating with existing telematics providers such as Samsara, Verizon Connect, TomTom Webfleet, or Geotab to pull real-time vehicle positions, trip data, and driver behaviour metrics",
+          "ELD compliance — for US operations, integrating ELD data from FMCSA-compliant devices to import hours-of-service data directly, eliminating manual entry and reducing compliance risk",
+          "Freight marketplace platforms — connecting to Uber Freight, Convoy, DAT, or equivalent UK pallet networks to import spot freight jobs or publish available capacity",
+          "Customer order management systems — EDI or API connections to key customers' ERP or WMS systems for automatic order import, eliminating manual phone and email order entry",
+          "Fuel card providers — importing fuel transaction data from providers like WEX, Fleet One, or Allstar for automatic allocation against vehicles and jobs",
+          "Accounting software — syncing job data, driver pay, and supplier invoices with QuickBooks, Xero, or Sage to eliminate manual bookkeeping entry",
+        ],
+      },
+      {
+        heading: "Cost to Build a Custom TMS",
+        content:
+          "Here are 2025 cost ranges for the most common logistics software development projects using US or UK development teams:",
+        table: {
+          headers: ["Project Type", "Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Customer tracking portal", "Live tracking, delivery notifications, ePOD, order history", "$30,000 – $60,000", "8–12 weeks"],
+            ["Driver mobile app", "Manifest, navigation, ePOD, exception reporting, offline mode", "$45,000 – $90,000", "10–18 weeks"],
+            ["Dispatch and order management system", "Order entry, vehicle and driver assignment, live dispatch board", "$55,000 – $110,000", "12–20 weeks"],
+            ["Route optimisation layer", "Automated daily route build with time window and capacity constraints", "$25,000 – $60,000", "8–14 weeks"],
+            ["Fleet management module", "Maintenance scheduling, defect reporting, compliance tracking", "$30,000 – $65,000", "8–14 weeks"],
+            ["Full custom TMS", "All of the above plus customer portal, integrations, and reporting", "$180,000 – $400,000", "8–16 months"],
+          ],
+        },
+        afterTable:
+          "Most logistics businesses start with a driver app and customer tracking portal — the two investments that immediately improve customer satisfaction and reduce dispatch team workload. The full TMS typically follows in a second phase, built on the same data architecture as the initial apps and therefore avoiding expensive retrofitting.",
+      },
+    ],
+    cta: {
+      heading: "Build Custom Software for Your Logistics Business",
+      text: "Tell us about your fleet, your customers, and the operational problems costing you time and margin. We will design a custom solution and give you an honest cost estimate.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];
