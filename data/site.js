@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/how-to-calculate-roi-custom-software",
+    title: "How to Calculate the ROI of Custom Software Before You Build",
+    tag: "How-To",
+    summary:
+      "A software build is an investment, not a cost — and like any investment, the return can be calculated before you commit. This guide gives you a practical framework for building the ROI case for custom software.",
+  },
+  {
+    url: "/insights/how-to-choose-software-development-company-usa",
+    title: "How to Choose a Software Development Company in the USA (2025 Guide)",
+    tag: "How-To",
+    summary:
+      "Choosing the wrong software development company is one of the most expensive mistakes a business can make. This guide gives you a practical evaluation framework — portfolio checks, red flags, pricing models, and the questions that separate credible firms from the rest.",
+  },
+  {
+    url: "/insights/custom-software-for-financial-services",
+    title: "Custom Software for Financial Services: Compliance, CRM, and Automation",
+    tag: "Industry",
+    summary:
+      "Financial services firms run on compliance, client relationships, and precise reporting — three areas where generic software consistently falls short. Here is what financial businesses are building custom in 2025 and what it costs.",
+  },
+  {
     url: "/insights/custom-software-for-logistics-companies",
     title: "Custom Logistics Software: Fleet, Dispatch, and Delivery Management",
     tag: "Industry",
