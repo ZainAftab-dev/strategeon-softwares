@@ -85,7 +85,7 @@ export function CaseStudyGrid() {
                   )}
                 </div>
                 <h3>{item.title}</h3>
-                <p>{item.summary}</p>
+                <p style={{ flex: 1 }}>{item.summary}</p>
                 <p className="case-result"><strong>↗ {item.result}</strong></p>
                 <div className="project-actions single-action">
                   <motion.a

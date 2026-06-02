@@ -134,8 +134,8 @@ export const caseStudies = [
     title: "Strategeon LLC — Networking Store",
     category: "Business",
     badge: "Live Client Project",
-    result: "Moved from WhatsApp orders to a professional storefront — sales up from day one",
-    summary: "Strategeon LLC was running their TP-Link networking products business entirely through WhatsApp DMs and word of mouth — losing customers who couldn't find them online. We built a full e-commerce storefront with product catalogues, category pages, mobile-optimised design, and a smooth checkout flow. Within the first week of launch they processed their first online orders and gained a professional brand presence that competitors couldn't match at their price point.",
+    result: "First online orders processed within a week of launch",
+    summary: "A networking products retailer running entirely on WhatsApp DMs needed a proper storefront. We built a conversion-optimised e-commerce site with product catalogues, category pages, and a smooth mobile checkout.",
     demoUrl: "https://strategeonllc.com/",
     image: "/projects/strategeon.webp"
   },
