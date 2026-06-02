@@ -75,10 +75,18 @@ export function CaseStudyGrid() {
                 <span>{item.title}</span>
               </div>
               <div className="case-body">
-                <span className="pill">{item.category}</span>
+                <div className="case-meta">
+                  <span className="pill">{item.category}</span>
+                  {item.badge && (
+                    <span className="pill pill-live">
+                      <span className="live-dot" />
+                      {item.badge}
+                    </span>
+                  )}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.summary}</p>
-                <p><strong>{item.result}</strong></p>
+                <p className="case-result"><strong>↗ {item.result}</strong></p>
                 <div className="project-actions single-action">
                   <motion.a
                     className="btn btn-primary btn-shimmer"

@@ -174,6 +174,17 @@ button {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.btn-whatsapp {
+  color: #fff;
+  background: #25d366;
+  border-color: #25d366;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.28);
+}
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+}
+
 .btn-light {
   color: var(--ink);
   background: var(--white);
@@ -738,6 +749,40 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.case-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.pill-live {
+  background: #edfbf2;
+  border-color: #a3e8bb;
+  color: #12773e;
+  font-size: 13px;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #25d366;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.case-result {
+  color: #1688ff;
+  margin-top: 6px;
 }
 
 .project-actions {
