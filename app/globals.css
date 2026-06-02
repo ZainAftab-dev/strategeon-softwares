@@ -2454,6 +2454,58 @@ body.cursor-hidden * {
   margin-top: 20px;
 }
 
+.clutch-badge-static {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: box-shadow 0.2s;
+}
+
+.clutch-badge-static:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.clutch-badge-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #EF4335;
+}
+
+.clutch-badge-divider {
+  width: 1px;
+  height: 28px;
+  background: #e2e8f0;
+}
+
+.clutch-badge-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.clutch-badge-stars {
+  color: #f5a623;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.clutch-badge-label {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
 /* ── Pricing signal ── */
 .price-hint {
   display: flex;

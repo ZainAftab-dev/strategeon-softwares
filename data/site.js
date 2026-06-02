@@ -395,6 +395,17 @@ export const insights = [
 
 export const reviews = [
   {
+    name: "Usama Aftab",
+    initials: "UA",
+    location: "United Kingdom / 2 Jun 2026",
+    rating: "5.0",
+    order: "Verified Clutch review / E-Commerce Web Development",
+    headline: "They came in way more affordable without cutting corners on quality.",
+    role: "Owner, Networking & Connectivity Hardware Retailer",
+    quote:
+      "Strategeon Softwares designed and developed our e-commerce site from scratch. The team built the platform, set up product pages, and ensured mobile compatibility — all delivered on time and within budget."
+  },
+  {
     name: "Michael Anderson",
     initials: "MA",
     location: "Austin / 12 May 2026",
