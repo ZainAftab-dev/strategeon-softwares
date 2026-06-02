@@ -1200,17 +1200,6 @@ button {
     display: none;
   }
 
-  .nav-actions .btn-whatsapp {
-    display: inline-flex;
-    padding: 9px;
-    min-width: 0;
-    border-radius: 50%;
-  }
-
-  .nav-actions .btn-whatsapp .whatsapp-label {
-    display: none;
-  }
-
   .hero-grid,
   .split {
     grid-template-columns: 1fr;
