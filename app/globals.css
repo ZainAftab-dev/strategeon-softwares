@@ -2454,6 +2454,13 @@ body.cursor-hidden * {
   margin-top: 20px;
 }
 
+.carousel-bottom-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 .clutch-badge-static {
   display: inline-flex;
   align-items: center;

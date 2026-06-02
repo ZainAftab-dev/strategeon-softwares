@@ -51,35 +51,38 @@ export function ReviewsCarousel() {
         </motion.article>
       </AnimatePresence>
 
-      <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "10px" }}>
+      {/* Bottom row: stars+dots left, Clutch badge right */}
+      <div className="carousel-bottom-row">
+        <div>
+          {/* Star ratings — staggered fill */}
+          <div className="carousel-stars">
+            {[1, 2, 3, 4, 5].map((star, i) => (
+              <motion.span
+                key={`${current}-${star}`}
+                className="star"
+                initial={{ opacity: 0, scale: 0.4 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.07, duration: 0.25 }}
+              >
+                ★
+              </motion.span>
+            ))}
+          </div>
+
+          {/* Dot indicators */}
+          <div className="carousel-dots">
+            {reviews.map((_, i) => (
+              <button
+                key={i}
+                className={`carousel-dot${i === current ? " active" : ""}`}
+                onClick={() => setCurrent(i)}
+                aria-label={`Review ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
         <ClutchBadge />
-      </div>
-
-      {/* Star ratings — staggered fill */}
-      <div className="carousel-stars">
-        {[1, 2, 3, 4, 5].map((star, i) => (
-          <motion.span
-            key={`${current}-${star}`}
-            className="star"
-            initial={{ opacity: 0, scale: 0.4 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: i * 0.07, duration: 0.25 }}
-          >
-            ★
-          </motion.span>
-        ))}
-      </div>
-
-      {/* Dot indicators */}
-      <div className="carousel-dots">
-        {reviews.map((_, i) => (
-          <button
-            key={i}
-            className={`carousel-dot${i === current ? " active" : ""}`}
-            onClick={() => setCurrent(i)}
-            aria-label={`Review ${i + 1}`}
-          />
-        ))}
       </div>
     </div>
   );
