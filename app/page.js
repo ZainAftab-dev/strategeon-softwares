@@ -48,6 +48,7 @@ const homeSchema = {
 };
 
 import Link from "next/link";
+import Script from "next/script";
 import { MonitorSmartphone } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
@@ -185,15 +186,28 @@ export default function HomePage() {
 
       {/* ── Testimonials ── */}
       <section className="section section-soft">
+        <Script src="https://widget.clutch.co/static/js/widget.js" strategy="lazyOnload" />
         <div className="container split">
           <SlideLeft className="copy">
             <span className="eyebrow">Client feedback</span>
             <h2>Trusted by founders and growing service teams.</h2>
             <div className="rating-box" style={{ marginTop: "20px" }}>
-              <strong>4.9</strong>
+              <strong>5.0</strong>
               <span>average project rating</span>
             </div>
             <p>Clear planning, reliable communication, and support before and after launch.</p>
+            <div className="clutch-badge-wrap">
+              <div
+                className="clutch-widget"
+                data-url="https://widget.clutch.co"
+                data-widget-type="2"
+                data-height="50"
+                data-nofollow="true"
+                data-expandifr="true"
+                data-scale="100"
+                data-clutchcompany-id="2663263"
+              />
+            </div>
           </SlideLeft>
           <SlideRight>
             <ReviewsCarousel />

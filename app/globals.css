@@ -2449,6 +2449,11 @@ body.cursor-hidden * {
   }
 }
 
+/* ── Clutch badge ── */
+.clutch-badge-wrap {
+  margin-top: 20px;
+}
+
 /* ── Pricing signal ── */
 .price-hint {
   display: flex;
