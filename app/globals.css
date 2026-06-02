@@ -1200,6 +1200,13 @@ button {
     display: none;
   }
 
+  .nav-actions .btn-whatsapp {
+    display: inline-flex;
+    font-size: 13px;
+    padding: 8px 13px;
+    gap: 5px;
+  }
+
   .hero-grid,
   .split {
     grid-template-columns: 1fr;
