@@ -49,7 +49,6 @@ const homeSchema = {
 
 import Link from "next/link";
 import { MonitorSmartphone } from "lucide-react";
-import { ClutchBadge } from "@/components/ClutchBadge";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { AnimatedStats } from "@/components/AnimatedStats";
@@ -198,7 +197,6 @@ export default function HomePage() {
           </SlideLeft>
           <SlideRight>
             <ReviewsCarousel />
-            <ClutchBadge />
           </SlideRight>
         </div>
       </section>

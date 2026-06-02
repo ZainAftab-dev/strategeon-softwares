@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { reviews } from "@/data/site";
+import { ClutchBadge } from "@/components/ClutchBadge";
 
 export function ReviewsCarousel() {
   const [current, setCurrent] = useState(0);
@@ -49,6 +50,10 @@ export function ReviewsCarousel() {
           <p className="review-role">{review.role}</p>
         </motion.article>
       </AnimatePresence>
+
+      <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "10px" }}>
+        <ClutchBadge />
+      </div>
 
       {/* Star ratings — staggered fill */}
       <div className="carousel-stars">
