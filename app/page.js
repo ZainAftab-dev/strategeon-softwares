@@ -195,10 +195,10 @@ export default function HomePage() {
               <span>average project rating</span>
             </div>
             <p>Clear planning, reliable communication, and support before and after launch.</p>
-            <ClutchBadge />
           </SlideLeft>
           <SlideRight>
             <ReviewsCarousel />
+            <ClutchBadge />
           </SlideRight>
         </div>
       </section>
