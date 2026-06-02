@@ -191,6 +191,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/how-to-migrate-legacy-software",
+    title: "How to Migrate Away from Legacy Software Without Disrupting Your Business",
+    tag: "How-To",
+    summary:
+      "Migrating away from legacy software is one of the riskiest technology decisions a business makes — but staying on outdated systems costs more in the long run. This guide shows you how to do it safely.",
+  },
+  {
+    url: "/insights/how-to-build-client-portal",
+    title: "How to Build a Client Portal for Your Business (Without a Tech Background)",
+    tag: "How-To",
+    summary:
+      "A client portal reduces email back-and-forth, impresses clients, and keeps projects on track — but only if it's built around what your clients actually need. This guide shows you how to plan and commission one.",
+  },
+  {
+    url: "/insights/how-to-automate-business-processes",
+    title: "How to Automate Business Processes with Custom Software",
+    tag: "How-To",
+    summary:
+      "Automating the right business processes can save dozens of hours per week and eliminate costly errors. This guide shows you exactly where to start and what a custom automation build looks like.",
+  },
+  {
     url: "/insights/how-to-calculate-roi-custom-software",
     title: "How to Calculate the ROI of Custom Software Before You Build",
     tag: "How-To",
