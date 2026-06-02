@@ -149,6 +149,15 @@ export function HeroSection() {
             </motion.div>
           </div>
 
+          <motion.p
+            className="hero-price-hint"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: typingTotalDelay + 1.1 }}
+          >
+            Projects start from <strong>$500</strong> · We scope and price around your budget
+          </motion.p>
+
           {/* Stats — count-up when in view */}
           <div className="hero-proof" ref={proofRef}>
             {stats.slice(0, 3).map((item) => (
