@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/digital-transformation-small-business",
+    title: "Digital Transformation for Small Business: A Practical No-Jargon Guide",
+    tag: "Strategy",
+    summary:
+      "Digital transformation is not about buying trendy technology — it is about replacing the manual, error-prone, or time-wasting parts of your business with software that works. Here is how small businesses do it practically.",
+  },
+  {
+    url: "/insights/vendor-lock-in-software",
+    title: "The Real Cost of Vendor Lock-In in Business Software",
+    tag: "Strategy",
+    summary:
+      "Vendor lock-in is not an accident — it is deliberately engineered into most SaaS products. Understanding how it works is the first step to either avoiding it or escaping it before the cost becomes unbearable.",
+  },
+  {
+    url: "/insights/why-own-software-not-rent",
+    title: "Why Owning Your Software Beats Renting It Forever",
+    tag: "Strategy",
+    summary:
+      "Monthly SaaS fees add up to hundreds of thousands over a decade — money spent on software you will never own. More businesses are switching to custom builds that eliminate subscriptions and give them full control.",
+  },
+  {
     url: "/insights/how-to-migrate-legacy-software",
     title: "How to Migrate Away from Legacy Software Without Disrupting Your Business",
     tag: "How-To",
