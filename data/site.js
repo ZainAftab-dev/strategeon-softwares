@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/why-spreadsheets-are-killing-your-business",
+    title: "Why Spreadsheets Are Silently Killing Your Business Productivity",
+    tag: "Strategy",
+    summary:
+      "Every business starts with spreadsheets. But when they become the backbone of operations, they introduce errors, slow things down, and create risks that are invisible until they cause real damage.",
+  },
+  {
+    url: "/insights/scale-business-with-software",
+    title: "How to Use Custom Software to Scale from 10 to 100 Employees",
+    tag: "Strategy",
+    summary:
+      "Most businesses stall during growth not because demand dries up but because their internal systems cannot keep up. The right custom software removes the operational ceiling before it stops you.",
+  },
+  {
+    url: "/insights/custom-software-competitive-advantage",
+    title: "How Custom Software Gives Your Business a Competitive Advantage",
+    tag: "Strategy",
+    summary:
+      "Generic software creates operational parity with every competitor in your market. Custom software is how businesses break away — by moving faster, serving clients better, and making smarter decisions.",
+  },
+  {
     url: "/insights/digital-transformation-small-business",
     title: "Digital Transformation for Small Business: A Practical No-Jargon Guide",
     tag: "Strategy",
