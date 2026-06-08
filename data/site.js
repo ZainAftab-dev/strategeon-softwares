@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/eliminate-manual-data-entry",
+    title: "How to Eliminate Manual Data Entry in Your Business With Software",
+    tag: "Automation",
+    summary:
+      "Manual data entry is one of the most expensive operational habits a growing business can maintain — not because of the time it takes, but because of the errors it introduces and the decisions it delays.",
+  },
+  {
+    url: "/insights/stop-wasting-money-saas",
+    title: "How to Stop Wasting Money on SaaS Tools Your Team Doesn't Use",
+    tag: "Cost Savings",
+    summary:
+      "Most growing businesses are paying for software they no longer use, tools that duplicate each other, and licences for people who left years ago. A one-afternoon audit typically recovers 20-35% of the monthly SaaS bill.",
+  },
+  {
+    url: "/insights/business-needs-custom-client-portal",
+    title: "Why Your Business Needs a Custom Client Portal (And What It Should Include)",
+    tag: "Strategy",
+    summary:
+      "A custom client portal replaces scattered emails, shared drives, and repeated status calls with a single professional hub your clients actually want to use.",
+  },
+  {
     url: "/insights/why-spreadsheets-are-killing-your-business",
     title: "Why Spreadsheets Are Silently Killing Your Business Productivity",
     tag: "Strategy",
