@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/why-your-website-isnt-converting",
+    title: "Why Your Business Website Isn't Converting (And How to Fix It)",
+    tag: "Growth",
+    summary:
+      "Most business websites generate traffic but fail to turn visitors into enquiries. The gap is almost always fixable — but only if you diagnose the right causes first.",
+  },
+  {
+    url: "/insights/what-is-an-erp-system",
+    title: "What Is an ERP System? A Plain-English Guide for Business Owners",
+    tag: "Beginner Guide",
+    summary:
+      "ERP is one of the most used and least understood terms in business technology. This guide explains what an ERP system actually does, who needs one, and what your real options are.",
+  },
+  {
+    url: "/insights/what-is-a-rest-api",
+    title: "What Is an API and Why Does Your Business Need One?",
+    tag: "Beginner Guide",
+    summary:
+      "APIs are the plumbing that allows separate software tools to share data automatically. Understanding what they are — and when you need a custom one — saves significant time, errors, and operational cost.",
+  },
+  {
     url: "/insights/eliminate-manual-data-entry",
     title: "How to Eliminate Manual Data Entry in Your Business With Software",
     tag: "Automation",
