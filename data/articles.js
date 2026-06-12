@@ -4114,5 +4114,228 @@
       buttonText: "Book a Free Consultation",
     },
   },
+  {
+    slug: "what-is-cloud-deployment",
+    title: "What Is Cloud Deployment? A Business Owner's Guide to Hosting Software",
+    metaTitle: "What Is Cloud Deployment? | Business Owner's Guide",
+    metaDescription: "AWS, Azure, Vercel, cloud servers — what do these actually mean and which is right for your custom software? A plain-English guide.",
+    tag: "Beginner Guide",
+    publishDate: "June 12, 2026",
+    readTime: "7 min read",
+    summary: "Cloud deployment is how your software gets hosted and made accessible online — but the options range from simple managed platforms to enterprise infrastructure. This guide explains what each choice means for your cost, speed, and reliability.",
+    intro: "When your development team mentions deploying to the cloud, they are describing where your software will actually run once it leaves their screens and goes live. For a business owner, that is not just a technical footnote — it directly affects your monthly running costs, how fast the software responds, how secure your data is, and whether the system stays up when you need it. The good news: you do not need to understand every server configuration detail. You do need to understand the options well enough to ask the right questions and avoid expensive surprises. This guide explains cloud hosting in plain English, covers the main providers and platforms, and tells you what to look for when the conversation comes up with your development partner.",
+    sections: [
+      {
+        heading: "Cloud vs Traditional Hosting: What Actually Changed",
+        content: "Traditional hosting — also called on-premise or dedicated hosting — means your software runs on physical servers that your business owns or rents permanently. You pay for that capacity whether you use it or not, and upgrading means buying new hardware. Cloud hosting is different. Your software runs on virtual servers provided by companies like Amazon, Microsoft, or Google. You rent exactly the computing power you need, when you need it, and scale up or down without touching any physical hardware. For most custom business applications, cloud hosting is the default today because it is cheaper to start, faster to scale, and more reliable than managing your own servers. The question is not cloud versus traditional — it is which cloud approach is right for your specific application and budget.",
+        list: [
+          "Traditional hosting: fixed cost, fixed capacity, hardware is your responsibility",
+          "Cloud hosting: pay for what you use, scale instantly, provider manages the hardware",
+          "Cloud is the standard for new custom applications in 2025 — on-premise is rare for new builds",
+          "Your main decision is which cloud platform and deployment model fits your application",
+        ],
+      },
+      {
+        heading: "The Main Cloud Providers and What They Do",
+        content: "Three companies dominate cloud infrastructure: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform. All three offer similar core capabilities — virtual servers, databases, storage, and networking. The differences come in pricing models, specific services, and how familiar your development team is with each platform. For most small and mid-size business applications, AWS is the most common choice because it has the broadest ecosystem and the largest pool of developers who know it well. Azure is often preferred when businesses are already heavily using Microsoft products. Google Cloud is popular for data-heavy and analytics workloads. Your development team will typically recommend the platform they know best and that suits your application — and that is usually the right starting point.",
+        table: {
+          headers: ["Provider", "Best Known For", "Typical Use Case"],
+          rows: [
+            ["AWS (Amazon)", "Largest ecosystem, most services", "General-purpose apps, SaaS platforms, APIs"],
+            ["Azure (Microsoft)", "Microsoft product integration", "Enterprise apps, Office 365-connected systems"],
+            ["Google Cloud", "Data processing, analytics, ML", "Data-intensive or AI-powered applications"],
+            ["Vercel / Netlify", "Fast frontend deployment", "Next.js apps, marketing sites, client portals"],
+            ["DigitalOcean / Render", "Simplicity, cost efficiency", "Startups, MVPs, smaller business tools"],
+          ],
+        },
+        afterTable: "The right provider depends on your application requirements and your development team's expertise — not on which brand name sounds most impressive. For most custom business software, any of these providers will perform well if configured correctly from the start.",
+      },
+      {
+        heading: "What Vercel, AWS, and Managed Hosting Mean for Your App",
+        content: "When your developer says they will deploy to Vercel, AWS, or a managed host, they are describing how much infrastructure management is involved — and by extension, how much ongoing work is required to keep the system running reliably. Vercel and similar platforms such as Netlify and Render are fully managed: you push code and they handle servers, scaling, and much of the security configuration automatically. This makes them fast to deploy on and low-maintenance to operate. AWS offers far more control and flexibility, but requires more configuration and specialist knowledge to manage safely. Managed hosting services sit in the middle — they run on cloud infrastructure but provide a simplified management layer on top. For straightforward business applications, fully managed platforms are often the right choice because they reduce operational overhead and cost without sacrificing reliability.",
+      },
+      {
+        heading: "What Cloud Hosting Costs for a Typical Business Application",
+        content: "Cloud hosting costs scale with what your application actually does. A simple business web app with a database and moderate traffic might cost $20–$100 per month. A more complex application with multiple services, larger databases, and higher traffic could run $200–$600 per month. Enterprise applications with high availability requirements and significant data storage can reach several thousand per month. The important point is that cloud costs are predictable and manageable if your development team sets them up correctly — with appropriate server sizes, right-sized database tiers, and sensible auto-scaling rules. Oversized infrastructure is common and wasteful. Always ask for a hosting cost estimate as part of your initial project scoping, not as an afterthought once the build is complete.",
+        table: {
+          headers: ["Application Type", "Typical Monthly Cost", "Key Cost Drivers"],
+          rows: [
+            ["Simple business app or portal", "$20–$100/month", "Single server, small database, low traffic"],
+            ["Mid-complexity app with integrations", "$100–$400/month", "Multiple services, medium database"],
+            ["Multi-tenant SaaS platform", "$300–$1,500/month", "Multiple environments, CDN, monitoring"],
+            ["High-traffic or enterprise application", "$1,000–$5,000+/month", "High availability, redundancy, compliance"],
+          ],
+        },
+        afterTable: "These figures cover infrastructure only — they do not include development time, ongoing maintenance, or support contracts. Always ask your development partner to include a hosting cost estimate as part of the initial project scoping.",
+      },
+      {
+        heading: "Scalability: How Cloud Hosting Grows With Your Business",
+        content: "One of the most practical benefits of cloud hosting is elastic scalability. If your application is quiet overnight and busy during business hours, cloud infrastructure can automatically scale up when demand rises and scale back when it drops — so you pay only for what you use. If your business doubles in the next two years, your application infrastructure can scale with it without a hardware procurement cycle or a full migration project. For businesses planning for growth, this matters. It means the system you build today can support the business you aim to have in three years, without a costly rebuild. The caveat is that good scalability requires deliberate architecture decisions made during the build — which is one more reason to discuss hosting requirements at the design stage, not after go-live.",
+      },
+      {
+        heading: "Security and Uptime: What to Expect",
+        content: "Major cloud providers maintain physical security, hardware redundancy, and network infrastructure at a level no small or mid-size business could replicate independently. AWS, Azure, and Google Cloud all publish uptime guarantees of 99.9% or higher for their core services — that is less than nine hours of total downtime per year. That said, cloud infrastructure security is a shared responsibility model. The provider secures the physical infrastructure and network. Your development team is responsible for the application layer — access controls, encryption, API security, and correct configuration. A well-built deployment also includes automated backups, monitoring and alerting, and a clear incident response process. If your development partner cannot describe what monitoring they have in place and what happens when something breaks, that is a gap worth closing before launch.",
+        list: [
+          "Cloud providers guarantee 99.9%+ infrastructure uptime — under nine hours downtime per year",
+          "Security is shared: provider secures hardware, your team secures the application",
+          "Automated backups should be standard — ask how often and how long they are retained",
+          "Monitoring and alerting should be set up before go-live, not added afterwards",
+          "Hosting accounts should be in your name — your development partner should have access, not ownership",
+        ],
+      },
+      {
+        heading: "Questions to Ask Your Development Partner About Hosting",
+        content: "Most business owners do not think to ask about hosting until something goes wrong — a slow application, unexpected bills, or a security incident. Asking these questions upfront takes five minutes and can save significant problems later. Which cloud provider do you recommend, and why is it the right fit for this application? What is the estimated monthly hosting cost at our expected traffic levels? How does the application scale if our user volume doubles in a year? What monitoring is in place, and who gets alerted if something breaks? Where are backups stored and how quickly can we recover? And critically — who owns the hosting account? If your development company holds the account and your relationship ends, you could lose access to your own software. Your infrastructure accounts should always be registered in your business name, with your development partner holding access rather than ownership.",
+      },
+    ],
+    cta: {
+      heading: "Get a Hosting Plan That Fits Your Application and Budget",
+      text: "We design cloud deployments that are right-sized, secure, and clearly owned by you. Book a free consultation to discuss your project's hosting and infrastructure requirements.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
+  {
+    slug: "what-is-agile-development",
+    title: "What Is Agile Software Development? (And Why It Matters for Your Project)",
+    metaTitle: "What Is Agile Software Development? | Business Guide",
+    metaDescription: "Agile is how professional software teams work — in sprints, with regular demos and feedback. Here is what it means for your project and why it reduces risk.",
+    tag: "Beginner Guide",
+    publishDate: "June 12, 2026",
+    readTime: "6 min read",
+    summary: "Agile software development means your project is built in short cycles with regular check-ins and working software at every stage — not a six-month wait followed by a big reveal. Understanding how it works puts you in control of the build.",
+    intro: "If you have ever commissioned a large project — a renovation, a marketing campaign, a technology system — you know the risk of the big reveal: months of work, a final handover, and the uncomfortable discovery that some things are not quite right. Agile software development was designed to prevent exactly that. It structures a project as a series of short build cycles, each one producing working software you can see, test, and give feedback on. Instead of waiting six months to find out whether you got what you wanted, you find out every two weeks and make small course corrections along the way. This guide explains what agile means in practice for a business owner, what your role looks like, and how to tell whether a development team is running a real agile process or just using the word.",
+    sections: [
+      {
+        heading: "Agile Explained Simply: The Core Idea",
+        content: "Agile is not a specific software tool or a rigid process — it is a way of organising work that prioritises short feedback loops over long upfront planning cycles. In a traditional waterfall project, a team designs everything in advance, builds for months, then hands over a finished product. In an agile project, the team builds a small piece, shows it to you, incorporates your feedback, then builds the next piece. The underlying logic is that software requirements change — because real users discover what they actually need only once they can see something working. Agile accepts this and builds iterative revision into the process rather than treating change as a disruption. The result is a final product that is much more closely aligned with what your business actually needs, because you have been involved throughout rather than reviewing everything for the first time at handover.",
+      },
+      {
+        heading: "Sprints: What They Are and How They Protect You",
+        content: "A sprint is the basic time unit of an agile project — typically a one or two-week period in which the development team builds a defined set of features. At the start of each sprint, the team selects work from the project backlog (the prioritised list of everything to be built) and commits to completing it by the end of the sprint. At the end, they run a demo to show you exactly what was built. This two-week review cycle creates a natural checkpoint at which you see real progress, raise concerns, and reprioritise the next sprint if your requirements have evolved. Sprints protect you because they limit how far a project can drift before you catch it. The most you can lose in a poorly directed sprint is two weeks of work — not six months.",
+        list: [
+          "A sprint is typically one to two weeks of focused, committed development work",
+          "Each sprint ends with a live demo of exactly what was built that cycle",
+          "You review and give feedback before the next sprint starts",
+          "Priorities can shift between sprints if business requirements change",
+          "Progress is visible and tangible every two weeks — not just on paper",
+        ],
+      },
+      {
+        heading: "What You See and Approve at Each Stage",
+        content: "A well-run agile project gives you multiple review points throughout — not just at the end. Before development begins, you approve wireframes or prototypes showing how the application will look and flow. During development, each sprint ends with a demo of working software — not a screenshot or a slide deck, but a live walkthrough of what was built. You test it, raise anything that needs adjusting, and confirm it meets the requirement before the team moves on. By the time the project reaches go-live, you have already reviewed and approved every section of the product. The final handover is a formality rather than the first real look.",
+        table: {
+          headers: ["Stage", "What You See", "What You Can Change"],
+          rows: [
+            ["Discovery", "Scope document and cost estimate", "Requirements, priorities, scope"],
+            ["Design", "Wireframes or visual mockups", "Layout, flows, labelling, branding"],
+            ["Sprint demo (every 1–2 weeks)", "Working software for that sprint", "Refinements and next sprint priorities"],
+            ["Testing phase", "Full application under QA review", "Bug reports, edge case behaviour"],
+            ["Go-live", "Live production application", "Post-launch improvements"],
+          ],
+        },
+        afterTable: "Each stage is a genuine checkpoint. Correcting something at the design stage takes hours. The same issue discovered after six weeks of development can cost days to fix. Reviewing carefully at each stage is the single highest-value contribution a client makes to a software project.",
+      },
+      {
+        heading: "Agile vs Waterfall: What the Difference Means for Clients",
+        content: "The waterfall method runs a project in strict sequential phases: requirements first, then design, then build, then testing, then delivery. Each phase must be fully complete before the next starts. This approach assumes requirements are fully understood upfront — which is rarely true for complex software projects. Agile accepts that requirements evolve and builds revision into the process rather than treating it as a failure. For clients, the practical difference is where the risk sits. In waterfall, you might wait three to six months before seeing working software, and changes discovered late are expensive to implement. In agile, you see working software every two weeks, changes are expected and managed, and the final product is the result of an ongoing conversation. Most professional development teams default to agile for custom builds — if a team proposes pure waterfall for a complex application, ask them to explain why.",
+      },
+      {
+        heading: "Your Role as a Client in an Agile Project",
+        content: "Agile projects require more active involvement from clients than waterfall — but that involvement is exactly what produces better outcomes. Your primary role is product owner: the person who decides what gets built, in what order, and whether the result meets the requirement. In practice, this means attending sprint demos (typically 30–60 minutes every one to two weeks), giving clear feedback within a day or two of each demo, and being available to answer questions when the team needs clarification on a requirement. You do not need technical knowledge for any of this. You need domain expertise — a clear understanding of your business, your users, and what good looks like for them. Development teams are experts in how to build software. You are the expert in what it needs to do. The best projects happen when both sides respect that distinction.",
+        list: [
+          "Attend sprint demos — 30 to 60 minutes every one to two weeks is all it takes",
+          "Give feedback promptly — delays in feedback delay the start of the next sprint",
+          "Be available to answer requirement questions during the build",
+          "Bring domain expertise the development team could not otherwise have",
+          "Raise concerns early rather than saving them for a scheduled end-of-project review",
+        ],
+      },
+      {
+        heading: "How to Give Good Feedback During Development",
+        content: "The quality of client feedback at sprint demos directly affects the quality of the finished product. Good feedback is specific, grounded in user needs, and avoids prescribing technical solutions. Instead of saying this page looks wrong, say a first-time user would not know what to click here — the primary action needs to be more visible. Instead of make it faster, say the dashboard takes four seconds to load and users report finding it frustrating. Describe what you observe, who is affected, and why it matters — then let the development team propose the fix. The one thing to avoid is silence. If something seems off but you cannot quite articulate it, say so. Experienced teams are skilled at drawing out clear requirements from incomplete descriptions. What they cannot work with effectively is no input at all.",
+      },
+    ],
+    cta: {
+      heading: "Work With a Team That Keeps You in Control",
+      text: "We run fully agile projects with fortnightly demos, clear progress visibility, and no late surprises. Book a free consultation to talk through your project.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
+  {
+    slug: "discovery-phase-software-development",
+    title: "What Is the Discovery Phase in Software Development — And Why It Matters",
+    metaTitle: "Discovery Phase in Software Development | Why It Matters",
+    metaDescription: "The discovery phase is where most good software projects are won or lost. Here is what it involves, how long it takes, and what you should get from it.",
+    tag: "Process",
+    publishDate: "June 12, 2026",
+    readTime: "7 min read",
+    summary: "The discovery phase is the structured work a development team does before writing a single line of code — mapping requirements, identifying risks, and producing a clear plan. Skipping it is the most common cause of software projects going over budget.",
+    intro: "The discovery phase is the part of a software project that happens before any code is written. It is where your development team works with you to fully understand the problem you are solving, the users who will use the system, the processes it needs to support, and the technical environment it needs to fit into. Done well, discovery produces a clear project plan with a reliable cost estimate, a defined scope, and a shared understanding between you and the team of exactly what is being built and why. Done poorly — or skipped entirely — it is the single most reliable predictor of a project going over budget, missing requirements, or stalling midway through the build. This guide explains what a proper discovery phase involves, what you should receive from it, and how to spot development teams that are not doing it properly.",
+    sections: [
+      {
+        heading: "What Discovery Is — and What It Is Not",
+        content: "Discovery is structured investigation and planning. It involves a series of working sessions in which your development team asks detailed questions about your business, your users, your current processes, and your goals. They document what they learn, identify gaps and ambiguities, and produce a set of outputs — requirements, user flows, technical architecture decisions, and a cost estimate — that form the foundation for the build. Discovery is not a sales meeting. It is not a free consultation. It is not the team listening to your brief and nodding along. Done properly, it takes real time, involves experienced people on both sides, and produces written documents you can hold the team accountable to throughout the build. If a development company sends a detailed fixed-price quote within 24 hours of your first call with no discovery phase, they are estimating from assumptions — and you pay for the ones they get wrong.",
+      },
+      {
+        heading: "The Deliverables You Should Receive from Discovery",
+        content: "A professional discovery engagement should produce a set of written outputs that you review and approve before any development starts. These give you something concrete to base decisions on and something to refer back to if scope disputes arise during the build.",
+        list: [
+          "Scope document: a written description of what will be built, feature by feature",
+          "User stories: plain-English descriptions of each feature from the end user's perspective",
+          "User flow diagrams: visual maps of how users move through the application",
+          "Technical architecture overview: the systems, databases, and integrations the build requires",
+          "Wireframes or screen mockups: visual sketches of key application screens",
+          "Cost estimate with confidence level: fixed price or a defined range, based on agreed scope",
+          "Project timeline: a week-by-week plan from kick-off to go-live",
+          "Risk register: known unknowns that could affect cost or delivery timeline",
+        ],
+        afterContent: "Not every project needs all eight. But for any build of meaningful complexity, you should expect at minimum a scope document, user stories, and a cost estimate tied to that scope — and asking for these is entirely reasonable.",
+      },
+      {
+        heading: "How Discovery Prevents Scope Creep and Budget Overruns",
+        content: "Scope creep — the gradual expansion of a project beyond its original definition — is the most common cause of software projects going over budget. It happens when requirements are not clearly defined upfront, so new items get added during the build, each one seeming small in isolation but collectively adding weeks of unplanned work. Discovery eliminates most scope creep by forcing clarity before the build starts. When a requirement is written down, reviewed, and signed off, it is much harder for it to quietly expand later. If something is in the scope document, it is in the project. If something is not in the scope document, adding it requires a formal change request with an agreed cost and timeline impact — which is fair to both sides and keeps budgets predictable.",
+        table: {
+          headers: ["Without Discovery", "With Discovery"],
+          rows: [
+            ["Requirements communicated verbally or informally", "Requirements documented and signed off in writing"],
+            ["Cost estimates based on assumptions", "Cost estimates tied to a defined scope"],
+            ["Scope expands incrementally throughout the build", "Changes handled through formal, costed change requests"],
+            ["Disagreements about what was agreed", "Scope document resolves disputes objectively"],
+            ["Timeline slips as unknowns surface during development", "Known risks identified and planned for before build starts"],
+          ],
+        },
+        afterTable: "The discovery investment almost always pays for itself in reduced change requests and fewer surprises during the build. For a project costing $50,000 to deliver, a $3,000–$5,000 discovery phase is one of the most cost-effective decisions you can make.",
+      },
+      {
+        heading: "How Long Discovery Takes and What It Costs",
+        content: "Discovery duration scales with project complexity. For a straightforward business application — a client portal, an internal management tool, or a reporting dashboard — discovery typically takes one to two weeks. For a system involving multiple integrations, complex workflows, or regulatory requirements, three to four weeks is more realistic. Large enterprise platforms can require six to eight weeks of dedicated discovery work. Discovery is typically charged separately from the development project itself, at a day rate or fixed project price. Common ranges are $2,000–$5,000 for smaller projects and $5,000–$15,000 for more complex ones. Some development companies credit the discovery fee against the full project if you proceed — which aligns incentives well. Others charge it as a standalone engagement. Either is reasonable. What should concern you is a company that proposes no discovery at all before quoting a complex project.",
+      },
+      {
+        heading: "Questions Your Development Partner Should Ask in Discovery",
+        content: "A good discovery process is driven by the development team asking the right questions — not just receiving your brief. The questions they ask tell you a great deal about their experience and how seriously they take your project outcomes. You should expect them to ask who the end users are and what they currently do without this system. They should ask about integrations — what other software needs to connect. They should ask about data: what needs to be imported, how much, and what the reporting requirements are. They should ask about user roles and permissions — who sees what and who can do what. They should ask about edge cases: what happens when a payment fails, a user makes an error, or the system receives unexpected input. And they should ask about future requirements — what does this system need to handle in two years that it does not need to handle today.",
+        list: [
+          "Who are the end users, and what do they currently do without this system?",
+          "What other software does this application need to connect to?",
+          "What data needs to be imported from existing systems at launch?",
+          "What are the user roles and permission levels required?",
+          "What are the most critical edge cases and error conditions to plan for?",
+          "What does success look like six months after the system goes live?",
+          "What is the most likely risk that could cause this project to miss its goals?",
+        ],
+      },
+      {
+        heading: "Red Flags: Developers Who Skip Discovery",
+        content: "Some development companies rush or skip discovery because it delays the path to a signed contract. This is a short-term business decision that almost always becomes a long-term problem for the client. Watch for these specific signs: a fixed-price quote sent within 24 hours of the first call with no discovery work (they are estimating from assumptions); a team that agrees to build everything on your list without any pushback or clarifying questions (they have not thought critically about feasibility or dependencies); a team that says discovery is included in the project fee but cannot describe what it actually produces; and a team that begins development before requirements are written down and agreed. None of these indicate an efficient company. They indicate a team optimising for a signed contract rather than a successful outcome. A development partner worth working with will insist on doing discovery properly — even if you initially push back on the time it takes.",
+      },
+    ],
+    cta: {
+      heading: "Start With a Discovery Phase That Sets Your Project Up to Succeed",
+      text: "Our discovery engagements produce a clear scope, a reliable estimate, and a build plan you can hold us to. Book a free initial consultation to find out if we are the right fit.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];
 

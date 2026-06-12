@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/discovery-phase-software-development",
+    title: "What Is the Discovery Phase in Software Development — And Why It Matters",
+    tag: "Process",
+    summary:
+      "The discovery phase is the structured work a development team does before writing a single line of code — mapping requirements, identifying risks, and producing a clear plan. Skipping it is the most common cause of software projects going over budget.",
+  },
+  {
+    url: "/insights/what-is-agile-development",
+    title: "What Is Agile Software Development? (And Why It Matters for Your Project)",
+    tag: "Beginner Guide",
+    summary:
+      "Agile software development means your project is built in short cycles with regular check-ins and working software at every stage — not a six-month wait followed by a big reveal. Understanding how it works puts you in control of the build.",
+  },
+  {
+    url: "/insights/what-is-cloud-deployment",
+    title: "What Is Cloud Deployment? A Business Owner's Guide to Hosting Software",
+    tag: "Beginner Guide",
+    summary:
+      "Cloud deployment is how your software gets hosted and made accessible online — but the options range from simple managed platforms to enterprise infrastructure. This guide explains what each choice means for your cost, speed, and reliability.",
+  },
+  {
     url: "/insights/why-your-website-isnt-converting",
     title: "Why Your Business Website Isn't Converting (And How to Fix It)",
     tag: "Growth",
