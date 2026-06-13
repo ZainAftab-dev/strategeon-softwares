@@ -4337,5 +4337,317 @@
       buttonText: "Book a Free Consultation",
     },
   },
+  {
+    slug: "how-to-write-software-requirements",
+    title: "How to Write Software Requirements Without Being a Developer",
+    metaTitle: "How to Write Software Requirements | Non-Technical Guide",
+    metaDescription: "You do not need to be technical to write good software requirements. Here is a practical template and process for describing what you want to build.",
+    tag: "How-To",
+    publishDate: "June 13, 2026",
+    readTime: "8 min read",
+    summary: "Writing clear software requirements is the single thing non-technical business owners can do to make their project faster, cheaper, and less stressful. You do not need to know how software is built — you need to know what it should do.",
+    intro: "One of the biggest reasons software projects go over budget or deliver the wrong thing is not bad development — it is unclear requirements. When a business owner commissions a piece of software without writing down exactly what it needs to do, the development team fills the gaps with assumptions. Every assumption that turns out to be wrong costs money to fix. The good news is that you do not need any technical knowledge to write good software requirements. You need business knowledge — and you have that. This guide walks you through a straightforward process for capturing what you need, in a format your development team can actually build from.",
+    sections: [
+      {
+        heading: "Why Requirements Matter — and What Happens Without Them",
+        content: "Requirements are the agreed definition of what software must do. They form the basis for estimates, timelines, and scope. When requirements are clear and written down, your development team knows what to build, and you have a reference point to check the final result against. When requirements are missing or vague, you get a project that drifts. Scope expands because 'that wasn't in the spec'. Features get built in ways that don't match your business logic because the developer made a reasonable but wrong assumption. Work gets redone, budgets stretch, and timelines slip. According to industry research, poor requirements definition is the leading cause of software project failure, ahead of technical problems and resource constraints. The investment of a few hours writing requirements before development starts typically saves weeks of corrections during and after the build.",
+        list: [
+          "Clear requirements reduce the chance of expensive rework mid-project",
+          "Written requirements give you a baseline to compare the delivered system against",
+          "A solid requirements document lets multiple developers bid on the same project fairly",
+          "Requirements catch misunderstandings between you and your developer before code is written",
+        ],
+      },
+      {
+        heading: "The Difference Between Requirements and Solutions",
+        content: "The most common mistake business owners make when writing requirements is describing the solution instead of the requirement. A solution is how the problem is solved. A requirement is what problem needs solving. For example: 'Build a dashboard with a pie chart showing monthly revenue by region' is a solution. The underlying requirement is: 'The finance team needs to review regional revenue performance monthly to make staffing decisions'. When you describe the requirement rather than the solution, your developer can suggest a better technical approach — and often the best solution is not the one you initially imagined. A good rule of thumb: describe what the system needs to achieve and who needs to achieve it. Leave the how to the development team. This also prevents you from accidentally specifying something technically awkward when there is a simpler path to the same outcome.",
+      },
+      {
+        heading: "User Story Format: The Simplest Way to Describe Features",
+        content: "User stories are the most widely used format for writing software requirements in a clear, non-technical way. The format is simple: 'As a [type of user], I want to [do something] so that [I achieve a goal]'. This structure forces you to think about who uses a feature, what they need to do, and why — which are exactly the three things a developer needs to know to build it well.",
+        table: {
+          headers: ["User Story", "What It Captures"],
+          rows: [
+            ["As an admin, I want to add new client accounts so that I can onboard customers without IT help", "Who (admin), what (create accounts), why (remove IT dependency)"],
+            ["As a client, I want to view all my invoices in one place so that I do not need to email accounts", "Who (client), what (invoice history), why (reduce support requests)"],
+            ["As a project manager, I want to assign tasks to team members so that accountability is clear", "Who (PM), what (task assignment), why (clear ownership)"],
+            ["As a sales rep, I want to see a client's full order history before a call so that I can tailor my pitch", "Who (sales), what (order history view), why (better preparation)"],
+          ],
+        },
+        afterTable: "You do not need to write perfect user stories. The goal is to capture the intent clearly enough that a developer can ask the right follow-up questions — and that you can review the delivered feature against the original story and decide whether it meets the need.",
+      },
+      {
+        heading: "What to Document: Flows, Roles, Rules, and Edge Cases",
+        content: "User stories capture individual features, but software requirements also need to cover four other areas that are often overlooked.",
+        subsections: [
+          {
+            subheading: "User Flows",
+            text: "A user flow describes the sequence of steps a user takes to complete a task. For example, the flow for placing an order might be: browse products → add to basket → enter delivery address → select payment method → confirm order → receive confirmation email. Drawing this out (even as a simple numbered list) shows the developer the full journey, not just isolated steps — and surfaces questions like: what happens if the payment fails at step five?",
+          },
+          {
+            subheading: "User Roles and Permissions",
+            text: "Most business software has more than one type of user. An admin can do things a standard user cannot. A client can see their own data but not another client's. Document who the different user types are and what each type is and is not allowed to do. This directly informs how the system's access control and data model are built.",
+          },
+          {
+            subheading: "Business Rules",
+            text: "Business rules are the logic your software needs to follow. For example: 'A purchase order cannot be approved by the same person who raised it'. Or: 'If a client's account balance exceeds 60 days overdue, automatically flag their account and prevent new orders'. These rules are often invisible until a developer builds something that does not follow them — at which point they cost time and money to retrofit.",
+          },
+          {
+            subheading: "Edge Cases",
+            text: "Edge cases are the unusual but possible scenarios your system needs to handle. What happens when a user enters invalid data? What happens if two users try to edit the same record simultaneously? What happens if an integration goes offline? You do not need to anticipate every edge case, but documenting the most likely ones prevents your developer from making a wrong assumption about how you want them handled.",
+          },
+        ],
+      },
+      {
+        heading: "Priority: Must-Have vs Nice-to-Have",
+        content: "Not all requirements are equal. One of the most useful things you can do when writing requirements is assign a priority level to each one. The simplest approach is a three-tier system: must-have (without this the system cannot function), should-have (important and included if time and budget allow), and could-have (useful but not critical). This allows your development team to build the most important features first. If the project runs up against budget or timeline constraints, it is always better to have delivered the must-haves completely than to have partially delivered everything. Priority also forces useful discipline on your side — when you have to decide what is truly essential, you often discover that your original wishlist was longer than it needed to be.",
+        table: {
+          headers: ["Priority", "Description", "Example"],
+          rows: [
+            ["Must-Have", "Core functionality — without this the system does not work", "User login and authentication"],
+            ["Should-Have", "Important but not blocking — include if budget allows", "Email notification on new order"],
+            ["Could-Have", "Nice to have — add in a later phase", "PDF export of reports"],
+            ["Won't Have (This Phase)", "Explicitly out of scope — reduces confusion", "Mobile app version"],
+          ],
+        },
+        afterTable: "Marking something as 'won't have this phase' is not a rejection — it is a future roadmap item. Good requirements documents are clear about what is out of scope, not just what is in scope.",
+      },
+      {
+        heading: "How to Review Requirements With Your Development Team",
+        content: "Once you have drafted your requirements, the review session with your development team is where the document gets tested. The developer will ask clarifying questions — and the quality of those questions tells you a great deal about their experience. Good questions include: 'What should happen if a user does X?', 'Is this rule always true or are there exceptions?', and 'Does this feature need to work offline?'. Go through the requirements section by section. When a developer asks a question you had not considered, write the answer into the document. By the end of the review, every ambiguity should be resolved and both sides should be able to say: if we build exactly what is written here, we will have solved the problem. Never start development before completing this step.",
+      },
+      {
+        heading: "A Simple Template to Get Started",
+        content: "You do not need specialist software to write requirements. A shared Google Doc or Word document works perfectly. Structure it with these sections: a project overview (what you are building and why), a list of user roles and their permissions, a set of user stories organised by functional area, any business rules that apply, a list of integrations with other systems, and a prioritised feature list. For each user story, note any known edge cases or exceptions. Keep the language plain. If you find yourself using technical terms, replace them with plain descriptions of outcomes. The goal is a document that anyone on your team could read and understand — and that your developer can build from without needing a follow-up call for every line.",
+        list: [
+          "Project overview: what you are building and the business problem it solves",
+          "User roles: who uses the system and what each type of user can do",
+          "User stories: one per feature, in 'As a [user], I want to [action] so that [outcome]' format",
+          "Business rules: logic the system must follow (approvals, calculations, restrictions)",
+          "Integrations: other systems the software needs to connect to",
+          "Edge cases: unusual scenarios and how they should be handled",
+          "Priority: must-have, should-have, could-have, won't have this phase",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Get Expert Help Turning Your Requirements Into Working Software",
+      text: "We work with business owners at every stage — from refining your requirements through to delivering a fully built and tested system.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
+  {
+    slug: "how-to-build-an-mvp",
+    title: "How to Build a Minimum Viable Product: A Business Owner's Guide",
+    metaTitle: "How to Build an MVP | Business Owner's Guide to Software",
+    metaDescription: "An MVP gets your software to real users fast, at lower cost, so you can validate before investing everything. Here is how to plan and build one.",
+    tag: "Process",
+    publishDate: "June 13, 2026",
+    readTime: "8 min read",
+    summary: "An MVP is the smallest version of your software that delivers real value to real users — not a rough prototype, not a demo, but a working system that tests your riskiest assumptions before you commit to a full build.",
+    intro: "The minimum viable product — or MVP — is one of the most useful ideas in modern software development, and one of the most misunderstood. Many business owners hear 'minimum' and think 'low quality' or 'barely functional'. That is not what an MVP is. A genuine MVP is the smallest version of your product that delivers real value to real users and allows you to test the assumptions your business model depends on. The purpose of building an MVP is not to build something cheap. It is to learn something important before spending more. If the core idea works, you invest in the full build with confidence. If something does not work, you find out before you have spent a quarter of a million dollars on a system that needs to be rebuilt from scratch. This guide explains what an MVP is, how to plan one, and how to use it to make better decisions faster.",
+    sections: [
+      {
+        heading: "What an MVP Is — and What It Is Not",
+        content: "An MVP is not a buggy prototype. It is not a demo with placeholder data. It is not a mock-up. It is working software that real users can use to accomplish a real task. The 'minimum' part refers to scope — the number of features included — not quality. Code quality, security, and reliability still matter in an MVP, because you are putting it in front of real users and making real decisions based on how they respond. The 'viable' part is equally important. The product has to be genuinely useful for the core use case you are testing. If it frustrates users or lacks the functionality they need to complete the task, you will not get meaningful feedback — you will just get complaints about what is missing. A good MVP does one thing well. Not ten things adequately. One thing, completely, to a standard that lets users evaluate whether it solves their problem.",
+        list: [
+          "An MVP is working software, not a prototype or a wireframe",
+          "An MVP does one thing well, not many things partially",
+          "Code quality and security still matter — real users are using it",
+          "The purpose is to generate learning, not just to save development cost",
+          "An MVP is not the end product — it is the first version of it",
+        ],
+      },
+      {
+        heading: "The Core Question: What Is the Riskiest Assumption to Test?",
+        content: "Every software project is built on assumptions. Some are low-risk: 'Users will want to log in with their email address'. Others are high-risk: 'Users will pay $99 per month for access to this feature'. The purpose of an MVP is to test the high-risk assumptions — the ones that, if wrong, would change the project significantly. Before planning your MVP, list the assumptions behind the project. Then mark the ones that are unproven. Then rank them by how damaging it would be if the assumption turned out to be false. The ones at the top of that list are what your MVP needs to test. For a B2B SaaS product, the riskiest assumption is usually whether the target user will pay for the core feature. For an internal business tool, it is often whether staff will actually use it and whether it genuinely reduces the manual work it is supposed to replace. Build your MVP around generating evidence on those specific questions.",
+      },
+      {
+        heading: "How to Cut Scope Without Cutting Value",
+        content: "The hardest part of planning an MVP is deciding what to leave out. Every feature on your wishlist seems necessary — until you force yourself to ask whether users can get value without it. A useful technique is to take your full feature list and ask, for each item: 'Can a user complete the core task without this feature?' If yes, it is a candidate for removal from the MVP. This filtering process often reduces scope by 40 to 60 percent without reducing the core value proposition at all.",
+        table: {
+          headers: ["Feature", "Core Task Dependency?", "MVP Decision"],
+          rows: [
+            ["User login and authentication", "Yes — cannot use the system without it", "Include"],
+            ["Core workflow (the main job the system does)", "Yes — this IS the product", "Include"],
+            ["Email notifications", "No — users can check the system manually", "Defer to Phase 2"],
+            ["Reporting and analytics dashboard", "No — core task works without reports", "Defer to Phase 2"],
+            ["Mobile app version", "No — web browser works on mobile", "Defer to Phase 2"],
+            ["Advanced search and filtering", "No — basic search is sufficient initially", "Defer to Phase 2"],
+            ["PDF export functionality", "No — screen view is enough for testing", "Defer to Phase 2"],
+          ],
+        },
+        afterTable: "Features deferred to Phase 2 are not abandoned — they are planned and designed during the MVP build so they can be added efficiently. The difference is that you have real user feedback before building them, which often changes what you build and how.",
+      },
+      {
+        heading: "MVP vs Prototype vs Full Product",
+        content: "These three terms are often used interchangeably, but they mean different things and serve different purposes.",
+        subsections: [
+          {
+            subheading: "Prototype",
+            text: "A prototype is a visual simulation of a product — typically clickable wireframes or screen mockups. It has no real functionality. You can show it to users and ask for feedback on design and flow, but it does not process data, connect to databases, or perform real operations. Prototypes are useful for validating UX early at low cost — but they cannot tell you whether users will actually use and value a working system.",
+          },
+          {
+            subheading: "MVP",
+            text: "An MVP is real, functional software. It processes real data, performs real operations, and can be used by real users for real work. It is limited in scope but not in quality. An MVP generates actionable, reliable evidence about how users behave when given a working tool — which is the only evidence that matters for product decisions.",
+          },
+          {
+            subheading: "Full Product",
+            text: "A full product is the complete vision — all features, all integrations, polished UX, mobile apps, advanced reporting, and everything on the original roadmap. It is what you build after your MVP has validated the core concept and given you clear direction on what the full build should include. Building the full product first is the most common and most expensive way to discover that some of your original assumptions were wrong.",
+          },
+        ],
+      },
+      {
+        heading: "Cost of an MVP vs a Full Build",
+        content: "An MVP typically costs 25 to 40 percent of what a full build of the same product would cost. The exact ratio depends on how aggressively scope has been cut and how complex the core feature set is. For context, a custom business application that would cost $80,000 to build completely might cost $20,000 to $35,000 as an MVP. A SaaS product that would cost $150,000 fully featured might cost $35,000 to $50,000 as an MVP. The cost difference is not just immediate — it is compounded. An MVP that generates feedback allows the Phase 2 budget to be spent on features users have confirmed they want, rather than features the team assumed they would want. Projects that go straight to full build often find themselves rebuilding significant parts of the product after launch because real users behave differently from assumed users.",
+        table: {
+          headers: ["Project Type", "Full Build Cost", "MVP Cost", "Time to First Users"],
+          rows: [
+            ["Internal business tool", "$40,000–$80,000", "$12,000–$25,000", "12–16 weeks"],
+            ["Client portal", "$50,000–$120,000", "$15,000–$35,000", "10–14 weeks"],
+            ["SaaS product", "$100,000–$300,000", "$30,000–$70,000", "16–24 weeks"],
+            ["E-commerce platform", "$60,000–$150,000", "$20,000–$45,000", "12–18 weeks"],
+          ],
+        },
+        afterTable: "These are indicative ranges. Scope decisions during discovery have the largest impact on cost. The most important comparison is not MVP cost vs full build cost — it is MVP cost vs the cost of building the wrong full product.",
+      },
+      {
+        heading: "How to Gather Feedback and Decide What to Build Next",
+        content: "An MVP generates value through the feedback it produces. But feedback is only useful if you collect it systematically. Before launch, define the specific questions you are trying to answer — for example: 'Do users complete the core workflow without assistance?', 'At what point do users abandon the process?', 'What feature do users request most often that is not in the MVP?'. Use a combination of usage analytics (which screens users visit, where they drop off), direct user interviews (at least five structured conversations in the first month), and support requests (the questions users ask reveal where the product is unclear). From this data, build a prioritised Phase 2 feature list. The features users ask for repeatedly and the workflow steps where they get stuck are the highest-value additions.",
+        list: [
+          "Define your learning questions before launch — not after",
+          "Use analytics to track where users go and where they stop",
+          "Run at least five structured user interviews in the first month",
+          "Track every support request — patterns reveal the most needed features",
+          "Compare actual usage to your original assumptions and document the differences",
+        ],
+      },
+      {
+        heading: "Common MVP Mistakes to Avoid",
+        content: "Most MVP failures come from a small number of predictable mistakes. The most common is building too much: every feature creeps in and the MVP takes as long as a full build. The second is building too little: the MVP is so stripped down that users cannot see how it solves their problem and feedback is useless. A third mistake is not defining success criteria upfront — without knowing what you are trying to prove, any result can be interpreted as success or failure depending on how you feel about it. A fourth mistake is building a great MVP and then not talking to users. The MVP has no value unless someone uses it and you learn from that use.",
+        list: [
+          "Do not include every feature just in case — you can add them in Phase 2",
+          "Do not strip the product so bare that users cannot see the value",
+          "Define success criteria before you build so you can measure them after",
+          "Plan your user engagement process before launch, not after",
+          "Do not treat the MVP as the finished product and stop iterating",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Build an MVP That Gives You Real Answers Fast",
+      text: "We help business owners define the right scope, build to a production-ready standard, and extract the feedback that drives smart Phase 2 decisions.",
+      link: "/contact",
+      buttonText: "Talk to Our Team",
+    },
+  },
+  {
+    slug: "what-to-expect-software-project",
+    title: "What to Expect During a Custom Software Project (Week by Week)",
+    metaTitle: "What to Expect During a Custom Software Project | Timeline Guide",
+    metaDescription: "From the first call to go-live: here is exactly what happens during a professional custom software development project and what your role is at each stage.",
+    tag: "Process",
+    publishDate: "June 13, 2026",
+    readTime: "9 min read",
+    summary: "A professional custom software project follows a predictable sequence from discovery through to go-live. Knowing what happens at each stage — and what your role is — reduces uncertainty, improves outcomes, and makes you a better client.",
+    intro: "Most business owners commissioning software for the first time have no idea what to expect. The process feels opaque: you describe what you want, money changes hands, and some weeks later a system appears — or does not appear, or appears only partly, or appears with surprises. This uncertainty is not inevitable. A professionally run software project follows a predictable sequence of stages, each with specific outputs, clear responsibilities, and decision points where you are involved and in control. This guide walks you through a typical custom software project week by week — what happens, what you receive, and what is expected of you at each stage. Not every project follows exactly this timeline, but the broad structure holds across the vast majority of professionally delivered custom software engagements.",
+    sections: [
+      {
+        heading: "Weeks 1–2: Discovery, Scoping, and Kick-Off",
+        content: "The first two weeks of a project are the most important and the most often rushed. This is the discovery phase: a structured series of working sessions in which your development team learns everything they need to know about what you are building, why, for whom, and in what technical and business context. You should expect a kick-off call in week one to introduce the teams, agree the communication protocol, and confirm the project goals. This is followed by one or more discovery workshops — detailed sessions in which the team asks questions about your users, workflows, integrations, business rules, and data. By the end of week two, you should receive a scope document describing what will be built, a set of user stories covering each feature, and an updated project plan confirming the timeline and next steps. Your role is to be available, think carefully, and answer questions honestly — including uncomfortable ones about what is genuinely required vs what would be nice to have.",
+        list: [
+          "Kick-off call: introductions, communication protocols, project goals confirmed",
+          "Discovery workshops: requirements gathered, business rules documented, integrations mapped",
+          "Scope document produced: written description of what will be built",
+          "User stories written: each feature described from the user's perspective",
+          "Project timeline confirmed: week-by-week plan from discovery to go-live",
+        ],
+      },
+      {
+        heading: "Weeks 3–4: UX Design and Prototype Review",
+        content: "Once the scope is agreed, the design phase begins. Your development team's designer translates the requirements into screen-level designs — wireframes first, then higher-fidelity mockups for the key screens. Wireframes are low-detail layouts that show the structure and flow of each screen without visual polish. They are fast to produce and fast to revise, which makes them the right tool for testing layout decisions before anyone writes code. Once wireframes are approved, higher-fidelity mockups are produced for the most important screens — the dashboard, the core workflow, the main data views. These show colour, typography, component styles, and overall visual tone. The key principle here: feedback on design is cheap. Feedback on code is expensive. Every visual problem you catch at the wireframe stage is five to ten times cheaper to fix than it would be after development.",
+        table: {
+          headers: ["Deliverable", "When", "Your Role"],
+          rows: [
+            ["Wireframes — all key screens", "Week 3", "Review and approve layout and flow"],
+            ["High-fidelity mockups — core screens", "Week 3–4", "Review visual design and brand alignment"],
+            ["Interactive prototype (if included)", "End of week 4", "Click through the flow and flag UX issues"],
+            ["Design system — component library", "Week 4", "Approve before development starts"],
+          ],
+        },
+        afterTable: "Do not approve designs you are uncertain about just to keep the project moving. A week of revision at the design stage prevents a month of rework at the development stage. Raise every concern, however small.",
+      },
+      {
+        heading: "Weeks 5–12: Sprint-Based Development and Demos",
+        content: "The development phase is where the software is built. In an agile project, this happens in sprints — typically two-week cycles, each focused on a defined set of features. At the start of each sprint, the team confirms which user stories will be built. At the end of each sprint, they deliver a working demo of everything completed in that cycle. Sprint demos are the most important touchpoints in the build phase. They let you see real, working software at regular intervals rather than waiting for a big reveal at the end. They give you the opportunity to confirm that each feature works as intended, raise questions, and catch misunderstandings while they are still cheap to fix. Your role is to attend demos, test the features delivered, and provide clear, specific feedback within an agreed window — typically 48 hours. Delayed feedback delays the project. Vague feedback creates rework. Specific feedback gets actioned immediately.",
+        list: [
+          "Sprint planning: team confirms which features will be built in the coming two weeks",
+          "Sprint demo: working software shown at end of each sprint for review and approval",
+          "Feedback window: your feedback should be specific and delivered within 48 hours",
+          "Change requests: scope changes mid-build require a formal assessment of time and cost impact",
+          "Progress visibility: you should always know what is built, what is next, and what is at risk",
+        ],
+      },
+      {
+        heading: "Testing Week: What QA Covers",
+        content: "Once development is complete, the project moves into dedicated quality assurance testing. A professional development team will run both functional testing (does each feature do what the requirements say it should?) and non-functional testing (is the system fast enough, secure, and stable under expected load?). You will also conduct user acceptance testing — your own structured walkthrough of the system against your requirements. UAT is not casual browsing. It is a methodical process of testing every feature you specified, in the workflows you described, with realistic data. The development team provides a test plan to guide you. Issues raised during UAT are categorised by severity — critical issues are fixed before go-live, minor issues are scheduled for the first post-launch patch.",
+        subsections: [
+          {
+            subheading: "Functional Testing",
+            text: "The development team tests every user story against the acceptance criteria — both 'happy path' scenarios (everything goes right) and error scenarios (invalid data, integration failures, edge cases). All critical and major issues are fixed before UAT begins.",
+          },
+          {
+            subheading: "User Acceptance Testing",
+            text: "Your structured walkthrough of the system to confirm it meets your requirements. You test the actual workflows your team will use with realistic data. Any issues you raise are logged and prioritised. UAT is the final gate before go-live — the system should not be deployed until you have confirmed it is ready.",
+          },
+        ],
+      },
+      {
+        heading: "Deployment and Go-Live",
+        content: "Go-live is the migration of the system from its staging environment (a private copy used for testing) to its production environment (the live version accessible to real users). A professional deployment process includes a final pre-launch checklist covering security configuration, domain and SSL setup, data migration (if applicable), and backup and recovery procedures.",
+        table: {
+          headers: ["Go-Live Step", "Who Is Responsible"],
+          rows: [
+            ["Final pre-launch security review", "Development team"],
+            ["Production environment configuration", "Development team"],
+            ["Data migration and integrity check", "Development team with your data"],
+            ["DNS and domain configuration", "Development team"],
+            ["Go/no-go decision", "Both parties — based on UAT sign-off"],
+            ["Staff training and rollout", "Shared — your team leads, development team supports"],
+          ],
+        },
+        afterTable: "Do not agree to go live before UAT is complete. The pressure to hit a launch date can lead to deploying a system with known issues — and known issues in production always cost more to manage than known issues in a controlled test environment.",
+      },
+      {
+        heading: "Post-Launch: What Support Looks Like",
+        content: "After go-live, a good development partner remains involved through a defined support and maintenance arrangement. This typically covers bug fixes for issues discovered post-launch, minor enhancements identified during the first weeks of use, performance monitoring, security patching for underlying dependencies, and hosting management. Support arrangements vary: some teams offer a retained monthly support package; others work on a time-and-materials basis. What matters is that the arrangement is agreed before go-live, not after. Post-launch is also when Phase 2 planning begins. With real users using the system and generating feedback, you now have concrete evidence to inform what to build next. The features that seemed essential before launch sometimes turn out to be irrelevant. The features users request repeatedly in the first month become the obvious Phase 2 priorities.",
+        list: [
+          "Bug fixes for issues discovered in production after go-live",
+          "Performance monitoring and alerts for errors or downtime",
+          "Security patches for frameworks and dependencies",
+          "Minor enhancements based on initial user feedback",
+          "Phase 2 planning based on real usage data and user feedback",
+        ],
+      },
+      {
+        heading: "How to Be a Great Client During the Build",
+        content: "The most successful software projects are collaborations. A great development partner brings technical expertise. A great client brings business knowledge, clear decision-making, and responsive communication. The single most impactful thing you can do as a client is respond quickly. Every time the development team needs a decision or a piece of information from you, the clock stops. Delays in approvals and feedback add directly to project duration. The second most impactful thing is to give specific feedback. 'I don't like this' is not useful. 'The list should be sorted by date by default, not alphabetically' is actioned immediately. The third is to avoid mid-project scope changes. Every addition to scope mid-build disrupts the team's plan and adds cost. Log new ideas for Phase 2.",
+        list: [
+          "Respond to questions and approval requests within 24 hours",
+          "Give specific, actionable feedback — not vague impressions",
+          "Avoid scope changes mid-sprint — log them for Phase 2",
+          "Attend every sprint demo — they are the project's quality control mechanism",
+          "Trust the team's technical judgement — focus on outcomes, not implementation details",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Work With a Team That Keeps You Informed at Every Stage",
+      text: "Our projects run on fortnightly sprint demos, clear progress visibility, and no surprises. Book a free consultation to see if we are the right fit for your project.",
+      link: "/contact",
+      buttonText: "Book a Free Consultation",
+    },
+  },
 ];
 

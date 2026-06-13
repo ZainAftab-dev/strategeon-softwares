@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/what-to-expect-software-project",
+    title: "What to Expect During a Custom Software Project (Week by Week)",
+    tag: "Process",
+    summary:
+      "A professional custom software project follows a predictable sequence from discovery through to go-live. Knowing what happens at each stage — and what your role is — reduces uncertainty, improves outcomes, and makes you a better client.",
+  },
+  {
+    url: "/insights/how-to-build-an-mvp",
+    title: "How to Build a Minimum Viable Product: A Business Owner's Guide",
+    tag: "Process",
+    summary:
+      "An MVP is the smallest version of your software that delivers real value to real users — not a rough prototype, not a demo, but a working system that tests your riskiest assumptions before you commit to a full build.",
+  },
+  {
+    url: "/insights/how-to-write-software-requirements",
+    title: "How to Write Software Requirements Without Being a Developer",
+    tag: "How-To",
+    summary:
+      "Writing clear software requirements is the single thing non-technical business owners can do to make their project faster, cheaper, and less stressful. You do not need to know how software is built — you need to know what it should do.",
+  },
+  {
     url: "/insights/discovery-phase-software-development",
     title: "What Is the Discovery Phase in Software Development — And Why It Matters",
     tag: "Process",
