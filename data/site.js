@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-for-us-startups",
+    title: "Custom Software Development for US Startups: What to Build First",
+    tag: "Strategy",
+    summary:
+      "Most startups either build too much too early or stay on temporary tools too long. The decision of when to commission custom software — and what to build first — is one of the most consequential a founding team makes. This guide gives you the framework to get it right.",
+  },
+  {
+    url: "/insights/software-development-for-uk-businesses",
+    title: "Custom Software Development for UK Businesses: A 2025 Buyer's Guide",
+    tag: "Local",
+    summary:
+      "UK businesses are increasingly commissioning custom software — from client portals and CRM systems to full ERP replacements. This guide covers what to expect from a development partner, how much projects typically cost, and the GDPR compliance requirements you need to factor in.",
+  },
+  {
+    url: "/insights/custom-software-development-florida",
+    title: "Custom Software Development in Florida: What to Look For in 2025",
+    tag: "Local",
+    summary:
+      "Florida's software development market has grown fast, but quality varies enormously. Whether you are in Miami, Orlando, Tampa, or Jacksonville, knowing what to look for — and what to avoid — can be the difference between a project that delivers and one that drains your budget.",
+  },
+  {
     url: "/insights/what-to-expect-software-project",
     title: "What to Expect During a Custom Software Project (Week by Week)",
     tag: "Process",
