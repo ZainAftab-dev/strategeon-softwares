@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/automate-customer-onboarding",
+    title: "How to Automate Customer Onboarding With Custom Software",
+    tag: "Automation",
+    summary:
+      "Manual onboarding means every new customer gets a slightly different experience depending on who handles their setup. Automating the process makes it faster, more consistent, and more impressive — and frees your team to focus on building the relationship rather than chasing paperwork.",
+  },
+  {
+    url: "/insights/business-intelligence-dashboard-guide",
+    title: "How to Build a Business Intelligence Dashboard Your Team Will Actually Use",
+    tag: "Strategy",
+    summary:
+      "Most business intelligence dashboards are built and then quietly abandoned. They show too many metrics, update too slowly, or answer questions nobody is actually asking. This guide explains how to build a dashboard your team opens every morning — with the right KPIs, connected data, and design that drives decisions.",
+  },
+  {
+    url: "/insights/crm-for-b2b-sales",
+    title: "Why Off-the-Shelf CRM Doesn't Work for B2B Sales (And What Does)",
+    tag: "Strategy",
+    summary:
+      "Generic CRM tools are built around simple B2C pipelines — they struggle with multi-stakeholder B2B deals that involve committees, contracts, and long buying cycles. Here is what a CRM built specifically for B2B sales looks like and when to build one.",
+  },
+  {
     url: "/insights/custom-software-for-us-startups",
     title: "Custom Software Development for US Startups: What to Build First",
     tag: "Strategy",
