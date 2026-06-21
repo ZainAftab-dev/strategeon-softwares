@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/how-long-does-custom-software-take",
+    title: "How Long Does Custom Software Development Take? (2025 Timeline Guide)",
+    tag: "Process",
+    summary:
+      "Custom software timelines range from 8 weeks for a simple MVP to 18 months for a complex enterprise system. This guide gives you realistic benchmarks by project type so you can plan with confidence.",
+  },
+  {
+    url: "/insights/custom-software-for-ecommerce-businesses",
+    title: "Custom Software for E-Commerce Businesses: What to Build Beyond Shopify",
+    tag: "Industry",
+    summary:
+      "Once you pass a certain volume, Shopify's limitations start costing you money in transaction fees, plugin costs, and operational inefficiency. This guide covers what successful e-commerce businesses build custom to break through those ceilings.",
+  },
+  {
+    url: "/insights/how-to-build-recurring-revenue-software",
+    title: "How to Build Recurring Revenue Through a Software Product",
+    tag: "Strategy",
+    summary:
+      "A software product can transform one-off project revenue into predictable monthly income. This guide explains how to identify the right product, price it, and build it without betting the business.",
+  },
+  {
     url: "/insights/automate-customer-onboarding",
     title: "How to Automate Customer Onboarding With Custom Software",
     tag: "Automation",
