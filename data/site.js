@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-maintenance-cost",
+    title: "Custom Software Maintenance Cost: What to Budget After Launch",
+    tag: "Cost Guide",
+    summary:
+      "Most businesses budget carefully for the build but are caught off guard by ongoing maintenance costs. Custom software maintenance typically runs 15–25% of the original build cost per year — this guide explains exactly what you are paying for and how to reduce it.",
+  },
+  {
+    url: "/insights/api-integration-cost-business",
+    title: "API Integration Cost for Businesses in 2025: What You Actually Pay",
+    tag: "Cost Guide",
+    summary:
+      "API integration costs range from $2,000 for a simple webhook to $80,000 for a multi-system data hub. This guide breaks down what drives those costs, which integrations deliver the best ROI, and when to build custom rather than use a platform like Zapier.",
+  },
+  {
+    url: "/insights/custom-inventory-management-software",
+    title: "Custom Inventory Management Software: Build vs Buy in 2025",
+    tag: "Cost Guide",
+    summary:
+      "Off-the-shelf inventory tools work until they don't — then spreadsheets creep back in. This guide shows what custom inventory management software costs, what it includes, and when building your own system delivers better ROI than another SaaS subscription.",
+  },
+  {
     url: "/insights/how-long-does-custom-software-take",
     title: "How Long Does Custom Software Development Take? (2025 Timeline Guide)",
     tag: "Process",
