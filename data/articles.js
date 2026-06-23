@@ -5785,5 +5785,268 @@
       buttonText: "Discuss Maintenance",
     },
   },
+  {
+    slug: "custom-payment-integration-software",
+    title: "Custom Payment Integration Software: What Businesses Need Beyond Stripe",
+    metaTitle: "Custom Payment Integration Software 2025 | Business Guide",
+    metaDescription: "Stripe and PayPal only go so far. Here is when and how businesses build custom payment integration software — and what it actually costs in 2025.",
+    tag: "How-To",
+    publishDate: "June 23, 2026",
+    readTime: "6 min read",
+    summary: "Stripe and PayPal handle standard transactions well. When you need split payments, complex subscription logic, B2B invoice billing, or seamless integration with your internal systems, custom payment integration software is the answer — and it costs less than most businesses expect.",
+    intro: "Most businesses start with Stripe or PayPal and are perfectly well served — until they are not. The moment you need split payments between multiple parties, complex subscription billing logic, B2B invoice payment with net terms, or a checkout experience that is genuinely embedded in your product rather than redirecting to a third-party page, standard payment tools become a constraint. They handle the standard cases brilliantly, but their APIs, fee structures, and data models were designed for the median business — not yours. Custom payment integration software gives you full control over payment flows, data ownership, fee optimisation, and the experience your clients have around payments. This guide explains when to build custom, what compliance requirements apply, and what it costs.",
+    sections: [
+      {
+        heading: "When Standard Payment Tools Stop Working for Your Business",
+        content: "Stripe, PayPal, Square, and GoCardless are excellent products for businesses with straightforward B2C or simple B2B payment needs. The question is what happens when your payment requirements move outside the standard model. The most common triggers for a custom build are: needing to split a single payment between your business and a partner or sub-seller; running a marketplace where multiple vendors receive different portions of each transaction; managing subscription billing logic that standard tools cannot model correctly; operating in a regulated industry where payment data cannot route through third-party servers; or needing payment events to trigger seamless, reliable updates across your CRM, ERP, accounting, and fulfilment systems without paying per-transaction fees to a middleware platform.",
+        list: [
+          "Marketplace or multi-vendor platforms where payment splitting between parties is required",
+          "Subscription businesses with custom billing cycles, usage-based pricing, tiered discounts, or complex trial structures",
+          "B2B businesses needing invoice-based payment with net payment terms, purchase order matching, and automated reconciliation",
+          "Regulated industries such as healthcare, fintech, and legal where data sovereignty prevents routing through third-party processors",
+          "High-volume businesses where per-transaction fees on standard platforms become a material cost line worth engineering away",
+        ],
+      },
+      {
+        heading: "Types of Custom Payment Integration and What They Cost",
+        content: "Custom payment integration covers a wide spectrum from a bespoke Stripe configuration to a fully custom payment processing layer. Most businesses sit somewhere in the middle: they use a regulated payment provider for the actual transaction processing — Stripe, Braintree, or Adyen — but build custom software around it to control the flow, data, user experience, and system integrations. Understanding the different layers helps you scope accurately and avoid building more than your situation requires.",
+        table: {
+          headers: ["Integration Type", "What It Means", "Typical Cost Range"],
+          rows: [
+            ["Custom Stripe integration", "Bespoke checkout, subscription logic, and webhook handling built on Stripe's API", "$8,000–$25,000"],
+            ["Enterprise gateway integration (Braintree/Adyen)", "Custom integration with an enterprise-grade gateway for higher volume or multi-currency", "$20,000–$60,000"],
+            ["Marketplace payment splitting", "Custom logic to split and route funds between sellers, platforms, and service providers", "$30,000–$80,000"],
+            ["Invoice and ACH/BACS billing system", "B2B system with invoice generation, net terms, direct debit collection, and reconciliation", "$25,000–$70,000"],
+            ["Direct card network integration", "Integration directly with card networks — rare, requires financial licensing", "$100,000+"],
+          ],
+        },
+        afterTable: "The most cost-effective approach for most businesses is a well-engineered integration on top of a regulated payment provider. This captures all the benefits of custom payment flows while keeping PCI compliance and fraud management with a specialist whose entire business is built around payment security.",
+      },
+      {
+        heading: "PCI DSS Compliance and the Tokenisation Approach",
+        content: "Payment Card Industry Data Security Standard (PCI DSS) compliance is a legal and commercial requirement for any business that handles card payments. Businesses out of compliance risk losing the ability to accept card payments and face significant fines in the event of a breach. The practical good news: building custom payment software on top of a compliant provider like Stripe or Adyen means you inherit most of the compliance infrastructure rather than building it yourself. Your custom layer handles user interface and business logic; the payment provider handles actual card data. This architecture is called payment tokenisation and is the correct approach for custom payment software in 2025.",
+        subsections: [
+          {
+            subheading: "How Tokenisation Works in Practice",
+            text: "In a tokenised architecture, your custom software never sees or stores actual card numbers. The user enters card details directly into a PCI-compliant interface provided by your payment processor — Stripe Elements or a Braintree hosted form — which returns a token your system stores. When a charge is needed, your system sends the token to the payment provider, which processes the actual transaction. This lets you build completely custom payment flows — checkout design, subscription logic, recurring billing — without taking on the full burden of PCI Level 1 compliance, which would require quarterly security assessments and significant ongoing infrastructure investment.",
+          },
+          {
+            subheading: "When You Need Your Own PCI Compliance Programme",
+            text: "If your business needs to accept card details via telephone, process offline payments from a mobile app that stores card details locally, or integrate directly with a card network, you will need a formal PCI compliance programme. This requires working with a dedicated compliance consultant alongside your development team. The majority of businesses can avoid this entirely by designing their payment architecture around hosted payment forms and tokenisation from the outset — a decision that pays back in significantly lower build and maintenance costs.",
+          },
+        ],
+      },
+      {
+        heading: "Integrating Payments With Your Business Systems",
+        content: "One of the primary reasons businesses build custom payment software rather than using standard tools is the integration requirement. When a payment is processed, that event needs to trigger reliable actions across your internal systems: update the order record in your CRM, create an invoice in your accounting software, release access in your subscription management system, notify your operations team, and update the customer-facing portal — all without manual intervention. Each of these connections needs to handle edge cases such as failed payments, partial refunds, and disputed charges, and must maintain data consistency even when one system is temporarily unavailable. This level of reliability requires proper webhook handling, retry logic, and event logging — none of which comes out of the box with a basic integration.",
+        list: [
+          "Accounting software sync: every payment, refund, or failed charge creates the correct accounting entries automatically, eliminating manual reconciliation",
+          "CRM update: deal stage advances, renewal dates set, and account status updated on every payment event without a manual step",
+          "Subscription management: access granted, suspended, or modified based on payment status, including automated failed payment recovery sequences",
+          "Customer notifications: payment confirmations, receipts, failed payment alerts, and retry requests triggered automatically at the right moment",
+          "Finance reporting: payment data aggregated in management dashboards with reconciliation against bank statements and accounting records",
+        ],
+      },
+      {
+        heading: "How to Plan Your Custom Payment Integration Project",
+        content: "Payment projects have a higher-than-average rate of scope creep because the edge cases — declined cards, partial refunds, disputed charges, currency conversion, tax calculation, and failed webhook retries — are systematically under-specified at the start. Before commissioning any custom payment work, map your complete payment journey from first charge to final reconciliation, including every exception state. A good development partner will push you on these edge cases during the discovery phase. The businesses that encounter cost overruns are those that specify the happy path clearly and leave the failure handling vague. Payment software failures are not merely inconvenient — they are financially and legally consequential, and the cost of fixing a poorly designed payment system in production is always greater than building it correctly the first time.",
+      },
+    ],
+    cta: {
+      heading: "Need Custom Payment Integration Built for Your Specific Business Model?",
+      text: "We design and build custom payment flows that handle your exact billing logic, integrate cleanly with your existing systems, and scale reliably as your business grows.",
+      link: "/contact",
+      buttonText: "Discuss Your Project",
+    },
+  },
+  {
+    slug: "custom-field-service-software",
+    title: "Custom Field Service Software for Trades and Service Businesses in 2025",
+    metaTitle: "Custom Field Service Software 2025 | Trades & Service Guide",
+    metaDescription: "Custom dispatch, job management, and mobile apps for trades and service businesses. What to build, what it costs, and how it pays for itself in 2025.",
+    tag: "Industry",
+    publishDate: "June 23, 2026",
+    readTime: "7 min read",
+    summary: "Off-the-shelf field service tools like Jobber and ServiceTitan work until your operation grows past what they were designed for. Custom field service software gives you a dispatch system, technician app, and customer portal built exactly around how your business works — and pays back faster than most owners expect.",
+    intro: "Field service businesses — trades, maintenance contractors, installation teams, equipment service companies — face operational problems that generic software was never designed to solve. Dispatching a job is easy. Dispatching the right engineer to the right job with the right parts, in real time, while keeping the customer informed and producing a professional invoice before leaving the site — that requires software built around how field service actually works. Off-the-shelf tools like Jobber and ServiceTitan serve a wide market well, but growing field service businesses consistently find that those tools either lack specific capabilities, charge per-technician fees that erode margins at scale, or cannot integrate cleanly with existing business systems. This guide covers what custom field service software looks like, what it includes, and what it costs to build in 2025.",
+    sections: [
+      {
+        heading: "Why Growing Field Service Businesses Outgrow Off-the-Shelf Tools",
+        content: "Jobber, ServiceTitan, Housecall Pro, and FieldPulse are strong products for the businesses they were designed for. They work well for straightforward scheduling, basic invoicing, and standard customer communication. The problems emerge when your operation has requirements those tools were not built to handle — and those requirements are often exactly what your competitive edge depends on. Custom field service software is typically commissioned by businesses with 15 or more technicians, complex job types that generic scheduling cannot model, or specific integration requirements with accounting, fleet management, or enterprise customer systems.",
+        list: [
+          "Per-user pricing becomes significant at scale — a common $50/user/month tool costs over $12,000 per year for 20 technicians before add-ons",
+          "Complex job workflows with multiple visit stages, sign-off requirements, and part tracking that generic scheduling tools cannot model correctly",
+          "Multi-trade businesses where different technician types need different job cards, checklists, and compliance documentation formats",
+          "Integration requirements with existing fleet management, ERP, or enterprise accounting systems that off-the-shelf tools do not support natively",
+          "Branded customer experience requirements that white-labelling a generic scheduling tool cannot fully deliver",
+          "B2B customers — facilities managers, property companies — that need a portal showing all jobs, service histories, and upcoming schedules in one place",
+        ],
+      },
+      {
+        heading: "Dispatching and Scheduling: The Core of Any Field Service System",
+        content: "Dispatching is the operational heart of a field service business. An effective dispatch system shows your entire workforce availability in real time, accounts for job duration estimates, travel time, required skill sets, and parts availability, and makes it straightforward for dispatchers to assign and reassign jobs as the day changes. The best custom dispatch systems are built around a drag-and-drop scheduling board that reflects your actual operational model — whether territory-based, skill-based, or team-based — and connect directly to technician mobile apps so changes propagate instantly to the field.",
+        table: {
+          headers: ["Feature", "Generic Tool Limitation", "Custom System Approach"],
+          rows: [
+            ["Skill-based job matching", "Basic tag filtering at most", "Rule-based auto-suggest using certification and proximity data"],
+            ["Multi-visit job tracking", "Single-visit job cards only", "Job lifecycle tracking across multiple site visits with status history"],
+            ["Parts availability pre-dispatch", "Manual lookup required", "Live integration with stock system before job is confirmed"],
+            ["SLA and overtime alerts", "Not available in most tools", "Automatic dispatcher alerts when jobs approach SLA deadlines"],
+            ["Post-dispatch customer communication", "Basic SMS from template", "Branded portal with live technician location tracking"],
+          ],
+        },
+        afterTable: "A well-built dispatch system reduces the average time a dispatcher spends on scheduling changes by 40–60%, and eliminates the most common cause of engineer idle time: arriving on site without the correct information or parts.",
+      },
+      {
+        heading: "Mobile Apps for Field Technicians",
+        content: "A technician mobile app is typically the highest-impact component of a custom field service system. It puts the complete job card in the engineer's hands — site notes, previous job history, compliance checklists, required parts list, customer contact details, and any access instructions — and allows them to update job status, capture photos, collect a digital signature, and submit the completed job without returning to the office or making a phone call to administration. The key design constraint for field service apps is offline reliability: engineers frequently work in basements, plant rooms, and areas with poor signal. The app must function without connectivity and sync all changes automatically when a signal is restored. Well-designed technician apps consistently reduce administrative overhead per job by 20–40 minutes.",
+        subsections: [
+          {
+            subheading: "What a Field Technician App Typically Includes",
+            text: "A custom technician app for field service typically includes: a daily job list with schedule view and one-tap navigation; a job card with customer details, site notes, previous visit history, and role-specific compliance checklists; parts used logging with stock adjustment; photo capture for before-and-after documentation and defect records; digital signature collection for job completion and customer approval; time logging against jobs for payroll and job costing; offline mode with automatic background sync on reconnection; and instant push notifications for job reassignments or messages from dispatch.",
+          },
+        ],
+      },
+      {
+        heading: "Customer Communication and Self-Service Portals",
+        content: "Modern customers expect real-time communication for field service bookings. A confirmation message when the job is booked, an automated alert when the technician is on their way, a live tracking link, and a professional completion report sent immediately on sign-off — these are the details that convert one-time customers into long-term clients and generate positive reviews. Custom software lets you build this communication layer exactly as your brand requires it, rather than sending generic-looking messages that arrive from a scheduling tool your customer has never heard of. For businesses serving facilities managers or property management companies, a self-service portal showing all open jobs, service histories, compliance documentation, and upcoming scheduled maintenance is often as commercially valuable as the field operations software itself.",
+        list: [
+          "Automated appointment confirmation with technician photo and qualifications for customer reassurance before arrival",
+          "Real-time technician tracking link sent 30–60 minutes before estimated arrival, reducing missed appointment costs",
+          "Digital job completion report emailed or accessible in customer portal immediately on sign-off, with photos attached",
+          "Self-service rebooking portal for customers on planned maintenance contracts",
+          "Automated follow-up sequences for review requests, maintenance reminders, and contract renewal prompts",
+        ],
+      },
+      {
+        heading: "Job Costing, Invoicing, and Payment",
+        content: "Field service businesses lose margin in two predictable ways: jobs that run over on time without that time being captured, and parts that are consumed on site without being added to the invoice before it is issued. Custom field service software solves both by automatically logging technician time via the mobile app and cross-referencing the parts used log against the job record before an invoice is generated. Invoices can be produced and sent — or even paid — before the technician has left the site. Integration between the field service system and your accounting software eliminates double-entry, ensures every job produces accurate cost data for margin analysis, and removes the end-of-month invoice reconciliation that consumes hours of admin time in manual systems.",
+      },
+      {
+        heading: "Cost to Build Custom Field Service Software",
+        content: "Custom field service software is a multi-component build: a web-based dispatch and admin panel, a mobile technician app, a customer portal, and the integrations that connect them to your accounting, stock, and fleet systems. The cost range is wide depending on which components you need and how complex your operational workflows are. The most cost-effective approach is to phase the build rather than commissioning everything at once.",
+        table: {
+          headers: ["Component", "Typical Cost Range", "Build Time"],
+          rows: [
+            ["Dispatch and scheduling system (web)", "$20,000–$45,000", "8–14 weeks"],
+            ["Technician mobile app (iOS and Android)", "$25,000–$60,000", "10–18 weeks"],
+            ["Customer portal with job tracking", "$10,000–$25,000", "4–8 weeks"],
+            ["Accounting and stock system integration", "$8,000–$20,000", "3–6 weeks"],
+            ["Full custom platform (all components combined)", "$80,000–$180,000", "20–36 weeks"],
+          ],
+        },
+        afterTable: "Most businesses start with dispatch and scheduling, add the technician app in the second phase, and build the customer portal third. Each phase delivers independent value, and phasing spreads the investment over 2–3 cycles rather than committing the full amount upfront.",
+      },
+    ],
+    cta: {
+      heading: "Ready to Replace Off-the-Shelf Field Service Tools With Something Built for Your Operation?",
+      text: "We build custom dispatch systems, technician apps, and customer portals for field service businesses that have outgrown generic tools. Tell us about your operation.",
+      link: "/contact",
+      buttonText: "Get a Custom Quote",
+    },
+  },
+  {
+    slug: "custom-employee-onboarding-software",
+    title: "Custom Employee Onboarding Software: What to Build and Why It Pays Off",
+    metaTitle: "Custom Employee Onboarding Software | Build & ROI Guide",
+    metaDescription: "Poor employee onboarding costs businesses thousands per hire. Custom onboarding software fixes it — here is what to build, what it integrates with, and what it costs.",
+    tag: "Automation",
+    publishDate: "June 23, 2026",
+    readTime: "7 min read",
+    summary: "Manual employee onboarding wastes 10–25 hours of staff time per hire and introduces compliance risk. Custom onboarding software automates the entire process — from digital contract signing to IT provisioning to compliance training — and pays back within 18–24 months for most businesses hiring regularly.",
+    intro: "Poor employee onboarding is expensive in ways most businesses never fully measure. Industry research consistently puts the cost of a failed hire at 50–200% of annual salary, and poor onboarding is one of the leading causes of early-stage turnover. Beyond the retention risk, manual onboarding processes waste significant HR, IT, and manager time on paperwork, account setup, equipment provisioning, and compliance training that could be automated. Custom employee onboarding software replaces the spreadsheets, email chains, shared drives, and manual IT tickets that characterise most small business onboarding with a single automated workflow that gets new hires productive faster and leaves a professional first impression. This guide covers what to build, how it integrates with your existing HR and IT stack, what the ROI looks like, and what it costs.",
+    sections: [
+      {
+        heading: "The Real Cost of Manual Employee Onboarding",
+        content: "Most businesses significantly underestimate both the cost and the inconsistency of manual onboarding. When you add up the time cost of everyone involved — HR, IT, the hiring manager, payroll — manual onboarding for a single employee typically consumes 10–25 hours of staff time spread across the first two weeks. At a blended rate of £40–£60 per hour, that is £400–£1,500 per hire in pure administrative time cost, before accounting for delays in productivity caused by missing system access, incomplete compliance training, or a disorganised first week. Inconsistency compounds the cost: when onboarding depends on individuals remembering their checklist, the quality and completeness of the experience varies dramatically between hires and between managers.",
+        table: {
+          headers: ["Onboarding Task", "Manual Time Cost", "Automated Time Cost"],
+          rows: [
+            ["Contract signing and HR paperwork", "2–4 hours (HR)", "15 minutes — digital completion and auto-filing"],
+            ["IT account creation and access provisioning", "3–6 hours (IT team)", "Automated — triggered on hire record creation"],
+            ["Payroll setup and bank detail collection", "1–2 hours (payroll)", "5 minutes — self-service digital form with validation"],
+            ["Compliance training assignment and tracking", "1–3 hours (HR)", "Zero — assigned automatically by role on start date"],
+            ["30/60/90-day check-in scheduling", "Ongoing manual calendar work", "Auto-scheduled from start date with automated reminders"],
+          ],
+        },
+        afterTable: "Businesses that automate onboarding typically reduce the HR and manager time cost per hire by 60–80%, while simultaneously improving consistency, compliance documentation quality, and the new hire experience.",
+      },
+      {
+        heading: "Manual Onboarding Bottlenecks That Custom Software Fixes",
+        content: "Manual onboarding breaks down at predictable points regardless of how well-organised the HR team is. These failure points are the starting brief for scoping what to build. Each one represents both a cost and a compliance or retention risk.",
+        list: [
+          "Document collection: contracts, right-to-work documents, bank details, and emergency contacts collected via email chains that are slow, hard to chase, and non-compliant with data handling requirements",
+          "IT provisioning: email, HR system, project management, Slack, and cloud storage access created via manual IT requests with no tracking, no SLA, and frequent delays",
+          "Compliance training: assigning mandatory modules, tracking completion, and chasing non-completions managed with spreadsheets and email reminders that are easy to miss",
+          "Manager onboarding tasks: induction schedules, buddy assignments, and first-week meeting plans rarely have a formal system — they depend on individual managers remembering",
+          "Check-in scheduling: 30-day, 60-day, and 90-day probationary reviews frequently missed because there is no automatic trigger after the start date is set",
+          "Equipment and access inconsistency: no single source of truth for what each role requires, leading to new starters missing critical access or receiving unnecessary permissions",
+        ],
+      },
+      {
+        heading: "Core Features of Custom Employee Onboarding Software",
+        content: "A custom onboarding system is built as a combination of a self-service portal for the new hire, an admin dashboard for HR, an automated task engine that coordinates actions across people and systems, and a reporting layer for compliance tracking. The exact feature set depends on your business size and compliance requirements, but the core building blocks are consistent across industries.",
+        subsections: [
+          {
+            subheading: "New Hire Self-Service Portal",
+            text: "Before day one, new hires access a branded portal to complete all required pre-start actions: reviewing and digitally signing their employment contract; submitting personal details, bank information, and tax forms; uploading right-to-work and identity documents; reviewing the employee handbook; and completing any mandatory pre-start compliance modules. This eliminates day-one paperwork entirely and ensures all legal documentation is completed and filed before the employee arrives. A well-designed portal also sets the tone: it tells the new hire that the business is organised, professional, and invested in making their start a good one — which matters for early retention.",
+          },
+          {
+            subheading: "Automated Task Engine",
+            text: "The task engine is the automation layer that coordinates the entire onboarding process. When a new hire record is created — typically triggered by an offer acceptance in your ATS or HR system — the engine automatically creates and assigns tasks for every stakeholder: IT receives a provisioning checklist for that specific role; the hiring manager receives induction schedule reminders; payroll receives a new starter notification. Each task has an owner, a due date, and a completion requirement. The system sends reminders automatically and escalates to HR management when tasks are overdue, giving HR full visibility without having to chase individuals manually.",
+          },
+          {
+            subheading: "Compliance and Training Tracking",
+            text: "Every business has mandatory compliance requirements for new employees — data protection training, health and safety inductions, role-specific certifications, or regulated industry qualifications. A custom onboarding system assigns and tracks these automatically based on the employee's role, department, and location, producing an auditable completion trail that manual systems cannot provide consistently. This is particularly valuable in healthcare, financial services, childcare, and education, where proof of completed training before an employee begins work is a legal requirement rather than a best practice.",
+          },
+        ],
+      },
+      {
+        heading: "Integration With HR, Payroll, and Identity Systems",
+        content: "A custom onboarding system is most powerful when it connects to the other platforms in your HR and IT stack. Standalone onboarding software that still requires manual data re-entry into your HRIS, payroll system, and identity provider defeats a significant part of its purpose. The integrations that deliver the greatest time savings are: your HR information system — BambooHR, HiBob, Personio, or a custom HR system — which becomes the source of truth for employee data; your payroll provider — Gusto, ADP, Xero Payroll, or Sage Payroll — which receives bank and tax details automatically without HR acting as a manual relay; and your identity provider — Google Workspace or Microsoft Azure Active Directory — which provisions email accounts and application access automatically when the hire record is created.",
+        list: [
+          "HRIS integration: new hire data syncs to your HR system automatically — no double entry and no data discrepancy between onboarding and HR records",
+          "Payroll integration: bank details and tax information submitted by the employee flow directly to payroll, eliminating the payroll team chasing paperwork",
+          "Identity provider provisioning: Google Workspace or Microsoft 365 accounts created automatically with the correct access groups for the role",
+          "E-signature integration: contracts and policies signed digitally via DocuSign or HelloSign, stored and indexed automatically against the employee record",
+          "Learning management system: training modules assigned automatically on start date, completion tracked and reported in the onboarding dashboard",
+        ],
+      },
+      {
+        heading: "ROI Calculation: What Custom Onboarding Software Pays Back",
+        content: "Custom onboarding software is one of the clearer ROI calculations in HR technology because the costs it replaces are concrete and measurable. Use this framework to build the business case before commissioning a build — or to evaluate whether what you currently spend on manual onboarding justifies the investment.",
+        table: {
+          headers: ["Cost Category", "Manual Process Estimate", "With Custom Onboarding"],
+          rows: [
+            ["HR admin time per hire", "10–15 hrs at £45/hr = £450–£675", "2–3 hrs = £90–£135 (saving: up to £540/hire)"],
+            ["IT provisioning time per hire", "3–6 hrs at £50/hr = £150–£300", "Automated — 15 min = £12 (saving: up to £288/hire)"],
+            ["Manager onboarding coordination", "5–8 hrs at £60/hr = £300–£480", "2–3 hrs = £120–£180 (saving: up to £300/hire)"],
+            ["Compliance training chase time", "2–4 hrs per hire (HR)", "Zero — automated assignment and reminders"],
+            ["Cost per compliance gap (risk)", "Variable — potentially significant", "Near-zero — auditable completion records for every hire"],
+          ],
+        },
+        afterTable: "For a business hiring 20 employees per year, the combined time savings typically reach £13,000–£22,000 annually. A custom onboarding system in the £25,000–£50,000 build range pays back within 18–24 months on time savings alone — before any improvement in new hire retention is counted.",
+      },
+      {
+        heading: "Cost to Build Custom Employee Onboarding Software",
+        content: "Custom employee onboarding software ranges in cost depending on the number of HR and IT system integrations, the complexity of compliance tracking requirements, and whether you need the new hire experience to work on mobile devices. A well-scoped MVP covering the self-service portal, automated task engine, digital contract signing, and 2–3 key integrations is achievable for most businesses at the lower end of the range. The full system with advanced compliance tracking, mobile optimisation, and a complete integration set falls in the mid-range.",
+        table: {
+          headers: ["Scope", "Typical Cost Range", "Best Suited For"],
+          rows: [
+            ["MVP: portal + task engine + e-signature", "$20,000–$35,000", "Businesses hiring 10–30 people per year with simple compliance needs"],
+            ["Mid-scope: MVP + HRIS + payroll + IT provisioning", "$35,000–$60,000", "Growing businesses with existing HR and payroll systems to integrate"],
+            ["Full system: all integrations + LMS + mobile + reporting", "$60,000–$100,000", "Businesses with regulated compliance requirements or 50+ hires per year"],
+          ],
+        },
+        afterTable: "Companies in regulated industries — healthcare, financial services, education — often commission onboarding systems primarily for the compliance documentation trail. In those contexts, the ROI is driven by the cost of a compliance failure rather than a straight time-saving calculation, which typically produces a much shorter payback period.",
+      },
+    ],
+    cta: {
+      heading: "Want to Automate Employee Onboarding and Get New Hires Productive From Day One?",
+      text: "We build custom onboarding systems that connect to your HR, payroll, and IT tools — so new starters are fully set up and ready before they arrive. Tell us about your hiring process.",
+      link: "/contact",
+      buttonText: "Discuss Onboarding Software",
+    },
+  },
 ];
 

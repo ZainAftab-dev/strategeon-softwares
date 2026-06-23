@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-employee-onboarding-software",
+    title: "Custom Employee Onboarding Software: What to Build and Why It Pays Off",
+    tag: "Automation",
+    summary:
+      "Manual employee onboarding wastes 10–25 hours of staff time per hire and introduces compliance risk. Custom onboarding software automates the entire process — from digital contract signing to IT provisioning to compliance training — and pays back within 18–24 months for most businesses hiring regularly.",
+  },
+  {
+    url: "/insights/custom-field-service-software",
+    title: "Custom Field Service Software for Trades and Service Businesses in 2025",
+    tag: "Industry",
+    summary:
+      "Off-the-shelf field service tools like Jobber and ServiceTitan work until your operation grows past what they were designed for. Custom field service software gives you a dispatch system, technician app, and customer portal built exactly around how your business works — and pays back faster than most owners expect.",
+  },
+  {
+    url: "/insights/custom-payment-integration-software",
+    title: "Custom Payment Integration Software: What Businesses Need Beyond Stripe",
+    tag: "How-To",
+    summary:
+      "Stripe and PayPal handle standard transactions well. When you need split payments, complex subscription logic, B2B invoice billing, or seamless integration with your internal systems, custom payment integration software is the answer — and it costs less than most businesses expect.",
+  },
+  {
     url: "/insights/custom-software-maintenance-cost",
     title: "Custom Software Maintenance Cost: What to Budget After Launch",
     tag: "Cost Guide",
