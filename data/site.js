@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/outsourcing-vs-in-house-software-development",
+    title: "Outsourcing vs In-House Software Development: Which Is Right for Your Business in 2025?",
+    tag: "Strategy",
+    summary:
+      "Outsourcing custom software gives you a known project cost, faster start, and specialist skills without hiring overhead — but requires clear scope and good communication. An in-house team gives you faster iteration and institutional knowledge accumulation, but costs significantly more per hour of output and takes 3–6 months to hire and onboard. This guide gives you the real comparison.",
+  },
+  {
+    url: "/insights/custom-database-development-cost",
+    title: "Custom Database Development Cost in 2025: What Businesses Actually Pay",
+    tag: "Cost Guide",
+    summary:
+      "Custom database development costs range from $8,000 for a simple structured data store with a basic admin interface to $80,000+ for a complex multi-tenant system with custom reporting and external integrations. The biggest cost variable is not the database itself — it's the admin interface and reporting layer built on top of it.",
+  },
+  {
+    url: "/insights/custom-software-for-accounting-firms",
+    title: "Custom Software for Accounting Firms: Client Portals, Workflow Automation, and Practice Management",
+    tag: "Industry",
+    summary:
+      "Off-the-shelf practice management tools like Karbon and TaxDome cover the basics but can't match the specific workflows of your firm. Custom software for accounting firms delivers a branded client portal, automated engagement workflows, and a practice management system that reflects how you actually work — not how the vendor thinks you should.",
+  },
+  {
     url: "/insights/custom-employee-onboarding-software",
     title: "Custom Employee Onboarding Software: What to Build and Why It Pays Off",
     tag: "Automation",
