@@ -6340,5 +6340,266 @@
       buttonText: "Talk to Our Team",
     },
   },
+  {
+    slug: "custom-workflow-automation-software",
+    title: "Custom Workflow Automation Software for Business: What It Does and What It Costs",
+    metaTitle: "Custom Workflow Automation Software | Cost & Guide 2026",
+    metaDescription: "Custom workflow automation software eliminates manual handoffs, reduces errors, and speeds up repetitive processes. Here is what it does, what it costs, and how to build it.",
+    tag: "Automation",
+    publishDate: "July 7, 2026",
+    readTime: "7 min read",
+    summary: "Custom workflow automation software replaces manual handoffs, email chains, and spreadsheet-based tracking with rules-driven processes that run automatically. For most businesses, the ROI arrives within 12 months through time savings alone — error reduction and compliance benefits add further value on top.",
+    intro: "Every business has workflows that rely on a human remembering to do the next thing: send the follow-up, update the status, notify the right person, generate the report. These handoffs are invisible in small teams and quietly expensive at scale. Missed steps cause delays, errors, and frustrated clients. The solution is not more checklists — it is software that handles the handoffs automatically. Custom workflow automation software is built around your specific processes rather than a generic template, which means it handles the exact sequence of steps your business actually runs, with the business rules that actually apply to your situation. This guide explains what custom workflow automation software does, what off-the-shelf tools can and cannot do, and what it costs to build something that fits.",
+    sections: [
+      {
+        heading: "What Workflow Automation Software Actually Does",
+        content: "Workflow automation software monitors a trigger — a form submission, a payment, a status change, a date — and then executes a sequence of actions automatically: creating records, sending notifications, updating statuses, generating documents, or calling external APIs. The result is that multi-step processes that previously required manual coordination happen reliably and consistently without human intervention at each step. The most impactful automations are those that replace high-frequency manual handoffs: new client onboarding, purchase order approvals, service delivery sign-offs, invoice generation on project completion, and compliance document collection. Each one is a sequence of steps that someone is currently doing manually and that software can handle faster, more consistently, and with a full audit trail.",
+        list: [
+          "Trigger-based rules: when X happens, do Y — including chained actions across multiple systems",
+          "Approval routing: automatic escalation to the right person based on value, type, or client tier",
+          "Status tracking: real-time visibility into where every item is in the process without asking anyone",
+          "Notification management: email, in-app, or webhook alerts only when genuinely needed",
+          "Document generation: automatic creation of contracts, reports, or invoices from structured data",
+          "System integration: writing data to your CRM, accounting software, or any connected tool",
+        ],
+      },
+      {
+        heading: "Off-the-Shelf Automation Tools vs Custom: Where the Ceiling Is",
+        content: "Tools like Zapier, Make (formerly Integromat), and n8n are excellent starting points for connecting SaaS applications and automating simple linear workflows. Most businesses should start there. The ceiling appears when your process has conditional branching, multi-party approvals, complex business rules, or integrations with internal systems that do not have public APIs. At that point, maintaining a web of Zaps or scenarios becomes technically debt-laden and fragile. Zapier's pricing also scales with usage volume — at the point where automation is genuinely business-critical and high-frequency, the monthly cost can rival a custom build amortised over two to three years.",
+        table: {
+          headers: ["Factor", "Zapier / Make", "Custom Automation Software"],
+          rows: [
+            ["Setup time", "Hours to days", "4–16 weeks depending on complexity"],
+            ["Cost to start", "Free to $600/month", "$15,000–$80,000 build cost"],
+            ["Business logic complexity", "Linear, simple branching", "Any logic your process requires"],
+            ["Internal system integration", "Requires existing APIs", "Custom API or database connectors built"],
+            ["Audit trail", "Basic execution logs", "Full, structured audit trail with custom reporting"],
+            ["Maintenance at scale", "Fragile — each Zap breaks independently", "Single maintained codebase, monitored system"],
+            ["Volume cost", "Increases with task volume", "Fixed hosting cost regardless of volume"],
+          ],
+        },
+        afterTable: "The decision point is usually a combination of complexity and volume. Simple, low-volume automations live happily in Zapier. Complex, business-critical, or high-volume processes justify the one-time cost of a custom build.",
+      },
+      {
+        heading: "The Workflows Businesses Most Commonly Automate",
+        content: "Across professional services, e-commerce, logistics, and operations-heavy businesses, the workflows that generate the most ROI when automated are the ones that combine high frequency with high manual effort per occurrence. The following processes consistently top the list across industries.",
+        subsections: [
+          {
+            subheading: "Client Onboarding",
+            text: "New client onboarding typically involves 8–15 individual steps: sending a welcome email, collecting documents, running background or credit checks, creating accounts across internal systems, assigning a team member, scheduling a kick-off call, and generating a welcome pack. Custom automation handles all of these from a single trigger — the client signing a contract or making a first payment — reducing onboarding from 3–5 business days to same-day completion with zero manual effort.",
+          },
+          {
+            subheading: "Purchase Order and Expense Approvals",
+            text: "Approval workflows in most businesses are handled by email, which creates no audit trail, no escalation when someone is unavailable, and no visibility into what is pending. Custom approval automation routes each request to the right approver based on value and category, escalates automatically after 24 or 48 hours without a decision, and records the full approval chain with timestamps — something any compliance framework or audit will require.",
+          },
+          {
+            subheading: "Invoice and Payment Processing",
+            text: "For businesses billing on milestones, time, or recurring schedules, automating invoice generation eliminates a high-frequency administrative task and accelerates cash flow. Custom automation generates and sends invoices at the right trigger, logs them to your accounting system, sends payment reminders at defined intervals, and updates the project or client record when payment is confirmed.",
+          },
+        ],
+      },
+      {
+        heading: "What Custom Workflow Automation Software Costs to Build",
+        content: "Build cost is determined by the number of workflows, their complexity, the number of external systems that need to be integrated, and whether the system requires a user-facing interface for monitoring and management. A focused automation project covering two to three related workflows — such as client onboarding, contract generation, and payment confirmation — typically costs between $15,000 and $35,000. A broader automation platform covering 6–10 workflows with a full admin dashboard, audit trail, and integrations to 3–4 external systems typically costs $40,000 to $80,000.",
+        table: {
+          headers: ["Project Scope", "Typical Cost Range", "Build Timeline"],
+          rows: [
+            ["2–3 workflows, 1–2 integrations, no admin UI", "$15,000–$28,000", "6–10 weeks"],
+            ["4–6 workflows, 3–4 integrations, basic monitoring dashboard", "$28,000–$50,000", "10–16 weeks"],
+            ["Full automation platform, 8+ workflows, custom dashboard and reporting", "$50,000–$80,000+", "16–24 weeks"],
+          ],
+        },
+        afterTable: "These ranges assume a professional development team building a production-quality system with proper testing, documentation, and deployment to a managed cloud environment. The cost of doing nothing — in human hours at even $30/hour — typically exceeds the build cost within 18 to 24 months for any high-frequency manual process.",
+      },
+      {
+        heading: "How to Measure the ROI of Workflow Automation",
+        content: "The business case for workflow automation is straightforward to calculate, and doing it before starting a build ensures you are investing in the right processes first. The core calculation: identify how many hours per week the manual version of the workflow consumes across all staff involved, multiply by the fully loaded hourly cost of those staff members, and project the annual saving. Add the value of error reduction — one prevented compliance failure, one avoided client churn from a missed follow-up, one caught billing error can represent significant financial impact. Divide the build cost by the annual saving to get the payback period. Most businesses undertaking workflow automation find payback periods of 12 to 24 months for focused projects, and 18 to 36 months for broader platforms.",
+        afterContent: "Error reduction and compliance benefits are often as valuable as the time saving but harder to quantify before a project starts. A useful approach is to ask: how much did the last missed step in this workflow cost the business? If the answer is measured in thousands rather than hundreds, the risk reduction value alone strengthens the business case significantly.",
+      },
+    ],
+    cta: {
+      heading: "Ready to Automate the Workflows Slowing You Down?",
+      text: "We design and build custom workflow automation software for UK and US businesses — built around your exact processes, integrated with your existing tools. Start with a conversation about what to automate first.",
+      link: "/contact",
+      buttonText: "Get a Free Consultation",
+    },
+  },
+  {
+    slug: "custom-document-management-software",
+    title: "Custom Document Management Software: Why SharePoint and Dropbox Are Not Enough",
+    metaTitle: "Custom Document Management Software 2026 | Beyond SharePoint",
+    metaDescription: "SharePoint is file storage, not document management. Custom DMS gives you version control, approval workflows, access rules, and compliance audit trails built for your business.",
+    tag: "Strategy",
+    publishDate: "July 7, 2026",
+    readTime: "7 min read",
+    summary: "SharePoint, Google Drive, and Dropbox store files — they do not manage documents. Custom document management software adds version control, role-based access, automated approval workflows, compliance audit trails, and retention policies that off-the-shelf tools cannot enforce. The difference matters most for professional services firms, regulated industries, and businesses managing client documentation at scale.",
+    intro: "Most businesses manage their documents the same way they managed them in 2005 — shared drives, email attachments, and naming conventions like 'Contract_FINAL_v3_revised.docx'. File storage tools like SharePoint, Google Drive, and Dropbox have made this marginally better by adding cloud sync and basic sharing controls, but they have not solved the underlying problems: no enforced version control, no approval workflows, no access rules tied to business logic, and no audit trail that would survive scrutiny. Custom document management software is different from file storage because it treats a document as a business object with a lifecycle — from creation through review, approval, distribution, retention, and eventual archiving or deletion. For professional services firms, construction companies, legal practices, healthcare providers, and any business managing regulated or client-specific documentation, the difference between file storage and proper document management is the difference between chaotic and compliant.",
+    sections: [
+      {
+        heading: "What Document Management Software Does That File Storage Does Not",
+        content: "The distinction is worth being precise about because many businesses assume SharePoint or Google Drive is their document management system when it is actually just a shared filing cabinet. A proper document management system (DMS) manages the full lifecycle of a document, not just its storage location. The core capabilities that separate DMS from file storage are version control with rollback, role-based access at the document level rather than the folder level, approval and sign-off workflows built into the system, automated retention and expiry rules, and a comprehensive audit trail showing who viewed, edited, approved, or shared each document and when.",
+        list: [
+          "Version control: every change creates a numbered version with author and timestamp — rollback is a click, not a desperate search through email history",
+          "Access control by document type, client, project, and role — not just which folder someone can open",
+          "Approval workflows: documents cannot be distributed or published until the right people have signed off, with escalation if approvers are unresponsive",
+          "Audit trail: a complete, tamper-resistant log of every action on every document — essential for regulatory compliance and professional indemnity",
+          "Retention policies: documents are automatically archived or flagged for deletion at the end of their required retention period",
+          "Search: find any document by content, metadata, client, project, or status — not by remembering what folder it was saved in",
+        ],
+      },
+      {
+        heading: "Why SharePoint, Dropbox, and Google Drive Fall Short",
+        content: "The off-the-shelf file storage tools are not bad products — they are simply designed for a different job. SharePoint's version history is manual and inconsistent; its access control is folder-based and requires IT overhead to manage; its search is notoriously unreliable for content within documents. Dropbox excels at synchronisation across devices but has minimal workflow capability and basic access control. Google Drive's strength is real-time collaboration, but its access model is email-based rather than role-based, creating significant exposure when staff leave or client relationships change.",
+        table: {
+          headers: ["Capability", "SharePoint / Dropbox / Google Drive", "Custom DMS"],
+          rows: [
+            ["Version control", "Manual, inconsistent — depends on user behaviour", "Automatic, enforced — every save creates a version"],
+            ["Access control", "Folder-based — broad and hard to audit", "Document-level by role, client, project, and status"],
+            ["Approval workflows", "Not built-in — requires manual email sign-off", "Configurable approval chains with escalation and audit"],
+            ["Audit trail", "Basic — logs file events but not content access in detail", "Complete, structured, tamper-resistant — survives compliance review"],
+            ["Retention policies", "Manual — relies on someone remembering to act", "Automated — documents archived or flagged at defined intervals"],
+            ["Search", "Filename-based — unreliable for document content", "Full-text, metadata, client, and status search"],
+            ["Client-specific access", "Requires per-folder sharing — high admin overhead", "Clients see only their documents — enforced by the system"],
+          ],
+        },
+        afterTable: "The gaps become business risks at scale. When a staff member leaves and still has access to five years of client documents, or when a compliance audit asks for every document related to a specific client over three years, the limitations of folder-based file storage become immediately visible.",
+      },
+      {
+        heading: "Industries Where Custom DMS Pays Off Fastest",
+        content: "Custom document management software delivers the strongest ROI in industries where documents are central to service delivery, where compliance requires demonstrable audit trails, or where large volumes of client-specific documents create significant administrative overhead when managed manually.",
+        subsections: [
+          {
+            subheading: "Professional Services (Law, Accounting, Consulting)",
+            text: "Professional services firms manage hundreds or thousands of documents per client — contracts, engagement letters, deliverables, signed approvals, and correspondence. Each has a specific lifecycle, retention requirement, and access restriction. Custom DMS for professional services firms includes matter or engagement-based document organisation, client portal access for approved documents, version control on all deliverables, and audit-ready access logs. Firms report saving 5–10 hours per week in document management overhead for every 10 active client files.",
+          },
+          {
+            subheading: "Construction and Engineering",
+            text: "Construction projects generate thousands of documents — drawings, specifications, RFIs, submittals, change orders, and inspection records — across multiple stakeholders: client, main contractor, subcontractors, and regulatory bodies. Version control failures in construction can mean building to the wrong drawing revision, with costly rework consequences. Custom DMS for construction includes drawing register management, revision-controlled document sets, subcontractor access with read-only restrictions, and RFI tracking integrated with the document library.",
+          },
+          {
+            subheading: "Healthcare and Life Sciences",
+            text: "HIPAA in the US and NHS data governance frameworks in the UK impose strict requirements on who can access patient or clinical documents and what the audit trail must show. Generic file storage tools cannot provide the access granularity or audit depth these frameworks require. Custom healthcare DMS solutions build access control around clinical role and patient relationship, provide full document-level audit trails, and enforce retention periods aligned to regulatory requirements.",
+          },
+        ],
+      },
+      {
+        heading: "Core Features of a Custom Document Management System",
+        content: "A custom DMS is typically built with a structured data layer storing document metadata, versioning, access rules, and workflow state, combined with a file storage layer — typically cloud object storage like AWS S3 or Google Cloud Storage — for the actual document files. The user-facing application provides the document library interface, upload and version management, approval workflows, and search. An API layer connects the DMS to other business systems: CRM for client-linked documents, project management tools for project-linked files, and e-signature platforms for approval workflows.",
+        list: [
+          "Document library with metadata tagging: client, project, document type, status, version, expiry date",
+          "Upload with automatic version incrementing — old versions retained and accessible, not overwritten",
+          "Configurable approval workflows: single-step, multi-step, parallel, and sequential approval chains",
+          "Role-based access matrix: each document type has defined read, edit, approve, and share permissions by role",
+          "Client portal integration: clients access approved documents through a dedicated secure portal",
+          "Full-text search across document content and metadata",
+          "Automated retention: documents flagged for review or archiving at defined periods",
+          "Audit log export: full document history exportable for compliance review",
+        ],
+      },
+      {
+        heading: "Cost to Build a Custom Document Management System",
+        content: "The cost of a custom DMS varies significantly based on the number of document types and workflows, the access control complexity, and whether a client-facing portal is included. A focused DMS covering a single department or document category with basic workflow and access control typically costs $20,000 to $40,000. A full-featured system covering multiple departments, complex approval chains, client portal access, and integration with CRM and project management tools typically costs $45,000 to $90,000. Ongoing hosting costs for a production DMS are typically $100 to $400 per month depending on storage volume and user count.",
+        table: {
+          headers: ["Scope", "Cost Range", "Timeline"],
+          rows: [
+            ["Single-department DMS, basic workflows, no client portal", "$20,000–$40,000", "8–14 weeks"],
+            ["Multi-department DMS, complex approval chains, staff portal", "$40,000–$65,000", "12–20 weeks"],
+            ["Full DMS with client portal, CRM integration, compliance audit module", "$65,000–$90,000+", "18–28 weeks"],
+          ],
+        },
+        afterTable: "The compliance risk reduction value often justifies the build cost independently of productivity savings. A single regulatory penalty for inadequate document controls or a professional indemnity claim arising from a version control failure can exceed the cost of a properly built system.",
+      },
+    ],
+    cta: {
+      heading: "Need a Document Management System Built for Your Business?",
+      text: "We design and build custom DMS solutions for professional services, construction, healthcare, and any business managing documents at scale. Start with a scoped conversation about what you need.",
+      link: "/contact",
+      buttonText: "Discuss Your Requirements",
+    },
+  },
+  {
+    slug: "fixed-price-vs-time-and-materials",
+    title: "Fixed Price vs Time and Materials: How to Choose the Right Software Development Contract",
+    metaTitle: "Fixed Price vs Time and Materials Contract | Software Guide 2026",
+    metaDescription: "Fixed price or time and materials? The right software development contract depends on how well requirements are defined. Here is the full comparison and when each protects you.",
+    tag: "How-To",
+    publishDate: "July 7, 2026",
+    readTime: "7 min read",
+    summary: "Fixed-price contracts work when requirements are fully defined before work starts. Time and materials contracts work when you need flexibility to discover and change scope during the build. Most professional engagements use a hybrid: a fixed-price discovery phase followed by a milestone-based or T&M build. Knowing which contract to expect — and what to negotiate — protects your budget and your project.",
+    intro: "The first significant decision after choosing a software development partner is agreeing on a commercial model. Fixed price and time and materials (T&M) are the two dominant approaches, and the choice between them has real consequences for your budget certainty, your exposure to scope creep, and the incentives your development partner is working under. Neither model is universally better — the right choice depends on how well defined your requirements are, how much flexibility you expect to need during the build, and how much financial risk you are comfortable carrying. This guide explains both models clearly, shows where each one works and where it backfires, and gives you a framework for choosing the right approach — and the right questions to ask before signing.",
+    sections: [
+      {
+        heading: "How Fixed-Price Contracts Work",
+        content: "In a fixed-price contract, the development partner agrees to deliver a defined scope of work for a set total fee. The scope is typically defined in a specification document or scope of work that both parties sign off before work begins. If the agreed scope is delivered, the fixed fee is paid — usually in milestone instalments tied to delivery stages. If the developer encounters unexpected complexity or underestimates the work, that cost overrun falls on them, not you. If you decide you want features that are not in the original scope, they are treated as change requests and priced separately. Fixed-price projects provide budget certainty, which is why many first-time software buyers prefer them. The risk is that certainty requires a fully defined scope — and most software projects discover new requirements during the build. Poorly defined scope in a fixed-price contract leads to scope disputes, change request battles, and either a substandard product or a budget overrun.",
+        list: [
+          "Budget certainty: you know the total cost before work starts",
+          "Incentive alignment: the developer is motivated to complete the agreed scope efficiently",
+          "Change requests: scope changes are costed and agreed separately — no hidden additions",
+          "Risk transfer: underestimation risk falls on the developer, not the client",
+          "Specification dependency: accuracy of the price depends entirely on accuracy and completeness of the spec",
+        ],
+      },
+      {
+        heading: "How Time and Materials Contracts Work",
+        content: "In a time and materials contract, you pay for the actual hours worked at an agreed day or hourly rate, plus any material costs such as hosting or third-party licences. There is no fixed total — the project cost is the sum of hours spent multiplied by the agreed rate. T&M gives you maximum flexibility: requirements can evolve, features can be reprioritised, and the development team can respond to discoveries during the build without generating a formal change order every time something changes. The risk is budget uncertainty. If the project takes longer than estimated, you pay the difference. Without strong project management and regular budget reporting, T&M projects can drift significantly beyond their original estimate. The mitigation is a well-managed discovery phase that produces a realistic estimate before build begins, combined with regular sprint reporting so you see exactly what has been spent and what remains.",
+      },
+      {
+        heading: "Fixed Price vs Time and Materials: Side-by-Side",
+        content: "The table below covers the key differences across the factors that matter most to a business commissioning software for the first time.",
+        table: {
+          headers: ["Factor", "Fixed Price", "Time and Materials"],
+          rows: [
+            ["Budget certainty", "High — total fee agreed upfront", "Lower — estimate only, actual depends on hours spent"],
+            ["Scope flexibility", "Low — changes require formal change requests", "High — requirements can evolve freely during sprints"],
+            ["Risk distribution", "Developer carries underestimation risk", "Client carries overrun risk"],
+            ["Best for", "Well-defined, stable requirements", "Exploratory, evolving, or complex requirements"],
+            ["Specification quality required", "Very high — price is only as good as the spec", "Moderate — discovery can happen during the build"],
+            ["Incentive to work efficiently", "High — developer benefits from finishing faster", "Lower — hours are billed regardless of pace"],
+            ["Change requests", "Formal, costed, agreed in writing before starting", "Informal — just reprioritise the next sprint"],
+            ["Typical use cases", "Defined features, integrations, data migrations", "Product development, SaaS, innovation projects"],
+          ],
+        },
+        afterTable: "No contract type prevents a bad outcome on its own. Fixed-price contracts with vague specs produce expensive disputes. T&M contracts without good project management produce budget drift. The contract type frames the commercial relationship — execution quality determines whether the project succeeds.",
+      },
+      {
+        heading: "When Fixed Price Is the Right Choice",
+        content: "Fixed-price contracts work well when requirements are stable, specific, and can be fully specified before the build begins. The clearest use cases are replacing a known existing system with defined features, integrating two systems with documented APIs, building a specific tool with a clear list of screens and functions, or delivering a data migration project where the source and destination are fully understood. A good rule of thumb: if you can describe every screen, every field, every rule, and every integration in a written document before work starts — and you are confident those requirements will not materially change during the build — a fixed-price contract is appropriate. If you cannot do that, you will almost certainly encounter scope disputes mid-project. Even in fixed-price projects, build in explicit change management: a clear written process for raising, assessing, and pricing scope changes, with written agreement required before any out-of-scope work proceeds.",
+      },
+      {
+        heading: "When Time and Materials Is the Right Choice",
+        content: "T&M contracts work best for projects where requirements will evolve during the build, where the development process involves significant discovery and iteration, or where you are building a first version of something new and expect to learn as you go. Product development, SaaS applications, customer-facing tools, and any project with substantial UX design work typically benefit from T&M because the right solution often only becomes clear after seeing early versions with real users. T&M also works well when you have a strong internal stakeholder who can actively manage the project and make fast decisions — the flexibility of T&M is only valuable if someone is using it actively to steer the project. Without that engagement, a T&M project can drift without clear direction.",
+      },
+      {
+        heading: "The Hybrid Approach: Fixed Discovery, Flexible Build",
+        content: "The most common arrangement for professional development engagements is a hybrid: a fixed-price discovery phase followed by a T&M or milestone-based build. Discovery (typically 2–4 weeks) produces detailed requirements, user flows, a data model, and a realistic project estimate. At the end of discovery, you have enough definition to either agree a fixed-price build for the full project or proceed T&M with a well-understood scope and estimate. This approach gives you the certainty of a defined spec before committing to build costs, while allowing requirements to be properly explored before they are locked. It is also a low-risk way to assess a new development partner: discovery is low cost, short, and highly revealing about how the team works.",
+        list: [
+          "Fixed-price discovery (2–4 weeks, £5,000–£20,000): produces the spec, UX wireframes, and build estimate",
+          "Option after discovery: fixed-price build if requirements are stable and fully defined",
+          "Option after discovery: T&M sprint-based build if iteration or scope evolution is expected",
+          "Milestone-based hybrid: fixed fees tied to delivery of defined milestones — certainty on each phase, flexibility across phases",
+          "Retainer model: ongoing monthly hours at an agreed rate for continuous development and maintenance post-launch",
+        ],
+      },
+      {
+        heading: "Key Contract Terms to Negotiate Regardless of Model",
+        content: "Beyond the commercial model itself, several contract terms protect your interests regardless of whether you agree fixed price or T&M. These are worth negotiating explicitly before signing any development agreement.",
+        list: [
+          "IP ownership: confirm that all code, designs, and data are assigned to you on delivery — not licensed to you by the agency",
+          "Payment terms: tie payments to milestones or deliverables, not solely to calendar dates",
+          "Source code access: you should have access to the codebase repository from day one, not only on final delivery",
+          "Change request process (fixed price): clear written process with cost agreed before any out-of-scope work begins",
+          "Budget reporting (T&M): weekly or fortnightly spend reports showing hours used, budget remaining, and burn rate against estimate",
+          "Handover and documentation: the agency should provide technical documentation, deployment runbooks, and a structured handover at project end",
+          "Warranty period: most professional agencies offer a 30–90 day bug fix warranty after go-live at no additional charge",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Not Sure Which Contract Is Right for Your Project?",
+      text: "We work with UK and US businesses on fixed-price, time-and-materials, and hybrid engagements. Tell us about your project and we will recommend the commercial model that protects you best.",
+      link: "/contact",
+      buttonText: "Talk to Our Team",
+    },
+  },
 ];
 

@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/fixed-price-vs-time-and-materials",
+    title: "Fixed Price vs Time and Materials: How to Choose the Right Software Development Contract",
+    tag: "How-To",
+    summary:
+      "Fixed-price contracts work when requirements are fully defined before work starts. Time and materials contracts work when you need flexibility to discover and change scope during the build. Most professional engagements use a hybrid: a fixed-price discovery phase followed by a milestone-based or T&M build. Knowing which contract to expect — and what to negotiate — protects your budget and your project.",
+  },
+  {
+    url: "/insights/custom-document-management-software",
+    title: "Custom Document Management Software: Why SharePoint and Dropbox Are Not Enough",
+    tag: "Strategy",
+    summary:
+      "SharePoint, Google Drive, and Dropbox store files — they do not manage documents. Custom document management software adds version control, role-based access, automated approval workflows, compliance audit trails, and retention policies that off-the-shelf tools cannot enforce. The difference matters most for professional services firms, regulated industries, and businesses managing client documentation at scale.",
+  },
+  {
+    url: "/insights/custom-workflow-automation-software",
+    title: "Custom Workflow Automation Software for Business: What It Does and What It Costs",
+    tag: "Automation",
+    summary:
+      "Custom workflow automation software replaces manual handoffs, email chains, and spreadsheet-based tracking with rules-driven processes that run automatically. For most businesses, the ROI arrives within 12 months through time savings alone — error reduction and compliance benefits add further value on top.",
+  },
+  {
     url: "/insights/outsourcing-vs-in-house-software-development",
     title: "Outsourcing vs In-House Software Development: Which Is Right for Your Business in 2025?",
     tag: "Strategy",
