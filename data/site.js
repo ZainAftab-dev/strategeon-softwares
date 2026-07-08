@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/mobile-app-vs-website",
+    title: "Mobile App vs Website: Which Should Your Business Build First?",
+    tag: "How-To",
+    summary:
+      "A mobile app and a website are different tools for different jobs. Websites work best for content, acquisition, and transactions that happen occasionally. Mobile apps work best for frequent, interactive use where offline access, device features, or push notifications matter. This guide gives business owners a practical framework for choosing between a website, a native mobile app, and the middle-ground option — a Progressive Web App.",
+  },
+  {
+    url: "/insights/custom-pos-system-development",
+    title: "Custom Point of Sale System: What Retail and Hospitality Businesses Build Beyond Square and Stripe",
+    tag: "Industry",
+    summary:
+      "Square, Stripe Terminal, and Shopify POS work well for simple, single-site operations. When businesses scale to multiple locations, add complex menus or B2B pricing, need deep loyalty integration, or require reporting across sites, off-the-shelf POS tools become a constraint. Custom POS systems give high-volume retail, restaurant, and hospitality businesses the exact transaction flows, integrations, and reporting their operations need without monthly fees or plugin workarounds.",
+  },
+  {
+    url: "/insights/custom-software-for-manufacturing",
+    title: "Custom Software for Manufacturing Companies: MES, Inventory, and Quality Control",
+    tag: "Industry",
+    summary:
+      "Manufacturing companies outgrow generic ERP modules when production complexity, quality requirements, or multi-site operations push against the limits of off-the-shelf tooling. Custom manufacturing software — covering MES, inventory, quality control, and shop floor reporting — gives manufacturers precise visibility into their operations without paying for modules they do not need or fitting their processes into someone else's workflow model.",
+  },
+  {
     url: "/insights/fixed-price-vs-time-and-materials",
     title: "Fixed Price vs Time and Materials: How to Choose the Right Software Development Contract",
     tag: "How-To",
