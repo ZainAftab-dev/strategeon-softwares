@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/how-to-reduce-software-development-costs",
+    title: "How to Reduce Software Development Costs Without Cutting Corners",
+    tag: "How-To",
+    summary:
+      "Cutting software costs the wrong way creates rework that costs more later. Here is how to reduce spend the right way, from scoping through contract structure.",
+  },
+  {
+    url: "/insights/custom-crm-vs-zoho",
+    title: "Custom CRM vs Zoho: Which Is Right for Your Growing Business?",
+    tag: "Comparison",
+    summary:
+      "Zoho wins on day-one price. Custom CRM wins once you need workflows, integrations, and data ownership that Zoho was never built for. Here is how to decide.",
+  },
+  {
+    url: "/insights/custom-software-for-insurance-agencies",
+    title: "Custom Software for Insurance Agencies: Policy Management, Claims, and Client Portals",
+    tag: "Industry",
+    summary:
+      "Generic agency management systems force insurance agencies into someone else's workflow. Here is what independent agencies and MGAs build custom instead, and what it costs.",
+  },
+  {
     url: "/insights/mobile-app-vs-website",
     title: "Mobile App vs Website: Which Should Your Business Build First?",
     tag: "How-To",
