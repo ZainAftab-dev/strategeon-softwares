@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-software-for-dental-practices",
+    title: "Custom Software for Dental Practices: Patient Management and Scheduling",
+    tag: "Industry",
+    summary:
+      "Dentrix and Open Dental cover the basics but charge for every add-on module. Here is what dental practices build custom and what it costs in 2026.",
+  },
+  {
+    url: "/insights/custom-appointment-scheduling-software",
+    title: "Custom Appointment Scheduling Software: What It Costs to Build in 2026",
+    tag: "Cost Guide",
+    summary:
+      "Off-the-shelf scheduling tools charge monthly per user and cap what you can customise. Here is when building your own scheduling system pays off.",
+  },
+  {
+    url: "/insights/custom-software-for-nonprofits",
+    title: "Custom Software for Nonprofits: Donor Management, Volunteers, and Grants",
+    tag: "Industry",
+    summary:
+      "Generic CRMs were not built for donor relationships, grant deadlines, or volunteer scheduling. Here is what nonprofits actually need and what it costs to build it.",
+  },
+  {
     url: "/insights/how-to-reduce-software-development-costs",
     title: "How to Reduce Software Development Costs Without Cutting Corners",
     tag: "How-To",
