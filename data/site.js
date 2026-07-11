@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-warehouse-management-software-cost",
+    title: "Custom Warehouse Management Software Cost: What to Budget in 2026",
+    tag: "Cost Guide",
+    summary:
+      "Off-the-shelf WMS platforms charge per user and rarely fit a warehouse's exact layout or workflow. Here is what custom warehouse management software actually costs to build in 2026.",
+  },
+  {
+    url: "/insights/white-label-software-vs-custom-development",
+    title: "White-Label Software vs Custom Development: Which Is Right for Your Business?",
+    tag: "Comparison",
+    summary:
+      "White-label platforms get you to market fast for a recurring fee. Custom development costs more upfront but you own the result outright. Here is how to decide which fits your business.",
+  },
+  {
+    url: "/insights/custom-software-for-property-management-companies",
+    title: "Custom Software for Property Management Companies: Tenants, Maintenance, and Rent Collection",
+    tag: "Industry",
+    summary:
+      "AppFolio and Buildium work fine at a few hundred units, then the per-unit fees and rigid workflows start costing more than they save. Here is what growing property management companies build custom instead.",
+  },
+  {
     url: "/insights/custom-software-for-dental-practices",
     title: "Custom Software for Dental Practices: Patient Management and Scheduling",
     tag: "Industry",
