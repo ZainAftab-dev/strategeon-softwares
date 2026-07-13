@@ -95,10 +95,7 @@ export async function POST(req) {
     if (!apiRes.ok) {
       const errText = await apiRes.text();
       console.error("Groq API error:", apiRes.status, errText);
-      return NextResponse.json(
-        { error: "AI unavailable", status: apiRes.status, detail: errText },
-        { status: 502 }
-      );
+      return NextResponse.json({ error: "AI unavailable" }, { status: 502 });
     }
 
     const data = await apiRes.json();

@@ -54,7 +54,6 @@ import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { AnimatedStats } from "@/components/AnimatedStats";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
-import { CaseStudyGrid } from "@/components/CaseStudyGrid";
 import { CTA } from "@/components/CTA";
 import { services, stats, technologyLogos, values } from "@/data/site";
 
@@ -166,20 +165,6 @@ export default function HomePage() {
             <p>Delivered work, satisfied clients, supported launches, and experience across multiple industries.</p>
           </AnimateInView>
           <AnimatedStats stats={stats} className="stats proof-stats" />
-        </div>
-      </section>
-
-      {/* ── Portfolio ── */}
-      <section className="section">
-        <div className="container">
-          <AnimateInView className="section-head">
-            <div>
-              <span className="eyebrow">Selected projects</span>
-              <h2>Real projects and product references clients can actually inspect.</h2>
-            </div>
-            <Link className="btn btn-light" href="/work">Open Work Page</Link>
-          </AnimateInView>
-          <CaseStudyGrid />
         </div>
       </section>
 

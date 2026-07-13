@@ -26,6 +26,8 @@ export function Header() {
             src="/logo.png"
             alt="Strategeon Softwares"
             className="brand-logo brand-logo-anim"
+            width={48}
+            height={48}
             fetchPriority="high"
             decoding="sync"
             initial={{ opacity: 0, scale: 0.85 }}

@@ -17,7 +17,7 @@ export function ContactForm({ industry }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "d6e7778d-7122-40ea-84a1-763897d8dd96",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           subject: `New project request — ${fd.get("name")}`,
           from_name: "Strategeon Softwares Site",
           replyto: fd.get("email"),
