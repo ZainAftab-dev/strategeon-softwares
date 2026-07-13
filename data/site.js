@@ -200,6 +200,27 @@ export const values = [
 
 export const insights = [
   {
+    url: "/insights/custom-billing-and-invoicing-software-cost",
+    title: "Custom Billing and Invoicing Software Cost: What to Budget in 2026",
+    tag: "Cost Guide",
+    summary:
+      "QuickBooks and generic invoicing tools work fine until billing gets complicated: usage-based pricing, proration, multi-entity tax rules. Here is what custom billing software actually costs to build in 2026.",
+  },
+  {
+    url: "/insights/custom-crm-vs-pipedrive",
+    title: "Custom CRM vs Pipedrive: Which Is Better for a Growing Sales Team?",
+    tag: "Comparison",
+    summary:
+      "Pipedrive is one of the fastest CRMs to get a sales team running on, but its pipeline-first design becomes a constraint once a sales process gets more complex. Here is the full 2026 comparison against a custom-built CRM.",
+  },
+  {
+    url: "/insights/custom-software-for-veterinary-clinics",
+    title: "Custom Software for Veterinary Clinics: Patient Records, Scheduling, and Client Portals",
+    tag: "Industry",
+    summary:
+      "Cornerstone and ezyVet work well for a single clinic running standard workflows, but multi-location practices and specialty clinics quickly hit their limits. Here is what veterinary practices build custom in 2026, and what it costs.",
+  },
+  {
     url: "/insights/custom-warehouse-management-software-cost",
     title: "Custom Warehouse Management Software Cost: What to Budget in 2026",
     tag: "Cost Guide",
