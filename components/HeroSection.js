@@ -155,7 +155,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Full Stack Development Solutions
+            Full-Stack Engineering
           </motion.span>
 
           <h1 aria-label="We Build. You Grow.">
@@ -209,8 +209,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: typingTotalDelay + 0.08 }}
           >
-            Custom web apps, mobile apps, and automation tools built around
-            your business — not the other way around.
+            Production-grade web apps, mobile apps, and the automation behind
+            them — designed, built, and shipped by one full-stack team.
           </motion.p>
 
           <div className="hero-actions">
@@ -240,7 +240,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.35, delay: typingTotalDelay + 0.45 }}
           >
-            Projects start from <strong>$500</strong> · We scope and price around your budget
+            Projects from <strong>$500</strong> — scoped to your budget, not a fixed package
           </motion.p>
 
           {/* Stats — count-up when in view */}

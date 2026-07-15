@@ -65,20 +65,7 @@ const HOME_BENTO_SIZE = {
 };
 const homeProjects = caseStudies.filter((item) => item.title in HOME_BENTO_SIZE);
 
-const CLIENTS = [
-  "Clearline Ventures",
-  "BrightPath Operations",
-  "Northline Dental Group",
-  "Summit Retail Systems",
-  "HarborCare Services",
-  "Clearline Ventures",
-  "BrightPath Operations",
-  "Northline Dental Group",
-];
-
 export default function HomePage() {
-  const strip = services.slice(0, 4);
-
   return (
     <>
       <script
@@ -88,31 +75,21 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <HeroSection />
 
-      {/* ── Service strip ── */}
+      {/* ── Service strip (compact marquee) ── */}
       <section className="service-strip">
-        <AnimateInView className="container strip-grid">
-          {strip.map((service) => {
+        <div className="container">
+          <p className="strip-label">What we build</p>
+        </div>
+        <InfiniteMarquee speed={28} pauseOnHover>
+          {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Link className="strip-card" href="/services" key={service.title}>
-                <Icon size={42} />
-                <h2>{service.title}</h2>
-                <p>{service.summary}</p>
-              </Link>
+              <span className="service-chip" key={service.title}>
+                <Icon size={16} />
+                {service.title}
+              </span>
             );
           })}
-        </AnimateInView>
-      </section>
-
-      {/* ── Clients marquee ── */}
-      <section className="clients-strip">
-        <div className="container">
-          <p className="clients-label">Trusted by</p>
-        </div>
-        <InfiniteMarquee speed={32} pauseOnHover>
-          {CLIENTS.map((name, i) => (
-            <span className="client-name" key={`${name}-${i}`}>{name}</span>
-          ))}
         </InfiniteMarquee>
       </section>
 

@@ -44,12 +44,12 @@ export default async function Image() {
             alignItems: "center",
             gap: 4,
           }}>
-            <span style={{ color: "#1688ff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
+            <span style={{ color: "#4f7fff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
             <span style={{ color: "#ffffff", fontSize: 36, fontWeight: 900, lineHeight: 1 }}>S</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ color: "#ffffff", fontSize: 22, fontWeight: 800, lineHeight: 1.1 }}>Strategeon</span>
-            <span style={{ color: "#35b8ff", fontSize: 14, letterSpacing: "0.22em" }}>SOFTWARES</span>
+            <span style={{ color: "#86a9ff", fontSize: 14, letterSpacing: "0.22em" }}>SOFTWARES</span>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default async function Image() {
           maxWidth: 900,
         }}>
           We Build.{" "}
-          <span style={{ color: "#1688ff" }}>You Grow.</span>
+          <span style={{ color: "#4f7fff" }}>You Grow.</span>
         </h1>
 
         {/* Subline */}
@@ -74,7 +74,7 @@ export default async function Image() {
           maxWidth: 780,
           lineHeight: 1.45,
         }}>
-          Full stack development solutions that drive real business results.
+          Production-grade web apps, mobile apps, and the automation behind them.
         </p>
 
         {/* Pills */}
@@ -85,7 +85,7 @@ export default async function Image() {
               border: "1px solid rgba(22,136,255,0.35)",
               borderRadius: 6,
               padding: "8px 18px",
-              color: "#35b8ff",
+              color: "#86a9ff",
               fontSize: 16,
               fontWeight: 700,
               display: "flex",

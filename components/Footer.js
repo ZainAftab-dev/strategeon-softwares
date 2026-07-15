@@ -41,7 +41,7 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 Strategeon Softwares. All rights reserved.</span>
-          <Link href="/privacy" style={{ color: "rgba(255,255,255,0.5)", fontSize: "13px" }}>Privacy Policy</Link>
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
     </footer>

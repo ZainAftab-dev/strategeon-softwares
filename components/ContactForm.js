@@ -42,7 +42,7 @@ export function ContactForm({ industry }) {
         Thanks. Your project request is on its way to the Strategeon team.
       </div>
       {status === "error" && (
-        <p style={{ color: "red", marginBottom: "12px" }}>
+        <p className="form-error">
           Something went wrong — please email us directly at info@strategeonsoftwares.com
         </p>
       )}
