@@ -14,6 +14,20 @@ const cardVariants = {
   }
 };
 
+// Bento tile sizing per case study — keeps the grid visually asymmetric
+// rather than a uniform 3-column layout.
+const BENTO_SIZE = {
+  "Hotel Booking Platform": "bento-large",
+  "Restaurant Ordering Platform": "bento-wide",
+  "E-Commerce Platform": "bento-small",
+  "Healthcare Appointment System": "bento-small",
+  "Finance Dashboard": "bento-wide",
+  "Strategeon LLC — Networking Store": "bento-wide",
+  "Job Board Platform": "bento-small",
+  "Property Rental Platform": "bento-wide",
+  "Logistics Dashboard": "bento-small",
+};
+
 export function CaseStudyGrid() {
   const [filter, setFilter] = useState("All");
   const categories = useMemo(
@@ -50,9 +64,9 @@ export function CaseStudyGrid() {
         ))}
       </div>
 
-      {/* Cards grid — staggered reveal */}
+      {/* Bento grid — staggered reveal, mixed tile sizes */}
       <motion.div
-        className="grid grid-3"
+        className="bento-grid"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
@@ -64,11 +78,10 @@ export function CaseStudyGrid() {
         <AnimatePresence mode="popLayout">
           {filtered.map((item) => (
             <motion.article
-              className="card case-card"
+              className={`case-card ${BENTO_SIZE[item.title] || "bento-small"}`}
               key={item.title}
               variants={cardVariants}
               layout
-              whileHover={{ y: -6, transition: { duration: 0.2 } }}
             >
               <div className="case-visual">
                 <img src={item.image} alt="" loading="lazy" decoding="async" />
@@ -85,19 +98,17 @@ export function CaseStudyGrid() {
                   )}
                 </div>
                 <h3>{item.title}</h3>
-                <p style={{ flex: 1 }}>{item.summary}</p>
+                <p>{item.summary}</p>
                 <p className="case-result"><strong>↗ {item.result}</strong></p>
                 <div className="project-actions single-action">
-                  <motion.a
+                  <a
                     className="btn btn-primary btn-shimmer"
                     href={item.demoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
                   >
                     View Project <ExternalLink size={16} />
-                  </motion.a>
+                  </a>
                 </div>
               </div>
             </motion.article>

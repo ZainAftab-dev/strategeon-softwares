@@ -1,8 +1,8 @@
 import { CheckCircle2 } from "lucide-react";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
-import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
-import { processSteps } from "@/data/site";
+import { ProcessRollingList } from "@/components/ProcessRollingList";
+import { SlideLeft, SlideRight } from "@/components/AnimateInView";
 
 export const metadata = {
   title: "Our Development Process | Strategy to Launch",
@@ -48,21 +48,7 @@ export default function ProcessPage() {
 
       <section className="section">
         <div className="container">
-          <StaggerContainer className="grid grid-3">
-            {processSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <FadeItem key={step.title}>
-                  <article className="card card-hover">
-                    <span className="pill">Step {index + 1}</span>
-                    <Icon size={38} className="card-icon" />
-                    <h3>{step.title}</h3>
-                    <p>{step.summary}</p>
-                  </article>
-                </FadeItem>
-              );
-            })}
-          </StaggerContainer>
+          <ProcessRollingList />
         </div>
       </section>
 

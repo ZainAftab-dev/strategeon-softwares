@@ -1,3 +1,4 @@
+import { Lexend, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -94,6 +95,20 @@ const organizationSchema = {
   serviceType: "Software Development",
 };
 
+const lexend = Lexend({
+  variable: "--font-lexend",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -103,7 +118,7 @@ const websiteSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lexend.variable} ${sourceSans.variable}`}>
       <body>
         <script
           type="application/ld+json"

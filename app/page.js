@@ -48,14 +48,22 @@ const homeSchema = {
 };
 
 import Link from "next/link";
-import { MonitorSmartphone } from "lucide-react";
+import { MonitorSmartphone, ExternalLink, ArrowRight } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { AnimatedStats } from "@/components/AnimatedStats";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
 import { CTA } from "@/components/CTA";
-import { services, stats, technologyLogos, values } from "@/data/site";
+import { services, stats, technologyLogos, values, caseStudies } from "@/data/site";
+
+const HOME_BENTO_SIZE = {
+  "Hotel Booking Platform": "bento-large",
+  "Restaurant Ordering Platform": "bento-wide",
+  "E-Commerce Platform": "bento-small",
+  "Healthcare Appointment System": "bento-small",
+};
+const homeProjects = caseStudies.filter((item) => item.title in HOME_BENTO_SIZE);
 
 const CLIENTS = [
   "Clearline Ventures",
@@ -88,7 +96,7 @@ export default function HomePage() {
             return (
               <Link className="strip-card" href="/services" key={service.title}>
                 <Icon size={42} />
-                <h3>{service.title}</h3>
+                <h2>{service.title}</h2>
                 <p>{service.summary}</p>
               </Link>
             );
@@ -106,6 +114,50 @@ export default function HomePage() {
             <span className="client-name" key={`${name}-${i}`}>{name}</span>
           ))}
         </InfiniteMarquee>
+      </section>
+
+      {/* ── Selected Work (bento) ── */}
+      <section className="section">
+        <div className="container">
+          <AnimateInView className="section-head">
+            <div>
+              <span className="eyebrow">Selected work</span>
+              <h2>Real client projects, live and in production.</h2>
+            </div>
+            <Link className="btn btn-light" href="/work">
+              View All Work <ArrowRight size={16} />
+            </Link>
+          </AnimateInView>
+          <div className="bento-grid">
+            {homeProjects.map((item) => (
+              <article className={`case-card ${HOME_BENTO_SIZE[item.title]}`} key={item.title}>
+                <div className="case-visual">
+                  <img src={item.image} alt="" loading="lazy" decoding="async" />
+                  <span>{item.title}</span>
+                </div>
+                <div className="case-body">
+                  <div className="case-meta">
+                    <span className="pill">{item.category}</span>
+                    {item.badge && (
+                      <span className="pill pill-live">
+                        <span className="live-dot" />
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.summary}</p>
+                  <p className="case-result"><strong>↗ {item.result}</strong></p>
+                  <div className="project-actions single-action">
+                    <a className="btn btn-primary btn-shimmer" href={item.demoUrl} target="_blank" rel="noreferrer">
+                      View Project <ExternalLink size={16} />
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ── Full Stack / Full Service / Full Commitment ── */}
