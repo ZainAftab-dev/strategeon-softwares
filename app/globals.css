@@ -1122,7 +1122,6 @@ body.cursor-hidden, body.cursor-hidden * { cursor: none !important; }
 
 @media (max-width: 640px) {
   .nav-wrap { gap: 12px; }
-  .brand-copy small { display: none; }
   .btn-whatsapp-label { display: none; }
   .nav-actions .btn-whatsapp {
     width: 40px;
