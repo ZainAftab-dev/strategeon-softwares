@@ -3,21 +3,15 @@ import {
   BadgeCheck,
   BarChart3,
   BriefcaseBusiness,
-  Building2,
   CheckCircle2,
   Cloud,
   Code2,
-  Cpu,
   Database,
-  Factory,
   HeartHandshake,
   LineChart,
   Megaphone,
   Rocket,
-  ShieldCheck,
-  ShoppingCart,
   Smartphone,
-  Stethoscope,
   Users,
   Workflow
 } from "lucide-react";
@@ -26,8 +20,6 @@ export const navItems = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/work", label: "Work" },
-  { href: "/industries", label: "Industries" },
-  { href: "/process", label: "Process" },
   { href: "/about", label: "About" },
   { href: "/insights", label: "Insights" },
   { href: "/contact", label: "Contact" }
@@ -166,15 +158,6 @@ export const caseStudies = [
     demoUrl: "https://ipi-logistics-dashboard.vercel.app",
     image: "/projects/logistics.webp"
   }
-];
-
-export const industries = [
-  { title: "Healthcare", icon: Stethoscope, summary: "Patient portals, scheduling, intake, reporting, and secure operational systems." },
-  { title: "SaaS", icon: Cpu, summary: "MVPs, subscription platforms, admin tools, billing, analytics, and product scaling." },
-  { title: "Ecommerce", icon: ShoppingCart, summary: "Custom storefronts, order operations, inventory, subscriptions, and integrations." },
-  { title: "Finance", icon: ShieldCheck, summary: "Secure dashboards, internal tools, data workflows, and compliance-aware engineering." },
-  { title: "Real Estate", icon: Building2, summary: "Listing portals, lead routing, agent dashboards, and automation systems." },
-  { title: "Manufacturing", icon: Factory, summary: "Production visibility, field operations, ERP connections, and reporting layers." }
 ];
 
 export const processSteps = [

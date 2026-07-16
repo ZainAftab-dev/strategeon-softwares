@@ -48,14 +48,15 @@ const homeSchema = {
 };
 
 import Link from "next/link";
-import { MonitorSmartphone, ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { AnimatedStats } from "@/components/AnimatedStats";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
-import { AnimateInView, StaggerContainer, FadeItem, SlideLeft, SlideRight } from "@/components/AnimateInView";
+import { ProcessRollingList } from "@/components/ProcessRollingList";
+import { AnimateInView, SlideLeft, SlideRight } from "@/components/AnimateInView";
 import { CTA } from "@/components/CTA";
-import { services, stats, technologyLogos, values, caseStudies } from "@/data/site";
+import { services, stats, technologyLogos, caseStudies } from "@/data/site";
 
 const HOME_BENTO_SIZE = {
   "Hotel Booking Platform": "bento-large",
@@ -137,27 +138,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Full Stack / Full Service / Full Commitment ── */}
+      {/* ── Process ── */}
       <section className="section">
         <div className="container">
           <AnimateInView className="section-head">
             <div>
-              <span className="eyebrow">Full Stack. Full Service. Full Commitment.</span>
-              <h2>We handle everything so you can focus on growing your business.</h2>
+              <span className="eyebrow">Our process</span>
+              <h2>A clear path from strategy to launch.</h2>
             </div>
-            <Link className="btn btn-light" href="/process">Our Process</Link>
           </AnimateInView>
-          <StaggerContainer className="grid grid-3">
-            {values.map((value) => (
-              <FadeItem key={value.title}>
-                <article className="card card-hover">
-                  <MonitorSmartphone size={34} className="card-icon" />
-                  <h3>{value.title}</h3>
-                  <p>{value.summary}</p>
-                </article>
-              </FadeItem>
-            ))}
-          </StaggerContainer>
+          <ProcessRollingList />
         </div>
       </section>
 

@@ -3,23 +3,16 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { navItems } from "@/data/site";
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 55);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <header className={`site-header${scrolled ? " scrolled" : ""}`}>
+    <header className="site-header">
       <div className="container nav-wrap">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
           <motion.img
