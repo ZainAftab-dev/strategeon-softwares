@@ -261,6 +261,7 @@ export function HeroSection() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <SplineScene scene={ROBOT_SCENE} className="hero-robot-canvas" />
+            <div className="hero-robot-watermark-cover" aria-hidden="true" />
             <div className="hero-robot-badge-cover" aria-hidden="true" ref={badgeCoverRef} />
           </motion.div>
         ) : (
