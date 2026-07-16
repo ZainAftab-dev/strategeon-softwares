@@ -17,6 +17,7 @@ function SplineLoader() {
 
 export function SplineScene({ scene, className }) {
   const [shouldLoad, setShouldLoad] = useState(false);
+  const [sceneReady, setSceneReady] = useState(false);
 
   useEffect(() => {
     // Defer fetching/evaluating the heavy Spline runtime until the browser is
@@ -31,7 +32,21 @@ export function SplineScene({ scene, className }) {
     };
   }, []);
 
-  if (!shouldLoad) return <SplineLoader />;
-
-  return <Spline scene={scene} className={className} renderOnDemand />;
+  return (
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+      {/* Keep the spinner visible through the scene's own (heavy) init —
+          without this there's a blank gap between "shouldLoad" flipping
+          true and the WebGL scene actually finishing setup. */}
+      {!sceneReady && <SplineLoader />}
+      {shouldLoad && (
+        <Spline
+          scene={scene}
+          className={className}
+          renderOnDemand
+          onLoad={() => setSceneReady(true)}
+          style={{ opacity: sceneReady ? 1 : 0, transition: "opacity 0.4s ease" }}
+        />
+      )}
+    </div>
+  );
 }

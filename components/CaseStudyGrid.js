@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { caseStudies } from "@/data/site";
@@ -84,7 +85,12 @@ export function CaseStudyGrid() {
               layout
             >
               <div className="case-visual">
-                <img src={item.image} alt="" loading="lazy" decoding="async" />
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 25vw"
+                />
                 <span>{item.title}</span>
               </div>
               <div className="case-body">

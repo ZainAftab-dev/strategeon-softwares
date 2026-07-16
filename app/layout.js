@@ -3,7 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
-import { ChatWidget } from "@/components/ChatWidget";
+import { DeferredChatWidget } from "@/components/DeferredChatWidget";
 
 export const metadata = {
   title: {
@@ -119,6 +119,11 @@ const websiteSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        {/* Warms the connection ahead of the deferred Spline scene fetch on the home page */}
+        <link rel="preconnect" href="https://prod.spline.design" />
+        <link rel="dns-prefetch" href="https://prod.spline.design" />
+      </head>
       <body>
         <script
           type="application/ld+json"
@@ -132,7 +137,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
-        <ChatWidget />
+        <DeferredChatWidget />
       </body>
     </html>
   );

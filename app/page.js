@@ -48,6 +48,7 @@ const homeSchema = {
 };
 
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
@@ -112,7 +113,12 @@ export default function HomePage() {
             {homeProjects.map((item) => (
               <article className={`case-card ${HOME_BENTO_SIZE[item.title]}`} key={item.title}>
                 <div className="case-visual">
-                  <img src={item.image} alt="" loading="lazy" decoding="async" />
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 25vw"
+                  />
                   <span>{item.title}</span>
                 </div>
                 <div className="case-body">

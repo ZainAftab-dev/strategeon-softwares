@@ -73,17 +73,27 @@ function useHeroSpotlight(containerRef, spotRef, badgeCoverRef) {
   }, [containerRef, spotRef, badgeCoverRef]);
 }
 
-// --- Desktop detection (robot only loads/renders on desktop-width viewports) ---
+// --- Robot eligibility: desktop-width viewport on hardware that can actually
+// run a WebGL scene smoothly (the Spline scene + physics runtime is a multi-MB
+// download and a real CPU/GPU cost, so low-memory/low-core machines get the
+// static photo instead, same as mobile). deviceMemory is Chromium-only — when
+// it's unavailable we don't penalize the device, we just fall back to the
+// core-count check. ---
 
-function useIsDesktop(breakpoint = 980) {
-  const [isDesktop, setIsDesktop] = useState(false);
+function useCanShowRobot(breakpoint = 980) {
+  const [canShow, setCanShow] = useState(false);
   useEffect(() => {
-    const check = () => setIsDesktop(window.innerWidth >= breakpoint);
+    const check = () => {
+      const isWide = window.innerWidth >= breakpoint;
+      const lowMemory = typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4;
+      const lowCores = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 2;
+      setCanShow(isWide && !lowMemory && !lowCores);
+    };
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
   }, [breakpoint]);
-  return isDesktop;
+  return canShow;
 }
 
 // --- Helpers ---
@@ -138,7 +148,7 @@ export function HeroSection() {
   const spotRef = useRef(null);
   const badgeCoverRef = useRef(null);
   useHeroSpotlight(heroRef, spotRef, badgeCoverRef);
-  const isDesktop = useIsDesktop();
+  const isDesktop = useCanShowRobot();
 
   // Approximate total typing duration for "We Build." (9 chars × 0.028s stagger + 0.1s delay)
   const typingTotalDelay = 0.1 + TYPED_CHARS.length * 0.028 + 0.05;

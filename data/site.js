@@ -813,12 +813,12 @@ export const reviews = [
 ];
 
 export const technologyLogos = [
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-  { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
-  { name: "Vercel", icon: "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" }
+  { name: "React", icon: "/tech/react.svg" },
+  { name: "Next.js", icon: "/tech/nextjs.svg" },
+  { name: "Node.js", icon: "/tech/nodejs.svg" },
+  { name: "Python", icon: "/tech/python.svg" },
+  { name: "PostgreSQL", icon: "/tech/postgresql.svg" },
+  { name: "Docker", icon: "/tech/docker.svg" },
+  { name: "Supabase", icon: "/tech/supabase.svg" },
+  { name: "Vercel", icon: "/tech/vercel.png" }
 ];
