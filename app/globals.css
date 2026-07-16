@@ -309,33 +309,6 @@ img { max-width: 100%; display: block; }
 .rating-box strong { font-family: var(--font-mono); font-size: 1.6rem; color: var(--accent-2); }
 .rating-box span { font-size: 0.85rem; color: var(--muted-fg); max-width: 140px; }
 
-.price-hint {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  background: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 14px 18px;
-  font-size: 0.88rem;
-  color: var(--muted-fg);
-  margin-bottom: 18px;
-  line-height: 1.5;
-}
-.price-tag {
-  display: inline-block;
-  flex-shrink: 0;
-  background: var(--accent);
-  color: #fff;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  border-radius: 5px;
-  padding: 3px 9px;
-  letter-spacing: 0.3px;
-  margin-top: 2px;
-}
-
 /* ============================================================
    HEADER
    ============================================================ */
@@ -644,7 +617,12 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    REVIEWS / CLUTCH BADGE
    ============================================================ */
-.review-card { padding: 36px; }
+.review-card {
+  padding: 36px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+}
 .review-top { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 .review-top .avatar {
   width: 48px;

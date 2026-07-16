@@ -20,10 +20,6 @@ export function CTA() {
             Share your goals, timeline, and what is blocking growth. You will
             leave with a practical next step.
           </p>
-          <div className="price-hint">
-            <span className="price-tag">From $500</span>
-            Every project is scoped to your budget — no fixed packages, no padded quotes. Just what you actually need.
-          </div>
           <div className="cta-actions">
             <Link className="btn btn-primary btn-shimmer btn-pulse" href="/contact">
               Book Consultation <ArrowRight size={18} />
