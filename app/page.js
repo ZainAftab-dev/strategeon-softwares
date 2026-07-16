@@ -63,6 +63,8 @@ const HOME_BENTO_SIZE = {
   "Restaurant Ordering Platform": "bento-wide",
   "E-Commerce Platform": "bento-small",
   "Healthcare Appointment System": "bento-small",
+  "Finance Dashboard": "bento-wide",
+  "Strategeon LLC — Networking Store": "bento-wide",
 };
 const homeProjects = caseStudies.filter((item) => item.title in HOME_BENTO_SIZE);
 
