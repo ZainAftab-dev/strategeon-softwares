@@ -76,22 +76,22 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <HeroSection />
 
-      {/* ── Service strip (compact marquee) ── */}
-      <section className="service-strip">
+      {/* ── What we build (hairline icon grid) ── */}
+      <section className="section-compact">
         <div className="container">
           <p className="strip-label">What we build</p>
+          <div className="service-grid">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div className="service-tile" key={service.title}>
+                  <Icon size={20} />
+                  <span>{service.title}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <InfiniteMarquee speed={28} pauseOnHover>
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
-              <span className="service-chip" key={service.title}>
-                <Icon size={16} />
-                {service.title}
-              </span>
-            );
-          })}
-        </InfiniteMarquee>
       </section>
 
       {/* ── Selected Work (bento) ── */}
@@ -152,16 +152,11 @@ export default function HomePage() {
       </section>
 
       {/* ── Tech stack marquee ── */}
-      <section className="section section-soft">
+      <section className="section-compact section-soft">
         <div className="container">
-          <AnimateInView className="section-head">
-            <div>
-              <span className="eyebrow">Modern technologies. Proven results.</span>
-              <h2>Built with reliable tools that scale from first launch to serious growth.</h2>
-            </div>
-          </AnimateInView>
+          <p className="strip-label">Modern technologies. Proven results.</p>
         </div>
-        <div style={{ padding: "24px 0" }}>
+        <div style={{ padding: "20px 0" }}>
           <InfiniteMarquee speed={26} direction="left" pauseOnHover>
             {technologyLogos.map((tech) => (
               <span className="tech-logo tech-logo-marquee" key={tech.name}>
