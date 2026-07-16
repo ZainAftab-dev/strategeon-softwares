@@ -479,12 +479,19 @@ img { max-width: 100%; display: block; }
 .hero-robot-canvas { width: 100%; height: 100%; }
 .hero-robot-watermark-cover {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 210px;
-  height: 40px;
+  right: 12px;
+  bottom: 8px;
+  width: 150px;
+  height: 46px;
   border-radius: 999px;
-  background: #000;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
 }
 .hero-robot-badge-cover {
