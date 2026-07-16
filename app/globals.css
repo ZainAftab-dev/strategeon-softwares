@@ -1121,6 +1121,15 @@ body.cursor-hidden, body.cursor-hidden * { cursor: none !important; }
 }
 
 @media (max-width: 640px) {
+  .nav-wrap { gap: 12px; }
+  .brand-copy small { display: none; }
+  .btn-whatsapp-label { display: none; }
+  .nav-actions .btn-whatsapp {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+  }
   .section { padding: 64px 0; }
   .section-compact { padding: 32px 0; }
   .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
