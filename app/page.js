@@ -48,26 +48,26 @@ const homeSchema = {
 };
 
 import Link from "next/link";
-import Image from "next/image";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { InfiniteMarquee } from "@/components/InfiniteMarquee";
 import { AnimatedStats } from "@/components/AnimatedStats";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { ProcessRollingList } from "@/components/ProcessRollingList";
+import { ProjectCard } from "@/components/ProjectCard";
 import { AnimateInView, SlideLeft, SlideRight } from "@/components/AnimateInView";
 import { CTA } from "@/components/CTA";
 import { services, stats, technologyLogos, caseStudies } from "@/data/site";
 
-const HOME_BENTO_SIZE = {
-  "Hotel Booking Platform": "bento-large",
-  "Restaurant Ordering Platform": "bento-wide",
-  "E-Commerce Platform": "bento-small",
-  "Healthcare Appointment System": "bento-small",
-  "Finance Dashboard": "bento-wide",
-  "Strategeon LLC — Networking Store": "bento-wide",
-};
-const homeProjects = caseStudies.filter((item) => item.title in HOME_BENTO_SIZE);
+const HOME_PROJECT_TITLES = [
+  "Strategeon LLC — Networking Store",
+  "Hotel Booking Platform",
+  "Restaurant Ordering Platform",
+  "E-Commerce Platform",
+];
+const homeProjects = HOME_PROJECT_TITLES.map((title) =>
+  caseStudies.find((item) => item.title === title)
+);
 
 export default function HomePage() {
   return (
@@ -109,38 +109,9 @@ export default function HomePage() {
               View All Work <ArrowRight size={16} />
             </Link>
           </AnimateInView>
-          <div className="bento-grid">
-            {homeProjects.map((item) => (
-              <article className={`case-card ${HOME_BENTO_SIZE[item.title]}`} key={item.title}>
-                <div className="case-visual">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 25vw"
-                  />
-                  <span>{item.title}</span>
-                </div>
-                <div className="case-body">
-                  <div className="case-meta">
-                    <span className="pill">{item.category}</span>
-                    {item.badge && (
-                      <span className="pill pill-live">
-                        <span className="live-dot" />
-                        {item.badge}
-                      </span>
-                    )}
-                  </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.summary}</p>
-                  <p className="case-result"><strong>↗ {item.result}</strong></p>
-                  <div className="project-actions single-action">
-                    <a className="btn btn-primary btn-shimmer" href={item.demoUrl} target="_blank" rel="noreferrer">
-                      View Project <ExternalLink size={16} />
-                    </a>
-                  </div>
-                </div>
-              </article>
+          <div className="project-list">
+            {homeProjects.map((item, index) => (
+              <ProjectCard item={item} index={index} key={item.title} />
             ))}
           </div>
         </div>

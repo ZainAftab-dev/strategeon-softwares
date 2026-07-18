@@ -76,6 +76,10 @@ export const technologies = [
   "Vercel"
 ];
 
+// Shown on every project card's GitHub icon — case studies are client
+// deliverables without public repos, so this points to the founder's profile.
+export const githubProfileUrl = "https://github.com/ZainAftab-dev";
+
 export const caseStudies = [
   {
     title: "Restaurant Ordering Platform",
@@ -84,7 +88,8 @@ export const caseStudies = [
     result: "Replaced paper menus — orders up 40% in first month",
     summary: "Built for a multi-location restaurant group struggling with manual order-taking and missed tables. We delivered a QR-based ordering system with real-time kitchen dashboards, owner analytics, and multi-location management — live and processing orders within 6 weeks.",
     demoUrl: "https://restaurant-ordering-saas.vercel.app",
-    image: "/projects/restaurant.webp"
+    image: "/projects/restaurant.webp",
+    tech: ["Next.js", "Node.js", "PostgreSQL"]
   },
   {
     title: "Hotel Booking Platform",
@@ -93,7 +98,8 @@ export const caseStudies = [
     result: "Cut booking admin time by 60% post-launch",
     summary: "A property group was managing reservations across WhatsApp and phone calls. We built a full booking platform with live availability, Stripe payments, owner dashboards, and automated confirmation emails — replacing a chaotic manual process with one centralised system.",
     demoUrl: "https://hotel-mern-booking.vercel.app",
-    image: "/projects/hotel.webp"
+    image: "/projects/hotel.webp",
+    tech: ["React", "Node.js", "MongoDB"]
   },
   {
     title: "E-Commerce Platform",
@@ -102,7 +108,8 @@ export const caseStudies = [
     result: "First online sales within 48 hours of launch",
     summary: "A retail client needed to move beyond in-store sales. We delivered a full storefront with product management, a Stripe-powered checkout, and an admin dashboard — from discovery to go-live in under 7 weeks.",
     demoUrl: "https://kk-nextjs-ecommerce.vercel.app",
-    image: "/projects/ecommerce.webp"
+    image: "/projects/ecommerce.webp",
+    tech: ["Next.js", "Stripe", "PostgreSQL"]
   },
   {
     title: "Healthcare Appointment System",
@@ -111,7 +118,8 @@ export const caseStudies = [
     result: "Reduced no-shows by 35% with automated SMS reminders",
     summary: "A healthcare provider was losing appointments to no-shows and managing bookings via phone. We built a patient scheduling platform with doctor availability, SMS confirmations, admin controls, and a reporting layer — live across 3 clinic locations.",
     demoUrl: "https://healthcare-arnob.vercel.app",
-    image: "/projects/healthcare.webp"
+    image: "/projects/healthcare.webp",
+    tech: ["Next.js", "Node.js", "Twilio"]
   },
   {
     title: "Finance Dashboard",
@@ -120,7 +128,8 @@ export const caseStudies = [
     result: "Real-time spend visibility across 5 accounts",
     summary: "A financial services client needed a single view of multi-account cash flow. We delivered a secure analytics dashboard with bank linking, transaction categorisation, budget goal tracking, and a clean reporting interface used by their team daily.",
     demoUrl: "https://gregogun-xylo.vercel.app",
-    image: "/projects/finance.webp"
+    image: "/projects/finance.webp",
+    tech: ["React", "Node.js", "PostgreSQL"]
   },
   {
     title: "Strategeon LLC — Networking Store",
@@ -129,7 +138,8 @@ export const caseStudies = [
     result: "First online orders processed within a week of launch",
     summary: "A networking products retailer running entirely on WhatsApp DMs needed a proper storefront. We built a conversion-optimised e-commerce site with product catalogues, category pages, and a smooth mobile checkout.",
     demoUrl: "https://strategeonllc.com/",
-    image: "/projects/strategeon.webp"
+    image: "/projects/strategeon.webp",
+    tech: ["Next.js", "E-Commerce", "Tailwind CSS"]
   },
   {
     title: "Job Board Platform",
@@ -138,7 +148,8 @@ export const caseStudies = [
     result: "500+ listings indexed on launch day",
     summary: "A hiring-focused startup needed a developer job board to compete with large aggregators. We built a full-stack platform with role filtering, location search, remote job toggles, and a clean card layout — optimised for speed and SEO from day one.",
     demoUrl: "https://nextjs-job-board-one.vercel.app",
-    image: "/projects/jobboard.webp"
+    image: "/projects/jobboard.webp",
+    tech: ["Next.js", "Prisma", "PostgreSQL"]
   },
   {
     title: "Property Rental Platform",
@@ -147,7 +158,8 @@ export const caseStudies = [
     result: "Onboarded 80+ listings within 2 weeks of launch",
     summary: "A property management company was using spreadsheets and email to manage listings. We delivered a full rental platform where owners list and manage properties and renters search by location and type — replacing a broken manual workflow with a scalable digital product.",
     demoUrl: "https://property-management-nextjs.vercel.app",
-    image: "/projects/property.webp"
+    image: "/projects/property.webp",
+    tech: ["Next.js", "Prisma", "PostgreSQL"]
   },
   {
     title: "Logistics Dashboard",
@@ -156,7 +168,8 @@ export const caseStudies = [
     result: "Full fleet visibility across 120+ vehicles in real time",
     summary: "A logistics operator had no single view of their fleet, shipments, and invoicing. We built an operations dashboard tracking vehicles, transporters, customers, and shipments — with built-in analytics, invoice generation, and a support tools layer used by their ops team every day.",
     demoUrl: "https://ipi-logistics-dashboard.vercel.app",
-    image: "/projects/logistics.webp"
+    image: "/projects/logistics.webp",
+    tech: ["Next.js", "Node.js", "PostgreSQL"]
   }
 ];
 
