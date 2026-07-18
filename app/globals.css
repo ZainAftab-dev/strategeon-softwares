@@ -738,7 +738,9 @@ img { max-width: 100%; display: block; }
 @media (max-width: 980px) {
   .project-card { flex-direction: column; align-items: stretch; padding: 36px 28px; gap: 32px; }
   .project-info { max-width: none; }
-  .project-visual { padding: 0; }
+  /* flex-basis of 480px from the desktop rule becomes a height in column
+     layout, reserving empty space above/below the centered laptop — reset it. */
+  .project-visual { flex: none; padding: 0; }
 }
 
 /* ============================================================
