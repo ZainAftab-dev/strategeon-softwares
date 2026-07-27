@@ -53,6 +53,11 @@ export function Header() {
             target="_blank"
             rel="noreferrer"
             aria-label="Chat on WhatsApp"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.fbq) {
+                window.fbq("track", "Contact", { content_name: "WhatsApp" });
+              }
+            }}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
           >

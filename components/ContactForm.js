@@ -29,6 +29,9 @@ export function ContactForm({ industry }) {
       });
       const data = await res.json();
       if (!data.success) throw new Error(data.message);
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead", { content_name: fd.get("project") });
+      }
       setStatus("sent");
       form.reset();
     } catch {
