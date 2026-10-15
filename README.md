@@ -1,14 +1,20 @@
 # Strategeon Softwares
 
+[![Live Site](https://img.shields.io/badge/Live-strategeonsoftwares.com-0A66C2)](https://strategeonsoftwares.com)
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?logo=vercel&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 > Full stack development solutions for businesses that need modern, scalable, high-performing web and mobile applications.
 
 A professional agency website built with **Next.js 16** (App Router) and **React 19**. Most pages are statically generated at build time; the homepage hero features an interactive 3D robot (desktop) with an AI chat widget and a Web3Forms-powered contact form.
 
 ---
 
-## Live Demo
+## Live Site
 
-Coming soon — deploy link will appear here after Vercel deployment.
+🔗 **https://strategeonsoftwares.com**
 
 ---
 
@@ -109,11 +115,14 @@ strategeon-softwares/
 │   ├── api/chat/route.js      # Groq-powered chat API (rate-limited, server-only key)
 │   ├── about/page.js
 │   ├── contact/page.js
-│   ├── industries/page.js
-│   ├── insights/[slug]/       # SEO article library
+│   ├── insights/              # SEO article library (index + [slug] pages)
+│   ├── privacy/page.js
 │   ├── process/page.js
 │   ├── services/page.js
-│   └── work/page.js
+│   ├── work/page.js
+│   ├── opengraph-image.js     # Generated social preview image
+│   ├── robots.js
+│   └── sitemap.js
 ├── components/
 │   ├── Header.js              # Sticky nav with mobile menu
 │   ├── Footer.js               # Site footer with links and contact info
@@ -123,9 +132,15 @@ strategeon-softwares/
 │   ├── PageHero.js             # Reusable inner-page hero
 │   ├── CaseStudyGrid.js        # Filterable project grid (used on /work)
 │   ├── ContactForm.js           # Web3Forms-powered contact form
-│   └── CTA.js                  # Call-to-action section
+│   ├── CTA.js                  # Call-to-action section
+│   └── ...                     # marquee, stats, reviews carousel, cursor, loading screen, etc.
 ├── data/
-│   └── site.js                 # All site content (projects, services, reviews, etc.)
+│   ├── site.js                 # All site content (projects, services, reviews, etc.)
+│   ├── articles.js             # Insight articles
+│   └── article-topics.js
+├── scripts/
+│   └── optimize-images.js      # Image optimisation helper
+├── run-oz-site.bat             # Windows one-click: install, build and start
 └── public/
     └── projects/                # Project screenshot images
 ```
@@ -160,7 +175,9 @@ All site content lives in [`data/site.js`](data/site.js):
 
 - `caseStudies` — projects shown on the Work page
 - `services` — service cards
-- `industries` — industry verticals
+- `technologies` — tech stack list
+- `values` — company values (About page)
+- `insights` — insight article summaries
 - `processSteps` — delivery process steps
 - `reviews` — client testimonials
 - `stats` — proof-point numbers
@@ -177,4 +194,4 @@ MIT — feel free to use this as a template for your own agency site.
 
 ---
 
-Built by [Strategeon Softwares](https://github.com/ZainAftab-dev/strategeon-softwares)
+Built by **Zain Aftab**, founder of [Strategeon Softwares](https://strategeonsoftwares.com) · [GitHub](https://github.com/ZainAftab-dev) · [LinkedIn](https://www.linkedin.com/in/zain-aftab-563727295/)
